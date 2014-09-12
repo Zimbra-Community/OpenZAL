@@ -1,0 +1,27 @@
+var classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database =
+[
+    [ "ConnectionProvider", "interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database_1_1_connection_provider.html", "interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database_1_1_connection_provider" ],
+    [ "CurrentVolumes", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database_1_1_current_volumes.html", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database_1_1_current_volumes" ],
+    [ "closeResults", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a013ba7fb495812f313a676aae7a716e3", null ],
+    [ "closeStatement", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#ac637dfe11dda0a146cab86e6a80abc1a", null ],
+    [ "getByType", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a75745b4defed6246c6622a019245340a", null ],
+    [ "getCalendarTableName", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#ae89a142792d8f1b928703b41a4c142d3", null ],
+    [ "getConnectionLegacy", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a2fa763b7080b10d6d5467b081f52554b", null ],
+    [ "getCurrentVolumes", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a767a72dce514da164bdc2d3148b8557e", null ],
+    [ "getItemTableName", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#aae196d560eee557ce5825120d5475777", null ],
+    [ "getMailboxSynchronizer", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a82f2ff0e72e1a13cef9f2d0e6b2c9d74", null ],
+    [ "getRevisionTableName", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#adf71ff32e275cccdd1dacec4495af292", null ],
+    [ "getSynchronizer", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a37b5565547e99beabb46f5cad452de18", null ],
+    [ "getSynchronizer", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a5b6770295611ed24edce6f05d00fd2f3", null ],
+    [ "getTombstoneTable", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a183846088384954afc87132b0c1d1d1d", null ],
+    [ "legacyGetConnection", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a6246a4a2298d609618e4a01f2b650873", null ],
+    [ "listAccountIds", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a5ed81a5fc2f9189a048602154e47081c", null ],
+    [ "quietCloseStatement", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#acf932496c040a60c4197fcf4b1673220", null ],
+    [ "setMailboxId", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a816d0ab873e6dc774ac797204f347f52", null ],
+    [ "suitableNumberOfVariables", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a999aba99dd3be0e4cefa3f6367415585", null ],
+    [ "suitableNumberOfVariables", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a7c190ee127a3276cd08dd38e4523939b", null ],
+    [ "suitableNumberOfVariables", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#adcbc799266661402dfdc5301f6485c98", null ],
+    [ "suitableNumberOfVariables", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a714c4ab067f721d211089741c4f343ba", null ],
+    [ "suitableNumberOfVariables", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a1ee45bee89d6f1fd87b3150f64dd1d3b", null ],
+    [ "IN_THIS_MAILBOX_AND", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a6e5ea4f543b55503bc47f1551fdd84f6", null ]
+];

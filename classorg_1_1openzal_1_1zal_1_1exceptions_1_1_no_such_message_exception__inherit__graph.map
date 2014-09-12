@@ -1,0 +1,5 @@
+<map id="org.openzal.zal.exceptions.NoSuchMessageException" name="org.openzal.zal.exceptions.NoSuchMessageException">
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_item_exception.html" title="org.openzal.zal.exceptions.\lNoSuchItemException" alt="" coords="5,275,187,322"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_mail_service_exception.html" title="org.openzal.zal.exceptions.\lMailServiceException" alt="" coords="5,179,187,226"/>
+<area shape="rect" id="node6" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="5,83,187,130"/>
+</map>

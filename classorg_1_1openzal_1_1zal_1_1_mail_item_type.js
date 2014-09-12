@@ -1,0 +1,26 @@
+var classorg_1_1openzal_1_1zal_1_1_mail_item_type =
+[
+    [ "of", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ace93a764c2d11b89cea07029e1c4dce6", null ],
+    [ "of", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a4ada5e3e5c0fe5f3ca0b11f83fde9359", null ],
+    [ "toByte", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a33e1e1e20e90d98aeb6872ba6a3074db", null ],
+    [ "toString", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a5d20f4f0b28a5135dabc108b11d11e93", null ],
+    [ "typeArrayFrom", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a216c6cfce3c87f86c37136b80566a0d4", null ],
+    [ "APPOINTMENT", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a1b63e3724c49d790f08fcb6ba4d7d879", null ],
+    [ "CHAT", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ab52d53625de83db154bffb5223ea2a87", null ],
+    [ "COMMENT", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a764fcdbe337063b7aefec0aeb0faeffa", null ],
+    [ "CONTACT", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ab169510cf68f7ddbb87d108392533205", null ],
+    [ "CONVERSATION", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a769f491bd5c3e17234076b0053039454", null ],
+    [ "DOCUMENT", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#abf50fc9d3c33d1f1d7fbd345b925c7da", null ],
+    [ "FLAG", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#adfb59fc4017f51653d77272c56131a7d", null ],
+    [ "FOLDER", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#aa1a8c5408c76e1791a0bb11aba27b51b", null ],
+    [ "LINK", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a12126b7074f44e054505acf8e8785660", null ],
+    [ "MESSAGE", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a1d6e4702a3ae109ec0d8e68c6bb08c3a", null ],
+    [ "MOUNTPOINT", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#aa803b99d1f9e2a829bdabbfe92b02bf9", null ],
+    [ "NOTE", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#acac60be456985554954f4a16e0bc824c", null ],
+    [ "SEARCHFOLDER", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a76ad6fecc78f508cf76e47400d58d83f", null ],
+    [ "TAG", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#acf35a75097b7cd29945482053441546a", null ],
+    [ "TASK", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ad1d86c2a11826345343b6f6e7f2f8868", null ],
+    [ "UNKNOWN", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ae3c7e5e1d818c22f5dd2d4dde5f89dab", null ],
+    [ "VIRTUAL_CONVERSATION", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a56b4c38ba5ee7bd493d33758c60ffd09", null ],
+    [ "WIKI", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a8e024cd03484c1e50b2dacdd5e388d48", null ]
+];

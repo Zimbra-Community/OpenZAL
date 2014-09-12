@@ -1,0 +1,26 @@
+var classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper =
+[
+    [ "wrapAccountQuotaInfos", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#abc77395606ce6401d025ce7b84ca70dd", null ],
+    [ "wrapAccounts", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ad93bb212c4f48237eea28648958295e0", null ],
+    [ "wrapACEs", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a1fb0d50883a713e6ec3237814c1eb550", null ],
+    [ "wrapAttachments", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ae77ebe0f57f8f18427239788c03ab869", null ],
+    [ "wrapCalendarItems", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a9c6bdf80d626b418fc355f95ca3f947d", null ],
+    [ "wrapCalendarResources", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ac9c44dad85e5238eebc8cbb70b5c1c4e", null ],
+    [ "wrapCoses", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ae979d4e20f0713b4592bc2df9c7d2565", null ],
+    [ "wrapCountAccountByCosList", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ab82981e2bf1875f5084b7ea02c75998f", null ],
+    [ "wrapDataSources", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a84fb72f316fa593b31d50f3178a6aa60", null ],
+    [ "wrapDistributionLists", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ad7b7e593b15bffe85d847bb214e442b3", null ],
+    [ "wrapDomain", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a9e78390777cb2beed890e99a2036b3e9", null ],
+    [ "wrapElements", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#aca229aa8eeea29b378c504ba9cae1f9e", null ],
+    [ "wrapGrants", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#afc886e30a0f4ec9de3569e40b0c16725", null ],
+    [ "wrapIdentities", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ab9d9e374d4ff408d13bb89f3d683d7b5", null ],
+    [ "wrapInvites", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a26a339df57b8d13975a5ba3921eb0217", null ],
+    [ "wrapMPartInfos", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ac6cc5fdf37f5a6b4b1fbdfb9b912d8ff", null ],
+    [ "wrapQuotaUsages", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a75647f4a4ef60ac5660047900fca6b52", null ],
+    [ "wrapServers", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#af27cd67521dda8427544f375d6362c6a", null ],
+    [ "wrapSignatures", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a5bf17b5064dfb7050c18ff29f720994d", null ],
+    [ "wrapUCServices", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#afa419534bf9d8148d1b36451e6c46574", null ],
+    [ "wrapVolumes", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a3fab76a49a97e844fd3eff4fe4a5b4fa", null ],
+    [ "wrapXmppComponents", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#aed0997b81dcdb11ce32699f653515f5a", null ],
+    [ "wrapZimlets", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a6695cc6e3366194c0ed15317b1b33fb4", null ]
+];

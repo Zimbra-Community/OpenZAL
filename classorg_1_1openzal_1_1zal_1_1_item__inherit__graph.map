@@ -1,0 +1,18 @@
+<map id="org.openzal.zal.Item" name="org.openzal.zal.Item">
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_calendar_item.html" title="org.openzal.zal.CalendarItem" alt="" coords="387,32,579,61"/>
+<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1_comment.html" title="org.openzal.zal.Comment" alt="" coords="397,85,568,115"/>
+<area shape="rect" id="node13" href="$classorg_1_1openzal_1_1zal_1_1_contact.html" title="org.openzal.zal.Contact" alt="" coords="403,139,563,168"/>
+<area shape="rect" id="node15" href="$classorg_1_1openzal_1_1zal_1_1_conversation.html" title="org.openzal.zal.Conversation" alt="" coords="388,192,577,221"/>
+<area shape="rect" id="node17" href="$classorg_1_1openzal_1_1zal_1_1_document.html" title="org.openzal.zal.Document" alt="" coords="396,245,569,275"/>
+<area shape="rect" id="node21" href="$classorg_1_1openzal_1_1zal_1_1_flag.html" title="org.openzal.zal.Flag" alt="" coords="413,299,552,328"/>
+<area shape="rect" id="node23" href="$classorg_1_1openzal_1_1zal_1_1_folder.html" title="org.openzal.zal.Folder" alt="" coords="408,352,557,381"/>
+<area shape="rect" id="node29" href="$classorg_1_1openzal_1_1zal_1_1_message.html" title="org.openzal.zal.Message" alt="" coords="400,405,565,435"/>
+<area shape="rect" id="node33" href="$classorg_1_1openzal_1_1zal_1_1_note.html" title="org.openzal.zal.Note" alt="" coords="412,459,553,488"/>
+<area shape="rect" id="node35" href="$classorg_1_1openzal_1_1zal_1_1_tag.html" title="org.openzal.zal.Tag" alt="" coords="415,512,551,541"/>
+<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1_appointment.html" title="org.openzal.zal.Appointment" alt="" coords="629,5,816,35"/>
+<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1_task.html" title="org.openzal.zal.Task" alt="" coords="652,59,793,88"/>
+<area shape="rect" id="node19" href="$classorg_1_1openzal_1_1zal_1_1_link.html" title="org.openzal.zal.Link" alt="" coords="653,245,792,275"/>
+<area shape="rect" id="node25" href="$classorg_1_1openzal_1_1zal_1_1_mountpoint.html" title="org.openzal.zal.Mountpoint" alt="" coords="633,299,812,328"/>
+<area shape="rect" id="node27" href="$classorg_1_1openzal_1_1zal_1_1_search_folder.html" title="org.openzal.zal.SearchFolder" alt="" coords="628,352,817,381"/>
+<area shape="rect" id="node31" href="$classorg_1_1openzal_1_1zal_1_1_chat.html" title="org.openzal.zal.Chat" alt="" coords="652,405,793,435"/>
+</map>

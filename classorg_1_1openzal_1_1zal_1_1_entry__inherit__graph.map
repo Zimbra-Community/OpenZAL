@@ -1,0 +1,13 @@
+<map id="org.openzal.zal.Entry" name="org.openzal.zal.Entry">
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1_account.html" title="org.openzal.zal.Account" alt="" coords="228,13,391,43"/>
+<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1_config.html" title="org.openzal.zal.Config" alt="" coords="233,67,385,96"/>
+<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1_cos.html" title="org.openzal.zal.Cos" alt="" coords="240,120,379,149"/>
+<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1_distribution_list.html" title="org.openzal.zal.DistributionList" alt="" coords="209,173,409,203"/>
+<area shape="rect" id="node13" href="$classorg_1_1openzal_1_1zal_1_1_domain.html" title="org.openzal.zal.Domain" alt="" coords="231,227,388,256"/>
+<area shape="rect" id="node15" href="$classorg_1_1openzal_1_1zal_1_1_global_grant.html" title="org.openzal.zal.GlobalGrant" alt="" coords="219,280,400,309"/>
+<area shape="rect" id="node17" href="$classorg_1_1openzal_1_1zal_1_1_server.html" title="org.openzal.zal.Server" alt="" coords="233,333,385,363"/>
+<area shape="rect" id="node19" href="$classorg_1_1openzal_1_1zal_1_1_u_c_service.html" title="org.openzal.zal.UCService" alt="" coords="220,387,399,416"/>
+<area shape="rect" id="node21" href="$classorg_1_1openzal_1_1zal_1_1_x_m_p_p_component.html" title="org.openzal.zal.XMPPComponent" alt="" coords="200,440,419,469"/>
+<area shape="rect" id="node23" href="$classorg_1_1openzal_1_1zal_1_1_zimlet.html" title="org.openzal.zal.Zimlet" alt="" coords="235,493,384,523"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_calendar_resource.html" title="org.openzal.zal.Calendar\lResource" alt="" coords="468,5,633,51"/>
+</map>

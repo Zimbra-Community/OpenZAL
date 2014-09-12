@@ -1,0 +1,6 @@
+<map id="org.openzal.zal.exceptions.InternalServerException" name="org.openzal.zal.exceptions.InternalServerException">
+<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_find_distribution_list_exception.html" title="org.openzal.zal.exceptions.\lUnableToFindDistributionListException" alt="" coords="648,5,896,51"/>
+<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_obtain_d_b_connection_exception.html" title="org.openzal.zal.exceptions.\lUnableToObtainDBConnectionException" alt="" coords="643,74,901,121"/>
+<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_sanitize_folder_name_exception.html" title="org.openzal.zal.exceptions.\lUnableToSanitizeFolderNameException" alt="" coords="645,143,899,190"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="184,74,365,121"/>
+</map>

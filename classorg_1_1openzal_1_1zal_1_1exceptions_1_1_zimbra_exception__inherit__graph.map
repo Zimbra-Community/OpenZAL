@@ -1,0 +1,37 @@
+<map id="org.openzal.zal.exceptions.ZimbraException" name="org.openzal.zal.exceptions.ZimbraException">
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_already_in_progress_exception.html" title="org.openzal.zal.exceptions.\lAlreadyInProgressException" alt="" coords="437,5,624,51"/>
+<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_auth_failed_exception.html" title="org.openzal.zal.exceptions.\lAuthFailedException" alt="" coords="440,74,621,121"/>
+<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_auth_token_exception.html" title="org.openzal.zal.exceptions.\lAuthTokenException" alt="" coords="440,143,621,190"/>
+<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_change_password_account_exception.html" title="org.openzal.zal.exceptions.\lChangePasswordAccountException" alt="" coords="416,213,645,259"/>
+<area shape="rect" id="node13" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_data_source_exists_exception.html" title="org.openzal.zal.exceptions.\lDataSourceExistsException" alt="" coords="437,282,624,329"/>
+<area shape="rect" id="node15" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_extension_exception.html" title="org.openzal.zal.exceptions.\lExtensionException" alt="" coords="440,351,621,398"/>
+<area shape="rect" id="node17" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_identity_exists_exception.html" title="org.openzal.zal.exceptions.\lIdentityExistsException" alt="" coords="440,421,621,467"/>
+<area shape="rect" id="node19" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_internal_server_exception.html" title="org.openzal.zal.exceptions.\lInternalServerException" alt="" coords="440,490,621,537"/>
+<area shape="rect" id="node27" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_invalid_request_exception.html" title="org.openzal.zal.exceptions.\lInvalidRequestException" alt="" coords="440,559,621,606"/>
+<area shape="rect" id="node29" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_ldap_exception.html" title="org.openzal.zal.exceptions.\lLdapException" alt="" coords="440,629,621,675"/>
+<area shape="rect" id="node31" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_mail_service_exception.html" title="org.openzal.zal.exceptions.\lMailServiceException" alt="" coords="440,698,621,745"/>
+<area shape="rect" id="node51" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_maintenance_mode_account_exception.html" title="org.openzal.zal.exceptions.\lMaintenanceModeAccountException" alt="" coords="413,767,648,814"/>
+<area shape="rect" id="node53" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_account_exception.html" title="org.openzal.zal.exceptions.\lNoSuchAccountException" alt="" coords="440,837,621,883"/>
+<area shape="rect" id="node55" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception.html" title="org.openzal.zal.exceptions.\lNoSuchAliasException" alt="" coords="440,906,621,953"/>
+<area shape="rect" id="node57" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception.html" title="org.openzal.zal.exceptions.\lNoSuchCalendarException" alt="" coords="440,975,621,1022"/>
+<area shape="rect" id="node59" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_cos_exception.html" title="org.openzal.zal.exceptions.\lNoSuchCosException" alt="" coords="440,1045,621,1091"/>
+<area shape="rect" id="node61" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html" title="org.openzal.zal.exceptions.\lNoSuchDomainException" alt="" coords="440,1114,621,1161"/>
+<area shape="rect" id="node63" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_grant_exception.html" title="org.openzal.zal.exceptions.\lNoSuchGrantException" alt="" coords="440,1183,621,1230"/>
+<area shape="rect" id="node65" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_signature_exception.html" title="org.openzal.zal.exceptions.\lNoSuchSignatureException" alt="" coords="440,1253,621,1299"/>
+<area shape="rect" id="node67" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_zimlet_exception.html" title="org.openzal.zal.exceptions.\lNoSuchZimletException" alt="" coords="440,1322,621,1369"/>
+<area shape="rect" id="node69" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_too_many_data_sources_exception.html" title="org.openzal.zal.exceptions.\lTooManyDataSourcesException" alt="" coords="425,1391,636,1438"/>
+<area shape="rect" id="node71" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_too_many_identities_exception.html" title="org.openzal.zal.exceptions.\lTooManyIdentitiesException" alt="" coords="437,1461,624,1507"/>
+<area shape="rect" id="node73" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_volume_service_exception.html" title="org.openzal.zal.exceptions.\lVolumeServiceException" alt="" coords="440,1530,621,1577"/>
+<area shape="rect" id="node21" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_find_distribution_list_exception.html" title="org.openzal.zal.exceptions.\lUnableToFindDistributionListException" alt="" coords="701,351,949,398"/>
+<area shape="rect" id="node23" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_obtain_d_b_connection_exception.html" title="org.openzal.zal.exceptions.\lUnableToObtainDBConnectionException" alt="" coords="696,421,955,467"/>
+<area shape="rect" id="node25" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_sanitize_folder_name_exception.html" title="org.openzal.zal.exceptions.\lUnableToSanitizeFolderNameException" alt="" coords="699,490,952,537"/>
+<area shape="rect" id="node33" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_already_exists_exception.html" title="org.openzal.zal.exceptions.\lAlreadyExistsException" alt="" coords="735,559,916,606"/>
+<area shape="rect" id="node35" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception.html" title="org.openzal.zal.exceptions.\lNoSuchBlobException" alt="" coords="735,629,916,675"/>
+<area shape="rect" id="node37" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_item_exception.html" title="org.openzal.zal.exceptions.\lNoSuchItemException" alt="" coords="735,698,916,745"/>
+<area shape="rect" id="node45" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_permission_denied_exception.html" title="org.openzal.zal.exceptions.\lPermissionDeniedException" alt="" coords="732,767,919,814"/>
+<area shape="rect" id="node47" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_quota_exceeded_exception.html" title="org.openzal.zal.exceptions.\lQuotaExceededException" alt="" coords="735,837,916,883"/>
+<area shape="rect" id="node49" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimlet_exception.html" title="org.openzal.zal.exceptions.\lZimletException" alt="" coords="735,906,916,953"/>
+<area shape="rect" id="node39" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html" title="org.openzal.zal.exceptions.\lNoSuchConversationException" alt="" coords="1004,629,1207,675"/>
+<area shape="rect" id="node41" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html" title="org.openzal.zal.exceptions.\lNoSuchFolderException" alt="" coords="1015,698,1196,745"/>
+<area shape="rect" id="node43" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_message_exception.html" title="org.openzal.zal.exceptions.\lNoSuchMessageException" alt="" coords="1015,767,1196,814"/>
+</map>

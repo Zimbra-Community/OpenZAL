@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['mailbox',['mailbox',['../classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log.html#a2b2213754b28ce7a4dc2ae6b0fa3d527',1,'org::openzal::zal::log::ZimbraLog']]],
+  ['mailbox_5fid_5fall',['MAILBOX_ID_ALL',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1op_1_1_redoable_op.html#ad67fa4506685a8443fd4e6502787e3af',1,'org::openzal::zal::redolog::op::RedoableOp']]],
+  ['mailboxid',['mailboxId',['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#a45b7c3756a452870321710d2fee659d1',1,'org::openzal::zal::FullItemInfo']]],
+  ['maintenance',['maintenance',['../classorg_1_1openzal_1_1zal_1_1_account_status.html#aaee9e4c23e71938bf43d692cc0c91ce3',1,'org::openzal::zal::AccountStatus']]],
+  ['max_5fmetadata_5fsize',['MAX_METADATA_SIZE',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html#aed0cad3f1570152d423294ea0af67eca',1,'org::openzal::zal::Mailbox']]],
+  ['medium',['MEDIUM',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html#a57e5c584f78a2b08d95ec5db744d0e43',1,'org::openzal::zal::calendar::Priority']]],
+  ['message',['MESSAGE',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a1d6e4702a3ae109ec0d8e68c6bb08c3a',1,'org::openzal::zal::MailItemType']]],
+  ['metadata',['metadata',['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#abfe5a0c50da249cfd8ac940349f774dc',1,'org::openzal::zal::FullItemInfo']]],
+  ['misc',['misc',['../classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log.html#a0eabc8e2d59de9ffdf6980853e654423',1,'org::openzal::zal::log::ZimbraLog']]],
+  ['mobile',['mobile',['../classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log.html#ae3742218a4ca07ae25152041cdb85f93',1,'org::openzal::zal::log::ZimbraLog']]],
+  ['modcontent',['modContent',['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#a73e0874045788a53040170d663e58f20',1,'org::openzal::zal::FullItemInfo']]],
+  ['monthly',['MONTHLY',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_rule_1_1_frequency.html#ac71223f54837b241cc8aff253412db09',1,'org::openzal::zal::calendar::RecurrenceRule::Frequency']]],
+  ['mountpoint',['MOUNTPOINT',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#aa803b99d1f9e2a829bdabbfe92b02bf9',1,'org::openzal::zal::MailItemType']]],
+  ['mprovisioning',['mProvisioning',['../classorg_1_1openzal_1_1zal_1_1_provisioning.html#ab0fe4348faf191f2a5a78e401948043b',1,'org::openzal::zal::Provisioning']]],
+  ['mrawstatus',['mRawStatus',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_global_invite_status.html#a1c280c5300acae50c358fccfe47ef1a7',1,'org::openzal::zal::calendar::GlobalInviteStatus']]],
+  ['msgtype_5fforward',['MSGTYPE_FORWARD',['../classorg_1_1openzal_1_1zal_1_1_mail_sender.html#ad039e1e89b81b7f207327c8d02616967',1,'org::openzal::zal::MailSender']]],
+  ['msgtype_5freply',['MSGTYPE_REPLY',['../classorg_1_1openzal_1_1zal_1_1_mail_sender.html#a874116c6ef7f335e9b4d802f372f9f8b',1,'org::openzal::zal::MailSender']]],
+  ['msgvolid',['msgVolId',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database_1_1_current_volumes.html#a01e2f956d67de53b81281befed4749d3',1,'org::openzal::zal::lib::ZimbraDatabase::CurrentVolumes']]],
+  ['mwikicontext',['mWikiContext',['../classorg_1_1openzal_1_1zal_1_1_wiki_page_1_1_wiki_context.html#a9041f438fa146342520881377c7bad50',1,'org::openzal::zal::WikiPage::WikiContext']]]
+];

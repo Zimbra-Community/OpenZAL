@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['gal',['gal',['../classorg_1_1openzal_1_1zal_1_1_data_source_type.html#a38bbfe1bc44aa53d9c9a629230bce23c',1,'org::openzal::zal::DataSourceType']]],
+  ['gal_5focname',['gal_OCName',['../classorg_1_1openzal_1_1zal_1_1_data_source_type.html#a26dbf79011e96071dcf9e6a54f55797f',1,'org::openzal::zal::DataSourceType']]],
+  ['gal_5frefeference',['GAL_REFEFERENCE',['../enumorg_1_1openzal_1_1zal_1_1_contact_group_1_1_type.html#a55f2f8f662c28c8265163776eb54bcfd',1,'org::openzal::zal::ContactGroup::Type']]],
+  ['get_5fquota_5fusage_5frequest',['GET_QUOTA_USAGE_REQUEST',['../classorg_1_1openzal_1_1zal_1_1_administration_constants.html#a0af676dd90606650dc51aef6a05ac140',1,'org::openzal::zal::AdministrationConstants']]],
+  ['global',['global',['../enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html#a80baf10d33e884ca0780e4798105ff6d',1,'org::openzal::zal::provisioning::TargetType']]],
+  ['grantee_5fauthuser',['GRANTEE_AUTHUSER',['../classorg_1_1openzal_1_1zal_1_1_acl.html#ad72446f1ddd551a72fc4cde2ea8e4d91',1,'org::openzal::zal::Acl']]],
+  ['grantee_5fcos',['GRANTEE_COS',['../classorg_1_1openzal_1_1zal_1_1_acl.html#a08ad85dedd4e9f50449fe261eb6bc60f',1,'org::openzal::zal::Acl']]],
+  ['grantee_5fdomain',['GRANTEE_DOMAIN',['../classorg_1_1openzal_1_1zal_1_1_acl.html#a9988311b368132945d7e9d50600295b8',1,'org::openzal::zal::Acl']]],
+  ['grantee_5fgroup',['GRANTEE_GROUP',['../classorg_1_1openzal_1_1zal_1_1_acl.html#aac725cae4246dd67eafe551a9a7718a1',1,'org::openzal::zal::Acl']]],
+  ['grantee_5fguest',['GRANTEE_GUEST',['../classorg_1_1openzal_1_1zal_1_1_acl.html#a277f63dfc94e51a649904dde72580600',1,'org::openzal::zal::Acl']]],
+  ['grantee_5fkey',['GRANTEE_KEY',['../classorg_1_1openzal_1_1zal_1_1_acl.html#a7990703a9e7ff39ac737ecfb65e261f1',1,'org::openzal::zal::Acl']]],
+  ['grantee_5fpublic',['GRANTEE_PUBLIC',['../classorg_1_1openzal_1_1zal_1_1_acl.html#a6434e3149888458954b48052a96b2cc7',1,'org::openzal::zal::Acl']]],
+  ['grantee_5fuser',['GRANTEE_USER',['../classorg_1_1openzal_1_1zal_1_1_acl.html#aa7417b1cad73014710af120f7d9cf694',1,'org::openzal::zal::Acl']]],
+  ['green',['GREEN',['../classorg_1_1openzal_1_1zal_1_1_item_1_1_color.html#a1c78932781247f839ca6189cd3e2f7b2',1,'org::openzal::zal::Item::Color']]],
+  ['group',['group',['../classorg_1_1openzal_1_1zal_1_1_cache_entry_type.html#a5e93740c7e4d7a28dc7b51e4daf76aad',1,'org.openzal.zal.CacheEntryType.group()'],['../enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html#a736beec2b065c3b6b25dfdb5dd8dc600',1,'org.openzal.zal.provisioning.TargetType.group()']]],
+  ['gt_5fdomain',['GT_DOMAIN',['../classorg_1_1openzal_1_1zal_1_1_grantee_type.html#ab289095b3a16a42a53539dacb04dacd6',1,'org::openzal::zal::GranteeType']]],
+  ['gt_5fext_5fgroup',['GT_EXT_GROUP',['../classorg_1_1openzal_1_1zal_1_1_grantee_type.html#aeb9883a4fc7c414960a23be44af75450',1,'org::openzal::zal::GranteeType']]],
+  ['gt_5fgroup',['GT_GROUP',['../classorg_1_1openzal_1_1zal_1_1_grantee_type.html#a0c24d781b8aa776187f3de18b31d8008',1,'org::openzal::zal::GranteeType']]],
+  ['gt_5fuser',['GT_USER',['../classorg_1_1openzal_1_1zal_1_1_grantee_type.html#ad7646bda0572c567feb6ef4bb489fd1c',1,'org::openzal::zal::GranteeType']]]
+];

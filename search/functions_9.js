@@ -54,6 +54,7 @@ var searchData=
   ['isisexternalvirtualaccount',['isIsExternalVirtualAccount',['../classorg_1_1openzal_1_1zal_1_1_account.html#aa5e007cff06e76e8dd1b950b8c738b03',1,'org::openzal::zal::Account']]],
   ['isissystemaccount',['isIsSystemAccount',['../classorg_1_1openzal_1_1zal_1_1_account.html#ae2e744bbc066899c994bfed4cc25fcff',1,'org::openzal::zal::Account']]],
   ['isissystemresource',['isIsSystemResource',['../classorg_1_1openzal_1_1zal_1_1_account.html#a24940f6ab2ba2dd7324865683957fdbf',1,'org::openzal::zal::Account']]],
+  ['islocalaccount',['isLocalAccount',['../classorg_1_1openzal_1_1zal_1_1_account.html#a7968308bc6f14b4eeb4fbc89f1bd914c',1,'org::openzal::zal::Account']]],
   ['ismailboxd',['isMailboxd',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a3ea5cebfbd6a7f7aebe9e32b485bf471',1,'org::openzal::zal::extension::Zimbra']]],
   ['ismobilepolicyallownonprovisionabledevices',['isMobilePolicyAllowNonProvisionableDevices',['../classorg_1_1openzal_1_1zal_1_1_account.html#a239d346a07acccef31ac66f50ef2be49',1,'org::openzal::zal::Account']]],
   ['ismobilepolicyallowpartialprovisioning',['isMobilePolicyAllowPartialProvisioning',['../classorg_1_1openzal_1_1zal_1_1_account.html#acf70f1e894d6b98b36156e31086c521d',1,'org::openzal::zal::Account']]],

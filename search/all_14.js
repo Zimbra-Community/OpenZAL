@@ -1,7 +1,7 @@
 var searchData=
 [
   ['tag',['Tag',['../classorg_1_1openzal_1_1zal_1_1_tag.html',1,'org::openzal::zal']]],
-  ['tag',['TAG',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#acf35a75097b7cd29945482053441546a',1,'org.openzal.zal.MailItemType.TAG()'],['../classorg_1_1openzal_1_1zal_1_1_tag.html#ae5e1ffa1bdef48e7bdc912f49d44fa46',1,'org.openzal.zal.Tag.Tag()']]],
+  ['tag',['Tag',['../classorg_1_1openzal_1_1zal_1_1_tag.html#ae5e1ffa1bdef48e7bdc912f49d44fa46',1,'org.openzal.zal.Tag.Tag()'],['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#acf35a75097b7cd29945482053441546a',1,'org.openzal.zal.MailItemType.TAG()']]],
   ['tag_2ejava',['Tag.java',['../_tag_8java.html',1,'']]],
   ['tags',['Tags',['../classorg_1_1openzal_1_1zal_1_1_tags.html',1,'org::openzal::zal']]],
   ['tags',['Tags',['../classorg_1_1openzal_1_1zal_1_1_tags.html#a92eb1eab62db085d0b9246ffc9f98d60',1,'org.openzal.zal.Tags.Tags(String[] tags)'],['../classorg_1_1openzal_1_1zal_1_1_tags.html#a2d237f3bfa6fbd79f158d3b3e1d0eae4',1,'org.openzal.zal.Tags.Tags(List&lt; String &gt; tags)'],['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#a97ec944f5c5c3bbd3ad7dd7fac4bc586',1,'org.openzal.zal.FullItemInfo.tags()']]],
@@ -15,7 +15,7 @@ var searchData=
   ['targettype',['TargetType',['../enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html#ab99f3bd14c4a25ccfde42e8d1a91133a',1,'org.openzal.zal.provisioning.TargetType.TargetType()'],['../classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a116f558b2471347e02fcd89aaebbb5ad',1,'org.openzal.zal.ACE.targetType()']]],
   ['targettype_2ejava',['TargetType.java',['../_target_type_8java.html',1,'']]],
   ['task',['Task',['../classorg_1_1openzal_1_1zal_1_1_task.html',1,'org::openzal::zal']]],
-  ['task',['Task',['../classorg_1_1openzal_1_1zal_1_1_task.html#a30db36a06f6685d9ef52d74ff3912c91',1,'org.openzal.zal.Task.Task()'],['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ad1d86c2a11826345343b6f6e7f2f8868',1,'org.openzal.zal.MailItemType.TASK()']]],
+  ['task',['TASK',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ad1d86c2a11826345343b6f6e7f2f8868',1,'org.openzal.zal.MailItemType.TASK()'],['../classorg_1_1openzal_1_1zal_1_1_task.html#a30db36a06f6685d9ef52d74ff3912c91',1,'org.openzal.zal.Task.Task()']]],
   ['task_2ejava',['Task.java',['../_task_8java.html',1,'']]],
   ['task_5fcompleted',['TASK_COMPLETED',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_global_invite_status.html#aeb68cdc2063691e7e173c176e7e7e404',1,'org::openzal::zal::calendar::GlobalInviteStatus']]],
   ['task_5fin_5fprogress',['TASK_IN_PROGRESS',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_global_invite_status.html#a6175e971db90ef4b1c90d633a4cea782',1,'org::openzal::zal::calendar::GlobalInviteStatus']]],

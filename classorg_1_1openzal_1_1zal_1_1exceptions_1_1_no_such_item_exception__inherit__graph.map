@@ -1,7 +1,7 @@
 <map id="org.openzal.zal.exceptions.NoSuchItemException" name="org.openzal.zal.exceptions.NoSuchItemException">
-<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html" title="org.openzal.zal.exceptions.\lNoSuchConversationException" alt="" coords="873,5,1076,51"/>
-<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html" title="org.openzal.zal.exceptions.\lNoSuchFolderException" alt="" coords="884,74,1065,121"/>
-<area shape="rect" id="node13" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_message_exception.html" title="org.openzal.zal.exceptions.\lNoSuchMessageException" alt="" coords="884,143,1065,190"/>
-<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_mail_service_exception.html" title="org.openzal.zal.exceptions.\lMailServiceException" alt="" coords="413,74,595,121"/>
-<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="184,74,365,121"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html" title="org.openzal.zal.exceptions.\lNoSuchConversationException" alt="" coords="873,5,1077,46"/>
+<area shape="rect" id="node6" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html" title="org.openzal.zal.exceptions.\lNoSuchFolderException" alt="" coords="884,70,1065,111"/>
+<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_message_exception.html" title="org.openzal.zal.exceptions.\lNoSuchMessageException" alt="" coords="884,135,1065,177"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_mail_service_exception.html" title="org.openzal.zal.exceptions.\lMailServiceException" alt="" coords="413,70,595,111"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="184,70,365,111"/>
 </map>

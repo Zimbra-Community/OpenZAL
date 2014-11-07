@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -272,8 +272,8 @@ $(document).ready(function(){initNavTree('_extension_manager_8java_source.html',
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> isCompatible(Version currentVersion)</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordtype">int</span> parts = mRequiredVersion.getPartCount();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keywordflow">return</span> currentVersion.truncate(parts).equals(mRequiredVersion);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">return</span> currentVersion.truncate(2).equals(mRequiredVersion.truncate(2)) &amp;&amp;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;             currentVersion.<a class="code" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a9c24a74ae40d3d9dfe24bac28ef2c2ed">isAtLeast</a>(mRequiredVersion);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  }</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
@@ -395,6 +395,7 @@ $(document).ready(function(){initNavTree('_extension_manager_8java_source.html',
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager_html_a4c09be381521e9e2d32b68b9bfdf293d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager.html#a4c09be381521e9e2d32b68b9bfdf293d">org.openzal.zal.extension.ExtensionManager.stopExtensions</a></div><div class="ttdeci">void stopExtensions()</div><div class="ttdef"><b>Definition:</b> <a href="_extension_manager_8java_source.html#l00127">ExtensionManager.java:127</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_zal_version_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_zal_version.html">org.openzal.zal.ZalVersion</a></div><div class="ttdef"><b>Definition:</b> <a href="_zal_version_8java_source.html#l00026">ZalVersion.java:26</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html">org.openzal.zal.extension.Zimbra</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimbra_8java_source.html#l00033">Zimbra.java:33</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1lib_1_1_version_html_a9c24a74ae40d3d9dfe24bac28ef2c2ed"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a9c24a74ae40d3d9dfe24bac28ef2c2ed">org.openzal.zal.lib.Version.isAtLeast</a></div><div class="ttdeci">boolean isAtLeast(int major)</div><div class="ttdef"><b>Definition:</b> <a href="_version_8java_source.html#l00142">Version.java:142</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager_html_a62eff43459527b65dc4aa248c8a5cd8e"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager.html#a62eff43459527b65dc4aa248c8a5cd8e">org.openzal.zal.extension.ExtensionManager.startExtensions</a></div><div class="ttdeci">void startExtensions()</div><div class="ttdef"><b>Definition:</b> <a href="_extension_manager_8java_source.html#l00094">ExtensionManager.java:94</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log.html">org.openzal.zal.log.ZimbraLog</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimbra_log_8java_source.html#l00028">ZimbraLog.java:28</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager_html_a2751fe668928fc487bbd830614821475"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager.html#a2751fe668928fc487bbd830614821475">org.openzal.zal.extension.ExtensionManager.ExtensionManager</a></div><div class="ttdeci">ExtensionManager()</div><div class="ttdef"><b>Definition:</b> <a href="_extension_manager_8java_source.html#l00074">ExtensionManager.java:74</a></div></div>

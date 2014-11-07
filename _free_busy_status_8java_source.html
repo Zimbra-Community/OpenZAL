@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -148,45 +148,46 @@ $(document).ready(function(){initNavTree('_free_busy_status_8java_source.html','
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    sZimbra2Zal = <span class="keyword">new</span> HashMap&lt;String, FreeBusyStatus&gt;(5);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    sZimbra2Zal = <span class="keyword">new</span> HashMap&lt;String, FreeBusyStatus&gt;(6);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;B&quot;</span>, Busy);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;F&quot;</span>, Free);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;T&quot;</span>, BusyTentative);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;O&quot;</span>, BusyUnavailable);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;N&quot;</span>, NoData);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a7af562f6b6f675d6ffe65d8a2457fe58">   49</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a7af562f6b6f675d6ffe65d8a2457fe58">getRawFreeBusyStatus</a>()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> mRawFreeBusyStatus;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> String mRawFreeBusyStatus;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#ac9f1101c9f04a3e5ccafc46964da1ac7">   56</a></span>&#160;  <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#ac9f1101c9f04a3e5ccafc46964da1ac7">FreeBusyStatus</a>(String rawFreeBusyStatus)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    mRawFreeBusyStatus = rawFreeBusyStatus;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#af1b04e06ef32500908bda6d7b545993a">   62</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html">FreeBusyStatus</a> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#af1b04e06ef32500908bda6d7b545993a">fromZimbra</a>(String freeBusy)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html">FreeBusyStatus</a> status = sZimbra2Zal.get(freeBusy);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (status == null) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Invalid FreeBusyStatus: &quot;</span> + freeBusy);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> status;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;&quot;</span>,  NoData);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a7af562f6b6f675d6ffe65d8a2457fe58">   50</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a7af562f6b6f675d6ffe65d8a2457fe58">getRawFreeBusyStatus</a>()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> mRawFreeBusyStatus;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> String mRawFreeBusyStatus;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#ac9f1101c9f04a3e5ccafc46964da1ac7">   57</a></span>&#160;  <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#ac9f1101c9f04a3e5ccafc46964da1ac7">FreeBusyStatus</a>(String rawFreeBusyStatus)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    mRawFreeBusyStatus = rawFreeBusyStatus;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#af1b04e06ef32500908bda6d7b545993a">   63</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html">FreeBusyStatus</a> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#af1b04e06ef32500908bda6d7b545993a">fromZimbra</a>(String freeBusy)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html">FreeBusyStatus</a> status = sZimbra2Zal.get(freeBusy);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (status == null) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Invalid FreeBusyStatus: &quot;</span> + freeBusy);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> status;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_a7427828be35f2ded9c0fc48616a01dfb"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a7427828be35f2ded9c0fc48616a01dfb">org.openzal.zal.calendar.FreeBusyStatus.BusyTentative</a></div><div class="ttdeci">BusyTentative</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00032">FreeBusyStatus.java:32</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_a9e4943d0fb2b756c88f109c4a431eb63"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a9e4943d0fb2b756c88f109c4a431eb63">org.openzal.zal.calendar.FreeBusyStatus.BusyUnavailable</a></div><div class="ttdeci">BusyUnavailable</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00033">FreeBusyStatus.java:33</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_a048053d9395e8e02c29e92d212cde4ae"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a048053d9395e8e02c29e92d212cde4ae">org.openzal.zal.calendar.FreeBusyStatus.NoData</a></div><div class="ttdeci">NoData</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00034">FreeBusyStatus.java:34</a></div></div>
-<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_a7af562f6b6f675d6ffe65d8a2457fe58"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a7af562f6b6f675d6ffe65d8a2457fe58">org.openzal.zal.calendar.FreeBusyStatus.getRawFreeBusyStatus</a></div><div class="ttdeci">String getRawFreeBusyStatus()</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00049">FreeBusyStatus.java:49</a></div></div>
-<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_af1b04e06ef32500908bda6d7b545993a"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#af1b04e06ef32500908bda6d7b545993a">org.openzal.zal.calendar.FreeBusyStatus.fromZimbra</a></div><div class="ttdeci">static FreeBusyStatus fromZimbra(String freeBusy)</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00062">FreeBusyStatus.java:62</a></div></div>
+<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_a7af562f6b6f675d6ffe65d8a2457fe58"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a7af562f6b6f675d6ffe65d8a2457fe58">org.openzal.zal.calendar.FreeBusyStatus.getRawFreeBusyStatus</a></div><div class="ttdeci">String getRawFreeBusyStatus()</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00050">FreeBusyStatus.java:50</a></div></div>
+<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_af1b04e06ef32500908bda6d7b545993a"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#af1b04e06ef32500908bda6d7b545993a">org.openzal.zal.calendar.FreeBusyStatus.fromZimbra</a></div><div class="ttdeci">static FreeBusyStatus fromZimbra(String freeBusy)</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00063">FreeBusyStatus.java:63</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_adc8c05df986b2bf5bcdd824ff3a4e7a7"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#adc8c05df986b2bf5bcdd824ff3a4e7a7">org.openzal.zal.calendar.FreeBusyStatus.Free</a></div><div class="ttdeci">Free</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00031">FreeBusyStatus.java:31</a></div></div>
-<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_ac9f1101c9f04a3e5ccafc46964da1ac7"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#ac9f1101c9f04a3e5ccafc46964da1ac7">org.openzal.zal.calendar.FreeBusyStatus.FreeBusyStatus</a></div><div class="ttdeci">FreeBusyStatus(String rawFreeBusyStatus)</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00056">FreeBusyStatus.java:56</a></div></div>
+<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_ac9f1101c9f04a3e5ccafc46964da1ac7"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#ac9f1101c9f04a3e5ccafc46964da1ac7">org.openzal.zal.calendar.FreeBusyStatus.FreeBusyStatus</a></div><div class="ttdeci">FreeBusyStatus(String rawFreeBusyStatus)</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00057">FreeBusyStatus.java:57</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html">org.openzal.zal.calendar.FreeBusyStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00028">FreeBusyStatus.java:28</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status_html_a06976171f26118d5c261c6c81767863f"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a06976171f26118d5c261c6c81767863f">org.openzal.zal.calendar.FreeBusyStatus.Busy</a></div><div class="ttdeci">Busy</div><div class="ttdef"><b>Definition:</b> <a href="_free_busy_status_8java_source.html#l00030">FreeBusyStatus.java:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

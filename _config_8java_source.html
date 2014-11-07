@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -135,66 +135,93 @@ $(document).ready(function(){initNavTree('_config_8java_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> java.util.Map;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> java.util.Set;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html">   30</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html">Config</a> <span class="keyword">extends</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_entry.html">Entry</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  @NotNull <span class="keyword">private</span> <span class="keyword">final</span> com.zimbra.cs.account.Config mConfig;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> com.zimbra.common.service.ServiceException;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> com.zimbra.cs.extension.ZimbraExtension;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html">org.openzal.zal.exceptions.NoSuchDomainException</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a2ee1a36f7f81609ba1e2a9225fea76e9">   34</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a2ee1a36f7f81609ba1e2a9225fea76e9">Config</a>(@NotNull Object config)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    super(config);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    mConfig = (com.zimbra.cs.account.Config) config;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#ae4909d8f37012cf89fcee0c4e66ffdd9">   40</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#ae4909d8f37012cf89fcee0c4e66ffdd9">Config</a>(HashMap&lt;String, Object&gt; hashMap, @NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html">Provisioning</a> provisioning)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">this</span>(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">new</span> com.zimbra.cs.account.Config(</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        hashMap,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        provisioning.toZimbra(com.zimbra.cs.account.Provisioning.class)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      )</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    );</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a861e521f7ffedbccc4f6cbbc8294d989">   50</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a861e521f7ffedbccc4f6cbbc8294d989">getVersionCheckNotificationEmail</a>()</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> mConfig.getVersionCheckNotificationEmail();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7">   56</a></span>&#160;  <span class="keyword">public</span> Set&lt;String&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7">getMultiAttrSet</a>(String name)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashSet&lt;String&gt;(mConfig.getMultiAttrSet(name));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6de70236e4c2881208a96ff4645173a0">   61</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6de70236e4c2881208a96ff4645173a0">getAttr</a>(String name)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> mConfig.getAttr(name);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a347a63c013023e1460cdee7b12a948e2">   67</a></span>&#160;  <span class="keyword">public</span> Map&lt;String, Object&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a347a63c013023e1460cdee7b12a948e2">getAttrs</a>(<span class="keywordtype">boolean</span> applyDefaults)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashMap&lt;String, Object&gt;(mConfig.getAttrs(applyDefaults));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6d11334f1b51c9b611be01871b282daf">   72</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6d11334f1b51c9b611be01871b282daf">getAttr</a>(String name, String defaultValue)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> mConfig.getAttr(name, defaultValue);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6de70236e4c2881208a96ff4645173a0"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6de70236e4c2881208a96ff4645173a0">org.openzal.zal.Config.getAttr</a></div><div class="ttdeci">String getAttr(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00061">Config.java:61</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6c2faff938d3e88b4dcea3e3c43681e7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7">org.openzal.zal.Config.getMultiAttrSet</a></div><div class="ttdeci">Set&lt; String &gt; getMultiAttrSet(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00056">Config.java:56</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a861e521f7ffedbccc4f6cbbc8294d989"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a861e521f7ffedbccc4f6cbbc8294d989">org.openzal.zal.Config.getVersionCheckNotificationEmail</a></div><div class="ttdeci">String getVersionCheckNotificationEmail()</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00050">Config.java:50</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html">org.openzal.zal.Config</a></div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00030">Config.java:30</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a347a63c013023e1460cdee7b12a948e2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a347a63c013023e1460cdee7b12a948e2">org.openzal.zal.Config.getAttrs</a></div><div class="ttdeci">Map&lt; String, Object &gt; getAttrs(boolean applyDefaults)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00067">Config.java:67</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html">   34</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html">Config</a> <span class="keyword">extends</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_entry.html">Entry</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  @NotNull <span class="keyword">private</span> <span class="keyword">final</span> com.zimbra.cs.account.Config mConfig;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a2ee1a36f7f81609ba1e2a9225fea76e9">   38</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a2ee1a36f7f81609ba1e2a9225fea76e9">Config</a>(@NotNull Object config)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    super(config);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    mConfig = (com.zimbra.cs.account.Config) config;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#ae4909d8f37012cf89fcee0c4e66ffdd9">   44</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#ae4909d8f37012cf89fcee0c4e66ffdd9">Config</a>(HashMap&lt;String, Object&gt; hashMap, @NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html">Provisioning</a> provisioning)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">this</span>(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">new</span> com.zimbra.cs.account.Config(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        hashMap,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        provisioning.toZimbra(com.zimbra.cs.account.Provisioning.class)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      )</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a861e521f7ffedbccc4f6cbbc8294d989">   54</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a861e521f7ffedbccc4f6cbbc8294d989">getVersionCheckNotificationEmail</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> mConfig.getVersionCheckNotificationEmail();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7">   60</a></span>&#160;  <span class="keyword">public</span> Set&lt;String&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7">getMultiAttrSet</a>(String name)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashSet&lt;String&gt;(mConfig.getMultiAttrSet(name));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6de70236e4c2881208a96ff4645173a0">   65</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6de70236e4c2881208a96ff4645173a0">getAttr</a>(String name)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> mConfig.getAttr(name);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a347a63c013023e1460cdee7b12a948e2">   71</a></span>&#160;  <span class="keyword">public</span> Map&lt;String, Object&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a347a63c013023e1460cdee7b12a948e2">getAttrs</a>(<span class="keywordtype">boolean</span> applyDefaults)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashMap&lt;String, Object&gt;(mConfig.getAttrs(applyDefaults));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#ae74769de0442c14f282b6d632b209879">   76</a></span>&#160;  <span class="keyword">public</span> @NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_domain.html">Domain</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#ae74769de0442c14f282b6d632b209879">getDefaultDomain</a>()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    String defaultDomainName = mConfig.getAttr(<span class="stringliteral">&quot;zimbraDefaultDomainName&quot;</span>,<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      Object domain = mConfig.getProvisioning().getDomainByName(defaultDomainName);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">if</span>( domain == null )</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html">NoSuchDomainException</a>(defaultDomainName);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_domain.html">Domain</a>(domain);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6d11334f1b51c9b611be01871b282daf">   95</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#a6d11334f1b51c9b611be01871b282daf">getAttr</a>(String name, String defaultValue)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> mConfig.getAttr(name, defaultValue);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6de70236e4c2881208a96ff4645173a0"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6de70236e4c2881208a96ff4645173a0">org.openzal.zal.Config.getAttr</a></div><div class="ttdeci">String getAttr(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00065">Config.java:65</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6c2faff938d3e88b4dcea3e3c43681e7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7">org.openzal.zal.Config.getMultiAttrSet</a></div><div class="ttdeci">Set&lt; String &gt; getMultiAttrSet(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00060">Config.java:60</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_ae74769de0442c14f282b6d632b209879"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#ae74769de0442c14f282b6d632b209879">org.openzal.zal.Config.getDefaultDomain</a></div><div class="ttdeci">Domain getDefaultDomain()</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00076">Config.java:76</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a861e521f7ffedbccc4f6cbbc8294d989"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a861e521f7ffedbccc4f6cbbc8294d989">org.openzal.zal.Config.getVersionCheckNotificationEmail</a></div><div class="ttdeci">String getVersionCheckNotificationEmail()</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00054">Config.java:54</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html">org.openzal.zal.Config</a></div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00034">Config.java:34</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a347a63c013023e1460cdee7b12a948e2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a347a63c013023e1460cdee7b12a948e2">org.openzal.zal.Config.getAttrs</a></div><div class="ttdeci">Map&lt; String, Object &gt; getAttrs(boolean applyDefaults)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00071">Config.java:71</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html">org.openzal.zal.Provisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00075">Provisioning.java:75</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a2ee1a36f7f81609ba1e2a9225fea76e9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a2ee1a36f7f81609ba1e2a9225fea76e9">org.openzal.zal.Config.Config</a></div><div class="ttdeci">Config(@NotNull Object config)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00034">Config.java:34</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_ae4909d8f37012cf89fcee0c4e66ffdd9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#ae4909d8f37012cf89fcee0c4e66ffdd9">org.openzal.zal.Config.Config</a></div><div class="ttdeci">Config(HashMap&lt; String, Object &gt; hashMap,@NotNull Provisioning provisioning)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00040">Config.java:40</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html">org.openzal.zal.exceptions.NoSuchDomainException</a></div><div class="ttdef"><b>Definition:</b> <a href="_no_such_domain_exception_8java_source.html#l00023">NoSuchDomainException.java:23</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a2ee1a36f7f81609ba1e2a9225fea76e9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a2ee1a36f7f81609ba1e2a9225fea76e9">org.openzal.zal.Config.Config</a></div><div class="ttdeci">Config(@NotNull Object config)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00038">Config.java:38</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_ae4909d8f37012cf89fcee0c4e66ffdd9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#ae4909d8f37012cf89fcee0c4e66ffdd9">org.openzal.zal.Config.Config</a></div><div class="ttdeci">Config(HashMap&lt; String, Object &gt; hashMap,@NotNull Provisioning provisioning)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00044">Config.java:44</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_domain_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_domain.html">org.openzal.zal.Domain</a></div><div class="ttdef"><b>Definition:</b> <a href="_domain_8java_source.html#l00035">Domain.java:35</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_entry_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_entry.html">org.openzal.zal.Entry</a></div><div class="ttdef"><b>Definition:</b> <a href="_entry_8java_source.html#l00027">Entry.java:27</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6d11334f1b51c9b611be01871b282daf"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6d11334f1b51c9b611be01871b282daf">org.openzal.zal.Config.getAttr</a></div><div class="ttdeci">String getAttr(String name, String defaultValue)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00072">Config.java:72</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6d11334f1b51c9b611be01871b282daf"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6d11334f1b51c9b611be01871b282daf">org.openzal.zal.Config.getAttr</a></div><div class="ttdeci">String getAttr(String name, String defaultValue)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00095">Config.java:95</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

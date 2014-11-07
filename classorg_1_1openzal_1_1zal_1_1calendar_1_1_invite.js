@@ -8,6 +8,7 @@ var classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite =
     [ "getAttendees", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a8d5234d2deac7bd81648b6b1ca9ac96b", null ],
     [ "getDescription", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ac1303585f003fe60c36bc820657227b3", null ],
     [ "getDescriptionHtml", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#aaad118424a0d18095fc528c536620f1a", null ],
+    [ "getEffectiveDuration", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a27b2e2c4a9471e85cc05d8ed1204e126", null ],
     [ "getEffectiveEndTime", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ad133f9e3a2908a32b8b30e4ab03d8c5b", null ],
     [ "getEndTimeDate", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ac245b4a57d48da3d1cb06891bd936ed7", null ],
     [ "getExceptionInstances", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a8842e9ee79f8bfe464c5da1e53cf2f19", null ],

@@ -1,5 +1,5 @@
 <map id="org.openzal.zal.Provisioning.getGranteeName" name="org.openzal.zal.Provisioning.getGranteeName">
-<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1_grantee_type.html#a951c42bc60e93d8c2c27ead7e2777204" title="org.openzal.zal.GranteeType.getCode" alt="" coords="261,5,504,35"/>
-<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_provisioning.html#aba58982453ff374bff0767f8fb0cd37d" title="org.openzal.zal.Provisioning.get\lDistributionListById" alt="" coords="280,58,485,105"/>
-<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1_provisioning.html#a60cdbef5a1f0aca3ae7dbab445bbf37d" title="org.openzal.zal.Provisioning.get\lAccountById" alt="" coords="280,127,485,174"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_grantee_type.html#a951c42bc60e93d8c2c27ead7e2777204" title="org.openzal.zal.GranteeType.getCode" alt="" coords="261,5,504,32"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1_provisioning.html#aba58982453ff374bff0767f8fb0cd37d" title="org.openzal.zal.Provisioning.get\lDistributionListById" alt="" coords="279,57,486,98"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1_provisioning.html#a60cdbef5a1f0aca3ae7dbab445bbf37d" title="org.openzal.zal.Provisioning.get\lAccountById" alt="" coords="279,122,486,163"/>
 </map>

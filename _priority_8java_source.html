@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -154,25 +154,26 @@ $(document).ready(function(){initNavTree('_priority_8java_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  @NotNull</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html#a4827c49f7f23caf95cea265e55a3e36d">   45</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html">Priority</a> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html#a4827c49f7f23caf95cea265e55a3e36d">fromZimbra</a>(@Nullable String zimbraPriority)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(zimbraPriority == null)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(zimbraPriority == null || zimbraPriority.isEmpty())</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      zimbraPriority = <span class="stringliteral">&quot;9&quot;</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> priority = Integer.valueOf(zimbraPriority);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span>( priority &lt; MEDIUM.mRawPriority )</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> HIGH;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>( priority &gt; MEDIUM.mRawPriority )</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> LOW;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> MEDIUM;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> priority = Integer.valueOf(zimbraPriority);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>( priority &lt; MEDIUM.mRawPriority )</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> HIGH;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>( priority &gt; MEDIUM.mRawPriority )</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">return</span> LOW;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> MEDIUM;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority_html_abf9694a90d07c7090692fcd781cb7b09"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html#abf9694a90d07c7090692fcd781cb7b09">org.openzal.zal.calendar.Priority.LOW</a></div><div class="ttdeci">LOW</div><div class="ttdef"><b>Definition:</b> <a href="_priority_8java_source.html#l00030">Priority.java:30</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority_html_a039de321e11a7a2b163153bddba2d77e"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html#a039de321e11a7a2b163153bddba2d77e">org.openzal.zal.calendar.Priority.Priority</a></div><div class="ttdeci">Priority(int i)</div><div class="ttdef"><b>Definition:</b> <a href="_priority_8java_source.html#l00034">Priority.java:34</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority_html"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html">org.openzal.zal.calendar.Priority</a></div><div class="ttdef"><b>Definition:</b> <a href="_priority_8java_source.html#l00026">Priority.java:26</a></div></div>

@@ -1,4 +1,4 @@
 <map id="org.openzal.zal.Mailbox.copyCalendarReplyInfo" name="org.openzal.zal.Mailbox.copyCalendarReplyInfo">
-<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1_mailbox.html#ab0373bdade64c22a6f47e4cbde3f8b56" title="org.openzal.zal.Mailbox.begin\lTransaction" alt="" coords="245,5,440,51"/>
-<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7975508368bee5110e2ea1a682095973" title="org.openzal.zal.Mailbox.end\lTransaction" alt="" coords="251,74,435,121"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_mailbox.html#ab0373bdade64c22a6f47e4cbde3f8b56" title="org.openzal.zal.Mailbox.begin\lTransaction" alt="" coords="245,5,440,46"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7975508368bee5110e2ea1a682095973" title="org.openzal.zal.Mailbox.end\lTransaction" alt="" coords="251,70,435,111"/>
 </map>

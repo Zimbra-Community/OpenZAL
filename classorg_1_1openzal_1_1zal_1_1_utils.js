@@ -9,7 +9,7 @@ var classorg_1_1openzal_1_1zal_1_1_utils =
     [ "encodeFSSafeBase64", "classorg_1_1openzal_1_1zal_1_1_utils.html#abad6a9667711e9176e20957a67e11a78", null ],
     [ "exceptionToString", "classorg_1_1openzal_1_1zal_1_1_utils.html#a096b1ab50c6c94a36fbbd711da50f5dc", null ],
     [ "getContent", "classorg_1_1openzal_1_1zal_1_1_utils.html#afef8749bae0cb74f5871b9a15875fa26", null ],
-    [ "getPublicURLForDomain", "classorg_1_1openzal_1_1zal_1_1_utils.html#a1549ad425911fb764a8b483c644839da", null ],
+    [ "getPublicURLForDomain", "classorg_1_1openzal_1_1zal_1_1_utils.html#aeb9617263c6f2b9ff42ae81259056ffc", null ],
     [ "getSmtpSession", "classorg_1_1openzal_1_1zal_1_1_utils.html#ade0d3ac8fa7d8c10427c6de5dc99c728", null ],
     [ "isGzipped", "classorg_1_1openzal_1_1zal_1_1_utils.html#ac0055902ff5e9bba82b502b0c13b58e1", null ],
     [ "loadTimeZonesFromFile", "classorg_1_1openzal_1_1zal_1_1_utils.html#ad80b57bc19805f59fe1ab180febf6ceb", null ],

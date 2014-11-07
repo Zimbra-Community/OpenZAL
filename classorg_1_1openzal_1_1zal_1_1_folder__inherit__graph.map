@@ -1,5 +1,5 @@
 <map id="org.openzal.zal.Folder" name="org.openzal.zal.Folder">
-<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1_mountpoint.html" title="org.openzal.zal.Mountpoint" alt="" coords="5,237,184,267"/>
-<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1_search_folder.html" title="org.openzal.zal.SearchFolder" alt="" coords="208,237,397,267"/>
-<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_item.html" title="org.openzal.zal.Item" alt="" coords="129,83,268,112"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1_mountpoint.html" title="org.openzal.zal.Mountpoint" alt="" coords="5,229,184,256"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_search_folder.html" title="org.openzal.zal.SearchFolder" alt="" coords="209,229,399,256"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_item.html" title="org.openzal.zal.Item" alt="" coords="129,80,268,107"/>
 </map>

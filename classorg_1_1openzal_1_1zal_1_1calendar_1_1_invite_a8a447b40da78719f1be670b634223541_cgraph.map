@@ -1,4 +1,4 @@
 <map id="org.openzal.zal.calendar.Invite.getAlarmMinutesBeforeStart" name="org.openzal.zal.calendar.Invite.getAlarmMinutesBeforeStart">
-<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ab4bb9ca379efda609626d8112dc72cd5" title="org.openzal.zal.calendar.\lInvite.getUtcStartTime" alt="" coords="495,5,660,51"/>
-<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a9555c0ff6e76c2021a662b4d98413e6c" title="org.openzal.zal.calendar.\lInvite.getUtcEndTime" alt="" coords="279,34,444,81"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ab4bb9ca379efda609626d8112dc72cd5" title="org.openzal.zal.calendar.\lInvite.getUtcStartTime" alt="" coords="494,5,661,46"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a9555c0ff6e76c2021a662b4d98413e6c" title="org.openzal.zal.calendar.\lInvite.getUtcEndTime" alt="" coords="278,34,445,75"/>
 </map>

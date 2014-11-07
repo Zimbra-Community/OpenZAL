@@ -27,6 +27,8 @@ var searchData=
   ['altertag',['alterTag',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html#a6651a6966caa230a315a8336bf222dc4',1,'org::openzal::zal::Mailbox']]],
   ['appointment',['Appointment',['../classorg_1_1openzal_1_1zal_1_1_appointment.html#a9ee6c5b5c1e3f32de9eced1177ec4d20',1,'org::openzal::zal::Appointment']]],
   ['asmap',['asMap',['../classorg_1_1openzal_1_1zal_1_1_metadata.html#a27dd7c9e5ed287f56d1b09f69b40e5b4',1,'org::openzal::zal::Metadata']]],
+  ['assertaccountbyid',['assertAccountById',['../classorg_1_1openzal_1_1zal_1_1_provisioning.html#ae1c41b6e99ff3d283c9100e4c8eec5a8',1,'org::openzal::zal::Provisioning']]],
+  ['assertaccountbyname',['assertAccountByName',['../classorg_1_1openzal_1_1zal_1_1_provisioning.html#aa43703344ec5fcb2f636d366f0b4ed29',1,'org::openzal::zal::Provisioning']]],
   ['attachmentsindexingenabled',['attachmentsIndexingEnabled',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html#a37f4d73354041a1d88a1a0dfff2599f8',1,'org::openzal::zal::Mailbox']]],
   ['attendee',['Attendee',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199',1,'org::openzal::zal::calendar::Attendee']]],
   ['attendeeinvitestatus',['AttendeeInviteStatus',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html#a661f505221df9685e2469876f7649577',1,'org::openzal::zal::calendar::AttendeeInviteStatus']]],

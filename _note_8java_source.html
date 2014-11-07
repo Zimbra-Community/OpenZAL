@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -145,9 +145,9 @@ $(document).ready(function(){initNavTree('_note_8java_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      mRectangle = rectangle;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span> com.zimbra.cs.mailbox.Note.Rectangle getZimbraRectangle()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    public &lt;T&gt; T toZimbra(Class&lt;T&gt; cls)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">return</span> mRectangle;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">return</span> cls.cast(mRectangle);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('_note_8java_source.html','');});
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_note_html_a6ee9dfb56c3641aa65c75d3839bc1df1"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_note.html#a6ee9dfb56c3641aa65c75d3839bc1df1">org.openzal.zal.Note.getSender</a></div><div class="ttdeci">String getSender()</div><div class="ttdef"><b>Definition:</b> <a href="_note_8java_source.html#l00050">Note.java:50</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_note_html_a79cebcb6e104002cbc3cb917a8a4f213"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_note.html#a79cebcb6e104002cbc3cb917a8a4f213">org.openzal.zal.Note.Note</a></div><div class="ttdeci">Note(@NotNull Object item)</div><div class="ttdef"><b>Definition:</b> <a href="_note_8java_source.html#l00044">Note.java:44</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_note_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_note.html">org.openzal.zal.Note</a></div><div class="ttdef"><b>Definition:</b> <a href="_note_8java_source.html#l00025">Note.java:25</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item.html">org.openzal.zal.Item</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_8java_source.html#l00039">Item.java:39</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item.html">org.openzal.zal.Item</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_8java_source.html#l00040">Item.java:40</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_note_html_a8e3b6ef75a37cd0d35d5b75e2edcf32a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_note.html#a8e3b6ef75a37cd0d35d5b75e2edcf32a">org.openzal.zal.Note.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_note_8java_source.html#l00060">Note.java:60</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

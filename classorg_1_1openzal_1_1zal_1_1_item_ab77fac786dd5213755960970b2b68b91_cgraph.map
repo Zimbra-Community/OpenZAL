@@ -1,5 +1,5 @@
 <map id="org.openzal.zal.Item.decodeZimbraMetadata" name="org.openzal.zal.Item.decodeZimbraMetadata">
-<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#ae7695613fc0b35523c173c978241704c" title="org.openzal.zal.lib.Version.lessThan" alt="" coords="240,36,472,65"/>
-<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a9e639c4e5c383ca9774733c165d0f3b5" title="org.openzal.zal.lib.Version.compareTo" alt="" coords="521,5,764,35"/>
-<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#aee4f26ef7c44dbf2428e53a07dabf9ff" title="org.openzal.zal.lib.Version.\lVersion" alt="" coords="553,58,732,105"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#ae7695613fc0b35523c173c978241704c" title="org.openzal.zal.lib.Version.lessThan" alt="" coords="240,35,472,61"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a9e639c4e5c383ca9774733c165d0f3b5" title="org.openzal.zal.lib.Version.compareTo" alt="" coords="521,5,765,32"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#aee4f26ef7c44dbf2428e53a07dabf9ff" title="org.openzal.zal.lib.Version.\lVersion" alt="" coords="553,57,732,98"/>
 </map>

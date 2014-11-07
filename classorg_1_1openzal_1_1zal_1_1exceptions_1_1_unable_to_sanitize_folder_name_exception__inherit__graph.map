@@ -1,4 +1,4 @@
 <map id="org.openzal.zal.exceptions.UnableToSanitizeFolderNameException" name="org.openzal.zal.exceptions.UnableToSanitizeFolderNameException">
-<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_internal_server_exception.html" title="org.openzal.zal.exceptions.\lInternalServerException" alt="" coords="41,179,223,226"/>
-<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="41,83,223,130"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_internal_server_exception.html" title="org.openzal.zal.exceptions.\lInternalServerException" alt="" coords="41,171,223,213"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="41,81,223,122"/>
 </map>

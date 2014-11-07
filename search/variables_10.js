@@ -7,6 +7,7 @@ var searchData=
   ['server',['server',['../classorg_1_1openzal_1_1zal_1_1_cache_entry_type.html#ab1308d60f2b64dbef3c7fe5233737797',1,'org.openzal.zal.CacheEntryType.server()'],['../enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html#a1ee198468ffdf47bf428743b9153b684',1,'org.openzal.zal.provisioning.TargetType.server()']]],
   ['service_5fmailbox',['SERVICE_MAILBOX',['../classorg_1_1openzal_1_1zal_1_1_provisioning.html#a8be2714b94273ce357468abbfd0bbd89',1,'org::openzal::zal::Provisioning']]],
   ['servicehostname',['serviceHostname',['../classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_server.html#ac73a73ea0dc216caaa8ec47a605dcb42',1,'org.openzal.zal.ProvisioningKey.ByServer.serviceHostname()'],['../classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_x_m_p_p_component.html#a7736a88d838001ef03bb8db4e1c595d1',1,'org.openzal.zal.ProvisioningKey.ByXMPPComponent.serviceHostname()']]],
+  ['sinstance',['sInstance',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html#aaabc668e40bbecb3529ca73c3951e34b',1,'org::openzal::zal::lib::ActualClock']]],
   ['size',['size',['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#adeb8281b0fb057521141f3e4b2ebeb08',1,'org::openzal::zal::FullItemInfo']]],
   ['skin',['skin',['../classorg_1_1openzal_1_1zal_1_1_cache_entry_type.html#ac790dd31752c484f3eaf5e26c7b2be66',1,'org::openzal::zal::CacheEntryType']]],
   ['sm',['sm',['../classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a0fe195122db403102dfac275c7d0bd9a',1,'org::openzal::zal::StoreManagerImp']]],

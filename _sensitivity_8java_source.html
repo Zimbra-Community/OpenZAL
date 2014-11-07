@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -159,27 +159,28 @@ $(document).ready(function(){initNavTree('_sensitivity_8java_source.html','');})
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    sZimbra2Zal = <span class="keyword">new</span> HashMap&lt;String, Sensitivity&gt;(3);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;PUB&quot;</span>, PUBLIC);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;PRI&quot;</span>, PRIVATE);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;CON&quot;</span>, CONFIDENTIAL);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;PUBLIC&quot;</span>, PUBLIC);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;PRIVATE&quot;</span>, PRIVATE);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;CONFIDENTIAL&quot;</span>, CONFIDENTIAL);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a16e78cc82fe054649fe8b12dbb34f25f">   62</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html">Sensitivity</a> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a16e78cc82fe054649fe8b12dbb34f25f">fromZimbra</a>(@NotNull String classProp)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html">Sensitivity</a> sensitivity = sZimbra2Zal.get(classProp);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (sensitivity == null)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Invalid invite sensitivity: &quot;</span> + classProp);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> sensitivity;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    sZimbra2Zal = <span class="keyword">new</span> HashMap&lt;String, Sensitivity&gt;(7);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;&quot;</span>, PUBLIC);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;PUB&quot;</span>, PUBLIC);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;PRI&quot;</span>, PRIVATE);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;CON&quot;</span>, CONFIDENTIAL);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;PUBLIC&quot;</span>, PUBLIC);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;PRIVATE&quot;</span>, PRIVATE);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    sZimbra2Zal.put(<span class="stringliteral">&quot;CONFIDENTIAL&quot;</span>, CONFIDENTIAL);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a16e78cc82fe054649fe8b12dbb34f25f">   63</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html">Sensitivity</a> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a16e78cc82fe054649fe8b12dbb34f25f">fromZimbra</a>(@NotNull String classProp)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html">Sensitivity</a> sensitivity = sZimbra2Zal.get(classProp);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (sensitivity == null)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Invalid invite sensitivity: &quot;</span> + classProp);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> sensitivity;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity_html"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html">org.openzal.zal.calendar.Sensitivity</a></div><div class="ttdef"><b>Definition:</b> <a href="_sensitivity_8java_source.html#l00028">Sensitivity.java:28</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity_html_ad14fbdbe6d100b85fed5825775e43b32"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#ad14fbdbe6d100b85fed5825775e43b32">org.openzal.zal.calendar.Sensitivity.getRawSensitivity</a></div><div class="ttdeci">String getRawSensitivity()</div><div class="ttdef"><b>Definition:</b> <a href="_sensitivity_8java_source.html#l00035">Sensitivity.java:35</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity_html_a2ac6bc83b9ed1f6b0965eee63a7fc6da"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a2ac6bc83b9ed1f6b0965eee63a7fc6da">org.openzal.zal.calendar.Sensitivity.Sensitivity</a></div><div class="ttdeci">Sensitivity(String sensitivity)</div><div class="ttdef"><b>Definition:</b> <a href="_sensitivity_8java_source.html#l00042">Sensitivity.java:42</a></div></div>
@@ -187,6 +188,6 @@ $(document).ready(function(){initNavTree('_sensitivity_8java_source.html','');})
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity_html_a6b8015766add7702ce08cdd0b7de3b6d"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a6b8015766add7702ce08cdd0b7de3b6d">org.openzal.zal.calendar.Sensitivity.PUBLIC</a></div><div class="ttdeci">PUBLIC</div><div class="ttdef"><b>Definition:</b> <a href="_sensitivity_8java_source.html#l00030">Sensitivity.java:30</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity_html_a959f573743d83614c1778de4a87668e6"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a959f573743d83614c1778de4a87668e6">org.openzal.zal.calendar.Sensitivity.PERSONAL</a></div><div class="ttdeci">PERSONAL</div><div class="ttdef"><b>Definition:</b> <a href="_sensitivity_8java_source.html#l00033">Sensitivity.java:33</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity_html_a39db922a092192b833fc74983a6d36f6"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a39db922a092192b833fc74983a6d36f6">org.openzal.zal.calendar.Sensitivity.PRIVATE</a></div><div class="ttdeci">PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="_sensitivity_8java_source.html#l00031">Sensitivity.java:31</a></div></div>
-<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity_html_a16e78cc82fe054649fe8b12dbb34f25f"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a16e78cc82fe054649fe8b12dbb34f25f">org.openzal.zal.calendar.Sensitivity.fromZimbra</a></div><div class="ttdeci">static Sensitivity fromZimbra(@NotNull String classProp)</div><div class="ttdef"><b>Definition:</b> <a href="_sensitivity_8java_source.html#l00062">Sensitivity.java:62</a></div></div>
+<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity_html_a16e78cc82fe054649fe8b12dbb34f25f"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a16e78cc82fe054649fe8b12dbb34f25f">org.openzal.zal.calendar.Sensitivity.fromZimbra</a></div><div class="ttdeci">static Sensitivity fromZimbra(@NotNull String classProp)</div><div class="ttdef"><b>Definition:</b> <a href="_sensitivity_8java_source.html#l00063">Sensitivity.java:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

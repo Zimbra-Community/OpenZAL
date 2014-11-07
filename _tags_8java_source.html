@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('_tags_8java_source.html','');});
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_tags.html#a09b72423dc19886afcb17d3322ffcb0b">   45</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_tags.html">Tags</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_tags.html#a09b72423dc19886afcb17d3322ffcb0b">extractFromItem</a>( @NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item.html">Item</a> item )</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* $if ZimbraVersion &lt; 8.0.0 $</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    return new Tags(item.getBitmask());</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    return new Tags(item.getTagBitmask());</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    $else$ */</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_tags.html">Tags</a>(item.getTags());</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/* $endif$ */</span></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('_tags_8java_source.html','');});
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_tags_html_aa53406c809f98cb18367c1e93f675a7f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_tags.html#aa53406c809f98cb18367c1e93f675a7f">org.openzal.zal.Tags.getLongTags</a></div><div class="ttdeci">long getLongTags()</div><div class="ttdef"><b>Definition:</b> <a href="_tags_8java_source.html#l00054">Tags.java:54</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item.html">org.openzal.zal.Item</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_8java_source.html#l00039">Item.java:39</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item.html">org.openzal.zal.Item</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_8java_source.html#l00040">Item.java:40</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_tags_html_a09b72423dc19886afcb17d3322ffcb0b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_tags.html#a09b72423dc19886afcb17d3322ffcb0b">org.openzal.zal.Tags.extractFromItem</a></div><div class="ttdeci">static Tags extractFromItem(@NotNull Item item)</div><div class="ttdef"><b>Definition:</b> <a href="_tags_8java_source.html#l00045">Tags.java:45</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_tags_html_aa83b2d682eab490868bb60470a8802e5"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_tags.html#aa83b2d682eab490868bb60470a8802e5">org.openzal.zal.Tags.getTags</a></div><div class="ttdeci">String[] getTags()</div><div class="ttdef"><b>Definition:</b> <a href="_tags_8java_source.html#l00063">Tags.java:63</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_tags_html_a92eb1eab62db085d0b9246ffc9f98d60"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_tags.html#a92eb1eab62db085d0b9246ffc9f98d60">org.openzal.zal.Tags.Tags</a></div><div class="ttdeci">Tags(String[] tags)</div><div class="ttdef"><b>Definition:</b> <a href="_tags_8java_source.html#l00072">Tags.java:72</a></div></div>

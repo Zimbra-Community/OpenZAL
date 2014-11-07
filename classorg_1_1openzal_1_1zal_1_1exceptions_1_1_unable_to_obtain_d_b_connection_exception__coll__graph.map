@@ -1,4 +1,4 @@
 <map id="org.openzal.zal.exceptions.UnableToObtainDBConnectionException" name="org.openzal.zal.exceptions.UnableToObtainDBConnectionException">
-<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_internal_server_exception.html" title="org.openzal.zal.exceptions.\lInternalServerException" alt="" coords="44,179,225,226"/>
-<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="44,83,225,130"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_internal_server_exception.html" title="org.openzal.zal.exceptions.\lInternalServerException" alt="" coords="43,171,224,213"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="43,81,224,122"/>
 </map>

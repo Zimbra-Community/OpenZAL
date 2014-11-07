@@ -1,6 +1,6 @@
 <map id="org.openzal.zal.ItemInfo" name="org.openzal.zal.ItemInfo">
-<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1_placed_item_info.html" title="org.openzal.zal.PlacedItemInfo" alt="" coords="97,237,300,267"/>
-<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_item_status.html" title="org.openzal.zal.ItemStatus" alt="" coords="109,83,288,112"/>
-<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1_full_item_info.html" title="org.openzal.zal.FullItemInfo" alt="" coords="5,315,187,344"/>
-<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1_item_change.html" title="org.openzal.zal.ItemChange" alt="" coords="211,315,395,344"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1_placed_item_info.html" title="org.openzal.zal.PlacedItemInfo" alt="" coords="99,229,301,256"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_item_status.html" title="org.openzal.zal.ItemStatus" alt="" coords="111,80,289,107"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_full_item_info.html" title="org.openzal.zal.FullItemInfo" alt="" coords="5,304,187,331"/>
+<area shape="rect" id="node6" href="$classorg_1_1openzal_1_1zal_1_1_item_change.html" title="org.openzal.zal.ItemChange" alt="" coords="211,304,396,331"/>
 </map>

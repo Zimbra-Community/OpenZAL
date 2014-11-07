@@ -4,6 +4,7 @@ var searchData=
   ['encode',['encode',['../classorg_1_1openzal_1_1zal_1_1_contact_group.html#a90cb2bb51f7989dc00cdc24c76df943b',1,'org.openzal.zal.ContactGroup.encode()'],['../classorg_1_1openzal_1_1zal_1_1_grant.html#a9014d232d9ee7fddfa16bb29ded33b21',1,'org.openzal.zal.Grant.encode()'],['../classorg_1_1openzal_1_1zal_1_1_utils.html#acd1364772caea33eca790e8c6ef09ede',1,'org.openzal.zal.Utils.encode()']]],
   ['encodeattrs',['encodeAttrs',['../classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log.html#a4399a381e351cffc8596cc240e0d6160',1,'org::openzal::zal::log::ZimbraLog']]],
   ['encodefssafebase64',['encodeFSSafeBase64',['../classorg_1_1openzal_1_1zal_1_1_utils.html#abad6a9667711e9176e20957a67e11a78',1,'org::openzal::zal::Utils']]],
+  ['encodesubmetadataforitemtype',['encodeSubmetadataForItemType',['../classorg_1_1openzal_1_1zal_1_1_item.html#a7bff42ced9d305625e8fdd91c37f8ef3',1,'org::openzal::zal::Item']]],
   ['encodezimbrametadata',['encodeZimbraMetadata',['../classorg_1_1openzal_1_1zal_1_1_item.html#a08c37fa78516cf7abb82f21306438a63',1,'org::openzal::zal::Item']]],
   ['encryptdata',['encryptData',['../classorg_1_1openzal_1_1zal_1_1_data_source.html#a19f01d13507c84efa0be34e7301f56d3',1,'org::openzal::zal::DataSource']]],
   ['endtransaction',['endTransaction',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7975508368bee5110e2ea1a682095973',1,'org::openzal::zal::Mailbox']]],

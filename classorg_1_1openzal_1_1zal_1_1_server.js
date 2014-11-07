@@ -15,6 +15,7 @@ var classorg_1_1openzal_1_1zal_1_1_server =
     [ "getName", "classorg_1_1openzal_1_1zal_1_1_server.html#a1228761ce1690f57690cb310fa836bf8", null ],
     [ "getServiceEnabled", "classorg_1_1openzal_1_1zal_1_1_server.html#afff13f2594bc4fcae6532c1b46f45f3f", null ],
     [ "getServiceInstalled", "classorg_1_1openzal_1_1zal_1_1_server.html#a0f9eed39cb599030d40e6c0b8d4fa165", null ],
+    [ "hasMailboxService", "classorg_1_1openzal_1_1zal_1_1_server.html#a98e4609fe6a4a6b0bf41db05e309b12c", null ],
     [ "isXMPPEnabled", "classorg_1_1openzal_1_1zal_1_1_server.html#a195468cdcb06ced0ab5c23c095e17ba2", null ],
     [ "setHsmPolicy", "classorg_1_1openzal_1_1zal_1_1_server.html#aa42dcd47c51132634a6efb9529276d03", null ]
 ];

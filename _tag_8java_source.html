@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -134,13 +134,26 @@ $(document).ready(function(){initNavTree('_tag_8java_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_tag.html">   25</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_tag.html">Tag</a> <span class="keyword">extends</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item.html">Item</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_tag.html#ae5e1ffa1bdef48e7bdc912f49d44fa46">   27</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_tag.html#ae5e1ffa1bdef48e7bdc912f49d44fa46">Tag</a>(@NotNull Object item)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    super(item);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item.html">org.openzal.zal.Item</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_8java_source.html#l00039">Item.java:39</a></div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> com.zimbra.cs.mailbox.Tag mTag;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_tag.html#ae5e1ffa1bdef48e7bdc912f49d44fa46">   29</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_tag.html#ae5e1ffa1bdef48e7bdc912f49d44fa46">Tag</a>(@NotNull Object item)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    super(item);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    mTag = (com.zimbra.cs.mailbox.Tag) item;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_tag.html#a67394ba925f217998f00473b59795233">   35</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_tag.html#a67394ba925f217998f00473b59795233">getBitmask</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/* $else$</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">    return mTag.getBitmask();</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">$endif$ */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item.html">org.openzal.zal.Item</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_8java_source.html#l00040">Item.java:40</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_tag_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_tag.html">org.openzal.zal.Tag</a></div><div class="ttdef"><b>Definition:</b> <a href="_tag_8java_source.html#l00025">Tag.java:25</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_tag_html_ae5e1ffa1bdef48e7bdc912f49d44fa46"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_tag.html#ae5e1ffa1bdef48e7bdc912f49d44fa46">org.openzal.zal.Tag.Tag</a></div><div class="ttdeci">Tag(@NotNull Object item)</div><div class="ttdef"><b>Definition:</b> <a href="_tag_8java_source.html#l00027">Tag.java:27</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_tag_html_a67394ba925f217998f00473b59795233"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_tag.html#a67394ba925f217998f00473b59795233">org.openzal.zal.Tag.getBitmask</a></div><div class="ttdeci">long getBitmask()</div><div class="ttdef"><b>Definition:</b> <a href="_tag_8java_source.html#l00035">Tag.java:35</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_tag_html_ae5e1ffa1bdef48e7bdc912f49d44fa46"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_tag.html#ae5e1ffa1bdef48e7bdc912f49d44fa46">org.openzal.zal.Tag.Tag</a></div><div class="ttdeci">Tag(@NotNull Object item)</div><div class="ttdef"><b>Definition:</b> <a href="_tag_8java_source.html#l00029">Tag.java:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -156,8 +156,8 @@ $(document).ready(function(){initNavTree('_attendee_8java_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">   47</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">Attendee</a>(String address, String name, <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">AttendeeInviteStatus</a> status)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    mAddress = address;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    mName = name;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    mAddress = (address == null) ? <span class="stringliteral">&quot;&quot;</span> : address.replaceAll(<span class="stringliteral">&quot;;&quot;</span>,<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    mName = (name == null) ? <span class="stringliteral">&quot;&quot;</span> : name;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    mStatus = status;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>

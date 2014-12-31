@@ -20,6 +20,7 @@ var searchData=
   ['hasorganizer',['hasOrganizer',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ae103180985391c3af19afda6a9f2065b',1,'org::openzal::zal::calendar::Invite']]],
   ['hasotherattendees',['hasOtherAttendees',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#af7cabfdd1c9ab8a858c836a464679248',1,'org::openzal::zal::calendar::Invite']]],
   ['hasrecurid',['hasRecurId',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ad172b1a7b4b1bd2381838139c11fa6ed',1,'org::openzal::zal::calendar::Invite']]],
+  ['hassecondarymessagevolume',['hasSecondaryMessageVolume',['../classorg_1_1openzal_1_1zal_1_1_store_volume.html#a9b3e4ee5f1615c77ab6b947c83d6b9a5',1,'org::openzal::zal::StoreVolume']]],
   ['hassensitivity',['hasSensitivity',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a0cf29db4332082b453e27709a66d477c',1,'org::openzal::zal::calendar::Invite']]],
   ['hasstarttime',['hasStartTime',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#af439c4ccf888f45afcfa8adb81fc68de',1,'org::openzal::zal::calendar::Invite']]],
   ['hasuntil',['hasUntil',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_rule.html#aac7fb3b9b9ec3567c9ba3576de8302c4',1,'org::openzal::zal::calendar::RecurrenceRule']]],

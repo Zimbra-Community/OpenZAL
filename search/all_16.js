@@ -1,7 +1,7 @@
 var searchData=
 [
   ['version',['Version',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html',1,'org::openzal::zal::lib']]],
-  ['version',['VERSION',['../classorg_1_1openzal_1_1zal_1_1_zal_build_info.html#ac84a636ef8086ffffd4db9cbe471158e',1,'org.openzal.zal.ZalBuildInfo.VERSION()'],['../classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#aee4f26ef7c44dbf2428e53a07dabf9ff',1,'org.openzal.zal.lib.Version.Version(int...versionParts)'],['../classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#aab2ef35a4b378598d90e487fa46dfc79',1,'org.openzal.zal.lib.Version.Version(@NotNull String version)']]],
+  ['version',['Version',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#aee4f26ef7c44dbf2428e53a07dabf9ff',1,'org.openzal.zal.lib.Version.Version(int...versionParts)'],['../classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#aab2ef35a4b378598d90e487fa46dfc79',1,'org.openzal.zal.lib.Version.Version(@NotNull String version)'],['../classorg_1_1openzal_1_1zal_1_1_zal_build_info.html#ac84a636ef8086ffffd4db9cbe471158e',1,'org.openzal.zal.ZalBuildInfo.VERSION()']]],
   ['version_2ejava',['Version.java',['../_version_8java.html',1,'']]],
   ['virtual_5fconversation',['VIRTUAL_CONVERSATION',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a56b4c38ba5ee7bd493d33758c60ffd09',1,'org::openzal::zal::MailItemType']]],
   ['virtualhostname',['virtualHostname',['../classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_domain.html#a454ff1edfa7edf17b2aa53c368ff929a',1,'org::openzal::zal::ProvisioningKey::ByDomain']]],

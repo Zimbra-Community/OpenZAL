@@ -43,6 +43,7 @@ var classorg_1_1openzal_1_1zal_1_1_mailbox =
     [ "getCalendarItemByUid", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad116139f52acbea87627d9842280fd34", null ],
     [ "getCalendarItemsForRange", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#adc6cb6cb6b7c6f0588172560c910801f", null ],
     [ "getConfig", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a6617301acf9f3e00938a7a5d06fb7dc9", null ],
+    [ "getContactById", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#acf7f5085befa99b0aba555704911e7fa", null ],
     [ "getFolderById", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a671808ac3419d47a177a48711b1afb2d", null ],
     [ "getFolderByName", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a174f04b1bda320c6b4fd206a08ad94c9", null ],
     [ "getFolderByPath", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#ae95daf7b04a0bbae54e6793d9eaac998", null ],

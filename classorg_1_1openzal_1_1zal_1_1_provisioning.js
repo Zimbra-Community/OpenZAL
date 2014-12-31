@@ -20,6 +20,7 @@ var classorg_1_1openzal_1_1zal_1_1_provisioning =
     [ "galSearch", "classorg_1_1openzal_1_1zal_1_1_provisioning.html#a81db1a64f7e47976f4a8a0b69abd9918", null ],
     [ "get", "classorg_1_1openzal_1_1zal_1_1_provisioning.html#a4d05c8bf4485e1496e33e32ff895cff4", null ],
     [ "get", "classorg_1_1openzal_1_1zal_1_1_provisioning.html#ac4b55e02b2dcf5ca5871535640659cbd", null ],
+    [ "getAccountByAccountIdOrItemId", "classorg_1_1openzal_1_1zal_1_1_provisioning.html#ad517b5f9db359afcdef3c8df2a87f44d", null ],
     [ "getAccountById", "classorg_1_1openzal_1_1zal_1_1_provisioning.html#a60cdbef5a1f0aca3ae7dbab445bbf37d", null ],
     [ "getAccountByName", "classorg_1_1openzal_1_1zal_1_1_provisioning.html#a4719025a6c7bc2cec78697c84d6b7dff", null ],
     [ "getAccountsOnCos", "classorg_1_1openzal_1_1zal_1_1_provisioning.html#aea36fd42bee027c412e91619ad53c384", null ],

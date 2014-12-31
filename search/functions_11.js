@@ -100,6 +100,7 @@ var searchData=
   ['simpleaddmessage',['simpleAddMessage',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html#a8ae7ff986fa423c2ca8e571d48590d4c',1,'org::openzal::zal::Mailbox']]],
   ['simplecreatedocument',['simpleCreateDocument',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html#a88166fd67dc8f52c8f743e690b8aec74',1,'org::openzal::zal::Mailbox']]],
   ['simpleonset',['SimpleOnset',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone_1_1_simple_onset.html#af456f0e3d4730c6c7be20507a74ff4bc',1,'org::openzal::zal::calendar::ICalendarTimezone::SimpleOnset']]],
+  ['size',['size',['../classorg_1_1openzal_1_1zal_1_1_metadata_list.html#a7d1aa2b1825ca10b92166fc551916d35',1,'org::openzal::zal::MetadataList']]],
   ['skipbytes',['skipBytes',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_input.html#a122dca0af1f7e17af994be037be40533',1,'org::openzal::zal::redolog::RedoLogInput']]],
   ['skiptohit',['skipToHit',['../classorg_1_1openzal_1_1zal_1_1_query_results.html#a3018c82edb16555c99131bd6d5f18cae',1,'org::openzal::zal::QueryResults']]],
   ['soapelement',['SoapElement',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_element.html#a1b0134cda2288543d48ebefc338ce0f1',1,'org::openzal::zal::soap::SoapElement']]],

@@ -212,6 +212,9 @@ var dir_b1399420ac79cc000737d5217fd8c4b6 =
     [ "Metadata.java", "_metadata_8java.html", [
       [ "Metadata", "classorg_1_1openzal_1_1zal_1_1_metadata.html", "classorg_1_1openzal_1_1zal_1_1_metadata" ]
     ] ],
+    [ "MetadataList.java", "_metadata_list_8java.html", [
+      [ "MetadataList", "classorg_1_1openzal_1_1zal_1_1_metadata_list.html", "classorg_1_1openzal_1_1zal_1_1_metadata_list" ]
+    ] ],
     [ "Mime.java", "_mime_8java.html", [
       [ "Mime", "classorg_1_1openzal_1_1zal_1_1_mime.html", "classorg_1_1openzal_1_1zal_1_1_mime" ]
     ] ],

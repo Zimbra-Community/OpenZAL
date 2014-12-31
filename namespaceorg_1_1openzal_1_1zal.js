@@ -75,6 +75,7 @@ var namespaceorg_1_1openzal_1_1zal =
     [ "MailSession", "classorg_1_1openzal_1_1zal_1_1_mail_session.html", "classorg_1_1openzal_1_1zal_1_1_mail_session" ],
     [ "Message", "classorg_1_1openzal_1_1zal_1_1_message.html", "classorg_1_1openzal_1_1zal_1_1_message" ],
     [ "Metadata", "classorg_1_1openzal_1_1zal_1_1_metadata.html", "classorg_1_1openzal_1_1zal_1_1_metadata" ],
+    [ "MetadataList", "classorg_1_1openzal_1_1zal_1_1_metadata_list.html", "classorg_1_1openzal_1_1zal_1_1_metadata_list" ],
     [ "Mime", "classorg_1_1openzal_1_1zal_1_1_mime.html", "classorg_1_1openzal_1_1zal_1_1_mime" ],
     [ "MimeConstants", "classorg_1_1openzal_1_1zal_1_1_mime_constants.html", "classorg_1_1openzal_1_1zal_1_1_mime_constants" ],
     [ "Mountpoint", "classorg_1_1openzal_1_1zal_1_1_mountpoint.html", "classorg_1_1openzal_1_1zal_1_1_mountpoint" ],

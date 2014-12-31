@@ -8,9 +8,13 @@ var classorg_1_1openzal_1_1zal_1_1_metadata =
     [ "containsKey", "classorg_1_1openzal_1_1zal_1_1_metadata.html#afa5622e0504b8a3f5e235f77a6ab1cc0", null ],
     [ "get", "classorg_1_1openzal_1_1zal_1_1_metadata.html#ac0db94717411edf9ec4697c3e9f8587b", null ],
     [ "get", "classorg_1_1openzal_1_1zal_1_1_metadata.html#a38b5545c99776f6a6d455d7a84dd3c87", null ],
+    [ "getInt", "classorg_1_1openzal_1_1zal_1_1_metadata.html#a198eaa50467e1e41f50740f257fd78a2", null ],
+    [ "getList", "classorg_1_1openzal_1_1zal_1_1_metadata.html#a3aa6f0d6793d0a02910c2247a8d3deca", null ],
     [ "getLong", "classorg_1_1openzal_1_1zal_1_1_metadata.html#ab10acdb56251624c3d212c5e5424060e", null ],
+    [ "getShort", "classorg_1_1openzal_1_1zal_1_1_metadata.html#a4bf8327289cf8e12079e304c7947b422", null ],
     [ "put", "classorg_1_1openzal_1_1zal_1_1_metadata.html#ae5cbb2958a0943f5074ad496231ad6c5", null ],
     [ "put", "classorg_1_1openzal_1_1zal_1_1_metadata.html#a0fad9259d51cdbf473780355913ae4a3", null ],
+    [ "put", "classorg_1_1openzal_1_1zal_1_1_metadata.html#aabdd83de6b967272c7f09122ea4cf2a6", null ],
     [ "remove", "classorg_1_1openzal_1_1zal_1_1_metadata.html#a993463491c560872e137dac7789e497f", null ],
     [ "toString", "classorg_1_1openzal_1_1zal_1_1_metadata.html#af4035922cfb8f71d764c227328292377", null ]
 ];

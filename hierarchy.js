@@ -144,6 +144,7 @@ var hierarchy =
     [ "org.openzal.zal.MailSession", "classorg_1_1openzal_1_1zal_1_1_mail_session.html", null ],
     [ "org.openzal.zal.calendar.MapTimeZone", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_map_time_zone.html", null ],
     [ "org.openzal.zal.Metadata", "classorg_1_1openzal_1_1zal_1_1_metadata.html", null ],
+    [ "org.openzal.zal.MetadataList", "classorg_1_1openzal_1_1zal_1_1_metadata_list.html", null ],
     [ "org.openzal.zal.Mime", "classorg_1_1openzal_1_1zal_1_1_mime.html", null ],
     [ "org.openzal.zal.MimeConstants", "classorg_1_1openzal_1_1zal_1_1_mime_constants.html", null ],
     [ "org.openzal.zal.MPartInfo", "classorg_1_1openzal_1_1zal_1_1_m_part_info.html", null ],

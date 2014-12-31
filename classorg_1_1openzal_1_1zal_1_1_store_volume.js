@@ -23,6 +23,8 @@ var classorg_1_1openzal_1_1zal_1_1_store_volume =
     [ "getName", "classorg_1_1openzal_1_1zal_1_1_store_volume.html#a558c1d723619916a0bcf61389ee8c3f3", null ],
     [ "getRootPath", "classorg_1_1openzal_1_1zal_1_1_store_volume.html#a67691427925a9021286970e57b5881c5", null ],
     [ "getType", "classorg_1_1openzal_1_1zal_1_1_store_volume.html#a0732a3aea186096e90c9408a4eb966d7", null ],
+    [ "getVolumeByName", "classorg_1_1openzal_1_1zal_1_1_store_volume.html#a237ca1bb37e6d4671efc0d00e46998d8", null ],
+    [ "hasSecondaryMessageVolume", "classorg_1_1openzal_1_1zal_1_1_store_volume.html#a9b3e4ee5f1615c77ab6b947c83d6b9a5", null ],
     [ "setCurrentVolume", "classorg_1_1openzal_1_1zal_1_1_store_volume.html#a838753b76e6773df30166345d29608fb", null ],
     [ "setDefaultBits", "classorg_1_1openzal_1_1zal_1_1_store_volume.html#a194b45233421cfe12052d84aca1a43c0", null ],
     [ "update", "classorg_1_1openzal_1_1zal_1_1_store_volume.html#a0c773f8f67a4f577e2cc8c5c94797671", null ],

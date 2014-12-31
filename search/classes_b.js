@@ -14,6 +14,7 @@ var searchData=
   ['maptimezone',['MapTimeZone',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_map_time_zone.html',1,'org::openzal::zal::calendar']]],
   ['message',['Message',['../classorg_1_1openzal_1_1zal_1_1_message.html',1,'org::openzal::zal']]],
   ['metadata',['Metadata',['../classorg_1_1openzal_1_1zal_1_1_metadata.html',1,'org::openzal::zal']]],
+  ['metadatalist',['MetadataList',['../classorg_1_1openzal_1_1zal_1_1_metadata_list.html',1,'org::openzal::zal']]],
   ['mime',['Mime',['../classorg_1_1openzal_1_1zal_1_1_mime.html',1,'org::openzal::zal']]],
   ['mimeconstants',['MimeConstants',['../classorg_1_1openzal_1_1zal_1_1_mime_constants.html',1,'org::openzal::zal']]],
   ['mountpoint',['Mountpoint',['../classorg_1_1openzal_1_1zal_1_1_mountpoint.html',1,'org::openzal::zal']]],

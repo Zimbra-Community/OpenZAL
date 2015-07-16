@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classorg_1_1openzal_1_1zal_1_1_mime.ht
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,10 +130,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:afd5c7479db8a003c55283320f05ce918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9284f8d3564fb6c3e6b35f1723bee238"><td class="memItemLeft" align="right" valign="top">static MimeMessage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a9284f8d3564fb6c3e6b35f1723bee238">buildFixedMimeMessage</a> (Session session)</td></tr>
 <tr class="separator:a9284f8d3564fb6c3e6b35f1723bee238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71dc4da5d1c54881e62bf50ba1f7eff"><td class="memItemLeft" align="right" valign="top">static MimeMessage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mime.html#ae71dc4da5d1c54881e62bf50ba1f7eff">expandMessage</a> (MimeMessage original)  throws MessagingException   </td></tr>
+<tr class="separator:ae71dc4da5d1c54881e62bf50ba1f7eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_mime_8java_source.html#l00034">34</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00035">35</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9284f8d3564fb6c3e6b35f1723bee238"></a>
 <div class="memitem">
@@ -157,7 +159,33 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mime_8java_source.html#l00075">75</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00076">76</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae71dc4da5d1c54881e62bf50ba1f7eff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static MimeMessage org.openzal.zal.Mime.expandMessage </td>
+          <td>(</td>
+          <td class="paramtype">MimeMessage&#160;</td>
+          <td class="paramname"><em>original</em></td><td>)</td>
+          <td> throws MessagingException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00084">84</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
 
 </div>
 </div>
@@ -193,7 +221,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mime_8java_source.html#l00069">69</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00070">70</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
 
 </div>
 </div>
@@ -229,7 +257,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mime_8java_source.html#l00056">56</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00057">57</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
 
 </div>
 </div>
@@ -255,7 +283,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mime_8java_source.html#l00037">37</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00038">38</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
 
 </div>
 </div>
@@ -281,7 +309,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mime_8java_source.html#l00063">63</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00064">64</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
 
 </div>
 </div>
@@ -317,7 +345,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mime_8java_source.html#l00043">43</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00044">44</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
 
 </div>
 </div>
@@ -343,7 +371,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mime_8java_source.html#l00050">50</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
+<p>Definition at line <a class="el" href="_mime_8java_source.html#l00051">51</a> of file <a class="el" href="_mime_8java_source.html">Mime.java</a>.</p>
 
 </div>
 </div>

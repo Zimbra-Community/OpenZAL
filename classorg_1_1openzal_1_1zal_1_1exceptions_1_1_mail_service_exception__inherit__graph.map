@@ -2,11 +2,12 @@
 <area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_already_exists_exception.html" title="org.openzal.zal.exceptions.\lAlreadyExistsException" alt="" coords="645,5,827,46"/>
 <area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception.html" title="org.openzal.zal.exceptions.\lNoSuchBlobException" alt="" coords="645,70,827,111"/>
 <area shape="rect" id="node6" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_item_exception.html" title="org.openzal.zal.exceptions.\lNoSuchItemException" alt="" coords="645,135,827,177"/>
-<area shape="rect" id="node10" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_permission_denied_exception.html" title="org.openzal.zal.exceptions.\lPermissionDeniedException" alt="" coords="643,201,829,242"/>
-<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_quota_exceeded_exception.html" title="org.openzal.zal.exceptions.\lQuotaExceededException" alt="" coords="645,266,827,307"/>
-<area shape="rect" id="node12" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimlet_exception.html" title="org.openzal.zal.exceptions.\lZimletException" alt="" coords="645,331,827,373"/>
+<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_permission_denied_exception.html" title="org.openzal.zal.exceptions.\lPermissionDeniedException" alt="" coords="643,201,829,242"/>
+<area shape="rect" id="node12" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_quota_exceeded_exception.html" title="org.openzal.zal.exceptions.\lQuotaExceededException" alt="" coords="645,266,827,307"/>
+<area shape="rect" id="node13" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimlet_exception.html" title="org.openzal.zal.exceptions.\lZimletException" alt="" coords="645,331,827,373"/>
 <area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html" title="org.openzal.zal.exceptions.\lZimbraException" alt="" coords="184,169,365,210"/>
-<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html" title="org.openzal.zal.exceptions.\lNoSuchConversationException" alt="" coords="878,70,1082,111"/>
-<area shape="rect" id="node8" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html" title="org.openzal.zal.exceptions.\lNoSuchFolderException" alt="" coords="889,135,1071,177"/>
-<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_message_exception.html" title="org.openzal.zal.exceptions.\lNoSuchMessageException" alt="" coords="889,201,1071,242"/>
+<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception.html" title="org.openzal.zal.exceptions.\lNoSuchAppointmentException" alt="" coords="880,38,1080,79"/>
+<area shape="rect" id="node8" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html" title="org.openzal.zal.exceptions.\lNoSuchConversationException" alt="" coords="878,103,1082,145"/>
+<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html" title="org.openzal.zal.exceptions.\lNoSuchFolderException" alt="" coords="889,169,1071,210"/>
+<area shape="rect" id="node10" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_message_exception.html" title="org.openzal.zal.exceptions.\lNoSuchMessageException" alt="" coords="889,234,1071,275"/>
 </map>

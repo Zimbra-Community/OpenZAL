@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classorg_1_1openzal_1_1zal_1_1_mailbox
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -134,8 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a783389b6f6178ebf979f4abb8b96ddd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95dcd5d85b543ab7a40a3b173466cf1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a95dcd5d85b543ab7a40a3b173466cf1c">newZimbraAdminContext</a> ()</td></tr>
 <tr class="separator:a95dcd5d85b543ab7a40a3b173466cf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4cf78727e7f29c01333f8a8ad9c9d77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad4cf78727e7f29c01333f8a8ad9c9d77">newContext</a> ()</td></tr>
-<tr class="separator:ad4cf78727e7f29c01333f8a8ad9c9d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8027acba5aa15af5a8e34c66ff619d1a"><td class="memItemLeft" align="right" valign="top">com.zimbra.cs.mailbox.Mailbox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a8027acba5aa15af5a8e34c66ff619d1a">getMailbox</a> ()</td></tr>
 <tr class="separator:a8027acba5aa15af5a8e34c66ff619d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0ade96461e88afb513453fc3b43557d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad0ade96461e88afb513453fc3b43557d">getAccount</a> ()  throws NoSuchAccountException   </td></tr>
@@ -178,6 +176,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaa0a1ccb5048584e074a9ae6a6b86ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a671808ac3419d47a177a48711b1afb2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_folder.html">Folder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a671808ac3419d47a177a48711b1afb2d">getFolderById</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> zContext, int id)  throws NoSuchFolderException   </td></tr>
 <tr class="separator:a671808ac3419d47a177a48711b1afb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87163e89ae5b0facd2ae93ceaa05044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mountpoint.html">Mountpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ae87163e89ae5b0facd2ae93ceaa05044">getMountpointById</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int id)</td></tr>
+<tr class="separator:ae87163e89ae5b0facd2ae93ceaa05044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae90007d9a6f9513f1179f14eceec5f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_calendar_item.html">CalendarItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ae90007d9a6f9513f1179f14eceec5f95">getCalendarItemById</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int id)  throws NoSuchCalendarException   </td></tr>
 <tr class="separator:ae90007d9a6f9513f1179f14eceec5f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad116139f52acbea87627d9842280fd34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_calendar_item.html">CalendarItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad116139f52acbea87627d9842280fd34">getCalendarItemByUid</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, String uid)  throws NoSuchCalendarException   </td></tr>
@@ -200,6 +200,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6617301acf9f3e00938a7a5d06fb7dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7b177ebba22b84dc78c9c3a806ee6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#aaa7b177ebba22b84dc78c9c3a806ee6a">setConfig</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, String section,@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_metadata.html">Metadata</a> config)  throws ZimbraException   </td></tr>
 <tr class="separator:aaa7b177ebba22b84dc78c9c3a806ee6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc72393c13ca3036ed1048975bbcbcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7cc72393c13ca3036ed1048975bbcbcf">removeConfig</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, String section)  throws ZimbraException   </td></tr>
+<tr class="separator:a7cc72393c13ca3036ed1048975bbcbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6651a6966caa230a315a8336bf222dc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a6651a6966caa230a315a8336bf222dc4">alterTag</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int itemId, byte type, int tagId, boolean addTag)  throws ZimbraException   </td></tr>
 <tr class="separator:a6651a6966caa230a315a8336bf222dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fbc413743e305f6f0e36d1e136debf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a5fbc413743e305f6f0e36d1e136debf6">setTags</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int itemId, byte type,@Nullable Collection&lt; String &gt; tags)  throws ZimbraException   </td></tr>
@@ -225,6 +227,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa24ddee20719a0f71cf931d86d4808ee"><td class="memItemLeft" align="right" valign="top">Iterator&lt; Map.Entry&lt; Byte, <br class="typebreak" />
 List&lt; Integer &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#aa24ddee20719a0f71cf931d86d4808ee">getItemIds</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int folderId)  throws ZimbraException   </td></tr>
 <tr class="separator:aa24ddee20719a0f71cf931d86d4808ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68c64c7af81261f761e03adb1c4263f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad68c64c7af81261f761e03adb1c4263f">canRead</a> (<a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int itemId)</td></tr>
+<tr class="separator:ad68c64c7af81261f761e03adb1c4263f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5467c93c6a370d7c4d2c00fa3452536"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ab5467c93c6a370d7c4d2c00fa3452536">canWrite</a> (<a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int itemId)</td></tr>
+<tr class="separator:ab5467c93c6a370d7c4d2c00fa3452536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4ec52936a13c0c9127190232e5896ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ae4ec52936a13c0c9127190232e5896ed">modifyPartStat</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int calItemId,@Nullable <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html">RecurrenceId</a> recurId, String cnStr, String addressStr, String cutypeStr, String roleStr, String partStatStr, Boolean rsvp, int seqNo, long dtStamp)  throws ZimbraException   </td></tr>
 <tr class="separator:ae4ec52936a13c0c9127190232e5896ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a404df9312a17e772d7d1a069a7c0f589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_tag.html">Tag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a404df9312a17e772d7d1a069a7c0f589">getTagById</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int itemId)  throws NoSuchItemException   </td></tr>
@@ -263,6 +269,8 @@ List&lt; Integer &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="botto
 <tr class="separator:a8ae7ff986fa423c2ca8e571d48590d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7f5085befa99b0aba555704911e7fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact.html">Contact</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#acf7f5085befa99b0aba555704911e7fa">getContactById</a> (<a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, int id)</td></tr>
 <tr class="separator:acf7f5085befa99b0aba555704911e7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c5daa2c2404a003476e7683a9668e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact.html">Contact</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a27c5daa2c2404a003476e7683a9668e3">createContact</a> (<a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_parsed_contact.html">ParsedContact</a> pc, int folderId)</td></tr>
+<tr class="separator:a27c5daa2c2404a003476e7683a9668e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ea2eab96f33f892354d0149737bddd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact.html">Contact</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ab9ea2eab96f33f892354d0149737bddd">createContact</a> (<a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_parsed_contact.html">ParsedContact</a> pc, int folderId, String tags)  throws ZimbraException   </td></tr>
 <tr class="separator:ab9ea2eab96f33f892354d0149737bddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f4016892dbaf867e04c58df7e6003d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact.html">Contact</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a3f4016892dbaf867e04c58df7e6003d5">createContact</a> (@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> octxt,@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_parsed_contact.html">ParsedContact</a> pc, int folderId,@NotNull Collection&lt; String &gt; tags)  throws ZimbraException   </td></tr>
@@ -421,7 +429,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02223">2223</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02299">2299</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -473,7 +481,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01732">1732</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01808">1808</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -531,7 +539,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01843">1843</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01919">1919</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -613,7 +621,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01452">1452</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01517">1517</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -695,7 +703,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01472">1472</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01537">1537</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -777,7 +785,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01509">1509</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01574">1574</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -823,7 +831,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00801">801</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00819">819</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -851,7 +859,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00966">966</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00985">985</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -868,7 +876,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01206">1206</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01271">1271</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -896,7 +904,63 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02103">2103</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02179">2179</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad68c64c7af81261f761e03adb1c4263f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.openzal.zal.Mailbox.canRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a>&#160;</td>
+          <td class="paramname"><em>octxt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>itemId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01123">1123</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5467c93c6a370d7c4d2c00fa3452536"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.openzal.zal.Mailbox.canWrite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a>&#160;</td>
+          <td class="paramname"><em>octxt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>itemId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01143">1143</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -913,7 +977,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01224">1224</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01289">1289</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -947,7 +1011,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00602">602</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00603">603</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1004,7 +1068,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01949">1949</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02025">2025</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1044,7 +1108,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01986">1986</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02062">2062</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1148,41 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02012">2012</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02088">2088</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27c5daa2c2404a003476e7683a9668e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact.html">Contact</a> org.openzal.zal.Mailbox.createContact </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a>&#160;</td>
+          <td class="paramname"><em>octxt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_parsed_contact.html">ParsedContact</a>&#160;</td>
+          <td class="paramname"><em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>folderId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01680">1680</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1222,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01614">1614</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01690">1690</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1164,7 +1262,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01640">1640</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01716">1716</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1308,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01666">1666</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01742">1742</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1378,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01773">1773</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01849">1849</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1392,7 +1490,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01355">1355</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01420">1420</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1449,7 +1547,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02038">2038</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02114">2114</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1519,7 +1617,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01911">1911</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01987">1987</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1576,7 +1674,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01814">1814</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01890">1890</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1640,7 +1738,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01393">1393</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01458">1458</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1674,7 +1772,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01427">1427</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01492">1492</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +1806,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00635">635</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00636">636</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1771,7 +1869,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02125">2125</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02201">2201</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1788,7 +1886,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00234">234</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00219">219</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1816,7 +1914,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00247">247</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00232">232</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1842,7 +1940,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02355">2355</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02431">2431</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1878,7 +1976,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02396">2396</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02472">2472</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1915,7 +2013,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02362">2362</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02438">2438</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -1951,7 +2049,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02369">2369</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02445">2445</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1988,7 +2086,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02419">2419</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02495">2495</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2014,7 +2112,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02427">2427</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02503">2503</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2051,7 +2149,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02448">2448</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02524">2524</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2079,7 +2177,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00567">567</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00568">568</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2118,7 +2216,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00581">581</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00582">582</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2170,7 +2268,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00992">992</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01011">1011</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2209,7 +2307,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00767">767</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00768">768</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2237,7 +2335,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01601">1601</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01667">1667</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2276,7 +2374,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00550">550</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00535">535</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2310,7 +2408,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00476">476</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00461">461</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2338,7 +2436,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00493">493</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00478">478</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2380,7 +2478,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00252">252</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00237">237</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2414,7 +2512,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00361">361</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00346">346</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2453,7 +2551,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01073">1073</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01092">1092</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2481,7 +2579,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01276">1276</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01341">1341</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2544,7 +2642,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01017">1017</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01036">1036</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2561,7 +2659,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01219">1219</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01284">1284</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2579,7 +2677,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00262">262</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00247">247</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2596,7 +2694,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00228">228</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00213">213</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2622,7 +2720,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02454">2454</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02530">2530</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2650,7 +2748,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00377">377</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00362">362</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2678,7 +2776,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00392">392</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00377">377</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2696,7 +2794,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00510">510</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00495">495</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2724,7 +2822,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00447">447</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00432">432</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2752,7 +2850,35 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00427">427</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00412">412</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae87163e89ae5b0facd2ae93ceaa05044"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_mountpoint.html">Mountpoint</a> org.openzal.zal.Mailbox.getMountpointById </td>
+          <td>(</td>
+          <td class="paramtype">@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a>&#160;</td>
+          <td class="paramname"><em>octxt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00552">552</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2769,7 +2895,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02483">2483</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02559">2559</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2786,7 +2912,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02502">2502</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02578">2578</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2831,7 +2957,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01135">1135</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01200">1200</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2859,7 +2985,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01151">1151</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01216">1216</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2888,7 +3014,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00257">257</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00242">242</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2917,7 +3043,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00354">354</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00339">339</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -2951,7 +3077,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01059">1059</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01078">1078</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 <p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2980,7 +3106,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00459">459</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00444">444</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3031,7 +3157,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00891">891</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00910">910</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3113,7 +3239,18 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01104">1104</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01163">1163</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_ae4ec52936a13c0c9127190232e5896ed_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_ae4ec52936a13c0c9127190232e5896ed_cgraph" alt=""/></div>
+<map name="classorg_1_1openzal_1_1zal_1_1_mailbox_ae4ec52936a13c0c9127190232e5896ed_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_ae4ec52936a13c0c9127190232e5896ed_cgraph">
+<area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ab5467c93c6a370d7c4d2c00fa3452536" title="org.openzal.zal.Mailbox.can\lWrite" alt="" coords="256,5,440,46"/><area shape="rect" id="node3" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad0ade96461e88afb513453fc3b43557d" title="org.openzal.zal.Mailbox.get\lAccount" alt="" coords="257,94,439,135"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -3153,35 +3290,18 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00979">979</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00998">998</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_ad16206be1f249f3d73aed478ec602438_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_ad16206be1f249f3d73aed478ec602438_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_ad16206be1f249f3d73aed478ec602438_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_ad16206be1f249f3d73aed478ec602438_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_item.html#ae78fd675c572de9985d7f26e9dab3a55" title="org.openzal.zal.Item.convertType" alt="" coords="248,5,464,32"/></map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="ad4cf78727e7f29c01333f8a8ad9c9d77"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a> org.openzal.zal.Mailbox.newContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00213">213</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3198,7 +3318,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01193">1193</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01258">1258</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3232,13 +3352,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01187">1187</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01252">1252</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a0d31b5f2e28229f8c6bacfad27de1be2_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a0d31b5f2e28229f8c6bacfad27de1be2_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a0d31b5f2e28229f8c6bacfad27de1be2_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a0d31b5f2e28229f8c6bacfad27de1be2_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a93d7b572dd24976976da28546592bd99" title="org.openzal.zal.Mailbox.get\lAccountId" alt="" coords="243,5,424,46"/></map>
@@ -3261,13 +3381,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02546">2546</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02622">2622</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_aceb3d6ad4ebd62cb4895bc11a89b05f4_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_aceb3d6ad4ebd62cb4895bc11a89b05f4_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_aceb3d6ad4ebd62cb4895bc11a89b05f4_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_aceb3d6ad4ebd62cb4895bc11a89b05f4_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a722ca9b9f6cc9caa1cfc2a9d33eeaf42" title="org.openzal.zal.Mailbox.getId" alt="" coords="237,12,429,39"/></map>
@@ -3300,13 +3420,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02584">2584</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02660">2660</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a576141646255fb92dca61b6c8217f8dd_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a576141646255fb92dca61b6c8217f8dd_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a576141646255fb92dca61b6c8217f8dd_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a576141646255fb92dca61b6c8217f8dd_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a722ca9b9f6cc9caa1cfc2a9d33eeaf42" title="org.openzal.zal.Mailbox.getId" alt="" coords="237,12,429,39"/></map>
@@ -3329,7 +3449,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00267">267</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00252">252</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3347,7 +3467,35 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02526">2526</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02602">2602</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7cc72393c13ca3036ed1048975bbcbcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.openzal.zal.Mailbox.removeConfig </td>
+          <td>(</td>
+          <td class="paramtype">@NotNull <a class="el" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a>&#160;</td>
+          <td class="paramname"><em>octxt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>section</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00802">802</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3393,13 +3541,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00622">622</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00623">623</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a35a06845daa395b75bbf6975291894a3_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a35a06845daa395b75bbf6975291894a3_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a35a06845daa395b75bbf6975291894a3_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a35a06845daa395b75bbf6975291894a3_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_item.html#ae78fd675c572de9985d7f26e9dab3a55" title="org.openzal.zal.Item.convertType" alt="" coords="261,5,477,32"/></map>
@@ -3450,13 +3598,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01230">1230</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01295">1295</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a22f94a104a34b4e6c8049f089a21cbaf_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a22f94a104a34b4e6c8049f089a21cbaf_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a22f94a104a34b4e6c8049f089a21cbaf_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a22f94a104a34b4e6c8049f089a21cbaf_cgraph">
 </map>
@@ -3519,7 +3667,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00909">909</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00928">928</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3583,7 +3731,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00684">684</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00685">685</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3647,13 +3795,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00722">722</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00723">723</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a4821d2202d011726f9a15644878a9944_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a4821d2202d011726f9a15644878a9944_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a4821d2202d011726f9a15644878a9944_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a4821d2202d011726f9a15644878a9944_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a891ccdf65f308d9150f7277c1b8237c6" title="org.openzal.zal.Mailbox.set\lCalendarItem" alt="" coords="235,5,416,46"/></map>
@@ -3698,13 +3846,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00661">661</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00662">662</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_aad1a134cfe0c6cdd22ec1e9ce5af5846_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_aad1a134cfe0c6cdd22ec1e9ce5af5846_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_aad1a134cfe0c6cdd22ec1e9ce5af5846_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_aad1a134cfe0c6cdd22ec1e9ce5af5846_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_item.html#ae78fd675c572de9985d7f26e9dab3a55" title="org.openzal.zal.Item.convertType" alt="" coords="235,12,451,39"/></map>
@@ -3743,7 +3891,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00785">785</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00786">786</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3783,13 +3931,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01168">1168</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01233">1233</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_ab650944f1efd3a2674569f21a291eacc_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_ab650944f1efd3a2674569f21a291eacc_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_ab650944f1efd3a2674569f21a291eacc_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_ab650944f1efd3a2674569f21a291eacc_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_item.html#ae78fd675c572de9985d7f26e9dab3a55" title="org.openzal.zal.Item.convertType" alt="" coords="235,12,451,39"/></map>
@@ -3834,13 +3982,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00414">414</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00399">399</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a8ed19fb3577824caedace09640823199_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a8ed19fb3577824caedace09640823199_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a8ed19fb3577824caedace09640823199_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a8ed19fb3577824caedace09640823199_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_item.html#ae78fd675c572de9985d7f26e9dab3a55" title="org.openzal.zal.Item.convertType" alt="" coords="264,5,480,32"/></map>
@@ -3885,13 +4033,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00871">871</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00889">889</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a555896fa02460eb14a3c38e254240779_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a555896fa02460eb14a3c38e254240779_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a555896fa02460eb14a3c38e254240779_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a555896fa02460eb14a3c38e254240779_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_item.html#ae78fd675c572de9985d7f26e9dab3a55" title="org.openzal.zal.Item.convertType" alt="" coords="235,12,451,39"/></map>
@@ -3930,7 +4078,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00648">648</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00649">649</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -3970,13 +4118,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00818">818</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00836">836</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a5fbc413743e305f6f0e36d1e136debf6_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a5fbc413743e305f6f0e36d1e136debf6_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a5fbc413743e305f6f0e36d1e136debf6_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a5fbc413743e305f6f0e36d1e136debf6_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_item.html#ae78fd675c572de9985d7f26e9dab3a55" title="org.openzal.zal.Item.convertType" alt="" coords="264,5,480,32"/></map>
@@ -4021,7 +4169,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00853">853</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00871">871</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -4055,7 +4203,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01553">1553</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01618">1618</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -4107,13 +4255,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01703">1703</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l01779">1779</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
-<p><div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_mailbox_a88166fd67dc8f52c8f743e690b8aec74_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_mailbox_a88166fd67dc8f52c8f743e690b8aec74_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_mailbox_a88166fd67dc8f52c8f743e690b8aec74_cgraph" id="classorg_1_1openzal_1_1zal_1_1_mailbox_a88166fd67dc8f52c8f743e690b8aec74_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a6571b9f58365c2fddd75f87612e7d186" title="org.openzal.zal.Mailbox.create\lDocument" alt="" coords="257,5,455,46"/></map>
@@ -4136,7 +4284,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00281">281</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00266">266</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -4154,7 +4302,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00286">286</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l00271">271</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -4188,7 +4336,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02508">2508</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02584">2584</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>
@@ -4651,7 +4799,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02582">2582</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
+<p>Definition at line <a class="el" href="_mailbox_8java_source.html#l02658">2658</a> of file <a class="el" href="_mailbox_8java_source.html">Mailbox.java</a>.</p>
 
 </div>
 </div>

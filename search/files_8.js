@@ -4,6 +4,7 @@ var searchData=
   ['icalendartimezone_2ejava',['ICalendarTimezone.java',['../_i_calendar_timezone_8java.html',1,'']]],
   ['identity_2ejava',['Identity.java',['../_identity_8java.html',1,'']]],
   ['identityexistsexception_2ejava',['IdentityExistsException.java',['../_identity_exists_exception_8java.html',1,'']]],
+  ['immutablechangeattempt_2ejava',['ImmutableChangeAttempt.java',['../_immutable_change_attempt_8java.html',1,'']]],
   ['internaladmindocumenthandler_2ejava',['InternalAdminDocumentHandler.java',['../_internal_admin_document_handler_8java.html',1,'']]],
   ['internaldocumenthandler_2ejava',['InternalDocumentHandler.java',['../_internal_document_handler_8java.html',1,'']]],
   ['internaldocumenthelper_2ejava',['InternalDocumentHelper.java',['../_internal_document_helper_8java.html',1,'']]],

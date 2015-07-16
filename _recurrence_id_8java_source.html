@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_recurrence_id_8java_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_recurrence_id_8java_source.html','');
 <div class="contents">
 <a href="_recurrence_id_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -163,7 +163,37 @@ $(document).ready(function(){initNavTree('_recurrence_id_8java_source.html','');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> mDt;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  @Override</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#af8155035d85340ed34d4485479bc824d">   58</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#af8155035d85340ed34d4485479bc824d">equals</a>(Object o)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == o)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (o == null || getClass() != o.getClass())</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html">RecurrenceId</a> that = (<a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#a1781da3acc663223e77c9300228540e4">RecurrenceId</a>) o;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (mExceptionStartTimeUtc != that.mExceptionStartTimeUtc)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  @Override</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#a7675eb4793f1af1eed5849588dc0db00">   80</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#a7675eb4793f1af1eed5849588dc0db00">hashCode</a>()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) (mExceptionStartTimeUtc ^ (mExceptionStartTimeUtc &gt;&gt;&gt; 32));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id_html_a7675eb4793f1af1eed5849588dc0db00"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#a7675eb4793f1af1eed5849588dc0db00">org.openzal.zal.calendar.RecurrenceId.hashCode</a></div><div class="ttdeci">int hashCode()</div><div class="ttdef"><b>Definition:</b> <a href="_recurrence_id_8java_source.html#l00080">RecurrenceId.java:80</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id_html_af8155035d85340ed34d4485479bc824d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#af8155035d85340ed34d4485479bc824d">org.openzal.zal.calendar.RecurrenceId.equals</a></div><div class="ttdeci">boolean equals(Object o)</div><div class="ttdef"><b>Definition:</b> <a href="_recurrence_id_8java_source.html#l00058">RecurrenceId.java:58</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id_html_a8e1d718dec95da2059ebe69e19c6d9b7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#a8e1d718dec95da2059ebe69e19c6d9b7">org.openzal.zal.calendar.RecurrenceId.getExceptionStartTimeUtc</a></div><div class="ttdeci">long getExceptionStartTimeUtc()</div><div class="ttdef"><b>Definition:</b> <a href="_recurrence_id_8java_source.html#l00042">RecurrenceId.java:42</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html">org.openzal.zal.calendar.RecurrenceId</a></div><div class="ttdef"><b>Definition:</b> <a href="_recurrence_id_8java_source.html#l00032">RecurrenceId.java:32</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id_html_a1781da3acc663223e77c9300228540e4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#a1781da3acc663223e77c9300228540e4">org.openzal.zal.calendar.RecurrenceId.RecurrenceId</a></div><div class="ttdeci">RecurrenceId(long exceptionStartTimeUtc)</div><div class="ttdef"><b>Definition:</b> <a href="_recurrence_id_8java_source.html#l00037">RecurrenceId.java:37</a></div></div>

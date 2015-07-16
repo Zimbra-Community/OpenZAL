@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_clock_8java_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_clock_8java_source.html','');});
 <div class="contents">
 <a href="_clock_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -134,12 +134,15 @@ $(document).ready(function(){initNavTree('_clock_8java_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html">   25</a></span>&#160;<span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html">Clock</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a7b829692b5236e8b7d4cf5d9d719cb9a">now</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">public</span> Calendar <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#af979583b8286ad62312fe08c20fed607">getCurrentTime</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">public</span> Calendar <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a332d1d5a14ff38df4c7cda5b6b82e3e9">getDaysFromNow</a>(<span class="keywordtype">int</span> numDays);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a3ff5752dfd71d092b72c3c60021640eb">   27</a></span>&#160;  <span class="keywordtype">long</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a3ff5752dfd71d092b72c3c60021640eb">ONE_DAY</a> = 24L * 60L * 60L * 1000L;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a7b829692b5236e8b7d4cf5d9d719cb9a">now</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span> Calendar <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#af979583b8286ad62312fe08c20fed607">getCurrentTime</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">public</span> Calendar <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a332d1d5a14ff38df4c7cda5b6b82e3e9">getDaysFromNow</a>(<span class="keywordtype">int</span> numDays);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock_html_a332d1d5a14ff38df4c7cda5b6b82e3e9"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a332d1d5a14ff38df4c7cda5b6b82e3e9">org.openzal.zal.lib.Clock.getDaysFromNow</a></div><div class="ttdeci">Calendar getDaysFromNow(int numDays)</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock_html_af979583b8286ad62312fe08c20fed607"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#af979583b8286ad62312fe08c20fed607">org.openzal.zal.lib.Clock.getCurrentTime</a></div><div class="ttdeci">Calendar getCurrentTime()</div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock_html_a3ff5752dfd71d092b72c3c60021640eb"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a3ff5752dfd71d092b72c3c60021640eb">org.openzal.zal.lib.Clock.ONE_DAY</a></div><div class="ttdeci">long ONE_DAY</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8java_source.html#l00027">Clock.java:27</a></div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock_html_a7b829692b5236e8b7d4cf5d9d719cb9a"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a7b829692b5236e8b7d4cf5d9d719cb9a">org.openzal.zal.lib.Clock.now</a></div><div class="ttdeci">long now()</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html">org.openzal.zal.lib.Clock</a></div><div class="ttdef"><b>Definition:</b> <a href="_clock_8java_source.html#l00025">Clock.java:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

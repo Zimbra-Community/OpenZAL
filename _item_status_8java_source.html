@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_item_status_8java_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_item_status_8java_source.html','');})
 <div class="contents">
 <a href="_item_status_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -131,69 +131,84 @@ $(document).ready(function(){initNavTree('_item_status_8java_source.html','');})
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">package </span>org.openzal.zal;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.Nullable;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> java.io.Serializable;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">   28</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">ItemStatus</a> <span class="keyword">implements</span> Serializable</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">long</span> serialVersionUID = 1522734297886684519L;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">   32</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">   33</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a7b321eb4f6908a828823ed461a52859f">   35</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a7b321eb4f6908a828823ed461a52859f">ItemStatus</a>(<span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a>, <span class="keywordtype">long</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a>)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    this.sequence = <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    this.date = <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  @Override</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ac9d30d50c738e0320b86ebf4f9d41e1d">   42</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ac9d30d50c738e0320b86ebf4f9d41e1d">toString</a>()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;sq: &quot;</span>+<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a>+<span class="stringliteral">&quot; dt: &quot;</span>+<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  @Override</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a376807564c3b39b274a5c9719a741d06">   48</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a376807564c3b39b274a5c9719a741d06">equals</a>(@Nullable Object o)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == o)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (o == null || getClass() != o.getClass())</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">ItemStatus</a> that = (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a7b321eb4f6908a828823ed461a52859f">ItemStatus</a>) o;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> com.fasterxml.jackson.annotation.JsonCreator;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> com.fasterxml.jackson.databind.annotation.JsonSerialize;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> com.fasterxml.jackson.databind.ser.std.ToStringSerializer;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.Nullable;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> java.io.Serializable;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;@JsonSerialize(<span class="keyword">using</span> = ToStringSerializer.class)</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">   32</a></span>&#160;public class <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">ItemStatus</a> implements Serializable</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">long</span> serialVersionUID = 1522734297886684519L;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">   36</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">   37</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a7b321eb4f6908a828823ed461a52859f">   39</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a7b321eb4f6908a828823ed461a52859f">ItemStatus</a>(<span class="keywordtype">int</span> sequence, <span class="keywordtype">long</span> date)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this.sequence = sequence;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    this.date = date;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  @JsonCreator</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aba63e8fbd62ce10b656b93305e182d70">   46</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">ItemStatus</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aba63e8fbd62ce10b656b93305e182d70">fromString</a>(String value)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    String[] values = value.split(<span class="stringliteral">&quot;@&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">ItemStatus</a>(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      Integer.valueOf(values[0]),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      Long.valueOf(values[1])</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  @Override</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ac9d30d50c738e0320b86ebf4f9d41e1d">   56</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ac9d30d50c738e0320b86ebf4f9d41e1d">toString</a>()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> sequence+<span class="stringliteral">&quot;@&quot;</span>+date;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a> != that.<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a>)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a> != that.<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a>)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  @Override</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a376807564c3b39b274a5c9719a741d06">   62</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a376807564c3b39b274a5c9719a741d06">equals</a>(@Nullable Object o)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == o)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (o == null || getClass() != o.getClass())</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  @Override</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a3c94dd1d4787561cb9ce0194e9a4a666">   74</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a3c94dd1d4787561cb9ce0194e9a4a666">hashCode</a>()</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> result = <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    result = 31 * result + (int) (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a> ^ (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a> &gt;&gt;&gt; 32));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_a7b321eb4f6908a828823ed461a52859f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a7b321eb4f6908a828823ed461a52859f">org.openzal.zal.ItemStatus.ItemStatus</a></div><div class="ttdeci">ItemStatus(int sequence, long date)</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00035">ItemStatus.java:35</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_a3c94dd1d4787561cb9ce0194e9a4a666"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a3c94dd1d4787561cb9ce0194e9a4a666">org.openzal.zal.ItemStatus.hashCode</a></div><div class="ttdeci">int hashCode()</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00074">ItemStatus.java:74</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html">org.openzal.zal.ItemStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00028">ItemStatus.java:28</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_a376807564c3b39b274a5c9719a741d06"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a376807564c3b39b274a5c9719a741d06">org.openzal.zal.ItemStatus.equals</a></div><div class="ttdeci">boolean equals(@Nullable Object o)</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00048">ItemStatus.java:48</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_ac9d30d50c738e0320b86ebf4f9d41e1d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ac9d30d50c738e0320b86ebf4f9d41e1d">org.openzal.zal.ItemStatus.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00042">ItemStatus.java:42</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_aa9ff2c1fe61beeb2fb0ec4a8716dcda3"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">org.openzal.zal.ItemStatus.sequence</a></div><div class="ttdeci">int sequence</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00032">ItemStatus.java:32</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_ad67d52ec1c20687d54bee6786e85b5b2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">org.openzal.zal.ItemStatus.date</a></div><div class="ttdeci">long date</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00033">ItemStatus.java:33</a></div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">ItemStatus</a> that = (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html">ItemStatus</a>) o;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (date != that.<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">date</a>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (sequence != that.<a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">sequence</a>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  @Override</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a3c94dd1d4787561cb9ce0194e9a4a666">   88</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a3c94dd1d4787561cb9ce0194e9a4a666">hashCode</a>()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> result = sequence;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    result = 31 * result + (int) (date ^ (date &gt;&gt;&gt; 32));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_a7b321eb4f6908a828823ed461a52859f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a7b321eb4f6908a828823ed461a52859f">org.openzal.zal.ItemStatus.ItemStatus</a></div><div class="ttdeci">ItemStatus(int sequence, long date)</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00039">ItemStatus.java:39</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_a3c94dd1d4787561cb9ce0194e9a4a666"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a3c94dd1d4787561cb9ce0194e9a4a666">org.openzal.zal.ItemStatus.hashCode</a></div><div class="ttdeci">int hashCode()</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00088">ItemStatus.java:88</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html">org.openzal.zal.ItemStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00032">ItemStatus.java:32</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_a376807564c3b39b274a5c9719a741d06"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#a376807564c3b39b274a5c9719a741d06">org.openzal.zal.ItemStatus.equals</a></div><div class="ttdeci">boolean equals(@Nullable Object o)</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00062">ItemStatus.java:62</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_ac9d30d50c738e0320b86ebf4f9d41e1d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ac9d30d50c738e0320b86ebf4f9d41e1d">org.openzal.zal.ItemStatus.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00056">ItemStatus.java:56</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_aa9ff2c1fe61beeb2fb0ec4a8716dcda3"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3">org.openzal.zal.ItemStatus.sequence</a></div><div class="ttdeci">int sequence</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00036">ItemStatus.java:36</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_ad67d52ec1c20687d54bee6786e85b5b2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2">org.openzal.zal.ItemStatus.date</a></div><div class="ttdeci">long date</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00037">ItemStatus.java:37</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_status_html_aba63e8fbd62ce10b656b93305e182d70"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item_status.html#aba63e8fbd62ce10b656b93305e182d70">org.openzal.zal.ItemStatus.fromString</a></div><div class="ttdeci">static ItemStatus fromString(String value)</div><div class="ttdef"><b>Definition:</b> <a href="_item_status_8java_source.html#l00046">ItemStatus.java:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

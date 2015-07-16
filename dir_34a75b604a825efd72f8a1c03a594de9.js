@@ -27,6 +27,9 @@ var dir_34a75b604a825efd72f8a1c03a594de9 =
     [ "IdentityExistsException.java", "_identity_exists_exception_8java.html", [
       [ "IdentityExistsException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_identity_exists_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_identity_exists_exception" ]
     ] ],
+    [ "ImmutableChangeAttempt.java", "_immutable_change_attempt_8java.html", [
+      [ "ImmutableChangeAttempt", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_immutable_change_attempt.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_immutable_change_attempt" ]
+    ] ],
     [ "InternalServerException.java", "_internal_server_exception_8java.html", [
       [ "InternalServerException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_internal_server_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_internal_server_exception" ]
     ] ],
@@ -47,6 +50,9 @@ var dir_34a75b604a825efd72f8a1c03a594de9 =
     ] ],
     [ "NoSuchAliasException.java", "_no_such_alias_exception_8java.html", [
       [ "NoSuchAliasException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception" ]
+    ] ],
+    [ "NoSuchAppointmentException.java", "_no_such_appointment_exception_8java.html", [
+      [ "NoSuchAppointmentException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception" ]
     ] ],
     [ "NoSuchBlobException.java", "_no_such_blob_exception_8java.html", [
       [ "NoSuchBlobException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception" ]

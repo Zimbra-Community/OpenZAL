@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -81,6 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -184,9 +185,6 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <li>needsAuthentication()
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_handler.html#a644dc9853c398dff2e924415d9a62bf5">org.openzal.zal.soap.SoapHandler</a>
 </li>
-<li>newContext()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad4cf78727e7f29c01333f8a8ad9c9d77">org.openzal.zal.Mailbox</a>
-</li>
 <li>newCopy()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a5855558989b16d2452d6194c6a997ee4">org.openzal.zal.calendar.Invite</a>
 </li>
@@ -211,6 +209,9 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <li>NoSuchAliasException()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception.html#a30b7e3f65eacdb3dbaf95e19f96e039a">org.openzal.zal.exceptions.NoSuchAliasException</a>
 </li>
+<li>NoSuchAppointmentException()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception.html#a4617da396897b3763254f8c78791c263">org.openzal.zal.exceptions.NoSuchAppointmentException</a>
+</li>
 <li>NoSuchBlobException()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception.html#a4c8ec6d4382468ada9fdab0cecf59fc7">org.openzal.zal.exceptions.NoSuchBlobException</a>
 </li>
@@ -224,7 +225,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_cos_exception.html#a1598b30014f6bea44180637f916e4c4e">org.openzal.zal.exceptions.NoSuchCosException</a>
 </li>
 <li>NoSuchDomainException()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html#a3a700571c9e4a3d594d20dfec12b84f0">org.openzal.zal.exceptions.NoSuchDomainException</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html#a3d345fe05cdb116b2b0a8ef257ac4101">org.openzal.zal.exceptions.NoSuchDomainException</a>
 </li>
 <li>NoSuchFolderException()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html#ad80d641f4735778a67fe4ce89812fed1">org.openzal.zal.exceptions.NoSuchFolderException</a>
@@ -252,6 +253,9 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 </li>
 <li>notifyChanges()
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_listener.html#afe031b9f2a9e256ca739c1a7b1f79c60">org.openzal.zal.Listener</a>
+</li>
+<li>notifyExistingMailboxesAndStopTracking()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a65a147ddf17a2c34f241237d2dd76e4d">org.openzal.zal.MailboxManagerListenerWrapper</a>
 </li>
 <li>now()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html#afccd52ccae5851fa1f74975a93262a87">org.openzal.zal.lib.ActualClock</a>

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -81,6 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -131,7 +132,7 @@ $(document).ready(function(){initNavTree('functions_func_n.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -164,9 +165,6 @@ $(document).ready(function(){initNavTree('functions_func_n.html','');});
 <li>needsAuthentication()
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_handler.html#a644dc9853c398dff2e924415d9a62bf5">org.openzal.zal.soap.SoapHandler</a>
 </li>
-<li>newContext()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad4cf78727e7f29c01333f8a8ad9c9d77">org.openzal.zal.Mailbox</a>
-</li>
 <li>newCopy()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a5855558989b16d2452d6194c6a997ee4">org.openzal.zal.calendar.Invite</a>
 </li>
@@ -180,10 +178,13 @@ $(document).ready(function(){initNavTree('functions_func_n.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a0d31b5f2e28229f8c6bacfad27de1be2">org.openzal.zal.Mailbox</a>
 </li>
 <li>NoSuchAccountException()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_account_exception.html#aef455487be10fc34ab5e2f6a0c46f7d9">org.openzal.zal.exceptions.NoSuchAccountException</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_account_exception.html#add742cc1b52bff8f0dbb5fa231fde79a">org.openzal.zal.exceptions.NoSuchAccountException</a>
 </li>
 <li>NoSuchAliasException()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception.html#a30b7e3f65eacdb3dbaf95e19f96e039a">org.openzal.zal.exceptions.NoSuchAliasException</a>
+</li>
+<li>NoSuchAppointmentException()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception.html#a4617da396897b3763254f8c78791c263">org.openzal.zal.exceptions.NoSuchAppointmentException</a>
 </li>
 <li>NoSuchBlobException()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception.html#a4c8ec6d4382468ada9fdab0cecf59fc7">org.openzal.zal.exceptions.NoSuchBlobException</a>
@@ -216,13 +217,16 @@ $(document).ready(function(){initNavTree('functions_func_n.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_signature_exception.html#a3344e75ffd0d51d85fc3ea9ee216833e">org.openzal.zal.exceptions.NoSuchSignatureException</a>
 </li>
 <li>NoSuchZimletException()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_zimlet_exception.html#af08b8c8923c6abffa0c4816e8dc1d83c">org.openzal.zal.exceptions.NoSuchZimletException</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_zimlet_exception.html#aae8a54dd488050b3338febd7f4806bfe">org.openzal.zal.exceptions.NoSuchZimletException</a>
 </li>
 <li>Note()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_note.html#a79cebcb6e104002cbc3cb917a8a4f213">org.openzal.zal.Note</a>
 </li>
 <li>notifyChanges()
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_listener.html#afe031b9f2a9e256ca739c1a7b1f79c60">org.openzal.zal.Listener</a>
+</li>
+<li>notifyExistingMailboxesAndStopTracking()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a65a147ddf17a2c34f241237d2dd76e4d">org.openzal.zal.MailboxManagerListenerWrapper</a>
 </li>
 <li>now()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html#afccd52ccae5851fa1f74975a93262a87">org.openzal.zal.lib.ActualClock</a>

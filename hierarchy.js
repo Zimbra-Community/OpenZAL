@@ -7,6 +7,7 @@ var hierarchy =
     [ "org.openzal.zal.AdministrationConstants", "classorg_1_1openzal_1_1zal_1_1_administration_constants.html", null ],
     [ "org.openzal.zal.calendar.Attendee", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html", null ],
     [ "org.openzal.zal.calendar.AttendeeInviteStatus", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html", null ],
+    [ "org.openzal.zal.calendar.AttendeeType", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html", null ],
     [ "org.openzal.zal.AttributeClass", "classorg_1_1openzal_1_1zal_1_1_attribute_class.html", null ],
     [ "org.openzal.zal.AttributeInfo", "classorg_1_1openzal_1_1zal_1_1_attribute_info.html", null ],
     [ "org.openzal.zal.AuthProvider", "classorg_1_1openzal_1_1zal_1_1_auth_provider.html", null ],
@@ -77,7 +78,10 @@ var hierarchy =
     [ "org.openzal.zal.ContactConstants", "classorg_1_1openzal_1_1zal_1_1_contact_constants.html", null ],
     [ "org.openzal.zal.ContactGroup", "classorg_1_1openzal_1_1zal_1_1_contact_group.html", null ],
     [ "org.openzal.zal.WikiTemplate.Context", "classorg_1_1openzal_1_1zal_1_1_wiki_template_1_1_context.html", null ],
-    [ "org.openzal.zal.Continuation", "classorg_1_1openzal_1_1zal_1_1_continuation.html", null ],
+    [ "org.openzal.zal.Continuation", "interfaceorg_1_1openzal_1_1zal_1_1_continuation.html", [
+      [ "org.openzal.zal.ContinuationJetty", "classorg_1_1openzal_1_1zal_1_1_continuation_jetty.html", null ],
+      [ "org.openzal.zal.FakeContinuation", "classorg_1_1openzal_1_1zal_1_1_fake_continuation.html", null ]
+    ] ],
     [ "org.openzal.zal.Provisioning.CountAccountByCos", "classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_count_account_by_cos.html", null ],
     [ "org.openzal.zal.Provisioning.CountAccountResult", "classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_count_account_result.html", null ],
     [ "org.openzal.zal.redolog.op.CreateFolderPath", "classorg_1_1openzal_1_1zal_1_1redolog_1_1op_1_1_create_folder_path.html", null ],
@@ -166,7 +170,9 @@ var hierarchy =
     [ "org.openzal.zal.Provisioning", "classorg_1_1openzal_1_1zal_1_1_provisioning.html", null ],
     [ "org.openzal.zal.ProvisioningKey", "classorg_1_1openzal_1_1zal_1_1_provisioning_key.html", null ],
     [ "org.openzal.zal.soap.QName", "classorg_1_1openzal_1_1zal_1_1soap_1_1_q_name.html", null ],
-    [ "org.openzal.zal.QueryResults", "classorg_1_1openzal_1_1zal_1_1_query_results.html", null ],
+    [ "org.openzal.zal.QueryResults", "classorg_1_1openzal_1_1zal_1_1_query_results.html", [
+      [ "org.openzal.zal.FakeQueryResults", "classorg_1_1openzal_1_1zal_1_1_fake_query_results.html", null ]
+    ] ],
     [ "org.openzal.zal.QuotaUsage", "classorg_1_1openzal_1_1zal_1_1_quota_usage.html", null ],
     [ "org.openzal.zal.calendar.RecurrenceId", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html", null ],
     [ "org.openzal.zal.calendar.RecurrenceRule", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_rule.html", null ],
@@ -190,6 +196,7 @@ var hierarchy =
         [ "org.openzal.zal.exceptions.DataSourceExistsException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_data_source_exists_exception.html", null ],
         [ "org.openzal.zal.exceptions.ExtensionException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_extension_exception.html", null ],
         [ "org.openzal.zal.exceptions.IdentityExistsException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_identity_exists_exception.html", null ],
+        [ "org.openzal.zal.exceptions.ImmutableChangeAttempt", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_immutable_change_attempt.html", null ],
         [ "org.openzal.zal.exceptions.InternalServerException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_internal_server_exception.html", [
           [ "org.openzal.zal.exceptions.UnableToFindDistributionListException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_find_distribution_list_exception.html", null ],
           [ "org.openzal.zal.exceptions.UnableToObtainDBConnectionException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_obtain_d_b_connection_exception.html", null ],
@@ -201,6 +208,7 @@ var hierarchy =
           [ "org.openzal.zal.exceptions.AlreadyExistsException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_already_exists_exception.html", null ],
           [ "org.openzal.zal.exceptions.NoSuchBlobException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception.html", null ],
           [ "org.openzal.zal.exceptions.NoSuchItemException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_item_exception.html", [
+            [ "org.openzal.zal.exceptions.NoSuchAppointmentException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception.html", null ],
             [ "org.openzal.zal.exceptions.NoSuchConversationException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html", null ],
             [ "org.openzal.zal.exceptions.NoSuchFolderException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html", null ],
             [ "org.openzal.zal.exceptions.NoSuchMessageException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_message_exception.html", null ]
@@ -297,6 +305,9 @@ var hierarchy =
     ] ],
     [ "DocumentService", null, [
       [ "org.openzal.zal.soap.InternalOverrideDocumentServiceImpl", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_service_impl.html", null ]
+    ] ],
+    [ "HttpServletRequest", null, [
+      [ "org.openzal.zal.ContinuationHttpServletRequest", "interfaceorg_1_1openzal_1_1zal_1_1_continuation_http_servlet_request.html", null ]
     ] ],
     [ "Serializable", null, [
       [ "org.openzal.zal.ItemStatus", "classorg_1_1openzal_1_1zal_1_1_item_status.html", [

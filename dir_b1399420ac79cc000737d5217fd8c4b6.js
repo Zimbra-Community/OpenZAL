@@ -82,7 +82,13 @@ var dir_b1399420ac79cc000737d5217fd8c4b6 =
       [ "Type", "enumorg_1_1openzal_1_1zal_1_1_contact_group_1_1_type.html", "enumorg_1_1openzal_1_1zal_1_1_contact_group_1_1_type" ]
     ] ],
     [ "Continuation.java", "_continuation_8java.html", [
-      [ "Continuation", "classorg_1_1openzal_1_1zal_1_1_continuation.html", "classorg_1_1openzal_1_1zal_1_1_continuation" ]
+      [ "Continuation", "interfaceorg_1_1openzal_1_1zal_1_1_continuation.html", "interfaceorg_1_1openzal_1_1zal_1_1_continuation" ]
+    ] ],
+    [ "ContinuationHttpServletRequest.java", "_continuation_http_servlet_request_8java.html", [
+      [ "ContinuationHttpServletRequest", "interfaceorg_1_1openzal_1_1zal_1_1_continuation_http_servlet_request.html", "interfaceorg_1_1openzal_1_1zal_1_1_continuation_http_servlet_request" ]
+    ] ],
+    [ "ContinuationJetty.java", "_continuation_jetty_8java.html", [
+      [ "ContinuationJetty", "classorg_1_1openzal_1_1zal_1_1_continuation_jetty.html", "classorg_1_1openzal_1_1zal_1_1_continuation_jetty" ]
     ] ],
     [ "ContinuationThrowable.java", "_continuation_throwable_8java.html", [
       [ "ContinuationThrowable", "classorg_1_1openzal_1_1zal_1_1_continuation_throwable.html", "classorg_1_1openzal_1_1zal_1_1_continuation_throwable" ]
@@ -117,6 +123,12 @@ var dir_b1399420ac79cc000737d5217fd8c4b6 =
     [ "Entry.java", "_entry_8java.html", [
       [ "Entry", "classorg_1_1openzal_1_1zal_1_1_entry.html", "classorg_1_1openzal_1_1zal_1_1_entry" ],
       [ "EntryType", "classorg_1_1openzal_1_1zal_1_1_entry_1_1_entry_type.html", "classorg_1_1openzal_1_1zal_1_1_entry_1_1_entry_type" ]
+    ] ],
+    [ "FakeContinuation.java", "_fake_continuation_8java.html", [
+      [ "FakeContinuation", "classorg_1_1openzal_1_1zal_1_1_fake_continuation.html", "classorg_1_1openzal_1_1zal_1_1_fake_continuation" ]
+    ] ],
+    [ "FakeQueryResults.java", "_fake_query_results_8java.html", [
+      [ "FakeQueryResults", "classorg_1_1openzal_1_1zal_1_1_fake_query_results.html", "classorg_1_1openzal_1_1zal_1_1_fake_query_results" ]
     ] ],
     [ "Flag.java", "_flag_8java.html", [
       [ "Flag", "classorg_1_1openzal_1_1zal_1_1_flag.html", "classorg_1_1openzal_1_1zal_1_1_flag" ]

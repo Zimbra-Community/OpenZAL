@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_provisioning_8java_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_provisioning_8java_source.html','');}
 <div class="contents">
 <a href="_provisioning_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -637,7 +637,7 @@ $(document).ready(function(){initNavTree('_provisioning_8java_source.html','');}
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      {</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keywordflow">throw</span> ExceptionWrapper.createUnableToFindDistributionList(list);</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;      }</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;      <span class="keywordflow">return</span> distributionList.getAllMembersSet();</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;      <span class="keywordflow">return</span> Arrays.asList(distributionList.getAllMembers());</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    }</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keywordflow">catch</span> (com.zimbra.common.service.ServiceException e)</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    {</div>
@@ -1865,142 +1865,162 @@ $(document).ready(function(){initNavTree('_provisioning_8java_source.html','');}
 <div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;</div>
 <div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;    <span class="keywordtype">void</span> addContact(GalContact galContact)</div>
 <div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;    {</div>
-<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;      mContactList.add(galContact);</div>
-<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;    }</div>
-<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;  }</div>
-<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;</div>
-<div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;  @NotNull</div>
-<div class="line"><a name="l01763"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a81db1a64f7e47976f4a8a0b69abd9918"> 1763</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html">GalSearchResult</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a81db1a64f7e47976f4a8a0b69abd9918">galSearch</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> account, String query, <span class="keywordtype">int</span> skip, <span class="keywordtype">int</span> limit)</div>
-<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;  {</div>
-<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;    GalSearchParams searchParams = <span class="keyword">new</span> GalSearchParams(account.toZimbra(com.zimbra.cs.account.Account.class));</div>
-<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;</div>
-<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;    searchParams.createSearchParams(query);</div>
-<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;    searchParams.setQuery(query);</div>
-<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;    searchParams.setLimit(limit);</div>
-<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;    searchParams.setIdOnly(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;</div>
-<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;<span class="comment">/* $if MajorZimbraVersion &gt;= 7 $ */</span></div>
-<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;    searchParams.setType(GalSearchType.all);</div>
-<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;<span class="comment">/* $else$</span></div>
-<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;<span class="comment">    searchParams.setType(com.zimbra.cs.account.Provisioning.GAL_SEARCH_TYPE.ALL);</span></div>
-<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;<span class="comment">   $endif$ */</span></div>
-<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;</div>
-<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html">GalSearchResult</a> result = <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html">GalSearchResult</a>();</div>
-<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;    GalSearchCallback callback = <span class="keyword">new</span> GalSearchCallback(skip, searchParams, result);</div>
-<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;    searchParams.setResultCallback(callback);</div>
+<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;      <span class="keywordflow">if</span>( !alreadyAddedByEmail(galContact) )</div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;      {</div>
+<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;        mContactList.add(galContact);</div>
+<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;      }</div>
+<div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;    }</div>
+<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;</div>
+<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">boolean</span> alreadyAddedByEmail(GalContact galContact)</div>
+<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;    {</div>
+<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;      String email = galContact.getSingleAttr(<span class="stringliteral">&quot;email&quot;</span>);</div>
+<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;      <span class="keywordflow">if</span>( email == null ) {</div>
+<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;        email = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;      }</div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;</div>
+<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;      <span class="keywordflow">for</span>( GalContact current : mContactList )</div>
+<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;      {</div>
+<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;        <span class="keywordflow">if</span>( email.equalsIgnoreCase(current.getSingleAttr(<span class="stringliteral">&quot;email&quot;</span>)) )</div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;        {</div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;        }</div>
+<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;      }</div>
+<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;    }</div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;  }</div>
 <div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;</div>
-<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;    <span class="comment">//writes mResultList ans hasMore</span></div>
-<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;    GalSearchControl searchControl = <span class="keyword">new</span> GalSearchControl(searchParams);</div>
-<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;</div>
-<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;    {</div>
-<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;      searchControl.autocomplete();</div>
-<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;    }</div>
-<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;    {</div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;    }</div>
-<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;</div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;    <span class="keywordflow">if</span> (result.hasMore())</div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;    {</div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;      result.setTotal(result.getTotal() + 1);</div>
-<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;    }</div>
-<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;</div>
-<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;  }</div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;  @NotNull</div>
+<div class="line"><a name="l01783"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a81db1a64f7e47976f4a8a0b69abd9918"> 1783</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html">GalSearchResult</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a81db1a64f7e47976f4a8a0b69abd9918">galSearch</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> account, String query, <span class="keywordtype">int</span> skip, <span class="keywordtype">int</span> limit)</div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;  {</div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;    GalSearchParams searchParams = <span class="keyword">new</span> GalSearchParams(account.toZimbra(com.zimbra.cs.account.Account.class));</div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;</div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;    searchParams.createSearchParams(query);</div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;    searchParams.setQuery(query);</div>
+<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;    searchParams.setLimit(limit);</div>
+<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;    searchParams.setIdOnly(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;</div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;<span class="comment">/* $if MajorZimbraVersion &gt;= 7 $ */</span></div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;    searchParams.setType(GalSearchType.all);</div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;<span class="comment">/* $else$</span></div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;<span class="comment">    searchParams.setType(com.zimbra.cs.account.Provisioning.GAL_SEARCH_TYPE.ALL);</span></div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;<span class="comment">   $endif$ */</span></div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;</div>
+<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html">GalSearchResult</a> result = <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html">GalSearchResult</a>();</div>
+<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;    GalSearchCallback callback = <span class="keyword">new</span> GalSearchCallback(skip, searchParams, result);</div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;    searchParams.setResultCallback(callback);</div>
 <div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;</div>
-<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class </span>GalSearchCallback <span class="keyword">extends</span> GalSearchResultCallback</div>
-<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;  {</div>
-<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keywordtype">int</span>             mSkip;</div>
-<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> GalSearchResult mSearchResult;</div>
-<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> mCounter = 0;</div>
-<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;</div>
-<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;</div>
-<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;    GalSearchCallback(<span class="keywordtype">int</span> skip, GalSearchParams params, GalSearchResult result)</div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;    <span class="comment">//writes mResultList ans hasMore</span></div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;    GalSearchControl searchControl = <span class="keyword">new</span> GalSearchControl(searchParams);</div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;</div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;    {</div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;      searchControl.autocomplete();</div>
+<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;    }</div>
+<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
 <div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;    {</div>
-<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;      super(params);</div>
-<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;      mSkip = skip;</div>
-<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;      mSearchResult = result;</div>
-<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;    }</div>
-<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;</div>
-<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> handleContact(GalContact galContact)</div>
-<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;      <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></div>
-<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;    {</div>
-<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;      <span class="keywordflow">if</span> (mCounter &gt;= mSkip)</div>
-<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;      {</div>
-<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;        mSearchResult.addContact(<span class="keyword">new</span> GalSearchResult.GalContact(galContact));</div>
-<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;      }</div>
-<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;</div>
-<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;      mCounter += 1;</div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;      mSearchResult.setTotal(mCounter);</div>
-<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;    }</div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;    }</div>
+<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;</div>
+<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;    <span class="keywordflow">if</span> (result.hasMore())</div>
+<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;    {</div>
+<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;      result.setTotal(result.getTotal() + 1);</div>
+<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;    }</div>
+<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;</div>
+<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;  }</div>
+<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;</div>
+<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class </span>GalSearchCallback <span class="keyword">extends</span> GalSearchResultCallback</div>
+<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;  {</div>
+<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keywordtype">int</span>             mSkip;</div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;    <span class="keyword">private</span> <span class="keyword">final</span> GalSearchResult mSearchResult;</div>
+<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> mCounter = 0;</div>
 <div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;</div>
-<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> setHasMoreResult(<span class="keywordtype">boolean</span> hasMore)</div>
-<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;    {</div>
-<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;      mSearchResult.setHasMore(hasMore);</div>
-<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;    }</div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;</div>
-<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;    @Nullable</div>
-<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;    <span class="keyword">public</span> Element handleContact(@NotNull Contact contact)</div>
-<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;      <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></div>
-<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;    {</div>
-<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;      <span class="keywordflow">if</span> (mCounter &gt;= mSkip)</div>
-<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;      {</div>
-<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;        Map&lt;String, Object&gt; galAttrs = <span class="keyword">new</span> HashMap&lt;String, Object&gt;();</div>
-<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;        String tag_id = String.valueOf(contact.getId());</div>
-<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;</div>
-<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;        Map&lt;String, String&gt; fields = contact.getFields();</div>
-<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;        <span class="keywordflow">for</span> (String key : fields.keySet())</div>
-<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;        {</div>
-<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;          galAttrs.put(key, fields.get(key));</div>
-<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;        }</div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;</div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;    GalSearchCallback(<span class="keywordtype">int</span> skip, GalSearchParams params, GalSearchResult result)</div>
+<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;    {</div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;      super(params);</div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;      mSkip = skip;</div>
+<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;      mSearchResult = result;</div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;    }</div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;</div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> handleContact(GalContact galContact)</div>
+<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;      <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></div>
+<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;    {</div>
+<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;      <span class="keywordflow">if</span> (mCounter &gt;= mSkip)</div>
+<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;      {</div>
+<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        mSearchResult.addContact(<span class="keyword">new</span> GalSearchResult.GalContact(galContact));</div>
+<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;      }</div>
+<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;</div>
+<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;      mCounter += 1;</div>
+<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;      mSearchResult.setTotal(mCounter);</div>
+<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;    }</div>
 <div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;</div>
-<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;        GalContact galContact = <span class="keyword">new</span> GalContact(tag_id, galAttrs);</div>
-<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;        mSearchResult.addContact(<span class="keyword">new</span> GalSearchResult.GalContact(galContact));</div>
-<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;      }</div>
-<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;      mCounter += 1;</div>
-<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;      mSearchResult.setTotal(mCounter);</div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;      <span class="keywordflow">return</span> null;</div>
-<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;    }</div>
-<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;</div>
-<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> handleElement(@NotNull Element node)</div>
-<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;    {</div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;      <span class="keywordflow">if</span> (mCounter &gt;= mSkip)</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;      {</div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;        Map&lt;String, Object&gt; galAttrs = <span class="keyword">new</span> HashMap&lt;String, Object&gt;();</div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;        String tag_id;</div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;        <span class="keywordflow">try</span></div>
-<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;        {</div>
-<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;          tag_id = node.getAttribute(<span class="stringliteral">&quot;id&quot;</span>);</div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;        }</div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;        <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;        {</div>
-<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;          <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;        }</div>
-<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;        List&lt;Element&gt; tagList = node.listElements(<span class="stringliteral">&quot;a&quot;</span>);</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;</div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;        <span class="keywordflow">for</span> (Element tag : tagList)</div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;        {</div>
-<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;          String tag_n;</div>
-<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;          <span class="keywordflow">try</span></div>
-<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;          {</div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;            tag_n = tag.getAttribute(<span class="stringliteral">&quot;n&quot;</span>);</div>
-<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;          }</div>
-<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;          <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;          {</div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;            <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;          }</div>
-<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;          galAttrs.put(tag_n, tag.getText());</div>
-<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;        }</div>
-<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;</div>
-<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;        GalContact galContact = <span class="keyword">new</span> GalContact(tag_id, galAttrs);</div>
-<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;        mSearchResult.addContact(<span class="keyword">new</span> GalSearchResult.GalContact(galContact));</div>
-<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;      }</div>
-<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;      mCounter += 1;</div>
-<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;      mSearchResult.setTotal(mCounter);</div>
-<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;    }</div>
-<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;  }</div>
-<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;}</div>
+<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> setHasMoreResult(<span class="keywordtype">boolean</span> hasMore)</div>
+<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;    {</div>
+<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;      mSearchResult.setHasMore(hasMore);</div>
+<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;    }</div>
+<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;</div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;    @Nullable</div>
+<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;    <span class="keyword">public</span> Element handleContact(@NotNull Contact contact)</div>
+<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;      <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></div>
+<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;    {</div>
+<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;      <span class="keywordflow">if</span> (mCounter &gt;= mSkip)</div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;      {</div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;        Map&lt;String, Object&gt; galAttrs = <span class="keyword">new</span> HashMap&lt;String, Object&gt;();</div>
+<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;        String tag_id = String.valueOf(contact.getId());</div>
+<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;</div>
+<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;        Map&lt;String, String&gt; fields = contact.getFields();</div>
+<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;        <span class="keywordflow">for</span> (String key : fields.keySet())</div>
+<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;        {</div>
+<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;          galAttrs.put(key, fields.get(key));</div>
+<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;        }</div>
+<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;</div>
+<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;        GalContact galContact = <span class="keyword">new</span> GalContact(tag_id, galAttrs);</div>
+<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;        mSearchResult.addContact(<span class="keyword">new</span> GalSearchResult.GalContact(galContact));</div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;      }</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;      mCounter += 1;</div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;      mSearchResult.setTotal(mCounter);</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;      <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;    }</div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;</div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> handleElement(@NotNull Element node)</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;    {</div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;      <span class="keywordflow">if</span> (mCounter &gt;= mSkip)</div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;      {</div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;        Map&lt;String, Object&gt; galAttrs = <span class="keyword">new</span> HashMap&lt;String, Object&gt;();</div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;        String tag_id;</div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;        <span class="keywordflow">try</span></div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;        {</div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;          tag_id = node.getAttribute(<span class="stringliteral">&quot;id&quot;</span>);</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;        }</div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;        <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;        {</div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;          <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;        }</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;        List&lt;Element&gt; tagList = node.listElements(<span class="stringliteral">&quot;a&quot;</span>);</div>
+<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;</div>
+<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;        <span class="keywordflow">for</span> (Element tag : tagList)</div>
+<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;        {</div>
+<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;          String tag_n;</div>
+<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;          <span class="keywordflow">try</span></div>
+<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;          {</div>
+<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;            tag_n = tag.getAttribute(<span class="stringliteral">&quot;n&quot;</span>);</div>
+<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;          }</div>
+<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;          <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;          {</div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;            <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;          }</div>
+<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;          galAttrs.put(tag_n, tag.getText());</div>
+<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;        }</div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;</div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;        GalContact galContact = <span class="keyword">new</span> GalContact(tag_id, galAttrs);</div>
+<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;        mSearchResult.addContact(<span class="keyword">new</span> GalSearchResult.GalContact(galContact));</div>
+<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;      }</div>
+<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;      mCounter += 1;</div>
+<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;      mSearchResult.setTotal(mCounter);</div>
+<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;    }</div>
+<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;  }</div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;}</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result_html_a95ae076c73a54a8f6a658c8b95c1f860"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html#a95ae076c73a54a8f6a658c8b95c1f860">org.openzal.zal.Provisioning.GalSearchResult.hasMore</a></div><div class="ttdeci">boolean hasMore()</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01746">Provisioning.java:1746</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a7a5f626450897079599b7f5c934f3d7b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a7a5f626450897079599b7f5c934f3d7b">org.openzal.zal.Provisioning.A_zimbraCreateTimestamp</a></div><div class="ttdeci">static String A_zimbraCreateTimestamp</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00175">Provisioning.java:175</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a739d301150366e88bfe3757dda92d2ab"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a739d301150366e88bfe3757dda92d2ab">org.openzal.zal.Provisioning.createZContext</a></div><div class="ttdeci">OperationContext createZContext()</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00284">Provisioning.java:284</a></div></div>
@@ -2018,7 +2038,7 @@ $(document).ready(function(){initNavTree('_provisioning_8java_source.html','');}
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_find_distribution_list_exception_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_unable_to_find_distribution_list_exception.html">org.openzal.zal.exceptions.UnableToFindDistributionListException</a></div><div class="ttdef"><b>Definition:</b> <a href="_unable_to_find_distribution_list_exception_8java_source.html#l00023">UnableToFindDistributionListException.java:23</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_ac807d683145f0691fb27054bbbb4b29d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#ac807d683145f0691fb27054bbbb4b29d">org.openzal.zal.Provisioning.A_zimbraMobilePolicyRequireDeviceEncryption</a></div><div class="ttdeci">static String A_zimbraMobilePolicyRequireDeviceEncryption</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00105">Provisioning.java:105</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a148c8af372f240a18a033000ceb1bb71"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a148c8af372f240a18a033000ceb1bb71">org.openzal.zal.Provisioning.createCalendarResource</a></div><div class="ttdeci">Account createCalendarResource(String dstAccount, String newPassword, Map&lt; String, Object &gt; attrs)</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01144">Provisioning.java:1144</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_account_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_account.html">org.openzal.zal.Account</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_8java_source.html#l00044">Account.java:44</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_account_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_account.html">org.openzal.zal.Account</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_8java_source.html#l00046">Account.java:46</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_ac4c4e3ba57e8dfa0b99fda2dd0c4101c"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#ac4c4e3ba57e8dfa0b99fda2dd0c4101c">org.openzal.zal.Provisioning.A_zimbraPrefMailDefaultCharset</a></div><div class="ttdeci">static String A_zimbraPrefMailDefaultCharset</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00220">Provisioning.java:220</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a3ae1539c08ae67d0122a627b3da80c9c"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a3ae1539c08ae67d0122a627b3da80c9c">org.openzal.zal.Provisioning.visitAllLocalAccountsSlow</a></div><div class="ttdeci">void visitAllLocalAccountsSlow(@NotNull SimpleVisitor&lt; Account &gt; visitor,@NotNull Filter&lt; Account &gt; filterAccounts)</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00422">Provisioning.java:422</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result_html_a48331c34e1cdc128955f7a3fc969d542"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html#a48331c34e1cdc128955f7a3fc969d542">org.openzal.zal.Provisioning.GalSearchResult.getContactList</a></div><div class="ttdeci">List&lt; GalContact &gt; getContactList()</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01741">Provisioning.java:1741</a></div></div>
@@ -2072,7 +2092,7 @@ $(document).ready(function(){initNavTree('_provisioning_8java_source.html','');}
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_count_account_result_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_count_account_result.html">org.openzal.zal.Provisioning.CountAccountResult</a></div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01658">Provisioning.java:1658</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a0ad64ac27b708f0a91bdb059dab81a3c"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a0ad64ac27b708f0a91bdb059dab81a3c">org.openzal.zal.Provisioning.A_zimbraDomainAliasTargetId</a></div><div class="ttdeci">static String A_zimbraDomainAliasTargetId</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00183">Provisioning.java:183</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a2d0d1f023243e4896dea3e4d7154f7c0"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a2d0d1f023243e4896dea3e4d7154f7c0">org.openzal.zal.Provisioning.A_zimbraChildAccount</a></div><div class="ttdeci">static String A_zimbraChildAccount</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00190">Provisioning.java:190</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a81db1a64f7e47976f4a8a0b69abd9918"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a81db1a64f7e47976f4a8a0b69abd9918">org.openzal.zal.Provisioning.galSearch</a></div><div class="ttdeci">GalSearchResult galSearch(@NotNull Account account, String query, int skip, int limit)</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01763">Provisioning.java:1763</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a81db1a64f7e47976f4a8a0b69abd9918"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a81db1a64f7e47976f4a8a0b69abd9918">org.openzal.zal.Provisioning.galSearch</a></div><div class="ttdeci">GalSearchResult galSearch(@NotNull Account account, String query, int skip, int limit)</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01783">Provisioning.java:1783</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a1af2268b9a7ba9ebd9733a36126960e5"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a1af2268b9a7ba9ebd9733a36126960e5">org.openzal.zal.Provisioning.visitAllAccounts</a></div><div class="ttdeci">void visitAllAccounts(@NotNull SimpleVisitor&lt; Account &gt; visitor)</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00348">Provisioning.java:348</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_ab0fe4348faf191f2a5a78e401948043b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#ab0fe4348faf191f2a5a78e401948043b">org.openzal.zal.Provisioning.mProvisioning</a></div><div class="ttdeci">final com.zimbra.cs.account.Provisioning mProvisioning</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00227">Provisioning.java:227</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_acf91ad03fafb5a0223a93cf14a09aedb"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#acf91ad03fafb5a0223a93cf14a09aedb">org.openzal.zal.Provisioning.getGroupById</a></div><div class="ttdeci">Group getGroupById(String dlStr)</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01497">Provisioning.java:1497</a></div></div>
@@ -2185,7 +2205,7 @@ $(document).ready(function(){initNavTree('_provisioning_8java_source.html','');}
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a4009db7c9f7b82390df32a04db858d2b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a4009db7c9f7b82390df32a04db858d2b">org.openzal.zal.Provisioning.ZIMBRA_USER_ID</a></div><div class="ttdeci">static final String ZIMBRA_USER_ID</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00077">Provisioning.java:77</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_aea36fd42bee027c412e91619ad53c384"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#aea36fd42bee027c412e91619ad53c384">org.openzal.zal.Provisioning.getAccountsOnCos</a></div><div class="ttdeci">long getAccountsOnCos(@NotNull Domain domain,@NotNull Cos cos)</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01330">Provisioning.java:1330</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_afd15aed00350b70ec1a57edce866417b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#afd15aed00350b70ec1a57edce866417b">org.openzal.zal.Provisioning.A_zimbraMobilePolicyAllowInternetSharing</a></div><div class="ttdeci">static String A_zimbraMobilePolicyAllowInternetSharing</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00090">Provisioning.java:90</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">org.openzal.zal.OperationContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00026">OperationContext.java:26</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">org.openzal.zal.OperationContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00027">OperationContext.java:27</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_count_account_by_cos_html_a3ae846ded5ce2a820ed48d83e2f28317"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_count_account_by_cos.html#a3ae846ded5ce2a820ed48d83e2f28317">org.openzal.zal.Provisioning.CountAccountByCos.CountAccountByCos</a></div><div class="ttdeci">CountAccountByCos(com.zimbra.cs.account.Provisioning.CountAccountResult.CountAccountByCos countAccountByCos)</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l01677">Provisioning.java:1677</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a2370649000db857fc5bfe422b460eeda"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a2370649000db857fc5bfe422b460eeda">org.openzal.zal.Provisioning.getAllAdminAccounts</a></div><div class="ttdeci">List&lt; Account &gt; getAllAdminAccounts()</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00877">Provisioning.java:877</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html_a3431b2d9825261a07d16976a44bf2aa8"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a3431b2d9825261a07d16976a44bf2aa8">org.openzal.zal.Provisioning.A_zimbraACE</a></div><div class="ttdeci">static String A_zimbraACE</div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00153">Provisioning.java:153</a></div></div>

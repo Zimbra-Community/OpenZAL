@@ -14,6 +14,7 @@ var classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory =
     [ "setFreeBusyStatus", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html#ac4e2f54c3f653a7c660338e5af3ba2d8", null ],
     [ "setLocation", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html#ad6c55db1d89bde91b3453edfae6103c9", null ],
     [ "setOrganizer", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html#a0b0d070a08c5b077d40e67c55703e6dd", null ],
+    [ "setPartStat", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html#a82aa164b16c54aef7aa46b1614190c42", null ],
     [ "setPriority", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html#a2ee03d125596ed4c9481eac27a29b3d3", null ],
     [ "setRecurrenceRule", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html#adc4f1022a35b38b934f266dd504114da", null ],
     [ "setReminderTime", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html#a600bed1e76a323b9ea5c749c1d5978a5", null ],

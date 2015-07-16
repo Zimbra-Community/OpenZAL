@@ -1,0 +1,12 @@
+<map id="org.openzal.zal.CalendarItem.updatePartStat" name="org.openzal.zal.CalendarItem.updatePartStat">
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_item.html#a4fb43ace7a620be491c040f89430404a" title="org.openzal.zal.Item.get\lMailbox" alt="" coords="236,5,399,46"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1_calendar_item.html#abf5305023f55e87d4717156fcf3aa253" title="org.openzal.zal.Calendar\lItem.getDefaultInviteOrNull" alt="" coords="488,93,669,134"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1_calendar_item.html#a2148a7cd4653c9cff4503bcff779d540" title="org.openzal.zal.Calendar\lItem.getInvite" alt="" coords="234,122,401,163"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_item.html#a8b79cb2b78ecf02e73b3fb06ca6251aa" title="org.openzal.zal.Item.get\lDigest" alt="" coords="236,187,399,229"/>
+<area shape="rect" id="node6" href="$classorg_1_1openzal_1_1zal_1_1_calendar_item.html#aeea722e831dcef2587a2be15e66c2e5d" title="org.openzal.zal.Calendar\lItem.getMimeMessage" alt="" coords="234,253,401,294"/>
+<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1_calendar_item.html#a28933ac726cd9ef03c23fd615eda93b6" title="org.openzal.zal.Calendar\lItem.getParsedMessage" alt="" coords="234,318,401,359"/>
+<area shape="rect" id="node9" href="$classorg_1_1openzal_1_1zal_1_1_item.html#a37ed66805b1beba5975a98736d1e2014" title="org.openzal.zal.Item.get\lFolderId" alt="" coords="236,383,399,425"/>
+<area shape="rect" id="node10" href="$classorg_1_1openzal_1_1zal_1_1_item.html#aff662b01b248b8ca94d2d56aeeecd47f" title="org.openzal.zal.Item.get\lFlagBitmask" alt="" coords="236,449,399,490"/>
+<area shape="rect" id="node11" href="$classorg_1_1openzal_1_1zal_1_1_item.html#af933d5aeedd23b21c5a5de06e91b3de1" title="org.openzal.zal.Item.getTags" alt="" coords="222,515,413,541"/>
+<area shape="rect" id="node8" href="$classorg_1_1openzal_1_1zal_1_1_mailbox.html#a37f4d73354041a1d88a1a0dfff2599f8" title="org.openzal.zal.Mailbox.attachments\lIndexingEnabled" alt="" coords="461,318,696,359"/>
+</map>

@@ -6,6 +6,9 @@ var dir_8d97173d990e6f5a3604a760b5b93d3b =
     [ "AttendeeInviteStatus.java", "_attendee_invite_status_8java.html", [
       [ "AttendeeInviteStatus", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status" ]
     ] ],
+    [ "AttendeeType.java", "_attendee_type_8java.html", [
+      [ "AttendeeType", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type" ]
+    ] ],
     [ "CalendarItemData.java", "_calendar_item_data_8java.html", [
       [ "CalendarItemData", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_calendar_item_data.html", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_calendar_item_data" ]
     ] ],

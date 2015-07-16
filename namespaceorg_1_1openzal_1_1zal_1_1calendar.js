@@ -2,6 +2,7 @@ var namespaceorg_1_1openzal_1_1zal_1_1calendar =
 [
     [ "Attendee", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee" ],
     [ "AttendeeInviteStatus", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status" ],
+    [ "AttendeeType", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type" ],
     [ "CalendarItemData", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_calendar_item_data.html", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_calendar_item_data" ],
     [ "CalendarMime", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_calendar_mime.html", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_calendar_mime" ],
     [ "FreeBusyStatus", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status" ],

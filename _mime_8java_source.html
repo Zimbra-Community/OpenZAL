@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_mime_8java_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_mime_8java_source.html','');});
 <div class="contents">
 <a href="_mime_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -130,71 +130,90 @@ $(document).ready(function(){initNavTree('_mime_8java_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">package </span>org.openzal.zal;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.Nullable;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> javax.mail.MessagingException;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> javax.mail.Session;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> javax.mail.internet.MimeMessage;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> javax.mail.internet.MimeMultipart;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">import</span> javax.mail.internet.MimePart;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> java.io.IOException;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">import</span> java.util.List;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html">   34</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html">Mime</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a83954f3e45d80bf00db5a5fc63d197cd">   37</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> List&lt;MPartInfo&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a83954f3e45d80bf00db5a5fc63d197cd">getParts</a>(MimeMessage mimeMessage) <span class="keywordflow">throws</span> IOException, MessagingException</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> ZimbraListWrapper.wrapMPartInfos(com.zimbra.cs.mime.Mime.getParts(mimeMessage));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a51cc6b39b08456e3bf20ccb69baad878">   43</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html">MPartInfo</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a51cc6b39b08456e3bf20ccb69baad878">getTextBody</a>(MimeMessage mimeMessage, <span class="keywordtype">boolean</span> preferHtml)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">throws</span> IOException, MessagingException</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html">MPartInfo</a>(com.zimbra.cs.mime.Mime.getTextBody(com.zimbra.cs.mime.Mime.getParts(mimeMessage),</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                               preferHtml));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a59360ec4a2c5eaeb28715d12e4e0c210">   50</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a59360ec4a2c5eaeb28715d12e4e0c210">recursiveRepairTransferEncoding</a>(MimeMessage mimemessage1) <span class="keywordflow">throws</span> IOException, MessagingException</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    com.zimbra.cs.mime.Mime.recursiveRepairTransferEncoding(mimemessage1);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  @Nullable</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#abe32c16ffcae95721be4704fb4f21838">   56</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> MimeMultipart <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#abe32c16ffcae95721be4704fb4f21838">getMultipartContent</a>(MimePart multipartPart, String contentType)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">throws</span> IOException, MessagingException</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> com.zimbra.cs.mime.Mime.getMultipartContent(multipartPart, contentType);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  @Nullable</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a6713038a4e99c9765e4e13e6d88b9f63">   63</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a6713038a4e99c9765e4e13e6d88b9f63">getSubject</a>(MimeMessage mimeMessage) <span class="keywordflow">throws</span> MessagingException</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> com.zimbra.cs.mime.Mime.getSubject(mimeMessage);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  @Nullable</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#afd5c7479db8a003c55283320f05ce918">   69</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> MimePart <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#afd5c7479db8a003c55283320f05ce918">getMimePart</a>(MimePart mimePart, String part) <span class="keywordflow">throws</span> IOException, MessagingException</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> com.zimbra.cs.mime.Mime.getMimePart(mimePart, part);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a9284f8d3564fb6c3e6b35f1723bee238">   75</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> MimeMessage <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a9284f8d3564fb6c3e6b35f1723bee238">buildFixedMimeMessage</a>(Session session)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> com.zimbra.cs.mime.Mime.FixedMimeMessage(session);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_afd5c7479db8a003c55283320f05ce918"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#afd5c7479db8a003c55283320f05ce918">org.openzal.zal.Mime.getMimePart</a></div><div class="ttdeci">static MimePart getMimePart(MimePart mimePart, String part)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00069">Mime.java:69</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_abe32c16ffcae95721be4704fb4f21838"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#abe32c16ffcae95721be4704fb4f21838">org.openzal.zal.Mime.getMultipartContent</a></div><div class="ttdeci">static MimeMultipart getMultipartContent(MimePart multipartPart, String contentType)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00056">Mime.java:56</a></div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> com.zimbra.cs.mime.ExpandMimeMessage;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.Nullable;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> javax.mail.MessagingException;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> javax.mail.Session;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> javax.mail.internet.MimeMessage;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">import</span> javax.mail.internet.MimeMultipart;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> javax.mail.internet.MimePart;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">import</span> java.io.IOException;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">import</span> java.util.List;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html">   35</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html">Mime</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a83954f3e45d80bf00db5a5fc63d197cd">   38</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> List&lt;MPartInfo&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a83954f3e45d80bf00db5a5fc63d197cd">getParts</a>(MimeMessage mimeMessage) <span class="keywordflow">throws</span> IOException, MessagingException</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> ZimbraListWrapper.wrapMPartInfos(com.zimbra.cs.mime.Mime.getParts(mimeMessage));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a51cc6b39b08456e3bf20ccb69baad878">   44</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html">MPartInfo</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a51cc6b39b08456e3bf20ccb69baad878">getTextBody</a>(MimeMessage mimeMessage, <span class="keywordtype">boolean</span> preferHtml)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">throws</span> IOException, MessagingException</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html">MPartInfo</a>(com.zimbra.cs.mime.Mime.getTextBody(com.zimbra.cs.mime.Mime.getParts(mimeMessage),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                               preferHtml));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a59360ec4a2c5eaeb28715d12e4e0c210">   51</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a59360ec4a2c5eaeb28715d12e4e0c210">recursiveRepairTransferEncoding</a>(MimeMessage mimemessage1) <span class="keywordflow">throws</span> IOException, MessagingException</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    com.zimbra.cs.mime.Mime.recursiveRepairTransferEncoding(mimemessage1);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  @Nullable</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#abe32c16ffcae95721be4704fb4f21838">   57</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> MimeMultipart <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#abe32c16ffcae95721be4704fb4f21838">getMultipartContent</a>(MimePart multipartPart, String contentType)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">throws</span> IOException, MessagingException</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> com.zimbra.cs.mime.Mime.getMultipartContent(multipartPart, contentType);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  @Nullable</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a6713038a4e99c9765e4e13e6d88b9f63">   64</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a6713038a4e99c9765e4e13e6d88b9f63">getSubject</a>(MimeMessage mimeMessage) <span class="keywordflow">throws</span> MessagingException</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> com.zimbra.cs.mime.Mime.getSubject(mimeMessage);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  @Nullable</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#afd5c7479db8a003c55283320f05ce918">   70</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> MimePart <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#afd5c7479db8a003c55283320f05ce918">getMimePart</a>(MimePart mimePart, String part) <span class="keywordflow">throws</span> IOException, MessagingException</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> com.zimbra.cs.mime.Mime.getMimePart(mimePart, part);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a9284f8d3564fb6c3e6b35f1723bee238">   76</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> MimeMessage <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#a9284f8d3564fb6c3e6b35f1723bee238">buildFixedMimeMessage</a>(Session session)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> com.zimbra.cs.mime.Mime.FixedMimeMessage(session);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">  Apply zimbra own modifiers, for example it explode ms-tnef</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mime.html#ae71dc4da5d1c54881e62bf50ba1f7eff">   84</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> MimeMessage <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mime.html#ae71dc4da5d1c54881e62bf50ba1f7eff">expandMessage</a>(MimeMessage original) <span class="keywordflow">throws</span> MessagingException</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      ExpandMimeMessage expandMimeMessage = <span class="keyword">new</span> ExpandMimeMessage(original);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      expandMimeMessage.expand();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">return</span> expandMimeMessage.getExpanded();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">catch</span> (Throwable ex)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">return</span> original;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_afd5c7479db8a003c55283320f05ce918"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#afd5c7479db8a003c55283320f05ce918">org.openzal.zal.Mime.getMimePart</a></div><div class="ttdeci">static MimePart getMimePart(MimePart mimePart, String part)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00070">Mime.java:70</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_abe32c16ffcae95721be4704fb4f21838"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#abe32c16ffcae95721be4704fb4f21838">org.openzal.zal.Mime.getMultipartContent</a></div><div class="ttdeci">static MimeMultipart getMultipartContent(MimePart multipartPart, String contentType)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00057">Mime.java:57</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_ae71dc4da5d1c54881e62bf50ba1f7eff"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#ae71dc4da5d1c54881e62bf50ba1f7eff">org.openzal.zal.Mime.expandMessage</a></div><div class="ttdeci">static MimeMessage expandMessage(MimeMessage original)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00084">Mime.java:84</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html">org.openzal.zal.MPartInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00030">MPartInfo.java:30</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a59360ec4a2c5eaeb28715d12e4e0c210"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a59360ec4a2c5eaeb28715d12e4e0c210">org.openzal.zal.Mime.recursiveRepairTransferEncoding</a></div><div class="ttdeci">static void recursiveRepairTransferEncoding(MimeMessage mimemessage1)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00050">Mime.java:50</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a9284f8d3564fb6c3e6b35f1723bee238"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a9284f8d3564fb6c3e6b35f1723bee238">org.openzal.zal.Mime.buildFixedMimeMessage</a></div><div class="ttdeci">static MimeMessage buildFixedMimeMessage(Session session)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00075">Mime.java:75</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a51cc6b39b08456e3bf20ccb69baad878"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a51cc6b39b08456e3bf20ccb69baad878">org.openzal.zal.Mime.getTextBody</a></div><div class="ttdeci">static MPartInfo getTextBody(MimeMessage mimeMessage, boolean preferHtml)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00043">Mime.java:43</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a6713038a4e99c9765e4e13e6d88b9f63"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a6713038a4e99c9765e4e13e6d88b9f63">org.openzal.zal.Mime.getSubject</a></div><div class="ttdeci">static String getSubject(MimeMessage mimeMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00063">Mime.java:63</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html">org.openzal.zal.Mime</a></div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00034">Mime.java:34</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a83954f3e45d80bf00db5a5fc63d197cd"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a83954f3e45d80bf00db5a5fc63d197cd">org.openzal.zal.Mime.getParts</a></div><div class="ttdeci">static List&lt; MPartInfo &gt; getParts(MimeMessage mimeMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00037">Mime.java:37</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a59360ec4a2c5eaeb28715d12e4e0c210"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a59360ec4a2c5eaeb28715d12e4e0c210">org.openzal.zal.Mime.recursiveRepairTransferEncoding</a></div><div class="ttdeci">static void recursiveRepairTransferEncoding(MimeMessage mimemessage1)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00051">Mime.java:51</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a9284f8d3564fb6c3e6b35f1723bee238"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a9284f8d3564fb6c3e6b35f1723bee238">org.openzal.zal.Mime.buildFixedMimeMessage</a></div><div class="ttdeci">static MimeMessage buildFixedMimeMessage(Session session)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00076">Mime.java:76</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a51cc6b39b08456e3bf20ccb69baad878"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a51cc6b39b08456e3bf20ccb69baad878">org.openzal.zal.Mime.getTextBody</a></div><div class="ttdeci">static MPartInfo getTextBody(MimeMessage mimeMessage, boolean preferHtml)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00044">Mime.java:44</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a6713038a4e99c9765e4e13e6d88b9f63"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a6713038a4e99c9765e4e13e6d88b9f63">org.openzal.zal.Mime.getSubject</a></div><div class="ttdeci">static String getSubject(MimeMessage mimeMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00064">Mime.java:64</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html">org.openzal.zal.Mime</a></div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00035">Mime.java:35</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mime_html_a83954f3e45d80bf00db5a5fc63d197cd"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mime.html#a83954f3e45d80bf00db5a5fc63d197cd">org.openzal.zal.Mime.getParts</a></div><div class="ttdeci">static List&lt; MPartInfo &gt; getParts(MimeMessage mimeMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_mime_8java_source.html#l00038">Mime.java:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

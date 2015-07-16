@@ -2,6 +2,7 @@ var searchData=
 [
   ['nosuchaccountexception',['NoSuchAccountException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_account_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchaliasexception',['NoSuchAliasException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception.html',1,'org::openzal::zal::exceptions']]],
+  ['nosuchappointmentexception',['NoSuchAppointmentException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchblobexception',['NoSuchBlobException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchcalendarexception',['NoSuchCalendarException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchconversationexception',['NoSuchConversationException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html',1,'org::openzal::zal::exceptions']]],

@@ -15,5 +15,6 @@ var searchData=
   ['updateauthenticatedaccount',['updateAuthenticatedAccount',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#af12acc68cfca50cb22c48b148e98c6fa',1,'org.openzal.zal.soap.InternalOverrideAdminDocumentHandler.updateAuthenticatedAccount()'],['../classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_handler.html#a34d5ff52fc80bfe9b2f0b036de7a9c4a',1,'org.openzal.zal.soap.InternalOverrideDocumentHandler.updateAuthenticatedAccount()']]],
   ['updatechat',['updateChat',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html#abe77492e3fa5636fa80b2a78fd2a738c',1,'org::openzal::zal::Mailbox']]],
   ['updateextension',['updateExtension',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager.html#a5fa1e14abd3cc08d9c69f8abd28f80f0',1,'org::openzal::zal::extension::ExtensionManager']]],
+  ['updatepartstat',['updatePartStat',['../classorg_1_1openzal_1_1zal_1_1_calendar_item.html#aa285163dbc7838ecdb33a519dae9c9ee',1,'org::openzal::zal::CalendarItem']]],
   ['usedaylighttime',['useDaylightTime',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#af0acc780c2af55272e1f7be7003a6c3e',1,'org::openzal::zal::calendar::ICalendarTimezone']]]
 ];

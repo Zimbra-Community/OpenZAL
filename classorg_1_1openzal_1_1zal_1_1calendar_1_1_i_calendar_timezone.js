@@ -14,6 +14,7 @@ var classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone =
     [ "getTimeZone", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#a724a333f1b1e1416735fa1544ca65ecf", null ],
     [ "getUTC", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#a5e6e627a19f99d5e2214718fdcbdae23", null ],
     [ "hashCode", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#aa6e1ff87d6a8b333ac1558d66b03fac7", null ],
+    [ "inDaylightTime", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#ab4c7e8b854a0af5c094fa5d95437871e", null ],
     [ "lookup", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#a06afabbcf25df75021cfbeef49ee51bf", null ],
     [ "toString", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#ad2b9b05a999d52b7968bccf1420f74ae", null ],
     [ "useDaylightTime", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#af0acc780c2af55272e1f7be7003a6c3e", null ]

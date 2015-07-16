@@ -1,0 +1,6 @@
+<map id="org.openzal.zal.FakeQueryResults.FakeQueryResults" name="org.openzal.zal.FakeQueryResults.FakeQueryResults">
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_fake_query_results.html#afcc2082d311d561bf73009e6b797a84c" title="org.openzal.zal.FakeQuery\lResults.getNext" alt="" coords="235,5,413,46"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1_fake_query_results.html#a72df12f1d6f41d288a3c3601686fc646" title="org.openzal.zal.FakeQuery\lResults.skipToHit" alt="" coords="235,70,413,111"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1_fake_query_results.html#a2af51ee0a8579d0f8ef8298a23ea467b" title="org.openzal.zal.FakeQuery\lResults.hasNext" alt="" coords="235,135,413,177"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_fake_query_results.html#a541a637e0aca805e9a6a7154114fb6ba" title="org.openzal.zal.FakeQuery\lResults.close" alt="" coords="235,201,413,242"/>
+</map>

@@ -1,6 +1,7 @@
 var classorg_1_1openzal_1_1zal_1_1_mime =
 [
     [ "buildFixedMimeMessage", "classorg_1_1openzal_1_1zal_1_1_mime.html#a9284f8d3564fb6c3e6b35f1723bee238", null ],
+    [ "expandMessage", "classorg_1_1openzal_1_1zal_1_1_mime.html#ae71dc4da5d1c54881e62bf50ba1f7eff", null ],
     [ "getMimePart", "classorg_1_1openzal_1_1zal_1_1_mime.html#afd5c7479db8a003c55283320f05ce918", null ],
     [ "getMultipartContent", "classorg_1_1openzal_1_1zal_1_1_mime.html#abe32c16ffcae95721be4704fb4f21838", null ],
     [ "getParts", "classorg_1_1openzal_1_1zal_1_1_mime.html#a83954f3e45d80bf00db5a5fc63d197cd", null ],

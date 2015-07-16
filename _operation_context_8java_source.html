@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_operation_context_8java_source.html',
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_operation_context_8java_source.html',
 <div class="contents">
 <a href="_operation_context_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -131,42 +131,50 @@ $(document).ready(function(){initNavTree('_operation_context_8java_source.html',
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">package </span>org.openzal.zal;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html">org.openzal.zal.calendar.Attendee</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">   26</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  @NotNull <span class="keyword">private</span> <span class="keyword">final</span> com.zimbra.cs.mailbox.OperationContext mOperationContext;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3">   30</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3">OperationContext</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> account, <span class="keywordtype">boolean</span> enableAdminRights)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    mOperationContext = <span class="keyword">new</span> com.zimbra.cs.mailbox.OperationContext(</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      account.toZimbra(com.zimbra.cs.account.Account.class), enableAdminRights</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    );</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a27d5439fe0e3eed4805eb4972075c033">   37</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a27d5439fe0e3eed4805eb4972075c033">OperationContext</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> account)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    mOperationContext = <span class="keyword">new</span> com.zimbra.cs.mailbox.OperationContext(account.toZimbra(com.zimbra.cs.account.Account.class), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3">OperationContext</a>(@NotNull Object operationContext)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (operationContext == null)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> NullPointerException();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    mOperationContext = (com.zimbra.cs.mailbox.OperationContext) operationContext;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  com.zimbra.cs.mailbox.OperationContext getOperationContext()</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> mOperationContext;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_account_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_account.html">org.openzal.zal.Account</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_8java_source.html#l00044">Account.java:44</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html_a27d5439fe0e3eed4805eb4972075c033"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a27d5439fe0e3eed4805eb4972075c033">org.openzal.zal.OperationContext.OperationContext</a></div><div class="ttdeci">OperationContext(@NotNull Account account)</div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00037">OperationContext.java:37</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">org.openzal.zal.OperationContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00026">OperationContext.java:26</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html_a76450368e7f46639b838f47d5f262aa3"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3">org.openzal.zal.OperationContext.OperationContext</a></div><div class="ttdeci">OperationContext(@NotNull Account account, boolean enableAdminRights)</div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00030">OperationContext.java:30</a></div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">   27</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">OperationContext</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  @NotNull <span class="keyword">private</span> <span class="keyword">final</span> com.zimbra.cs.mailbox.OperationContext mOperationContext;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3">   31</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3">OperationContext</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> account, <span class="keywordtype">boolean</span> enableAdminRights)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    mOperationContext = <span class="keyword">new</span> com.zimbra.cs.mailbox.OperationContext(</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      account.toZimbra(com.zimbra.cs.account.Account.class), enableAdminRights</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    );</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a27d5439fe0e3eed4805eb4972075c033">   38</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a27d5439fe0e3eed4805eb4972075c033">OperationContext</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> account)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    mOperationContext = <span class="keyword">new</span> com.zimbra.cs.mailbox.OperationContext(account.toZimbra(com.zimbra.cs.account.Account.class), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3">OperationContext</a>(@NotNull Object operationContext)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (operationContext == null)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> NullPointerException();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    mOperationContext = (com.zimbra.cs.mailbox.OperationContext) operationContext;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  com.zimbra.cs.mailbox.OperationContext getOperationContext()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> mOperationContext;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a31329a7ca1d9260ecc5a4fa870d09733">   58</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a31329a7ca1d9260ecc5a4fa870d09733">getAccount</a>()</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a>(mOperationContext.getAuthenticatedUser());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_account_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_account.html">org.openzal.zal.Account</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_8java_source.html#l00046">Account.java:46</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html">org.openzal.zal.calendar.Attendee</a></div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00029">Attendee.java:29</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html_a27d5439fe0e3eed4805eb4972075c033"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a27d5439fe0e3eed4805eb4972075c033">org.openzal.zal.OperationContext.OperationContext</a></div><div class="ttdeci">OperationContext(@NotNull Account account)</div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00038">OperationContext.java:38</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html">org.openzal.zal.OperationContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00027">OperationContext.java:27</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html_a76450368e7f46639b838f47d5f262aa3"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3">org.openzal.zal.OperationContext.OperationContext</a></div><div class="ttdeci">OperationContext(@NotNull Account account, boolean enableAdminRights)</div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00031">OperationContext.java:31</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_operation_context_html_a31329a7ca1d9260ecc5a4fa870d09733"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_operation_context.html#a31329a7ca1d9260ecc5a4fa870d09733">org.openzal.zal.OperationContext.getAccount</a></div><div class="ttdeci">Account getAccount()</div><div class="ttdef"><b>Definition:</b> <a href="_operation_context_8java_source.html#l00058">OperationContext.java:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -7,8 +7,10 @@ var classorg_1_1openzal_1_1zal_1_1_calendar_item =
     [ "getInvite", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#a2148a7cd4653c9cff4503bcff779d540", null ],
     [ "getInvites", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#ae4213cb7d454ec78f5528ccfae1d3469", null ],
     [ "getMimeMessage", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#aeea722e831dcef2587a2be15e66c2e5d", null ],
+    [ "getParsedMessage", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#a28933ac726cd9ef03c23fd615eda93b6", null ],
     [ "getRecurrence", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#aa6a60b85e4603b7754aea2feccc452ce", null ],
     [ "getStartTime", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#a0b8ba81a54787b59e010d6508ccb1ebb", null ],
     [ "getUid", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#ac3c5774304e14d3c7f868498c36d1ecb", null ],
-    [ "isRecurring", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#ad6f79f913fa5448b5bc73d8a13c9178e", null ]
+    [ "isRecurring", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#ad6f79f913fa5448b5bc73d8a13c9178e", null ],
+    [ "updatePartStat", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#aa285163dbc7838ecdb33a519dae9c9ee", null ]
 ];

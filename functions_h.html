@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -81,6 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('functions_h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -186,8 +187,9 @@ $(document).ready(function(){initNavTree('functions_h.html','');});
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_account_status.html#ae6849092b1dc8448999ba3ea8f0691e1">org.openzal.zal.AccountStatus</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_a_c_e.html#aef279e88c05b4147d3da469a27143f15">org.openzal.zal.ACE</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html#aa6e1ff87d6a8b333ac1558d66b03fac7">org.openzal.zal.calendar.ICalendarTimezone</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_id.html#a7675eb4793f1af1eed5849588dc0db00">org.openzal.zal.calendar.RecurrenceId</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact.html#a571e260e575c7746d89b0b6fdf53067c">org.openzal.zal.Contact</a>
-, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_continuation.html#aedfa68476b4fa647dc11aa4ad0c581d1">org.openzal.zal.Continuation</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_continuation_jetty.html#a5507ecd27ea9adbed01bcfe4b074f554">org.openzal.zal.ContinuationJetty</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a816bde4a274838e969a02dbf783f951f">org.openzal.zal.Cos</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_data_source_type.html#acf0922c5a83359f8c95cf35e4def1371">org.openzal.zal.DataSourceType</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#aa5365dd8d60cf1ec8623060acd91d062">org.openzal.zal.Entry</a>
@@ -210,7 +212,8 @@ $(document).ready(function(){initNavTree('functions_h.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html#a95ae076c73a54a8f6a658c8b95c1f860">org.openzal.zal.Provisioning.GalSearchResult</a>
 </li>
 <li>hasNext()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_query_results.html#a71b73d3dec62ead39edab51286e643d9">org.openzal.zal.QueryResults</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_fake_query_results.html#a2af51ee0a8579d0f8ef8298a23ea467b">org.openzal.zal.FakeQueryResults</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_query_results.html#a71b73d3dec62ead39edab51286e643d9">org.openzal.zal.QueryResults</a>
 </li>
 <li>hasOrganizer()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ae103180985391c3af19afda6a9f2065b">org.openzal.zal.calendar.Invite</a>

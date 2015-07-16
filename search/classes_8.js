@@ -4,6 +4,7 @@ var searchData=
   ['icalendartimezone',['ICalendarTimezone',['../classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html',1,'org::openzal::zal::calendar']]],
   ['identity',['Identity',['../classorg_1_1openzal_1_1zal_1_1_identity.html',1,'org::openzal::zal']]],
   ['identityexistsexception',['IdentityExistsException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_identity_exists_exception.html',1,'org::openzal::zal::exceptions']]],
+  ['immutablechangeattempt',['ImmutableChangeAttempt',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_immutable_change_attempt.html',1,'org::openzal::zal::exceptions']]],
   ['internaldocumenthelper',['InternalDocumentHelper',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_document_helper.html',1,'org::openzal::zal::soap']]],
   ['internaloverrideadmindocumenthandler',['InternalOverrideAdminDocumentHandler',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html',1,'org::openzal::zal::soap']]],
   ['internaloverridedocumenthandler',['InternalOverrideDocumentHandler',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_handler.html',1,'org::openzal::zal::soap']]],

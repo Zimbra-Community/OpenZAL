@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_auth_token_8java_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_auth_token_8java_source.html','');});
 <div class="contents">
 <a href="_auth_token_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -173,9 +173,33 @@ $(document).ready(function(){initNavTree('_auth_token_8java_source.html','');});
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> mAuthToken.isDelegatedAdmin();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#a43543fecf176413a4a81476030258164">   67</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#a43543fecf176413a4a81476030258164">toString</a>()</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> mAuthToken.toString();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  public &lt;T&gt; T toZimbra(@NotNull Class&lt;T&gt; cls)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> cls.cast(mAuthToken);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#afcce750ac0bec4b249bef337340ab29b">   77</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#afcce750ac0bec4b249bef337340ab29b">getEncoded</a>()</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> mAuthToken.getEncoded();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">catch</span> (AuthTokenException e)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_auth_token_exception_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_auth_token_exception.html">org.openzal.zal.exceptions.AuthTokenException</a></div><div class="ttdef"><b>Definition:</b> <a href="_auth_token_exception_8java_source.html#l00023">AuthTokenException.java:23</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_token_html_a0354722779298fdd6bee89498f3bbaa4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#a0354722779298fdd6bee89498f3bbaa4">org.openzal.zal.AuthToken.getAccountId</a></div><div class="ttdeci">String getAccountId()</div><div class="ttdef"><b>Definition:</b> <a href="_auth_token_8java_source.html#l00052">AuthToken.java:52</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_token_html_afcce750ac0bec4b249bef337340ab29b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#afcce750ac0bec4b249bef337340ab29b">org.openzal.zal.AuthToken.getEncoded</a></div><div class="ttdeci">String getEncoded()</div><div class="ttdef"><b>Definition:</b> <a href="_auth_token_8java_source.html#l00077">AuthToken.java:77</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_token_html_a43543fecf176413a4a81476030258164"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#a43543fecf176413a4a81476030258164">org.openzal.zal.AuthToken.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_auth_token_8java_source.html#l00067">AuthToken.java:67</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_token_html_a881f48688f10d5f1a21d7f938654cd28"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#a881f48688f10d5f1a21d7f938654cd28">org.openzal.zal.AuthToken.isDelegatedAdmin</a></div><div class="ttdeci">boolean isDelegatedAdmin()</div><div class="ttdef"><b>Definition:</b> <a href="_auth_token_8java_source.html#l00062">AuthToken.java:62</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_token_html_a806b829776df92712aace287cfc46a67"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_token.html#a806b829776df92712aace287cfc46a67">org.openzal.zal.AuthToken.AuthToken</a></div><div class="ttdeci">AuthToken(@NotNull Object authToken)</div><div class="ttdef"><b>Definition:</b> <a href="_auth_token_8java_source.html#l00031">AuthToken.java:31</a></div></div>

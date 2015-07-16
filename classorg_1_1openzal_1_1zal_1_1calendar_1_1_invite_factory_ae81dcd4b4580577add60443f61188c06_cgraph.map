@@ -1,3 +1,4 @@
 <map id="org.openzal.zal.calendar.InviteFactory.populateFactoryFromExistingInvite" name="org.openzal.zal.calendar.InviteFactory.populateFactoryFromExistingInvite">
-<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ad172b1a7b4b1bd2381838139c11fa6ed" title="org.openzal.zal.calendar.\lInvite.hasRecurId" alt="" coords="281,11,447,53"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#abafbe8e47bb55eff95e6df318185521e" title="org.openzal.zal.calendar.\lInvite.getOrganizer" alt="" coords="281,5,447,46"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ad172b1a7b4b1bd2381838139c11fa6ed" title="org.openzal.zal.calendar.\lInvite.hasRecurId" alt="" coords="281,70,447,111"/>
 </map>

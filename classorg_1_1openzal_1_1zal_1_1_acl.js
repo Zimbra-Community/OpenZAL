@@ -19,5 +19,13 @@ var classorg_1_1openzal_1_1zal_1_1_acl =
     [ "GRANTEE_GUEST", "classorg_1_1openzal_1_1zal_1_1_acl.html#a277f63dfc94e51a649904dde72580600", null ],
     [ "GRANTEE_KEY", "classorg_1_1openzal_1_1zal_1_1_acl.html#a7990703a9e7ff39ac737ecfb65e261f1", null ],
     [ "GRANTEE_PUBLIC", "classorg_1_1openzal_1_1zal_1_1_acl.html#a6434e3149888458954b48052a96b2cc7", null ],
-    [ "GRANTEE_USER", "classorg_1_1openzal_1_1zal_1_1_acl.html#aa7417b1cad73014710af120f7d9cf694", null ]
+    [ "GRANTEE_USER", "classorg_1_1openzal_1_1zal_1_1_acl.html#aa7417b1cad73014710af120f7d9cf694", null ],
+    [ "RIGHT_ACTION", "classorg_1_1openzal_1_1zal_1_1_acl.html#a2392d9dc7fc47a5c0910298a6100b950", null ],
+    [ "RIGHT_ADMIN", "classorg_1_1openzal_1_1zal_1_1_acl.html#a51dc2a2d5ab81ab1f73345b86d4fd30b", null ],
+    [ "RIGHT_DELETE", "classorg_1_1openzal_1_1zal_1_1_acl.html#a0871beac4d793860f3d9a841a31f1945", null ],
+    [ "RIGHT_FREEBUSY", "classorg_1_1openzal_1_1zal_1_1_acl.html#a160b184ddb1d01915bc2f76d8ef7e10b", null ],
+    [ "RIGHT_INSERT", "classorg_1_1openzal_1_1zal_1_1_acl.html#ac31f0cb7f9c56825a977089f251ea425", null ],
+    [ "RIGHT_PRIVATE", "classorg_1_1openzal_1_1zal_1_1_acl.html#adf7148415e34a13d05938da495235719", null ],
+    [ "RIGHT_READ", "classorg_1_1openzal_1_1zal_1_1_acl.html#acfdbb36cd9843984092273ee41b4bfc0", null ],
+    [ "RIGHT_WRITE", "classorg_1_1openzal_1_1zal_1_1_acl.html#a6cbb25ebf74474d01f7080e9f3589679", null ]
 ];

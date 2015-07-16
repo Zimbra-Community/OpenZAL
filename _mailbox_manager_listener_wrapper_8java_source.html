@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_mailbox_manager_listener_wrapper_8jav
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_mailbox_manager_listener_wrapper_8jav
 <div class="contents">
 <a href="_mailbox_manager_listener_wrapper_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -134,82 +134,140 @@ $(document).ready(function(){initNavTree('_mailbox_manager_listener_wrapper_8jav
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.Nullable;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html">   27</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html">MailboxManagerListenerWrapper</a> <span class="keyword">implements</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager.html">MailboxManager</a>.<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_listener.html">Listener</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  @NotNull <span class="keyword">private</span> <span class="keyword">final</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener.html">MailboxManagerListener</a> mListener;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a17cc4523b4ec3cb4282383a198e78e1b">   31</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a17cc4523b4ec3cb4282383a198e78e1b">MailboxManagerListenerWrapper</a>(@NotNull <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener.html">MailboxManagerListener</a> listener)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (listener == null)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> NullPointerException();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    mListener = listener;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  @Override</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a8dd02cd7adaba69dad172cbdba843b3a">   41</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a8dd02cd7adaba69dad172cbdba843b3a">equals</a>(@Nullable Object o)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == o)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (o == null || getClass() != o.getClass())</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html">MailboxManagerListenerWrapper</a> that = (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a17cc4523b4ec3cb4282383a198e78e1b">MailboxManagerListenerWrapper</a>) o;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> java.util.Collections;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> java.util.HashMap;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> java.util.HashSet;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">import</span> java.util.Set;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> java.util.concurrent.ConcurrentHashMap;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">import</span> java.util.concurrent.locks.ReentrantLock;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html">   34</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html">MailboxManagerListenerWrapper</a> <span class="keyword">implements</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager.html">MailboxManager</a>.<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_listener.html">Listener</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener.html">MailboxManagerListener</a> mListener;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> Set&lt;String&gt;            mAlreadyNotifiedMailboxes;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> ReentrantLock          mLock;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">private</span>       <span class="keywordtype">boolean</span>                mTrack;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a17cc4523b4ec3cb4282383a198e78e1b">   42</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a17cc4523b4ec3cb4282383a198e78e1b">MailboxManagerListenerWrapper</a>(@NotNull <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener.html">MailboxManagerListener</a> listener)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (listener == null)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> NullPointerException();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    mListener = listener;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    mAlreadyNotifiedMailboxes = <span class="keyword">new</span> HashSet&lt;String&gt;();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    mLock = <span class="keyword">new</span> ReentrantLock();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    mTrack = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (mListener != null ? !mListener.equals(that.mListener) : that.mListener != null)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  @Override</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a2c4e4e04c23a957edf4afcf695d31996">   63</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a2c4e4e04c23a957edf4afcf695d31996">hashCode</a>()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> mListener != null ? mListener.hashCode() : 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  @Override</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a8dd02cd7adaba69dad172cbdba843b3a">   55</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a8dd02cd7adaba69dad172cbdba843b3a">equals</a>(@Nullable Object o)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == o)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (o == null || getClass() != o.getClass())</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html">MailboxManagerListenerWrapper</a> that = (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a17cc4523b4ec3cb4282383a198e78e1b">MailboxManagerListenerWrapper</a>) o;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  @Override</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a20e6847f6a4fc8ed64cf79c281cfa500">   69</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a20e6847f6a4fc8ed64cf79c281cfa500">mailboxAvailable</a>(com.zimbra.cs.mailbox.Mailbox mbox)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    mListener.mailboxAvailable(<span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html">Mailbox</a>(mbox));</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  @Override</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a4d09f9633bfcc97227301bff0ffeb880">   75</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a4d09f9633bfcc97227301bff0ffeb880">mailboxCreated</a>(com.zimbra.cs.mailbox.Mailbox mbox)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    mListener.mailboxCreated(<span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html">Mailbox</a>(mbox));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  @Override</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#afde275c900b481d2a0ad4f7df71797ff">   81</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#afde275c900b481d2a0ad4f7df71797ff">mailboxDeleted</a>(String accountId)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    mListener.mailboxDeleted(accountId);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  @Override</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a92000cebd2b612dc198484c45d38b89e">   87</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a92000cebd2b612dc198484c45d38b89e">mailboxLoaded</a>(com.zimbra.cs.mailbox.Mailbox mbox)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    mListener.mailboxLoaded(<span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html">Mailbox</a>(mbox));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (!mListener.equals(that.mListener))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">private</span> <span class="keywordtype">void</span> notifiedMailbox(String accountId)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (mTrack)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      mLock.lock();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        mAlreadyNotifiedMailboxes.add(accountId);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">finally</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        mLock.unlock();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_afde275c900b481d2a0ad4f7df71797ff"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#afde275c900b481d2a0ad4f7df71797ff">org.openzal.zal.MailboxManagerListenerWrapper.mailboxDeleted</a></div><div class="ttdeci">void mailboxDeleted(String accountId)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00081">MailboxManagerListenerWrapper.java:81</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a92000cebd2b612dc198484c45d38b89e"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a92000cebd2b612dc198484c45d38b89e">org.openzal.zal.MailboxManagerListenerWrapper.mailboxLoaded</a></div><div class="ttdeci">void mailboxLoaded(com.zimbra.cs.mailbox.Mailbox mbox)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00087">MailboxManagerListenerWrapper.java:87</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a20e6847f6a4fc8ed64cf79c281cfa500"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a20e6847f6a4fc8ed64cf79c281cfa500">org.openzal.zal.MailboxManagerListenerWrapper.mailboxAvailable</a></div><div class="ttdeci">void mailboxAvailable(com.zimbra.cs.mailbox.Mailbox mbox)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00069">MailboxManagerListenerWrapper.java:69</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a8dd02cd7adaba69dad172cbdba843b3a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a8dd02cd7adaba69dad172cbdba843b3a">org.openzal.zal.MailboxManagerListenerWrapper.equals</a></div><div class="ttdeci">boolean equals(@Nullable Object o)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00041">MailboxManagerListenerWrapper.java:41</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager.html">org.openzal.zal.MailboxManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_8java_source.html#l00033">MailboxManager.java:33</a></div></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a65a147ddf17a2c34f241237d2dd76e4d">   92</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a65a147ddf17a2c34f241237d2dd76e4d">notifyExistingMailboxesAndStopTracking</a>(Set&lt;Mailbox&gt; alreadyLoadedMailboxes)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    mLock.lock();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">for</span>( <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html">Mailbox</a> mailbox : alreadyLoadedMailboxes )</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span>( mAlreadyNotifiedMailboxes.contains(mailbox.getAccountId()) )</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        mListener.mailboxLoaded(mailbox);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      mTrack = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">finally</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      mLock.unlock();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  @Override</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a2c4e4e04c23a957edf4afcf695d31996">  116</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a2c4e4e04c23a957edf4afcf695d31996">hashCode</a>()</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> mListener.hashCode();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  @Override</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a20e6847f6a4fc8ed64cf79c281cfa500">  122</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a20e6847f6a4fc8ed64cf79c281cfa500">mailboxAvailable</a>(com.zimbra.cs.mailbox.Mailbox mbox)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    notifiedMailbox(mbox.getAccountId());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    mListener.mailboxAvailable(<span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html">Mailbox</a>(mbox));</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  @Override</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a4d09f9633bfcc97227301bff0ffeb880">  129</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a4d09f9633bfcc97227301bff0ffeb880">mailboxCreated</a>(com.zimbra.cs.mailbox.Mailbox mbox)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    notifiedMailbox(mbox.getAccountId());</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    mListener.mailboxCreated(<span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html">Mailbox</a>(mbox));</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  @Override</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#afde275c900b481d2a0ad4f7df71797ff">  136</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#afde275c900b481d2a0ad4f7df71797ff">mailboxDeleted</a>(String accountId)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    notifiedMailbox(accountId);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    mListener.mailboxDeleted(accountId);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  @Override</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a92000cebd2b612dc198484c45d38b89e">  143</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a92000cebd2b612dc198484c45d38b89e">mailboxLoaded</a>(com.zimbra.cs.mailbox.Mailbox mbox)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    notifiedMailbox(mbox.getAccountId());</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    mListener.mailboxLoaded(<span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html">Mailbox</a>(mbox));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_afde275c900b481d2a0ad4f7df71797ff"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#afde275c900b481d2a0ad4f7df71797ff">org.openzal.zal.MailboxManagerListenerWrapper.mailboxDeleted</a></div><div class="ttdeci">void mailboxDeleted(String accountId)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00136">MailboxManagerListenerWrapper.java:136</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a92000cebd2b612dc198484c45d38b89e"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a92000cebd2b612dc198484c45d38b89e">org.openzal.zal.MailboxManagerListenerWrapper.mailboxLoaded</a></div><div class="ttdeci">void mailboxLoaded(com.zimbra.cs.mailbox.Mailbox mbox)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00143">MailboxManagerListenerWrapper.java:143</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a20e6847f6a4fc8ed64cf79c281cfa500"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a20e6847f6a4fc8ed64cf79c281cfa500">org.openzal.zal.MailboxManagerListenerWrapper.mailboxAvailable</a></div><div class="ttdeci">void mailboxAvailable(com.zimbra.cs.mailbox.Mailbox mbox)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00122">MailboxManagerListenerWrapper.java:122</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a8dd02cd7adaba69dad172cbdba843b3a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a8dd02cd7adaba69dad172cbdba843b3a">org.openzal.zal.MailboxManagerListenerWrapper.equals</a></div><div class="ttdeci">boolean equals(@Nullable Object o)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00055">MailboxManagerListenerWrapper.java:55</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager.html">org.openzal.zal.MailboxManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_8java_source.html#l00034">MailboxManager.java:34</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox.html">org.openzal.zal.Mailbox</a></div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_8java_source.html#l00079">Mailbox.java:79</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a2c4e4e04c23a957edf4afcf695d31996"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a2c4e4e04c23a957edf4afcf695d31996">org.openzal.zal.MailboxManagerListenerWrapper.hashCode</a></div><div class="ttdeci">int hashCode()</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00063">MailboxManagerListenerWrapper.java:63</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a17cc4523b4ec3cb4282383a198e78e1b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a17cc4523b4ec3cb4282383a198e78e1b">org.openzal.zal.MailboxManagerListenerWrapper.MailboxManagerListenerWrapper</a></div><div class="ttdeci">MailboxManagerListenerWrapper(@NotNull MailboxManagerListener listener)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00031">MailboxManagerListenerWrapper.java:31</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a2c4e4e04c23a957edf4afcf695d31996"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a2c4e4e04c23a957edf4afcf695d31996">org.openzal.zal.MailboxManagerListenerWrapper.hashCode</a></div><div class="ttdeci">int hashCode()</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00116">MailboxManagerListenerWrapper.java:116</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a17cc4523b4ec3cb4282383a198e78e1b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a17cc4523b4ec3cb4282383a198e78e1b">org.openzal.zal.MailboxManagerListenerWrapper.MailboxManagerListenerWrapper</a></div><div class="ttdeci">MailboxManagerListenerWrapper(@NotNull MailboxManagerListener listener)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00042">MailboxManagerListenerWrapper.java:42</a></div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_listener_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_listener.html">org.openzal.zal.Listener</a></div><div class="ttdef"><b>Definition:</b> <a href="_listener_8java_source.html#l00023">Listener.java:23</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html">org.openzal.zal.MailboxManagerListenerWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00027">MailboxManagerListenerWrapper.java:27</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a4d09f9633bfcc97227301bff0ffeb880"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a4d09f9633bfcc97227301bff0ffeb880">org.openzal.zal.MailboxManagerListenerWrapper.mailboxCreated</a></div><div class="ttdeci">void mailboxCreated(com.zimbra.cs.mailbox.Mailbox mbox)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00075">MailboxManagerListenerWrapper.java:75</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html">org.openzal.zal.MailboxManagerListenerWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00034">MailboxManagerListenerWrapper.java:34</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a65a147ddf17a2c34f241237d2dd76e4d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a65a147ddf17a2c34f241237d2dd76e4d">org.openzal.zal.MailboxManagerListenerWrapper.notifyExistingMailboxesAndStopTracking</a></div><div class="ttdeci">void notifyExistingMailboxesAndStopTracking(Set&lt; Mailbox &gt; alreadyLoadedMailboxes)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00092">MailboxManagerListenerWrapper.java:92</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper_html_a4d09f9633bfcc97227301bff0ffeb880"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a4d09f9633bfcc97227301bff0ffeb880">org.openzal.zal.MailboxManagerListenerWrapper.mailboxCreated</a></div><div class="ttdeci">void mailboxCreated(com.zimbra.cs.mailbox.Mailbox mbox)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_wrapper_8java_source.html#l00129">MailboxManagerListenerWrapper.java:129</a></div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener.html">org.openzal.zal.MailboxManagerListener</a></div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_manager_listener_8java_source.html#l00023">MailboxManagerListener.java:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -81,6 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -131,7 +132,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -239,6 +240,9 @@ $(document).ready(function(){initNavTree('functions_func_r.html','');});
 <li>removeAlias()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_account.html#a2079069f7daf4169c5a7f98745a9c1d5">org.openzal.zal.Account</a>
 </li>
+<li>removeConfig()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7cc72393c13ca3036ed1048975bbcbcf">org.openzal.zal.Mailbox</a>
+</li>
 <li>removeGranteeId()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#ad97f1ea7a1b0b65460f445ffbadaf3b7">org.openzal.zal.Provisioning</a>
 </li>
@@ -261,7 +265,9 @@ $(document).ready(function(){initNavTree('functions_func_r.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a9ce481dc467ac72c9d5297e2cfb436c7">org.openzal.zal.soap.SoapServiceManager</a>
 </li>
 <li>resume()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_continuation.html#ab0ce9aeb46d8a55cfb15d3a3f1d7219c">org.openzal.zal.Continuation</a>
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_continuation.html#ab0ce9aeb46d8a55cfb15d3a3f1d7219c">org.openzal.zal.Continuation</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_continuation_jetty.html#a579568326330e278350b3d7b528cf815">org.openzal.zal.ContinuationJetty</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_fake_continuation.html#a0fad69a54a00199ce11ec3d6a5b1d468">org.openzal.zal.FakeContinuation</a>
 </li>
 <li>revokeAccess()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_acl.html#a481c121bd998fe11a8132013e286d560">org.openzal.zal.Acl</a>

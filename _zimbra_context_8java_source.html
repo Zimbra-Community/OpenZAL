@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_zimbra_context_8java_source.html','')
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_zimbra_context_8java_source.html','')
 <div class="contents">
 <a href="_zimbra_context_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_zimbra_context_8java_source.html','')
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">package </span>org.openzal.zal.soap;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_continuation.html">org.openzal.zal.Continuation</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_continuation.html">org.openzal.zal.Continuation</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('_zimbra_context_8java_source.html','')
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  HttpServletRequest <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#a0eca1b2b57ba746cb483f72709076515">getHttpServletRequest</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classorg_1_1openzal_1_1zal_1_1_continuation.html">Continuation</a> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#a8af4e7d90b3547e4875759024f0a9083">getContinuation</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_continuation.html">Continuation</a> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#a8af4e7d90b3547e4875759024f0a9083">getContinuation</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">boolean</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#ac6cf36503eb1d7ab0f0f2ce4e74ce77d">isDelegatedAuth</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('_zimbra_context_8java_source.html','')
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context_html_a94827779f4c08b7b04d7a5efe3f9306d"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#a94827779f4c08b7b04d7a5efe3f9306d">org.openzal.zal.soap.ZimbraContext.getTargetAccountId</a></div><div class="ttdeci">String getTargetAccountId()</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context_html_ac6cf36503eb1d7ab0f0f2ce4e74ce77d"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#ac6cf36503eb1d7ab0f0f2ce4e74ce77d">org.openzal.zal.soap.ZimbraContext.isDelegatedAuth</a></div><div class="ttdeci">boolean isDelegatedAuth()</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_node_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_node.html">org.openzal.zal.soap.SoapNode</a></div><div class="ttdef"><b>Definition:</b> <a href="_soap_node_8java_source.html#l00025">SoapNode.java:25</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_continuation_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_continuation.html">org.openzal.zal.Continuation</a></div><div class="ttdef"><b>Definition:</b> <a href="_continuation_8java_source.html#l00035">Continuation.java:35</a></div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_continuation_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_continuation.html">org.openzal.zal.Continuation</a></div><div class="ttdef"><b>Definition:</b> <a href="_continuation_8java_source.html#l00023">Continuation.java:23</a></div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context_html_a0eca1b2b57ba746cb483f72709076515"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#a0eca1b2b57ba746cb483f72709076515">org.openzal.zal.soap.ZimbraContext.getHttpServletRequest</a></div><div class="ttdeci">HttpServletRequest getHttpServletRequest()</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context_html_ae81473e69d7ce3ddf579d59b3037833a"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#ae81473e69d7ce3ddf579d59b3037833a">org.openzal.zal.soap.ZimbraContext.getAuthenticatedAccontId</a></div><div class="ttdeci">String getAuthenticatedAccontId()</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context_html_aace839d9eef3e6ae582fe967dff09dbf"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#aace839d9eef3e6ae582fe967dff09dbf">org.openzal.zal.soap.ZimbraContext.execLocalRequest</a></div><div class="ttdeci">SoapResponse execLocalRequest()</div></div>

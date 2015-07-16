@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_auth_provider_8java_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_auth_provider_8java_source.html','');
 <div class="contents">
 <a href="_auth_provider_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -131,34 +131,72 @@ $(document).ready(function(){initNavTree('_auth_provider_8java_source.html','');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">package </span>org.openzal.zal;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> com.zimbra.common.service.ServiceException;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html">   29</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html">AuthProvider</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#afe135b362255f1840eab69760288bbb5">   32</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_z_auth_token.html">ZAuthToken</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#afe135b362255f1840eab69760288bbb5">getAuthToken</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> requester)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_z_auth_token.html">ZAuthToken</a>(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        com.zimbra.cs.service.AuthProvider.getAuthToken(</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          requester.toZimbra(com.zimbra.cs.account.Account.class),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          true</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        ).toZAuthToken());</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> com.google.inject.Singleton;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> com.zimbra.cs.account.AuthTokenException;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> com.zimbra.cs.service.AuthProviderException;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> com.zimbra.common.service.ServiceException;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;@Singleton</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html">   33</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html">AuthProvider</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#afe135b362255f1840eab69760288bbb5">   36</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_z_auth_token.html">ZAuthToken</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#afe135b362255f1840eab69760288bbb5">getAuthToken</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> requester)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_z_auth_token.html">ZAuthToken</a>(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        com.zimbra.cs.service.AuthProvider.getAuthToken(</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          requester.toZimbra(com.zimbra.cs.account.Account.class),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          true</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        ).toZAuthToken());</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_account_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_account.html">org.openzal.zal.Account</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_8java_source.html#l00044">Account.java:44</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_provider_html_afe135b362255f1840eab69760288bbb5"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#afe135b362255f1840eab69760288bbb5">org.openzal.zal.AuthProvider.getAuthToken</a></div><div class="ttdeci">static ZAuthToken getAuthToken(@NotNull Account requester)</div><div class="ttdef"><b>Definition:</b> <a href="_auth_provider_8java_source.html#l00032">AuthProvider.java:32</a></div></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#a153510f78a678a8f50b147e6f5cc5c07">   53</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_token.html">AuthToken</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#a153510f78a678a8f50b147e6f5cc5c07">decodeAuthToken</a>(@NotNull String encoded)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_token.html">AuthToken</a>(com.zimbra.cs.account.AuthToken.getAuthToken(encoded));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">catch</span> (AuthTokenException e)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#addb93d93656e28f6e9637b7d4cce5dfe">   66</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_token.html">AuthToken</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#addb93d93656e28f6e9637b7d4cce5dfe">createAuthTokenForAccount</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1_account.html">Account</a> account)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_auth_token.html">AuthToken</a>(</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        com.zimbra.cs.service.AuthProvider.getAuthToken(</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          account.toZimbra(com.zimbra.cs.account.Account.class),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          true</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        )</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">catch</span> (AuthProviderException e)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_account_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_account.html">org.openzal.zal.Account</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_8java_source.html#l00046">Account.java:46</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_provider_html_afe135b362255f1840eab69760288bbb5"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#afe135b362255f1840eab69760288bbb5">org.openzal.zal.AuthProvider.getAuthToken</a></div><div class="ttdeci">static ZAuthToken getAuthToken(@NotNull Account requester)</div><div class="ttdef"><b>Definition:</b> <a href="_auth_provider_8java_source.html#l00036">AuthProvider.java:36</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_provider_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html">org.openzal.zal.AuthProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="_auth_provider_8java_source.html#l00029">AuthProvider.java:29</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_provider_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html">org.openzal.zal.AuthProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="_auth_provider_8java_source.html#l00033">AuthProvider.java:33</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_provider_html_addb93d93656e28f6e9637b7d4cce5dfe"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#addb93d93656e28f6e9637b7d4cce5dfe">org.openzal.zal.AuthProvider.createAuthTokenForAccount</a></div><div class="ttdeci">AuthToken createAuthTokenForAccount(@NotNull Account account)</div><div class="ttdef"><b>Definition:</b> <a href="_auth_provider_8java_source.html#l00066">AuthProvider.java:66</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_z_auth_token_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_z_auth_token.html">org.openzal.zal.ZAuthToken</a></div><div class="ttdef"><b>Definition:</b> <a href="_z_auth_token_8java_source.html#l00025">ZAuthToken.java:25</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_token_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_token.html">org.openzal.zal.AuthToken</a></div><div class="ttdef"><b>Definition:</b> <a href="_auth_token_8java_source.html#l00027">AuthToken.java:27</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_auth_provider_html_a153510f78a678a8f50b147e6f5cc5c07"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#a153510f78a678a8f50b147e6f5cc5c07">org.openzal.zal.AuthProvider.decodeAuthToken</a></div><div class="ttdeci">AuthToken decodeAuthToken(@NotNull String encoded)</div><div class="ttdef"><b>Definition:</b> <a href="_auth_provider_8java_source.html#l00053">AuthProvider.java:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['oc_5fzimbraaccount',['OC_zimbraAccount',['../classorg_1_1openzal_1_1zal_1_1_attribute_class.html#af75cdcd17b38f314224e63384c09cb10',1,'org::openzal::zal::AttributeClass']]],
+  ['one_5fday',['ONE_DAY',['../interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a3ff5752dfd71d092b72c3c60021640eb',1,'org::openzal::zal::lib::Clock']]],
   ['op_5fabort_5ftxn',['OP_ABORT_TXN',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#ad6ea5587c101a1536921c6c0ecb07aeb',1,'org::openzal::zal::redolog::Redolog']]],
   ['op_5fadd_5fdocument_5frevision',['OP_ADD_DOCUMENT_REVISION',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#ae4e4c14400adf66cef25d3b2b704d4d1',1,'org::openzal::zal::redolog::Redolog']]],
   ['op_5falter_5fitem_5ftag',['OP_ALTER_ITEM_TAG',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#af0cb3be78d087be18313cdbad20fd98f',1,'org::openzal::zal::redolog::Redolog']]],
@@ -90,5 +91,6 @@ var searchData=
   ['op_5funlock_5fitem',['OP_UNLOCK_ITEM',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#a788c71b96153bedf8957fd89260018ef',1,'org::openzal::zal::redolog::Redolog']]],
   ['op_5funwatch',['OP_UNWATCH',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#a4864f05aea22380f3a44f91d2423ece8',1,'org::openzal::zal::redolog::Redolog']]],
   ['op_5fwatch',['OP_WATCH',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#ae9a023417825e31aefa9ab27d6c1ad17',1,'org::openzal::zal::redolog::Redolog']]],
+  ['optional',['Optional',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html#ab70ca86f237de04e1d9e31177b38b1a3',1,'org::openzal::zal::calendar::AttendeeType']]],
   ['orange',['ORANGE',['../classorg_1_1openzal_1_1zal_1_1_item_1_1_color.html#a17576bbf9487cad975e346be9b63851b',1,'org::openzal::zal::Item::Color']]]
 ];

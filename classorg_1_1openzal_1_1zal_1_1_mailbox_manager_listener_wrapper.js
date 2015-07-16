@@ -6,5 +6,6 @@ var classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper =
     [ "mailboxAvailable", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a20e6847f6a4fc8ed64cf79c281cfa500", null ],
     [ "mailboxCreated", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a4d09f9633bfcc97227301bff0ffeb880", null ],
     [ "mailboxDeleted", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#afde275c900b481d2a0ad4f7df71797ff", null ],
-    [ "mailboxLoaded", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a92000cebd2b612dc198484c45d38b89e", null ]
+    [ "mailboxLoaded", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a92000cebd2b612dc198484c45d38b89e", null ],
+    [ "notifyExistingMailboxesAndStopTracking", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html#a65a147ddf17a2c34f241237d2dd76e4d", null ]
 ];

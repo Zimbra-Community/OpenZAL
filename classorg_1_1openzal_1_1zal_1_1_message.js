@@ -12,5 +12,6 @@ var classorg_1_1openzal_1_1zal_1_1_message =
     [ "getSender", "classorg_1_1openzal_1_1zal_1_1_message.html#acf3067f7435f0cf597c2eca726487a25", null ],
     [ "getSortRecipients", "classorg_1_1openzal_1_1zal_1_1_message.html#addf879adedc70c51b5fbc2b22bffc5fb", null ],
     [ "hasCalendarItemInfos", "classorg_1_1openzal_1_1zal_1_1_message.html#aba015f6dce3856ba82db213e3f0bec2d", null ],
+    [ "isFlagged", "classorg_1_1openzal_1_1zal_1_1_message.html#a63458a60ec769e91723da98fc86721e2", null ],
     [ "isInvite", "classorg_1_1openzal_1_1zal_1_1_message.html#a4e4f4e458fe22c73e7d96e7d2c3b5ebe", null ]
 ];

@@ -12,7 +12,8 @@ var indexSectionsWithContent =
   2: "o",
   3: "abcdefghijlmnopqrstuvwxz",
   4: "[abcdefghilmnopqrstuvwxz",
-  5: "abcdefghiklmnoprstuvwxyz"
+  5: "abcdefghiklmnoprstuvwxyz",
+  6: "r"
 };
 
 var indexSectionNames =
@@ -22,7 +23,8 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "variables"
+  5: "variables",
+  6: "enumvalues"
 };
 
 function convertToId(search)

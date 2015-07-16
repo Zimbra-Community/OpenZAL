@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_attendee_8java_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_attendee_8java_source.html','');});
 <div class="contents">
 <a href="_attendee_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2014 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -130,48 +130,77 @@ $(document).ready(function(){initNavTree('_attendee_8java_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceorg_1_1openzal_1_1zal_1_1calendar.html">   21</a></span>&#160;<span class="keyword">package </span>org.openzal.zal.calendar;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> com.zimbra.cs.mailbox.calendar.ZOrganizer;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html">   26</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html">Attendee</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#af7105ae6c4a4464a6785bd14786cca5b">   28</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#af7105ae6c4a4464a6785bd14786cca5b">getAddress</a>()</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> mAddress;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a105a45d4fb2675d118e7ce09f86266e9">   33</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a105a45d4fb2675d118e7ce09f86266e9">getName</a>()</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> mName;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a3542c8fe22165e5be6461764dedf86ea">   38</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">AttendeeInviteStatus</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a3542c8fe22165e5be6461764dedf86ea">getStatus</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> mStatus;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> String               mAddress;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> String               mName;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">AttendeeInviteStatus</a> mStatus;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">   47</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">Attendee</a>(String address, String name, <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">AttendeeInviteStatus</a> status)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    mAddress = (address == null) ? <span class="stringliteral">&quot;&quot;</span> : address.replaceAll(<span class="stringliteral">&quot;;&quot;</span>,<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    mName = (name == null) ? <span class="stringliteral">&quot;&quot;</span> : name;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    mStatus = status;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  ZOrganizer toZOrganizer()</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> ZOrganizer(mAddress, mName);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html">org.openzal.zal.calendar.Attendee</a></div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00026">Attendee.java:26</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_af7105ae6c4a4464a6785bd14786cca5b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#af7105ae6c4a4464a6785bd14786cca5b">org.openzal.zal.calendar.Attendee.getAddress</a></div><div class="ttdeci">String getAddress()</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00028">Attendee.java:28</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_a8917dd5245677e88af8a5a56c9860199"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">org.openzal.zal.calendar.Attendee.Attendee</a></div><div class="ttdeci">Attendee(String address, String name, AttendeeInviteStatus status)</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00047">Attendee.java:47</a></div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> com.fasterxml.jackson.annotation.JsonCreator;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> com.fasterxml.jackson.annotation.JsonProperty;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> com.zimbra.cs.mailbox.calendar.ZOrganizer;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.Nullable;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html">   29</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html">Attendee</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#af7105ae6c4a4464a6785bd14786cca5b">   31</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#af7105ae6c4a4464a6785bd14786cca5b">getAddress</a>()</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> mAddress;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a105a45d4fb2675d118e7ce09f86266e9">   36</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a105a45d4fb2675d118e7ce09f86266e9">getName</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> mName;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a3542c8fe22165e5be6461764dedf86ea">   41</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">AttendeeInviteStatus</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a3542c8fe22165e5be6461764dedf86ea">getStatus</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> mStatus;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a88f7cdba21c31ebdefed3b0b22bf74f0">   46</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html">AttendeeType</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a88f7cdba21c31ebdefed3b0b22bf74f0">getType</a>()</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> mType;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html">AttendeeType</a>         mType;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> String               mAddress;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> String               mName;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">private</span> <span class="keyword">final</span> <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">AttendeeInviteStatus</a> mStatus;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">   56</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">Attendee</a>(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    String address,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    String name,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">AttendeeInviteStatus</a> status</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  )</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">this</span>(address, name, status, <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html#a43fb997cbd9cad314b9cbb74406662c3">AttendeeType.Required</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  @JsonCreator</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#ae2c5783489df40956303fa7c3a603f4b">   66</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#ae2c5783489df40956303fa7c3a603f4b">Attendee</a>(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    @JsonProperty(<span class="stringliteral">&quot;address&quot;</span>) String address,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    @JsonProperty(<span class="stringliteral">&quot;name&quot;</span>) String name,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    @JsonProperty(<span class="stringliteral">&quot;status&quot;</span>) <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">AttendeeInviteStatus</a> status,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    @JsonProperty(<span class="stringliteral">&quot;type&quot;</span>) <a class="code" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html">AttendeeType</a> type</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  )</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    mType = type;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    mAddress = (address == null) ? <span class="stringliteral">&quot;&quot;</span> : address;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    mName = (name == null) ? <span class="stringliteral">&quot;&quot;</span> : name;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    mStatus = status;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ZOrganizer toZOrganizer()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> ZOrganizer(mAddress, mName);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html">org.openzal.zal.calendar.Attendee</a></div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00029">Attendee.java:29</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_af7105ae6c4a4464a6785bd14786cca5b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#af7105ae6c4a4464a6785bd14786cca5b">org.openzal.zal.calendar.Attendee.getAddress</a></div><div class="ttdeci">String getAddress()</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00031">Attendee.java:31</a></div></div>
+<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type_html_a43fb997cbd9cad314b9cbb74406662c3"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html#a43fb997cbd9cad314b9cbb74406662c3">org.openzal.zal.calendar.AttendeeType.Required</a></div><div class="ttdeci">Required</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_type_8java_source.html#l00025">AttendeeType.java:25</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_ae2c5783489df40956303fa7c3a603f4b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#ae2c5783489df40956303fa7c3a603f4b">org.openzal.zal.calendar.Attendee.Attendee</a></div><div class="ttdeci">Attendee(@JsonProperty(&quot;address&quot;) String address,@JsonProperty(&quot;name&quot;) String name,@JsonProperty(&quot;status&quot;) AttendeeInviteStatus status,@JsonProperty(&quot;type&quot;) AttendeeType type)</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00066">Attendee.java:66</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_a8917dd5245677e88af8a5a56c9860199"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">org.openzal.zal.calendar.Attendee.Attendee</a></div><div class="ttdeci">Attendee(String address, String name, AttendeeInviteStatus status)</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00056">Attendee.java:56</a></div></div>
 <div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status_html"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html">org.openzal.zal.calendar.AttendeeInviteStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="_attendee_invite_status_8java_source.html#l00028">AttendeeInviteStatus.java:28</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_a3542c8fe22165e5be6461764dedf86ea"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a3542c8fe22165e5be6461764dedf86ea">org.openzal.zal.calendar.Attendee.getStatus</a></div><div class="ttdeci">AttendeeInviteStatus getStatus()</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00038">Attendee.java:38</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_a105a45d4fb2675d118e7ce09f86266e9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a105a45d4fb2675d118e7ce09f86266e9">org.openzal.zal.calendar.Attendee.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00033">Attendee.java:33</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_a3542c8fe22165e5be6461764dedf86ea"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a3542c8fe22165e5be6461764dedf86ea">org.openzal.zal.calendar.Attendee.getStatus</a></div><div class="ttdeci">AttendeeInviteStatus getStatus()</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00041">Attendee.java:41</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_a88f7cdba21c31ebdefed3b0b22bf74f0"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a88f7cdba21c31ebdefed3b0b22bf74f0">org.openzal.zal.calendar.Attendee.getType</a></div><div class="ttdeci">AttendeeType getType()</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00046">Attendee.java:46</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_html_a105a45d4fb2675d118e7ce09f86266e9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a105a45d4fb2675d118e7ce09f86266e9">org.openzal.zal.calendar.Attendee.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_attendee_8java_source.html#l00036">Attendee.java:36</a></div></div>
+<div class="ttc" id="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type_html"><div class="ttname"><a href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html">org.openzal.zal.calendar.AttendeeType</a></div><div class="ttdef"><b>Definition:</b> <a href="_attendee_type_8java_source.html#l00023">AttendeeType.java:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.8.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -81,6 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -182,6 +183,12 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#aabd3880c9443ba029ad74099411a0f41">org.openzal.zal.soap.InternalOverrideAdminDocumentHandler</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_handler.html#a57e311429989bf881dd4840d9337d135">org.openzal.zal.soap.InternalOverrideDocumentHandler</a>
 </li>
+<li>canRead()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad68c64c7af81261f761e03adb1c4263f">org.openzal.zal.Mailbox</a>
+</li>
+<li>canWrite()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ab5467c93c6a370d7c4d2c00fa3452536">org.openzal.zal.Mailbox</a>
+</li>
 <li>ChangePasswordAccountException()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_change_password_account_exception.html#a6a3850e0845b70eb7d66912f536360e5">org.openzal.zal.exceptions.ChangePasswordAccountException</a>
 </li>
@@ -190,6 +197,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>CHAT
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ab52d53625de83db154bffb5223ea2a87">org.openzal.zal.MailItemType</a>
+</li>
+<li>checkAuthTokenValidityValue()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_account.html#a97e1fe35a8b6bc23cec78ca600e0186e">org.openzal.zal.Account</a>
 </li>
 <li>Checkpoint()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1redolog_1_1op_1_1_checkpoint.html#a4600a448b38db2138c842ae55276d8a1">org.openzal.zal.redolog.op.Checkpoint</a>
@@ -208,6 +218,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>close()
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_connection.html#a053fc715d062fb87f85092610dc197e9">org.openzal.zal.Connection</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_fake_query_results.html#a541a637e0aca805e9a6a7154114fb6ba">org.openzal.zal.FakeQueryResults</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_connection_wrapper.html#a96d14dd2801bd66d987f892fe4dd3b85">org.openzal.zal.lib.ZimbraConnectionWrapper</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_query_results.html#a4680c0204c363427bf07ed575abef80b">org.openzal.zal.QueryResults</a>
 </li>
@@ -279,7 +290,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="enumorg_1_1openzal_1_1zal_1_1_contact_group_1_1_type.html#ad1f7ee58539a5e80dff11a45491447aa">org.openzal.zal.ContactGroup.Type</a>
 </li>
 <li>ContactAttachment()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact_1_1_contact_attachment.html#af5419045eb72117e5a221aea0974243a">org.openzal.zal.Contact.ContactAttachment</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact_1_1_contact_attachment.html#a7e5e37af73c08cfdcbf160653cc980ab">org.openzal.zal.Contact.ContactAttachment</a>
 </li>
 <li>ContactGroup()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact_group.html#a71bb24b07f0a3d2d440cc7c7f23a12d7">org.openzal.zal.ContactGroup</a>
@@ -290,8 +301,8 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>Context()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_wiki_template_1_1_context.html#a632c1345d247bf42eba547697d738ebb">org.openzal.zal.WikiTemplate.Context</a>
 </li>
-<li>Continuation()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_continuation.html#a15d5e3218df63531bc7f94e8dc37b0e6">org.openzal.zal.Continuation</a>
+<li>ContinuationJetty()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_continuation_jetty.html#a527901c372b1366d3f38e353f38cfcd1">org.openzal.zal.ContinuationJetty</a>
 </li>
 <li>ContinuationThrowable()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_continuation_throwable.html#a35de3f9dc73ec9e5c94f8db726fffef1">org.openzal.zal.ContinuationThrowable</a>
@@ -346,6 +357,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>createAppointment()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html#a78a73f2f8115550dfd0f5ae3886ca5a2">org.openzal.zal.calendar.InviteFactory</a>
 </li>
+<li>createAuthTokenForAccount()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#addb93d93656e28f6e9637b7d4cce5dfe">org.openzal.zal.AuthProvider</a>
+</li>
 <li>createCalendarMessage()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_calendar_mime.html#ac356c88f58a288885f31641a5aaabda7">org.openzal.zal.calendar.CalendarMime</a>
 </li>
@@ -353,7 +367,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a148c8af372f240a18a033000ceb1bb71">org.openzal.zal.Provisioning</a>
 </li>
 <li>createChat()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#adb16876dc30850b72273c5401f365d72">org.openzal.zal.Mailbox</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a42d83e08205dc45531e1b81cd02ef512">org.openzal.zal.Mailbox</a>
 </li>
 <li>createComment()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a5be2738716aae38f0cec0e31d8b0ab5a">org.openzal.zal.Mailbox</a>
@@ -405,7 +419,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_response_simple.html#ab95384e29419bcbcc50d4a8a79c81b4d">org.openzal.zal.soap.SoapResponseSimple</a>
 </li>
 <li>createNoSuchZimletException()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html#a0a34aeb8785777b939521f3e0660b379">org.openzal.zal.exceptions.ExceptionWrapper</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html#a4d0b5d7b957dc787c4e89374293cdf80">org.openzal.zal.exceptions.ExceptionWrapper</a>
 </li>
 <li>createNote()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a3afee81378a993ff4a873dd7d449abb6">org.openzal.zal.Mailbox</a>
@@ -430,15 +444,15 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>createUnableToFindDistributionList()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html#aa3305574803a70e1a94084238ad07706">org.openzal.zal.exceptions.ExceptionWrapper</a>
-, <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception_factory.html#a25f5f98c9a236f938e2399d552bf59ae">org.openzal.zal.exceptions.ZimbraExceptionFactory</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception_factory.html#a4d26526e42dc29a8ecb6c216723f6e80">org.openzal.zal.exceptions.ZimbraExceptionFactory</a>
 </li>
 <li>createUnableToObtainDBConnection()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html#ad8fb7a8e07d0654eac0d4242bad05302">org.openzal.zal.exceptions.ExceptionWrapper</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception_factory.html#a4c2bd1b6f594daeb235f504680d7004e">org.openzal.zal.exceptions.ZimbraExceptionFactory</a>
 </li>
 <li>createUnableToSanitizeFolder()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html#ad04446a967ddcbcd984cf31f47f595d1">org.openzal.zal.exceptions.ExceptionWrapper</a>
-, <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception_factory.html#aac661a26684b3a479e36daad7cda9a61">org.openzal.zal.exceptions.ZimbraExceptionFactory</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html#ac798949f7df12c0608aaba7779e5a2b6">org.openzal.zal.exceptions.ExceptionWrapper</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception_factory.html#ae0f66cac718d2457636fc95b599b9192">org.openzal.zal.exceptions.ZimbraExceptionFactory</a>
 </li>
 <li>createZContext()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a739d301150366e88bfe3757dda92d2ab">org.openzal.zal.Provisioning</a>
@@ -469,7 +483,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_zal_version.html#a10f327508b9a1a0d060daf91e10fe8cf">org.openzal.zal.ZalVersion</a>
 </li>
 <li>CustomMetadata()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item_1_1_custom_metadata.html#a4c6eca4c384710edf5074b9b210d8d2f">org.openzal.zal.Item.CustomMetadata</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item_1_1_custom_metadata.html#aa97e6c262c750556d737c27b9c422ee6">org.openzal.zal.Item.CustomMetadata</a>
 </li>
 </ul>
 </div><!-- contents -->

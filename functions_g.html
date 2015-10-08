@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.8.1</span>
+   &#160;<span id="projectnumber">1.9.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -352,11 +352,15 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getBitmask()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_tag.html#a67394ba925f217998f00473b59795233">org.openzal.zal.Tag</a>
 </li>
+<li>getBlobBuilder()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a51029be25155f6d817b4513f842bd03d">org.openzal.zal.FileBlobStoreWrapImpl</a>
+</li>
 <li>getBlobDir()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html#a9cb834fc6e8bf8ebc57e67509f800394">org.openzal.zal.StoreVolume</a>
 </li>
 <li>getBlobPath()
-: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a65802f4fb3b23c25c2bfe9099d92a7ff">org.openzal.zal.StoreManager</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a6b8ee3adcb569b872da8b90b2740ff2c">org.openzal.zal.FileBlobStoreWrapImpl</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a65802f4fb3b23c25c2bfe9099d92a7ff">org.openzal.zal.StoreManager</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a875ad08027dc1503fe67b743a3f25f1e">org.openzal.zal.StoreManagerImp</a>
 </li>
 <li>getBody()
@@ -477,6 +481,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getContent()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_contact_1_1_contact_attachment.html#aeab7629abc562e0b5315db786d0b6f38">org.openzal.zal.Contact.ContactAttachment</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a56402c9c79b9b8e471a5ec20da32ab1b">org.openzal.zal.FileBlobStoreWrapImpl</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item.html#acb18c2dbd5a8a51dd64cb5e661f48d8d">org.openzal.zal.Item</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#afef8749bae0cb74f5871b9a15875fa26">org.openzal.zal.Utils</a>
 </li>
@@ -549,9 +554,17 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getCurrentSecondaryMessageVolume()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html#a906d24bc734372b501ddaf1ce864ac33">org.openzal.zal.StoreVolume</a>
 </li>
+<li>getCurrentSecondaryVolume()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a19c5c60b8015610c84a9d67dff4c3f1a">org.openzal.zal.StoreManager</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a09a98e88d4b5d9065e37bef03532b87c">org.openzal.zal.StoreManagerImp</a>
+</li>
 <li>getCurrentTime()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html#a329b98159ede8a2010ac9e5dc781ecae">org.openzal.zal.lib.ActualClock</a>
 , <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#af979583b8286ad62312fe08c20fed607">org.openzal.zal.lib.Clock</a>
+</li>
+<li>getCurrentVolume()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a3d62212ef490daa7ad019f81e3490042">org.openzal.zal.StoreManager</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#aa88b396328f09c7365badae7c63a31e4">org.openzal.zal.StoreManagerImp</a>
 </li>
 <li>getCurrentVolumes()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a767a72dce514da164bdc2d3148b8557e">org.openzal.zal.lib.ZimbraDatabase</a>
@@ -717,11 +730,15 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getFileBits()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html#a9e85abfe189c2e9a0393ec0dc9c29260">org.openzal.zal.StoreVolume</a>
 </li>
+<li>getFileBlobStore()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#ad34bc0067456dfa8123917d5976e449e">org.openzal.zal.StoreManagerImp</a>
+</li>
 <li>getFileGroupBits()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html#afae15e751ca429eee4de12acc8354a92">org.openzal.zal.StoreVolume</a>
 </li>
 <li>getFilename()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a290b4e84085fd50c31c496781b3b1579">org.openzal.zal.MPartInfo</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a173d90244a7170fc96908a04911ebb92">org.openzal.zal.FileBlobStoreWrapImpl</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a290b4e84085fd50c31c496781b3b1579">org.openzal.zal.MPartInfo</a>
 </li>
 <li>getFilePointer()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_input.html#a99587597dab2f4f2ed7d4408bee4e10b">org.openzal.zal.redolog.RedoLogInput</a>
@@ -756,6 +773,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getFrequency()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_rule.html#aaf47979b445c208a95998bec0cd73c82">org.openzal.zal.calendar.RecurrenceRule</a>
+</li>
+<li>getFriendlyEmailAddress()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_identity.html#a4a54133b3dc11437abe7bddb486ab8e6">org.openzal.zal.Identity</a>
 </li>
 <li>getGlobalGrant()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#ae295f80182738e0f3d18fac11714987d">org.openzal.zal.Provisioning</a>
@@ -935,7 +955,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a8027acba5aa15af5a8e34c66ff619d1a">org.openzal.zal.Mailbox</a>
 </li>
 <li>getMailboxBlob()
-: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a27b22de27547e709acf7b73b3baedc19">org.openzal.zal.StoreManager</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a740725995a6d7e86c3b783a66aaf0525">org.openzal.zal.FileBlobStoreWrapImpl</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a27b22de27547e709acf7b73b3baedc19">org.openzal.zal.StoreManager</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a6140958d62458a1f20d7b3b0edbac062">org.openzal.zal.StoreManagerImp</a>
 </li>
 <li>getMailboxByAccount()
@@ -1046,7 +1067,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getMimeMessage()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_calendar_item.html#aeea722e831dcef2587a2be15e66c2e5d">org.openzal.zal.CalendarItem</a>
-, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_message.html#adfcf5737ae4a46d6e988e6a02608555f">org.openzal.zal.Message</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_message.html#a71d472bb2023e711e0512119a7bfc2b2">org.openzal.zal.Message</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8">org.openzal.zal.ParsedMessage</a>
 </li>
 <li>getMimePart()
@@ -1139,7 +1160,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_zimlet_file.html#acfcde345bc4c8b0d1cad29d9bbfa496a">org.openzal.zal.ZimletFile</a>
 </li>
 <li>getNameForType()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item.html#a6e8a72119641cef8530ac68456185bbd">org.openzal.zal.Item</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item.html#a84d1d4f0e357d4d6d7897ce30d890ebc">org.openzal.zal.Item</a>
 </li>
 <li>getNamespace()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_q_name.html#af309b379756dfb0c76fb463d93e0af5f">org.openzal.zal.soap.QName</a>
@@ -1339,6 +1360,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getRootPath()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html#a67691427925a9021286970e57b5881c5">org.openzal.zal.StoreVolume</a>
 </li>
+<li>getSavedSequence()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item.html#a162dbbcd2890dbf23d54b2ab95ae3a98">org.openzal.zal.Item</a>
+</li>
 <li>getSchemaGroupId()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a28c1be825164c52019d0414196c5ac84">org.openzal.zal.Mailbox</a>
 </li>
@@ -1457,7 +1481,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context_simple.html#a4b83932bc3f21832533b29f63c282826">org.openzal.zal.soap.ZimbraContextSimple</a>
 </li>
 <li>getSynchronizer()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a37b5565547e99beabb46f5cad452de18">org.openzal.zal.lib.ZimbraDatabase</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#a5b6770295611ed24edce6f05d00fd2f3">org.openzal.zal.lib.ZimbraDatabase</a>
 </li>
 <li>getTagBitmask()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item.html#ac4cf7a875d05c499f302bb3bd5c5d063">org.openzal.zal.Item</a>
@@ -1584,6 +1608,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getZimbraDatabase()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#ab37b7841a582aee67497ff2e1fa6545b">org.openzal.zal.extension.Zimbra</a>
+</li>
+<li>getZimbraItemId()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_search_hit.html#a634bcb42f3fce21ae4f226b46b41b50a">org.openzal.zal.SearchHit</a>
 </li>
 <li>getZimbraUser()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html#a25f11be2c614cd12c26fd935966748e5">org.openzal.zal.Provisioning</a>

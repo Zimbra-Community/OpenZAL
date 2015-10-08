@@ -31,6 +31,7 @@ var classorg_1_1openzal_1_1zal_1_1_item =
     [ "getNameForType", "classorg_1_1openzal_1_1zal_1_1_item.html#a84d1d4f0e357d4d6d7897ce30d890ebc", null ],
     [ "getParentId", "classorg_1_1openzal_1_1zal_1_1_item.html#a107ee838532a6926730e0a08fcb15fc1", null ],
     [ "getPath", "classorg_1_1openzal_1_1zal_1_1_item.html#a6151a3d01dd110a6b37c2b9fdcfc5859", null ],
+    [ "getSavedSequence", "classorg_1_1openzal_1_1zal_1_1_item.html#a162dbbcd2890dbf23d54b2ab95ae3a98", null ],
     [ "getSize", "classorg_1_1openzal_1_1zal_1_1_item.html#a2a863548ff0862dc67d48a251e2eeb42", null ],
     [ "getSubject", "classorg_1_1openzal_1_1zal_1_1_item.html#ad01102da03cddf402b64731551903a72", null ],
     [ "getTagBitmask", "classorg_1_1openzal_1_1zal_1_1_item.html#ac4cf7a875d05c499f302bb3bd5c5d063", null ],

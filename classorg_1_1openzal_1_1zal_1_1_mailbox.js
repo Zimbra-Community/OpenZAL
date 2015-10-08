@@ -89,6 +89,7 @@ var classorg_1_1openzal_1_1zal_1_1_mailbox =
     [ "removeConfig", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7cc72393c13ca3036ed1048975bbcbcf", null ],
     [ "rename", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a35a06845daa395b75bbf6975291894a3", null ],
     [ "search", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a22f94a104a34b4e6c8049f089a21cbaf", null ],
+    [ "search", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7d7bda0b5cada2c28e6c4756760e0e54", null ],
     [ "sendMimeMessage", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a5636c475c003c4589a4ef5c9a4f833c2", null ],
     [ "setCalendarItem", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a891ccdf65f308d9150f7277c1b8237c6", null ],
     [ "setCalendarItem", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a4821d2202d011726f9a15644878a9944", null ],

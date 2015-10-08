@@ -108,6 +108,7 @@ var searchData=
   ['orange',['ORANGE',['../classorg_1_1openzal_1_1zal_1_1_item_1_1_color.html#a17576bbf9487cad975e346be9b63851b',1,'org::openzal::zal::Item::Color']]],
   ['orderzimletsbypriority',['orderZimletsByPriority',['../classorg_1_1openzal_1_1zal_1_1_utils.html#a98b86abc51dadf600220754f0b4497c9',1,'org::openzal::zal::Utils']]],
   ['org',['org',['../namespaceorg.html',1,'']]],
+  ['overrideextensionmap',['overrideExtensionMap',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a1d1e7cabe302ab9a2945fac7a240ec6c',1,'org::openzal::zal::extension::Zimbra']]],
   ['overridensoaphandler',['OverridenSoapHandler',['../interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_overriden_soap_handler.html',1,'org::openzal::zal::soap']]],
   ['overridensoaphandler_2ejava',['OverridenSoapHandler.java',['../_overriden_soap_handler_8java.html',1,'']]],
   ['overridensoapservice',['OverridenSoapService',['../interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_overriden_soap_service.html',1,'org::openzal::zal::soap']]],

@@ -11,6 +11,7 @@ var classorg_1_1openzal_1_1zal_1_1_calendar_item =
     [ "getRecurrence", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#aa6a60b85e4603b7754aea2feccc452ce", null ],
     [ "getStartTime", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#a0b8ba81a54787b59e010d6508ccb1ebb", null ],
     [ "getUid", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#ac3c5774304e14d3c7f868498c36d1ecb", null ],
+    [ "isPublic", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#a1b2402dc801c2820f8bfaf6c3a8dda4c", null ],
     [ "isRecurring", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#ad6f79f913fa5448b5bc73d8a13c9178e", null ],
     [ "updatePartStat", "classorg_1_1openzal_1_1zal_1_1_calendar_item.html#aa285163dbc7838ecdb33a519dae9c9ee", null ]
 ];

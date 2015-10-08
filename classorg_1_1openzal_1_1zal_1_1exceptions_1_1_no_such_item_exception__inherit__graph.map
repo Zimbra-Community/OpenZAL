@@ -1,5 +1,5 @@
 <map id="org.openzal.zal.exceptions.NoSuchItemException" name="org.openzal.zal.exceptions.NoSuchItemException">
-<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception.html" title="org.openzal.zal.exceptions.\lNoSuchAppointmentException" alt="" coords="875,5,1075,46"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception.html" title="org.openzal.zal.exceptions.\lNoSuchCalendarException" alt="" coords="884,5,1065,46"/>
 <area shape="rect" id="node6" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html" title="org.openzal.zal.exceptions.\lNoSuchConversationException" alt="" coords="873,70,1077,111"/>
 <area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html" title="org.openzal.zal.exceptions.\lNoSuchFolderException" alt="" coords="884,135,1065,177"/>
 <area shape="rect" id="node8" href="$classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_message_exception.html" title="org.openzal.zal.exceptions.\lNoSuchMessageException" alt="" coords="884,201,1065,242"/>

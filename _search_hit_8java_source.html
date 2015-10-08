@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.8.1</span>
+   &#160;<span id="projectnumber">1.9.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -167,12 +167,29 @@ $(document).ready(function(){initNavTree('_search_hit_8java_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_search_hit.html#a634bcb42f3fce21ae4f226b46b41b50a">   61</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_zimbra_item_id.html">ZimbraItemId</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_search_hit.html#a634bcb42f3fce21ae4f226b46b41b50a">getZimbraItemId</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_zimbra_item_id.html">ZimbraItemId</a>(</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        mZimbraHit.getParsedItemID().getAccountId(),</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        mZimbraHit.getParsedItemID().getId()</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_search_hit_html_a634bcb42f3fce21ae4f226b46b41b50a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_search_hit.html#a634bcb42f3fce21ae4f226b46b41b50a">org.openzal.zal.SearchHit.getZimbraItemId</a></div><div class="ttdeci">ZimbraItemId getZimbraItemId()</div><div class="ttdef"><b>Definition:</b> <a href="_search_hit_8java_source.html#l00061">SearchHit.java:61</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_search_hit_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_search_hit.html">org.openzal.zal.SearchHit</a></div><div class="ttdef"><b>Definition:</b> <a href="_search_hit_8java_source.html#l00028">SearchHit.java:28</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_search_hit_html_a1b73553c18f2c3a5c80d28d40c96ba68"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_search_hit.html#a1b73553c18f2c3a5c80d28d40c96ba68">org.openzal.zal.SearchHit.getItemId</a></div><div class="ttdeci">int getItemId()</div><div class="ttdef"><b>Definition:</b> <a href="_search_hit_8java_source.html#l00049">SearchHit.java:49</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_search_hit_html_a62f5ad883d08012b3fd2f44ec8ec6270"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_search_hit.html#a62f5ad883d08012b3fd2f44ec8ec6270">org.openzal.zal.SearchHit.getMailItem</a></div><div class="ttdeci">Item getMailItem()</div><div class="ttdef"><b>Definition:</b> <a href="_search_hit_8java_source.html#l00037">SearchHit.java:37</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_item_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_item.html">org.openzal.zal.Item</a></div><div class="ttdef"><b>Definition:</b> <a href="_item_8java_source.html#l00038">Item.java:38</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_search_hit_html_a7d573418c40409f1cf178dae7f460d55"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_search_hit.html#a7d573418c40409f1cf178dae7f460d55">org.openzal.zal.SearchHit.SearchHit</a></div><div class="ttdeci">SearchHit(@NotNull Object zimbraHit)</div><div class="ttdef"><b>Definition:</b> <a href="_search_hit_8java_source.html#l00032">SearchHit.java:32</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_zimbra_item_id_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_zimbra_item_id.html">org.openzal.zal.ZimbraItemId</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimbra_item_id_8java_source.html#l00026">ZimbraItemId.java:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

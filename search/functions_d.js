@@ -4,5 +4,6 @@ var searchData=
   ['onlocalserver',['onLocalServer',['../classorg_1_1openzal_1_1zal_1_1_provisioning.html#a48e83dd4ebbf4c13679e495d7963d16a',1,'org::openzal::zal::Provisioning']]],
   ['operationcontext',['OperationContext',['../classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3',1,'org.openzal.zal.OperationContext.OperationContext(@NotNull Account account, boolean enableAdminRights)'],['../classorg_1_1openzal_1_1zal_1_1_operation_context.html#a27d5439fe0e3eed4805eb4972075c033',1,'org.openzal.zal.OperationContext.OperationContext(@NotNull Account account)']]],
   ['orderzimletsbypriority',['orderZimletsByPriority',['../classorg_1_1openzal_1_1zal_1_1_utils.html#a98b86abc51dadf600220754f0b4497c9',1,'org::openzal::zal::Utils']]],
+  ['overrideextensionmap',['overrideExtensionMap',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a1d1e7cabe302ab9a2945fac7a240ec6c',1,'org::openzal::zal::extension::Zimbra']]],
   ['overridezimbrahandler',['overrideZimbraHandler',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a7f85c45dda2c19573c04cc7cd7308928',1,'org::openzal::zal::soap::SoapServiceManager']]]
 ];

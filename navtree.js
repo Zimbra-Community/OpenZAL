@@ -23,18 +23,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_c_e_8java.html",
-"_mime_8java.html",
-"_zimlet_file_8java.html",
-"classorg_1_1openzal_1_1zal_1_1_config.html#ae4909d8f37012cf89fcee0c4e66ffdd9",
-"classorg_1_1openzal_1_1zal_1_1_grant.html#a6d15866bf50c3701f08dfa9a6b323627",
-"classorg_1_1openzal_1_1zal_1_1_mailbox.html#a58fb36d2fc7c86a6003f473f4b7f6eda",
-"classorg_1_1openzal_1_1zal_1_1_provisioning.html#a1e1103370d9103bcf58f07f6054f49f5",
-"classorg_1_1openzal_1_1zal_1_1_quota_usage.html#aefb5536bdb6b947f5ed60d2afbee4e7e",
-"classorg_1_1openzal_1_1zal_1_1calendar_1_1_calendar_item_data.html",
-"classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_item_exception.html",
-"classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#a4910fd8c0f7cd82b92099f08108ffa5d",
-"enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html#a661f505221df9685e2469876f7649577",
-"interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_context.html#a94827779f4c08b7b04d7a5efe3f9306d"
+"_metadata_8java.html",
+"_zimlet_exception_8java.html",
+"classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7",
+"classorg_1_1openzal_1_1zal_1_1_folder.html#aa43779f633866b28ffcf23b4ebcdbe43",
+"classorg_1_1openzal_1_1zal_1_1_mailbox.html#a174f04b1bda320c6b4fd206a08ad94c9",
+"classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8",
+"classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_identity.html",
+"classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a9c6bdf80d626b418fc355f95ca3f947d",
+"classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html#ad04446a967ddcbcd984cf31f47f595d1",
+"classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_input.html#a122dca0af1f7e17af994be037be40533",
+"classorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_exception_container.html#a000edbfdf7f98c1b1edb1fc8f36f042e",
+"interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html#a73407dcc93421fb80b3a0a3567b09c0e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

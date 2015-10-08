@@ -49,6 +49,7 @@ var namespaceorg_1_1openzal_1_1zal =
     [ "Entry", "classorg_1_1openzal_1_1zal_1_1_entry.html", "classorg_1_1openzal_1_1zal_1_1_entry" ],
     [ "FakeContinuation", "classorg_1_1openzal_1_1zal_1_1_fake_continuation.html", "classorg_1_1openzal_1_1zal_1_1_fake_continuation" ],
     [ "FakeQueryResults", "classorg_1_1openzal_1_1zal_1_1_fake_query_results.html", "classorg_1_1openzal_1_1zal_1_1_fake_query_results" ],
+    [ "FileBlobStoreWrapImpl", "classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html", "classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl" ],
     [ "Flag", "classorg_1_1openzal_1_1zal_1_1_flag.html", "classorg_1_1openzal_1_1zal_1_1_flag" ],
     [ "Folder", "classorg_1_1openzal_1_1zal_1_1_folder.html", "classorg_1_1openzal_1_1zal_1_1_folder" ],
     [ "FullItemInfo", "classorg_1_1openzal_1_1zal_1_1_full_item_info.html", "classorg_1_1openzal_1_1zal_1_1_full_item_info" ],

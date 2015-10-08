@@ -130,6 +130,10 @@ var dir_b1399420ac79cc000737d5217fd8c4b6 =
     [ "FakeQueryResults.java", "_fake_query_results_8java.html", [
       [ "FakeQueryResults", "classorg_1_1openzal_1_1zal_1_1_fake_query_results.html", "classorg_1_1openzal_1_1zal_1_1_fake_query_results" ]
     ] ],
+    [ "FileBlobStoreWrap.java", "_file_blob_store_wrap_8java.html", null ],
+    [ "FileBlobStoreWrapImpl.java", "_file_blob_store_wrap_impl_8java.html", [
+      [ "FileBlobStoreWrapImpl", "classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html", "classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl" ]
+    ] ],
     [ "Flag.java", "_flag_8java.html", [
       [ "Flag", "classorg_1_1openzal_1_1zal_1_1_flag.html", "classorg_1_1openzal_1_1zal_1_1_flag" ]
     ] ],

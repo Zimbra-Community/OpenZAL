@@ -5,5 +5,7 @@ var classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra =
     [ "getStoreManager", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a6250e89ab6af8b35240b5e3500764f4d", null ],
     [ "getZimbraDatabase", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#ab37b7841a582aee67497ff2e1fa6545b", null ],
     [ "isMailboxd", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a3ea5cebfbd6a7f7aebe9e32b485bf471", null ],
+    [ "overrideExtensionMap", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a1d1e7cabe302ab9a2945fac7a240ec6c", null ],
+    [ "removeExtension", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a3e5a06498b5d08fb4eda8c114e3f944e", null ],
     [ "shutdownExtension", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a9bd8dfb9108200910448bab253586fa8", null ]
 ];

@@ -17,7 +17,6 @@ var namespaceorg_1_1openzal_1_1zal_1_1exceptions =
     [ "MaintenanceModeAccountException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_maintenance_mode_account_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_maintenance_mode_account_exception" ],
     [ "NoSuchAccountException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_account_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_account_exception" ],
     [ "NoSuchAliasException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception" ],
-    [ "NoSuchAppointmentException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_appointment_exception" ],
     [ "NoSuchBlobException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_blob_exception" ],
     [ "NoSuchCalendarException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception" ],
     [ "NoSuchConversationException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception" ],

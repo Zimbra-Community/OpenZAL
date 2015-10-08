@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.8.1</span>
+   &#160;<span id="projectnumber">1.9.1</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -176,33 +176,35 @@ $(document).ready(function(){initNavTree('_zal_entrypoint_8java_source.html','')
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Zimbra version mismatch - ZAL built for Zimbra: &quot;</span> + <a class="code" href="classorg_1_1openzal_1_1zal_1_1_zal_version.html">ZalVersion</a>.<a class="code" href="classorg_1_1openzal_1_1zal_1_1_zal_version.html#a6184f41f9416c0df917c3ffe6e248b2a">target</a>.<a class="code" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a91677e26bf4638f25b331a969288d1c4">toString</a>());</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      mExtensionManager.loadExtensions();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">catch</span> (IOException e)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Unable to load extension&quot;</span>, e);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  @Override</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#ae1e9b2d918597a4eb5e880fd791021e4">   80</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#ae1e9b2d918597a4eb5e880fd791021e4">postInit</a>()</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    mExtensionManager.startExtensions();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  @Override</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#a62fd9429137a01709ee061b31509a792">   86</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#a62fd9429137a01709ee061b31509a792">destroy</a>()</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    mExtensionManager.stopExtensions();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    Zimbra.overrideExtensionMap();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      mExtensionManager.loadExtensions();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">catch</span> (IOException e)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Unable to load extension&quot;</span>, e);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  @Override</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#ae1e9b2d918597a4eb5e880fd791021e4">   82</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#ae1e9b2d918597a4eb5e880fd791021e4">postInit</a>()</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    mExtensionManager.startExtensions();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  @Override</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#a62fd9429137a01709ee061b31509a792">   88</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#a62fd9429137a01709ee061b31509a792">destroy</a>()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    mExtensionManager.stopExtensions();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_zal_build_info_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_zal_build_info.html">org.openzal.zal.ZalBuildInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_zal_build_info_8java_source.html#l00023">ZalBuildInfo.java:23</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1lib_1_1_version_html_a4e1d9c3edc1c4a5ee1e1e47c9da8e40b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a4e1d9c3edc1c4a5ee1e1e47c9da8e40b">org.openzal.zal.lib.Version.equals</a></div><div class="ttdeci">boolean equals(@Nullable Object o)</div><div class="ttdef"><b>Definition:</b> <a href="_version_8java_source.html#l00163">Version.java:163</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html">org.openzal.zal.extension.ZalEntrypoint</a></div><div class="ttdef"><b>Definition:</b> <a href="_zal_entrypoint_8java_source.html#l00038">ZalEntrypoint.java:38</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_html_ad854469e02ef4b421ccd57de9b767772"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#ad854469e02ef4b421ccd57de9b767772">org.openzal.zal.extension.ZalEntrypoint.ZalEntrypoint</a></div><div class="ttdeci">ZalEntrypoint()</div><div class="ttdef"><b>Definition:</b> <a href="_zal_entrypoint_8java_source.html#l00043">ZalEntrypoint.java:43</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_html_a62fd9429137a01709ee061b31509a792"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#a62fd9429137a01709ee061b31509a792">org.openzal.zal.extension.ZalEntrypoint.destroy</a></div><div class="ttdeci">void destroy()</div><div class="ttdef"><b>Definition:</b> <a href="_zal_entrypoint_8java_source.html#l00086">ZalEntrypoint.java:86</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_html_a62fd9429137a01709ee061b31509a792"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#a62fd9429137a01709ee061b31509a792">org.openzal.zal.extension.ZalEntrypoint.destroy</a></div><div class="ttdeci">void destroy()</div><div class="ttdef"><b>Definition:</b> <a href="_zal_entrypoint_8java_source.html#l00088">ZalEntrypoint.java:88</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_zal_version_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_zal_version.html">org.openzal.zal.ZalVersion</a></div><div class="ttdef"><b>Definition:</b> <a href="_zal_version_8java_source.html#l00026">ZalVersion.java:26</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_zal_version_html_a6184f41f9416c0df917c3ffe6e248b2a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_zal_version.html#a6184f41f9416c0df917c3ffe6e248b2a">org.openzal.zal.ZalVersion.target</a></div><div class="ttdeci">static Version target</div><div class="ttdef"><b>Definition:</b> <a href="_zal_version_8java_source.html#l00029">ZalVersion.java:29</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_version_html_a41bb7bc720f17fb782982567d27bc365"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_version.html#a41bb7bc720f17fb782982567d27bc365">org.openzal.zal.lib.ZimbraVersion.current</a></div><div class="ttdeci">static ZimbraVersion current</div><div class="ttdef"><b>Definition:</b> <a href="_zimbra_version_8java_source.html#l00039">ZimbraVersion.java:39</a></div></div>
@@ -214,6 +216,6 @@ $(document).ready(function(){initNavTree('_zal_entrypoint_8java_source.html','')
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_version_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_version.html">org.openzal.zal.lib.ZimbraVersion</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimbra_version_8java_source.html#l00026">ZimbraVersion.java:26</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils.html">org.openzal.zal.tools.JarUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="_jar_utils_8java_source.html#l00041">JarUtils.java:41</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager.html">org.openzal.zal.extension.ExtensionManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_extension_manager_8java_source.html#l00039">ExtensionManager.java:39</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_html_ae1e9b2d918597a4eb5e880fd791021e4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#ae1e9b2d918597a4eb5e880fd791021e4">org.openzal.zal.extension.ZalEntrypoint.postInit</a></div><div class="ttdeci">void postInit()</div><div class="ttdef"><b>Definition:</b> <a href="_zal_entrypoint_8java_source.html#l00080">ZalEntrypoint.java:80</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_html_ae1e9b2d918597a4eb5e880fd791021e4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#ae1e9b2d918597a4eb5e880fd791021e4">org.openzal.zal.extension.ZalEntrypoint.postInit</a></div><div class="ttdeci">void postInit()</div><div class="ttdef"><b>Definition:</b> <a href="_zal_entrypoint_8java_source.html#l00082">ZalEntrypoint.java:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

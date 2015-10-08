@@ -54,6 +54,7 @@ var classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite =
     [ "hasStartTime", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#af439c4ccf888f45afcfa8adb81fc68de", null ],
     [ "isAllDayEvent", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#af6866687fa0d76cb398506a822b932fd", null ],
     [ "isCompleted", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#aa5a7889a04547d2b998d7ceef511ad79", null ],
+    [ "isPublic", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a50f74d3e01974e41c7c0f705cc6cdfd0", null ],
     [ "isRecurrence", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a5a37afd65d6d35c10a219acb82d5a854", null ],
     [ "isRecurrent", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a91a32672f81819f2f53e01f98757bae3", null ],
     [ "methodIsCancel", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ad7c66e3dfe2a80f11bebee438f0a285a", null ],

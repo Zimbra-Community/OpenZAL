@@ -3,7 +3,6 @@ var searchData=
   ['namedentrywrapper_2ejava',['NamedEntryWrapper.java',['../_named_entry_wrapper_8java.html',1,'']]],
   ['nosuchaccountexception_2ejava',['NoSuchAccountException.java',['../_no_such_account_exception_8java.html',1,'']]],
   ['nosuchaliasexception_2ejava',['NoSuchAliasException.java',['../_no_such_alias_exception_8java.html',1,'']]],
-  ['nosuchappointmentexception_2ejava',['NoSuchAppointmentException.java',['../_no_such_appointment_exception_8java.html',1,'']]],
   ['nosuchblobexception_2ejava',['NoSuchBlobException.java',['../_no_such_blob_exception_8java.html',1,'']]],
   ['nosuchcalendarexception_2ejava',['NoSuchCalendarException.java',['../_no_such_calendar_exception_8java.html',1,'']]],
   ['nosuchconversationexception_2ejava',['NoSuchConversationException.java',['../_no_such_conversation_exception_8java.html',1,'']]],

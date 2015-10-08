@@ -3,6 +3,7 @@ var searchData=
   ['fakecontinuation',['FakeContinuation',['../classorg_1_1openzal_1_1zal_1_1_fake_continuation.html#a9507fb9a1b8dae3d08a94f9834c48e42',1,'org::openzal::zal::FakeContinuation']]],
   ['fakequeryresults',['FakeQueryResults',['../classorg_1_1openzal_1_1zal_1_1_fake_query_results.html#ab47360fefc4af10e6808f3867ded04f9',1,'org::openzal::zal::FakeQueryResults']]],
   ['fatal',['fatal',['../classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log_1_1_zimbra_log_section.html#ab8afad738356bce423bf14c0f659e228',1,'org::openzal::zal::log::ZimbraLog::ZimbraLogSection']]],
+  ['fileblobstorewrapimpl',['FileBlobStoreWrapImpl',['../classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#ae9f917695455310f7bca95f725e60053',1,'org::openzal::zal::FileBlobStoreWrapImpl']]],
   ['filterout',['filterOut',['../interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_filter_3_01_t_01_4.html#a21b67f591a4ac2bed5ef3a9e1f59a35e',1,'org::openzal::zal::lib::Filter&lt; T &gt;']]],
   ['finalizeconverter',['finalizeConverter',['../classorg_1_1openzal_1_1zal_1_1log_1_1_pattern_parser.html#aecc3e01a7532bcbce2275bcd5bba04fb',1,'org::openzal::zal::log::PatternParser']]],
   ['flag',['Flag',['../classorg_1_1openzal_1_1zal_1_1_flag.html#a6d9991d337e36d2976a680b43798242b',1,'org::openzal::zal::Flag']]],

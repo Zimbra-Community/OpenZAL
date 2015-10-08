@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_filter_3_01_t_01_4.html" title="org.openzal.zal.lib.Filter\&lt; T \&gt;" alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node1" href="$interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html" title="org.openzal.zal.lib.Clock" alt="" coords="5,12,171,39"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html" title="org.openzal.zal.lib.Actual\lClock" alt="" coords="219,5,387,46"/>
 </map>

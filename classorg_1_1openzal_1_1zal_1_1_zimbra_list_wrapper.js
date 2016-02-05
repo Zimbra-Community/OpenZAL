@@ -7,7 +7,7 @@ var classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper =
     [ "wrapCalendarItems", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a9c6bdf80d626b418fc355f95ca3f947d", null ],
     [ "wrapCalendarResources", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ac9c44dad85e5238eebc8cbb70b5c1c4e", null ],
     [ "wrapCoses", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ae979d4e20f0713b4592bc2df9c7d2565", null ],
-    [ "wrapCountAccountByCosList", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ab82981e2bf1875f5084b7ea02c75998f", null ],
+    [ "wrapCountAccountByCosList", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a7e3cc32288fd153da218ccdb512fe1c3", null ],
     [ "wrapDataSources", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a84fb72f316fa593b31d50f3178a6aa60", null ],
     [ "wrapDistributionLists", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#ad7b7e593b15bffe85d847bb214e442b3", null ],
     [ "wrapDomain", "classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a9e78390777cb2beed890e99a2036b3e9", null ],

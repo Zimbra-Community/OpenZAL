@@ -5,7 +5,7 @@ var searchData=
   ['security',['security',['../classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log.html#ac17a22e418f071c9b61cbe2b8c152cf6',1,'org::openzal::zal::log::ZimbraLog']]],
   ['sequence',['sequence',['../classorg_1_1openzal_1_1zal_1_1_item_status.html#aa9ff2c1fe61beeb2fb0ec4a8716dcda3',1,'org::openzal::zal::ItemStatus']]],
   ['server',['server',['../classorg_1_1openzal_1_1zal_1_1_cache_entry_type.html#ab1308d60f2b64dbef3c7fe5233737797',1,'org.openzal.zal.CacheEntryType.server()'],['../enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html#a1ee198468ffdf47bf428743b9153b684',1,'org.openzal.zal.provisioning.TargetType.server()']]],
-  ['service_5fmailbox',['SERVICE_MAILBOX',['../classorg_1_1openzal_1_1zal_1_1_provisioning.html#a8be2714b94273ce357468abbfd0bbd89',1,'org::openzal::zal::Provisioning']]],
+  ['service_5fmailbox',['SERVICE_MAILBOX',['../classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a5c5bae21b7e262c4899074c8daecb415',1,'org::openzal::zal::ProvisioningImp']]],
   ['servicehostname',['serviceHostname',['../classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_server.html#ac73a73ea0dc216caaa8ec47a605dcb42',1,'org.openzal.zal.ProvisioningKey.ByServer.serviceHostname()'],['../classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_x_m_p_p_component.html#a7736a88d838001ef03bb8db4e1c595d1',1,'org.openzal.zal.ProvisioningKey.ByXMPPComponent.serviceHostname()']]],
   ['sinstance',['sInstance',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html#aaabc668e40bbecb3529ca73c3951e34b',1,'org::openzal::zal::lib::ActualClock']]],
   ['size',['size',['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#adeb8281b0fb057521141f3e4b2ebeb08',1,'org::openzal::zal::FullItemInfo']]],

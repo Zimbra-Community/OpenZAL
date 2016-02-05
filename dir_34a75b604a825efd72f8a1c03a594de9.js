@@ -63,6 +63,9 @@ var dir_34a75b604a825efd72f8a1c03a594de9 =
     [ "NoSuchCosException.java", "_no_such_cos_exception_8java.html", [
       [ "NoSuchCosException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_cos_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_cos_exception" ]
     ] ],
+    [ "NoSuchDistributionListException.java", "_no_such_distribution_list_exception_8java.html", [
+      [ "NoSuchDistributionListException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_distribution_list_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_distribution_list_exception" ]
+    ] ],
     [ "NoSuchDomainException.java", "_no_such_domain_exception_8java.html", [
       [ "NoSuchDomainException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception" ]
     ] ],

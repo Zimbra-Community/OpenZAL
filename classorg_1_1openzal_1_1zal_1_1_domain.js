@@ -15,6 +15,7 @@ var classorg_1_1openzal_1_1zal_1_1_domain =
     [ "getName", "classorg_1_1openzal_1_1zal_1_1_domain.html#adb63ab9ad9d51d7b39fff9e76516e22f", null ],
     [ "getPasswordChangeListener", "classorg_1_1openzal_1_1zal_1_1_domain.html#a27ae939dd9f9d1c2f19b1d20f8bf783d", null ],
     [ "getPublicHostname", "classorg_1_1openzal_1_1zal_1_1_domain.html#a7861c8934c629ba729a53bfa1f839220", null ],
+    [ "isAliasDomain", "classorg_1_1openzal_1_1zal_1_1_domain.html#af270e365cb5001a9de9a04d8971e189a", null ],
     [ "modify", "classorg_1_1openzal_1_1zal_1_1_domain.html#a4d0807b2a5e434dc266d824db522cffc", null ],
     [ "setDomainCOSMaxAccounts", "classorg_1_1openzal_1_1zal_1_1_domain.html#a7e795b095a1f881c39797ea04ca1779f", null ],
     [ "setDomainTypeAsString", "classorg_1_1openzal_1_1zal_1_1_domain.html#aa53b3481faa6722cff887aebb4815a15", null ],

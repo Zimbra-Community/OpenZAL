@@ -9,7 +9,7 @@ var searchData=
   ['oc_5fzimbraaccount',['OC_zimbraAccount',['../classorg_1_1openzal_1_1zal_1_1_attribute_class.html#af75cdcd17b38f314224e63384c09cb10',1,'org::openzal::zal::AttributeClass']]],
   ['of',['of',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ace93a764c2d11b89cea07029e1c4dce6',1,'org.openzal.zal.MailItemType.of(String itemType)'],['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a4ada5e3e5c0fe5f3ca0b11f83fde9359',1,'org.openzal.zal.MailItemType.of(byte type)']]],
   ['one_5fday',['ONE_DAY',['../interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html#a3ff5752dfd71d092b72c3c60021640eb',1,'org::openzal::zal::lib::Clock']]],
-  ['onlocalserver',['onLocalServer',['../classorg_1_1openzal_1_1zal_1_1_provisioning.html#a48e83dd4ebbf4c13679e495d7963d16a',1,'org::openzal::zal::Provisioning']]],
+  ['onlocalserver',['onLocalServer',['../interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#a48e83dd4ebbf4c13679e495d7963d16a',1,'org.openzal.zal.Provisioning.onLocalServer()'],['../classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a9079b090b1571c55b710b916fe679ecf',1,'org.openzal.zal.ProvisioningImp.onLocalServer()']]],
   ['op',['op',['../namespaceorg_1_1openzal_1_1zal_1_1redolog_1_1op.html',1,'org::openzal::zal::redolog']]],
   ['op_5fabort_5ftxn',['OP_ABORT_TXN',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#ad6ea5587c101a1536921c6c0ecb07aeb',1,'org::openzal::zal::redolog::Redolog']]],
   ['op_5fadd_5fdocument_5frevision',['OP_ADD_DOCUMENT_REVISION',['../classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog.html#ae4e4c14400adf66cef25d3b2b704d4d1',1,'org::openzal::zal::redolog::Redolog']]],

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.9.1</span>
+   &#160;<span id="projectnumber">1.10.2</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -96,6 +96,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_func_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_func_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
@@ -163,6 +165,9 @@ $(document).ready(function(){initNavTree('functions_func_d.html','');});
 <li>decodeAuthToken()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_auth_provider.html#a153510f78a678a8f50b147e6f5cc5c07">org.openzal.zal.AuthProvider</a>
 </li>
+<li>decodeHexStringToByteArray()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils.html#a739f20f2be8359a5b97427f0b253da49">org.openzal.zal.tools.JarUtils</a>
+</li>
 <li>decodeZimbraMetadata()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item.html#ab77fac786dd5213755960970b2b68b91">org.openzal.zal.Item</a>
 </li>
@@ -172,15 +177,26 @@ $(document).ready(function(){initNavTree('functions_func_d.html','');});
 <li>delete()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a03b346b592bfd24578a9811d1408e77c">org.openzal.zal.FileBlobStoreWrapImpl</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7db9823db29a948cd067960a31bcf2f7">org.openzal.zal.Mailbox</a>
-, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#ac089c4812c719a8f815d8fccf170ebee">org.openzal.zal.StoreManager</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a876decd7e708bd9f264eb4ad8fa93908">org.openzal.zal.StoreManager</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#ae14088d9111173b41744c78796b03008">org.openzal.zal.StoreManagerImp</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html#aa74540b4f01b6d28fff95490960c59ae">org.openzal.zal.StoreVolume</a>
 </li>
 <li>deleteAccount()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_account.html#a98c9532bc6cc693f053442ff0334c6fc">org.openzal.zal.Account</a>
 </li>
+<li>deleteAccountById()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#a2888026092a239c68d2956725b546606">org.openzal.zal.Provisioning</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a2aa3748480faea99513a910ef88fa941">org.openzal.zal.ProvisioningImp</a>
+</li>
+<li>deleteAccountByName()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#af784816b618dd8cbf2962480fd7e604e">org.openzal.zal.Provisioning</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#ac38e911e6fda476078cce9d62780e022">org.openzal.zal.ProvisioningImp</a>
+</li>
+<li>deleteMailbox()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a5721c580d511c8ba25468a64fd701740">org.openzal.zal.Mailbox</a>
+</li>
 <li>deleteStore()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#aec8c9fbdfd20316f7e946e6536c3c6ff">org.openzal.zal.FileBlobStoreWrapImpl</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#abef50f7d150d36017abe5e58aa081a9a">org.openzal.zal.FileBlobStoreWrapImpl</a>
 </li>
 <li>deployZimlet()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a29a9ba7283ff68d99bcc5b8102170744">org.openzal.zal.Utils</a>
@@ -192,10 +208,10 @@ $(document).ready(function(){initNavTree('functions_func_d.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1redolog_1_1op_1_1_redoable_op.html#a23e6f1eba3668fc608e59a30f0a952dc">org.openzal.zal.redolog.op.RedoableOp</a>
 </li>
 <li>destroy()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html#a62fd9429137a01709ee061b31509a792">org.openzal.zal.extension.ZalEntrypoint</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_impl.html#a7b4113fada5a2e9dd465eb6a498be6ec">org.openzal.zal.extension.ZalEntrypointImpl</a>
 </li>
 <li>Document()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_document.html#a3d6848388a9ab5ec70127c50b2427a34">org.openzal.zal.Document</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_document.html#ae25e2686efe92d001d1e111639e3aaf5">org.openzal.zal.Document</a>
 </li>
 <li>doGet()
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1http_1_1_http_handler.html#a2da72e4f857231adaa32a6996efee7bd">org.openzal.zal.http.HttpHandler</a>

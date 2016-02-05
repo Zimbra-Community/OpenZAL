@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.9.1</span>
+   &#160;<span id="projectnumber">1.10.2</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_utils_8java_source.html','');});
 <div class="contents">
 <a href="_utils_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2016 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -185,11 +185,11 @@ $(document).ready(function(){initNavTree('_utils_8java_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      sb.append(elements[n].getClassName());</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      sb.append(<span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      sb.append(elements[n].getMethodName());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      sb.append(<span class="stringliteral">&quot; ( &quot;</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      sb.append(<span class="stringliteral">&quot; (&quot;</span>);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      sb.append(elements[n].getFileName());</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      sb.append(<span class="stringliteral">&quot;:&quot;</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      sb.append(elements[n].getLineNumber());</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      sb.append(<span class="stringliteral">&quot; )&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      sb.append(<span class="stringliteral">&quot;)&quot;</span>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">if</span> (elements[n].isNativeMethod())</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      {</div>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('_utils_8java_source.html','');});
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    StringUtil.addToMultiMap(result, name, value);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a29a9ba7283ff68d99bcc5b8102170744">  179</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a29a9ba7283ff68d99bcc5b8102170744">deployZimlet</a>(<a class="code" href="classorg_1_1openzal_1_1zal_1_1_provisioning.html">Provisioning</a> provisioning, <a class="code" href="classorg_1_1openzal_1_1zal_1_1_zimlet_file.html">ZimletFile</a> zimlet) <span class="keywordflow">throws</span> IOException</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a29a9ba7283ff68d99bcc5b8102170744">  179</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a29a9ba7283ff68d99bcc5b8102170744">deployZimlet</a>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html">Provisioning</a> provisioning, <a class="code" href="classorg_1_1openzal_1_1zal_1_1_zimlet_file.html">ZimletFile</a> zimlet) <span class="keywordflow">throws</span> IOException</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  {</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
@@ -419,10 +419,25 @@ $(document).ready(function(){initNavTree('_utils_8java_source.html','');});
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a5f9909f4b6dab3f7bd2cabbe15ba2100">  313</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a5f9909f4b6dab3f7bd2cabbe15ba2100">getEmailNamePart</a>(String address)</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">if</span> (address.contains(<span class="stringliteral">&quot;@&quot;</span>))</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      String[] parts = address.split(<span class="stringliteral">&quot;@&quot;</span>);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="keywordflow">if</span> (parts.length == 2)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> address.split(<span class="stringliteral">&quot;@&quot;</span>)[0];</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    }</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Invalid mail address &quot;</span> + address);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;}</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_server_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_server.html">org.openzal.zal.Server</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_8java_source.html#l00035">Server.java:35</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html_a1da9a40276a5b797db48a61aaf7db8b4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html#a1da9a40276a5b797db48a61aaf7db8b4">org.openzal.zal.Utils.windowsSystemTimeFromSimpleOnset</a></div><div class="ttdeci">static WinSystemTime windowsSystemTimeFromSimpleOnset(ICalendarTimezone.SimpleOnset simpleOnset)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00280">Utils.java:280</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_account_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_account.html">org.openzal.zal.Account</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_8java_source.html#l00046">Account.java:46</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_account_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_account.html">org.openzal.zal.Account</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_8java_source.html#l00054">Account.java:54</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html_ade3724e63dde4c7aec6bc6736cc28cff"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html#ade3724e63dde4c7aec6bc6736cc28cff">org.openzal.zal.Utils.decode</a></div><div class="ttdeci">static Map&lt; String, Object &gt; decode(String attrs)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00102">Utils.java:102</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html">org.openzal.zal.Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00060">Utils.java:60</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html_a50c7d0c92803ba2b93b0d893a5eced36"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html#a50c7d0c92803ba2b93b0d893a5eced36">org.openzal.zal.Utils.setDefaultAlarm</a></div><div class="ttdeci">static void setDefaultAlarm(Invite invite, Account account)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00267">Utils.java:267</a></div></div>
@@ -433,7 +448,6 @@ $(document).ready(function(){initNavTree('_utils_8java_source.html','');});
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html_aeed2251a34652b0cb2bf2a0c628acd62"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html#aeed2251a34652b0cb2bf2a0c628acd62">org.openzal.zal.Utils.FBTYPE_BUSY</a></div><div class="ttdeci">static String FBTYPE_BUSY</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00062">Utils.java:62</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html_afef8749bae0cb74f5871b9a15875fa26"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html#afef8749bae0cb74f5871b9a15875fa26">org.openzal.zal.Utils.getContent</a></div><div class="ttdeci">static byte[] getContent(InputStream stream, int sizeHint)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00240">Utils.java:240</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html_ac0055902ff5e9bba82b502b0c13b58e1"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html#ac0055902ff5e9bba82b502b0c13b58e1">org.openzal.zal.Utils.isGzipped</a></div><div class="ttdeci">static boolean isGzipped(File file)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00235">Utils.java:235</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_provisioning_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_provisioning.html">org.openzal.zal.Provisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00075">Provisioning.java:75</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cache_entry_type_html_a19244902ff943fee04019425b5e1d20b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cache_entry_type.html#a19244902ff943fee04019425b5e1d20b">org.openzal.zal.CacheEntryType.zimlet</a></div><div class="ttdeci">static CacheEntryType zimlet</div><div class="ttdef"><b>Definition:</b> <a href="_cache_entry_type_8java_source.html#l00042">CacheEntryType.java:42</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_zimlet_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_zimlet.html">org.openzal.zal.Zimlet</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimlet_8java_source.html#l00030">Zimlet.java:30</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
@@ -449,7 +463,9 @@ $(document).ready(function(){initNavTree('_utils_8java_source.html','');});
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_zimlet_file_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_zimlet_file.html">org.openzal.zal.ZimletFile</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimlet_file_8java_source.html#l00030">ZimletFile.java:30</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html_ad80b57bc19805f59fe1ab180febf6ceb"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html#ad80b57bc19805f59fe1ab180febf6ceb">org.openzal.zal.Utils.loadTimeZonesFromFile</a></div><div class="ttdeci">static void loadTimeZonesFromFile(File tzFile)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00301">Utils.java:301</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html">org.openzal.zal.calendar.ICalendarTimezone</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_calendar_timezone_8java_source.html#l00037">ICalendarTimezone.java:37</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_domain_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_domain.html">org.openzal.zal.Domain</a></div><div class="ttdef"><b>Definition:</b> <a href="_domain_8java_source.html#l00035">Domain.java:35</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html">org.openzal.zal.calendar.Invite</a></div><div class="ttdef"><b>Definition:</b> <a href="_invite_8java_source.html#l00050">Invite.java:50</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_domain_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_domain.html">org.openzal.zal.Domain</a></div><div class="ttdef"><b>Definition:</b> <a href="_domain_8java_source.html#l00038">Domain.java:38</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html_a5f9909f4b6dab3f7bd2cabbe15ba2100"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html#a5f9909f4b6dab3f7bd2cabbe15ba2100">org.openzal.zal.Utils.getEmailNamePart</a></div><div class="ttdeci">static String getEmailNamePart(String address)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00313">Utils.java:313</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html">org.openzal.zal.calendar.Invite</a></div><div class="ttdef"><b>Definition:</b> <a href="_invite_8java_source.html#l00054">Invite.java:54</a></div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_provisioning_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html">org.openzal.zal.Provisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00038">Provisioning.java:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

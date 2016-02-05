@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.9.1</span>
+   &#160;<span id="projectnumber">1.10.2</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('interfaceorg_1_1openzal_1_1zal_1_1exte
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller__inherit__graph.png" border="0" usemap="#org_8openzal_8zal_8extension_8_zal_extension_controller_inherit__map" alt="Inheritance graph"/></div>
 <map name="org_8openzal_8zal_8extension_8_zal_extension_controller_inherit__map" id="org_8openzal_8zal_8extension_8_zal_extension_controller_inherit__map">
-<area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller_impl.html" title="org.openzal.zal.extension.\lZalExtensionControllerImpl" alt="" coords="5,97,184,138"/></map>
+<area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_stub_zal_extension_controller.html" title="org.openzal.zal.extension.\lStubZalExtensionController" alt="" coords="231,5,412,46"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -129,15 +129,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a03373d7d5853bfe56e9855ed975d1a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08fd2c15407f3e8398b15ff92982477f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html#a08fd2c15407f3e8398b15ff92982477f">reboot</a> ()</td></tr>
 <tr class="separator:a08fd2c15407f3e8398b15ff92982477f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73407dcc93421fb80b3a0a3567b09c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html#a73407dcc93421fb80b3a0a3567b09c0e">reload</a> (File directory)  throws IOException</td></tr>
-<tr class="separator:a73407dcc93421fb80b3a0a3567b09c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f547e1fcda85dfaeac85da96d48c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html#ab3f547e1fcda85dfaeac85da96d48c6b">update</a> (File directory)  throws IOException</td></tr>
-<tr class="separator:ab3f547e1fcda85dfaeac85da96d48c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45ddfb2d07fdf500b9d3c90c80c027a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html#ab45ddfb2d07fdf500b9d3c90c80c027a">reload</a> (File extensionDirectory, WeakReference&lt; ClassLoader &gt; previousClassLoader)  throws IOException</td></tr>
+<tr class="separator:ab45ddfb2d07fdf500b9d3c90c80c027a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3650ac888cb10ce57e96ff41b21a055"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html#ac3650ac888cb10ce57e96ff41b21a055">canControlExtension</a> ()</td></tr>
+<tr class="separator:ac3650ac888cb10ce57e96ff41b21a055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_zal_extension_controller_8java_source.html#l00026">26</a> of file <a class="el" href="_zal_extension_controller_8java_source.html">ZalExtensionController.java</a>.</p>
+<p>Definition at line <a class="el" href="_zal_extension_controller_8java_source.html#l00027">27</a> of file <a class="el" href="_zal_extension_controller_8java_source.html">ZalExtensionController.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac3650ac888cb10ce57e96ff41b21a055"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.openzal.zal.extension.ZalExtensionController.canControlExtension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_stub_zal_extension_controller.html#a50f5f4c70f0ea67c37736451b70604fb">org.openzal.zal.extension.StubZalExtensionController</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a08fd2c15407f3e8398b15ff92982477f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -151,11 +168,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller_impl.html#a4b7bd1875ef180610ae872cadf1b303d">org.openzal.zal.extension.ZalExtensionControllerImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_stub_zal_extension_controller.html#a0c3283d74c81fb8f2e278f75d1d2694a">org.openzal.zal.extension.StubZalExtensionController</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a73407dcc93421fb80b3a0a3567b09c0e"></a>
+<a class="anchor" id="ab45ddfb2d07fdf500b9d3c90c80c027a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -163,13 +180,23 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void org.openzal.zal.extension.ZalExtensionController.reload </td>
           <td>(</td>
           <td class="paramtype">File&#160;</td>
-          <td class="paramname"><em>directory</em></td><td>)</td>
-          <td> throws IOException</td>
+          <td class="paramname"><em>extensionDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WeakReference&lt; ClassLoader &gt;&#160;</td>
+          <td class="paramname"><em>previousClassLoader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller_impl.html#a76b1987ea23c4132c07f1761c101140b">org.openzal.zal.extension.ZalExtensionControllerImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_stub_zal_extension_controller.html#a05cc593eaf5b3a05c3f6eef18f9bdae5">org.openzal.zal.extension.StubZalExtensionController</a>.</p>
 
 </div>
 </div>
@@ -186,25 +213,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller_impl.html#a46e6a612e61892a7af444f1fb53ab066">org.openzal.zal.extension.ZalExtensionControllerImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab3f547e1fcda85dfaeac85da96d48c6b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.openzal.zal.extension.ZalExtensionController.update </td>
-          <td>(</td>
-          <td class="paramtype">File&#160;</td>
-          <td class="paramname"><em>directory</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller_impl.html#ad5774a32ffff5851b1c7b217cc9dcb85">org.openzal.zal.extension.ZalExtensionControllerImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_stub_zal_extension_controller.html#a64a4b1d262c5d04f0cfe7af9511fa61d">org.openzal.zal.extension.StubZalExtensionController</a>.</p>
 
 </div>
 </div>

@@ -7,6 +7,7 @@ var searchData=
   ['nosuchcalendarexception_2ejava',['NoSuchCalendarException.java',['../_no_such_calendar_exception_8java.html',1,'']]],
   ['nosuchconversationexception_2ejava',['NoSuchConversationException.java',['../_no_such_conversation_exception_8java.html',1,'']]],
   ['nosuchcosexception_2ejava',['NoSuchCosException.java',['../_no_such_cos_exception_8java.html',1,'']]],
+  ['nosuchdistributionlistexception_2ejava',['NoSuchDistributionListException.java',['../_no_such_distribution_list_exception_8java.html',1,'']]],
   ['nosuchdomainexception_2ejava',['NoSuchDomainException.java',['../_no_such_domain_exception_8java.html',1,'']]],
   ['nosuchfolderexception_2ejava',['NoSuchFolderException.java',['../_no_such_folder_exception_8java.html',1,'']]],
   ['nosuchgrantexception_2ejava',['NoSuchGrantException.java',['../_no_such_grant_exception_8java.html',1,'']]],

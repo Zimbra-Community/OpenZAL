@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['qname',['QName',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_q_name.html#a3dd3ef32134ec45994543c4308b8ddd3',1,'org::openzal::zal::soap::QName']]],
-  ['queryresults',['QueryResults',['../classorg_1_1openzal_1_1zal_1_1_query_results.html#a032003b2cef3d5c5613ad642ddc38639',1,'org::openzal::zal::QueryResults']]],
-  ['quietclosestatement',['quietCloseStatement',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#acf932496c040a60c4197fcf4b1673220',1,'org::openzal::zal::lib::ZimbraDatabase']]],
-  ['quietdelete',['quietDelete',['../classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a579051cdcfc55a697f7b2cc5164b777e',1,'org::openzal::zal::StoreManagerImp']]],
-  ['quotaexceededexception',['QuotaExceededException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_quota_exceeded_exception.html#ab653f04bf9d1b6cd5f6bad80c8a9e824',1,'org::openzal::zal::exceptions::QuotaExceededException']]],
-  ['quotausage',['QuotaUsage',['../classorg_1_1openzal_1_1zal_1_1_quota_usage.html#aa3147169bfd5782e001fce785798351d',1,'org::openzal::zal::QuotaUsage']]]
+  ['of',['of',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ace93a764c2d11b89cea07029e1c4dce6',1,'org.openzal.zal.MailItemType.of(String itemType)'],['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a4ada5e3e5c0fe5f3ca0b11f83fde9359',1,'org.openzal.zal.MailItemType.of(byte type)']]],
+  ['onlocalserver',['onLocalServer',['../interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#a48e83dd4ebbf4c13679e495d7963d16a',1,'org.openzal.zal.Provisioning.onLocalServer()'],['../classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a9079b090b1571c55b710b916fe679ecf',1,'org.openzal.zal.ProvisioningImp.onLocalServer()']]],
+  ['operationcontext',['OperationContext',['../classorg_1_1openzal_1_1zal_1_1_operation_context.html#a76450368e7f46639b838f47d5f262aa3',1,'org.openzal.zal.OperationContext.OperationContext(@NotNull Account account, boolean enableAdminRights)'],['../classorg_1_1openzal_1_1zal_1_1_operation_context.html#a27d5439fe0e3eed4805eb4972075c033',1,'org.openzal.zal.OperationContext.OperationContext(@NotNull Account account)']]],
+  ['orderzimletsbypriority',['orderZimletsByPriority',['../classorg_1_1openzal_1_1zal_1_1_utils.html#a98b86abc51dadf600220754f0b4497c9',1,'org::openzal::zal::Utils']]],
+  ['overrideextensionmap',['overrideExtensionMap',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a1d1e7cabe302ab9a2945fac7a240ec6c',1,'org::openzal::zal::extension::Zimbra']]],
+  ['overridezimbrahandler',['overrideZimbraHandler',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a7f85c45dda2c19573c04cc7cd7308928',1,'org::openzal::zal::soap::SoapServiceManager']]]
 ];

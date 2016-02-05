@@ -21,6 +21,7 @@ var namespaceorg_1_1openzal_1_1zal_1_1exceptions =
     [ "NoSuchCalendarException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception" ],
     [ "NoSuchConversationException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception" ],
     [ "NoSuchCosException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_cos_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_cos_exception" ],
+    [ "NoSuchDistributionListException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_distribution_list_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_distribution_list_exception" ],
     [ "NoSuchDomainException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception" ],
     [ "NoSuchFolderException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception" ],
     [ "NoSuchGrantException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_grant_exception.html", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_grant_exception" ],

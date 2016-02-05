@@ -7,5 +7,6 @@ var searchData=
   ['datasourcetype_2ejava',['DataSourceType.java',['../_data_source_type_8java.html',1,'']]],
   ['distributionlist_2ejava',['DistributionList.java',['../_distribution_list_8java.html',1,'']]],
   ['document_2ejava',['Document.java',['../_document_8java.html',1,'']]],
-  ['domain_2ejava',['Domain.java',['../_domain_8java.html',1,'']]]
+  ['domain_2ejava',['Domain.java',['../_domain_8java.html',1,'']]],
+  ['domainaliasesvisitor_2ejava',['DomainAliasesVisitor.java',['../_domain_aliases_visitor_8java.html',1,'']]]
 ];

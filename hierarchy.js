@@ -13,6 +13,7 @@ var hierarchy =
     [ "org.openzal.zal.AuthProvider", "classorg_1_1openzal_1_1zal_1_1_auth_provider.html", null ],
     [ "org.openzal.zal.AuthToken", "classorg_1_1openzal_1_1zal_1_1_auth_token.html", null ],
     [ "org.openzal.zal.Blob", "classorg_1_1openzal_1_1zal_1_1_blob.html", null ],
+    [ "org.openzal.zal.tools.BootCli", "classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html", null ],
     [ "org.openzal.zal.ProvisioningKey.ByAccount", "classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_account.html", null ],
     [ "org.openzal.zal.ProvisioningKey.ByCacheEntry", "classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_cache_entry.html", null ],
     [ "org.openzal.zal.ProvisioningKey.ByCalendarResource", "classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_calendar_resource.html", null ],
@@ -33,8 +34,12 @@ var hierarchy =
     [ "org.openzal.zal.redolog.op.Checkpoint", "classorg_1_1openzal_1_1zal_1_1redolog_1_1op_1_1_checkpoint.html", null ],
     [ "org.openzal.zal.tools.ChecksumChecker", "classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_checker.html", null ],
     [ "org.openzal.zal.tools.ChecksumWriter", "classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html", null ],
+    [ "ClassLoader", null, [
+      [ "org.openzal.zal.extension.BootstrapClassLoader", "classorg_1_1openzal_1_1zal_1_1extension_1_1_bootstrap_class_loader.html", null ]
+    ] ],
     [ "org.openzal.zal.lib.Clock", "interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html", [
-      [ "org.openzal.zal.lib.ActualClock", "classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html", null ]
+      [ "org.openzal.zal.lib.ActualClock", "classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html", null ],
+      [ "org.openzal.zal.lib.FakeClock", "classorg_1_1openzal_1_1zal_1_1lib_1_1_fake_clock.html", null ]
     ] ],
     [ "org.openzal.zal.Item.Color", "classorg_1_1openzal_1_1zal_1_1_item_1_1_color.html", null ],
     [ "Comparable", null, [
@@ -74,6 +79,7 @@ var hierarchy =
     [ "org.openzal.zal.lib.ZimbraDatabase.ConnectionProvider", "interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database_1_1_connection_provider.html", [
       [ "org.openzal.zal.ZimbraConnectionProvider", "classorg_1_1openzal_1_1zal_1_1_zimbra_connection_provider.html", null ]
     ] ],
+    [ "org.openzal.zal.tools.ConsoleBoot", "classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html", null ],
     [ "org.openzal.zal.Contact.ContactAttachment", "classorg_1_1openzal_1_1zal_1_1_contact_1_1_contact_attachment.html", null ],
     [ "org.openzal.zal.ContactConstants", "classorg_1_1openzal_1_1zal_1_1_contact_constants.html", null ],
     [ "org.openzal.zal.ContactGroup", "classorg_1_1openzal_1_1zal_1_1_contact_group.html", null ],
@@ -107,9 +113,11 @@ var hierarchy =
       [ "org.openzal.zal.XMPPComponent", "classorg_1_1openzal_1_1zal_1_1_x_m_p_p_component.html", null ],
       [ "org.openzal.zal.Zimlet", "classorg_1_1openzal_1_1zal_1_1_zimlet.html", null ]
     ] ],
+    [ "org.openzal.zal.Entry< K, V >", "classorg_1_1openzal_1_1zal_1_1_entry.html", null ],
     [ "org.openzal.zal.Entry.EntryType", "classorg_1_1openzal_1_1zal_1_1_entry_1_1_entry_type.html", null ],
     [ "org.openzal.zal.exceptions.ExceptionWrapper", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html", null ],
-    [ "org.openzal.zal.extension.ExtensionManager", "classorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager.html", null ],
+    [ "org.openzal.zal.extension.ExtensionManager", "interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager.html", null ],
+    [ "org.openzal.zal.lib.ExtensionVersionValidator", "classorg_1_1openzal_1_1zal_1_1lib_1_1_extension_version_validator.html", null ],
     [ "org.openzal.zal.FileBlobStoreWrapImpl", "classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html", null ],
     [ "org.openzal.zal.lib.Filter< T >", "interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_filter_3_01_t_01_4.html", null ],
     [ "org.openzal.zal.calendar.FreeBusyStatus", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html", null ],
@@ -131,17 +139,20 @@ var hierarchy =
     [ "org.openzal.zal.soap.InternalDocumentHelper", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_document_helper.html", null ],
     [ "org.openzal.zal.calendar.Invite", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html", null ],
     [ "org.openzal.zal.calendar.InviteFactory", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html", null ],
+    [ "org.openzal.zal.lib.JarAccessor", "classorg_1_1openzal_1_1zal_1_1lib_1_1_jar_accessor.html", null ],
     [ "org.openzal.zal.tools.JarUtils", "classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils.html", null ],
     [ "org.openzal.zal.Jetty", "classorg_1_1openzal_1_1zal_1_1_jetty.html", null ],
     [ "org.openzal.zal.LdapUtil", "classorg_1_1openzal_1_1zal_1_1_ldap_util.html", null ],
+    [ "org.openzal.zal.Listener", "interfaceorg_1_1openzal_1_1zal_1_1_listener.html", null ],
     [ "Listener", null, [
       [ "org.openzal.zal.MailboxManagerListenerWrapper", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html", null ]
     ] ],
-    [ "org.openzal.zal.Listener", "interfaceorg_1_1openzal_1_1zal_1_1_listener.html", null ],
     [ "org.openzal.zal.LocalConfig", "classorg_1_1openzal_1_1zal_1_1_local_config.html", null ],
     [ "org.openzal.zal.Mailbox", "classorg_1_1openzal_1_1zal_1_1_mailbox.html", null ],
     [ "org.openzal.zal.MailboxBlob", "classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html", null ],
-    [ "org.openzal.zal.MailboxManager", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager.html", null ],
+    [ "org.openzal.zal.MailboxManager", "interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager.html", [
+      [ "org.openzal.zal.MailboxManagerImp", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_imp.html", null ]
+    ] ],
     [ "org.openzal.zal.MailboxManagerListener", "interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener.html", null ],
     [ "org.openzal.zal.MailboxSessionProxy", "classorg_1_1openzal_1_1zal_1_1_mailbox_session_proxy.html", null ],
     [ "org.openzal.zal.MailItemType", "classorg_1_1openzal_1_1zal_1_1_mail_item_type.html", null ],
@@ -168,7 +179,9 @@ var hierarchy =
     [ "org.openzal.zal.PrefExternalSendersType", "classorg_1_1openzal_1_1zal_1_1_pref_external_senders_type.html", null ],
     [ "org.openzal.zal.calendar.Priority", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html", null ],
     [ "org.openzal.zal.Protocol", "classorg_1_1openzal_1_1zal_1_1_protocol.html", null ],
-    [ "org.openzal.zal.Provisioning", "classorg_1_1openzal_1_1zal_1_1_provisioning.html", null ],
+    [ "org.openzal.zal.Provisioning", "interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html", [
+      [ "org.openzal.zal.ProvisioningImp", "classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html", null ]
+    ] ],
     [ "org.openzal.zal.ProvisioningKey", "classorg_1_1openzal_1_1zal_1_1_provisioning_key.html", null ],
     [ "org.openzal.zal.soap.QName", "classorg_1_1openzal_1_1zal_1_1soap_1_1_q_name.html", null ],
     [ "org.openzal.zal.QueryResults", "classorg_1_1openzal_1_1zal_1_1_query_results.html", [
@@ -222,6 +235,7 @@ var hierarchy =
         [ "org.openzal.zal.exceptions.NoSuchAccountException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_account_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchAliasException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_alias_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchCosException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_cos_exception.html", null ],
+        [ "org.openzal.zal.exceptions.NoSuchDistributionListException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_distribution_list_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchDomainException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchGrantException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_grant_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchSignatureException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_signature_exception.html", null ],
@@ -265,10 +279,12 @@ var hierarchy =
     [ "org.openzal.zal.Tags", "classorg_1_1openzal_1_1zal_1_1_tags.html", null ],
     [ "org.openzal.zal.TargetBy", "classorg_1_1openzal_1_1zal_1_1_target_by.html", null ],
     [ "org.openzal.zal.provisioning.TargetType", "enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html", null ],
+    [ "org.openzal.zal.extension.TinyBoot", "classorg_1_1openzal_1_1zal_1_1extension_1_1_tiny_boot.html", null ],
     [ "org.openzal.zal.redolog.TransactionId", "classorg_1_1openzal_1_1zal_1_1redolog_1_1_transaction_id.html", null ],
     [ "org.openzal.zal.ContactGroup.Type", "enumorg_1_1openzal_1_1zal_1_1_contact_group_1_1_type.html", null ],
     [ "org.openzal.zal.Item.UnderlyingData", "classorg_1_1openzal_1_1zal_1_1_item_1_1_underlying_data.html", null ],
     [ "org.openzal.zal.Utils", "classorg_1_1openzal_1_1zal_1_1_utils.html", null ],
+    [ "org.openzal.zal.tools.VersionChooser", "classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html", null ],
     [ "org.openzal.zal.calendar.WeekDayNum", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_week_day_num.html", null ],
     [ "org.openzal.zal.WikiPage.WikiContext", "classorg_1_1openzal_1_1zal_1_1_wiki_page_1_1_wiki_context.html", null ],
     [ "org.openzal.zal.WikiPage", "classorg_1_1openzal_1_1zal_1_1_wiki_page.html", null ],
@@ -278,10 +294,11 @@ var hierarchy =
     [ "org.openzal.zal.ZalBuildInfo", "classorg_1_1openzal_1_1zal_1_1_zal_build_info.html", null ],
     [ "org.openzal.zal.extension.ZalExtension", "interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension.html", null ],
     [ "org.openzal.zal.extension.ZalExtensionController", "interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html", [
-      [ "org.openzal.zal.extension.ZalExtensionControllerImpl", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller_impl.html", null ]
+      [ "org.openzal.zal.extension.StubZalExtensionController", "classorg_1_1openzal_1_1zal_1_1extension_1_1_stub_zal_extension_controller.html", null ]
     ] ],
     [ "org.openzal.zal.lib.ZalIOUtils", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zal_i_o_utils.html", null ],
     [ "org.openzal.zal.ZalVersion", "classorg_1_1openzal_1_1zal_1_1_zal_version.html", null ],
+    [ "org.openzal.zal.lib.ZalVersionValidator", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zal_version_validator.html", null ],
     [ "org.openzal.zal.ZAuthToken", "classorg_1_1openzal_1_1zal_1_1_z_auth_token.html", null ],
     [ "org.openzal.zal.extension.Zimbra", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html", null ],
     [ "org.openzal.zal.lib.ZimbraDatabase", "classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html", null ],
@@ -294,6 +311,9 @@ var hierarchy =
     [ "org.openzal.zal.log.ZimbraLog.ZimbraLogSection", "classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log_1_1_zimbra_log_section.html", null ],
     [ "org.openzal.zal.ZimletDescription", "classorg_1_1openzal_1_1zal_1_1_zimlet_description.html", null ],
     [ "org.openzal.zal.ZimletFile", "classorg_1_1openzal_1_1zal_1_1_zimlet_file.html", null ],
+    [ "AbstractMap", null, [
+      [ "org.openzal.zal.lib.PermissiveMap< K, V >", "classorg_1_1openzal_1_1zal_1_1lib_1_1_permissive_map_3_01_k_00_01_v_01_4.html", null ]
+    ] ],
     [ "AdminDocumentHandler", null, [
       [ "org.openzal.zal.soap.InternalOverrideAdminDocumentHandler", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html", null ]
     ] ],
@@ -309,6 +329,9 @@ var hierarchy =
     [ "HttpServletRequest", null, [
       [ "org.openzal.zal.ContinuationHttpServletRequest", "interfaceorg_1_1openzal_1_1zal_1_1_continuation_http_servlet_request.html", null ]
     ] ],
+    [ "Map", null, [
+      [ "org.openzal.zal.lib.PermissiveMap< K, V >", "classorg_1_1openzal_1_1zal_1_1lib_1_1_permissive_map_3_01_k_00_01_v_01_4.html", null ]
+    ] ],
     [ "Serializable", null, [
       [ "org.openzal.zal.ItemStatus", "classorg_1_1openzal_1_1zal_1_1_item_status.html", [
         [ "org.openzal.zal.ItemInfo", "classorg_1_1openzal_1_1zal_1_1_item_info.html", [
@@ -319,13 +342,12 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "URLClassLoader", null, [
-      [ "org.openzal.zal.extension.ZalClassLoader", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_class_loader.html", null ]
-    ] ],
     [ "ZimbraExtension", null, [
-      [ "org.openzal.zal.extension.ZalEntrypoint", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html", null ]
+      [ "org.openzal.zal.extension.ZalEntrypoint", "interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html", [
+        [ "org.openzal.zal.extension.ZalEntrypointImpl", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_impl.html", null ]
+      ] ]
     ] ],
     [ "ZimbraExtensionPostInit", null, [
-      [ "org.openzal.zal.extension.ZalEntrypoint", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html", null ]
+      [ "org.openzal.zal.extension.ZalEntrypoint", "interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html", null ]
     ] ]
 ];

@@ -9,5 +9,6 @@ var classorg_1_1openzal_1_1zal_1_1_contact =
     [ "getEmailAddresses", "classorg_1_1openzal_1_1zal_1_1_contact.html#a8219556826c3676880dca2d5d8706c25", null ],
     [ "getFields", "classorg_1_1openzal_1_1zal_1_1_contact.html#a0c06f8fc225cf50e604829ce0f3f676c", null ],
     [ "getSortName", "classorg_1_1openzal_1_1zal_1_1_contact.html#ad1d98c56bd8a39abee59525ebe20df13", null ],
-    [ "hashCode", "classorg_1_1openzal_1_1zal_1_1_contact.html#a571e260e575c7746d89b0b6fdf53067c", null ]
+    [ "hashCode", "classorg_1_1openzal_1_1zal_1_1_contact.html#a571e260e575c7746d89b0b6fdf53067c", null ],
+    [ "toVCardInputStream", "classorg_1_1openzal_1_1zal_1_1_contact.html#a587f2f1e8c982b8b4fac2df3d381f8b3", null ]
 ];

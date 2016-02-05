@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.9.1</span>
+   &#160;<span id="projectnumber">1.10.2</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_store_manager_8java_source.html','');
 <div class="contents">
 <a href="_store_manager_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2016 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -157,9 +157,12 @@ $(document).ready(function(){initNavTree('_store_manager_8java_source.html','');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html">StoreVolume</a> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a3d62212ef490daa7ad019f81e3490042">getCurrentVolume</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html">StoreVolume</a> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a19c5c60b8015610c84a9d67dff4c3f1a">getCurrentSecondaryVolume</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html">StoreVolume</a> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#afa359f456307e1aad766b35d827446c4">getVolumeByName</a>(String name);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_store_manager_html_acf87aff766b4cbaef616575295006c17"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#acf87aff766b4cbaef616575295006c17">org.openzal.zal.StoreManager.link</a></div><div class="ttdeci">MailboxBlob link(Blob src, Mailbox destMbox, int destMsgId, int destRevision, short destVolumeId)</div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_blob_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_blob.html">org.openzal.zal.Blob</a></div><div class="ttdef"><b>Definition:</b> <a href="_blob_8java_source.html#l00028">Blob.java:28</a></div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_store_manager_html_afa359f456307e1aad766b35d827446c4"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#afa359f456307e1aad766b35d827446c4">org.openzal.zal.StoreManager.getVolumeByName</a></div><div class="ttdeci">StoreVolume getVolumeByName(String name)</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_store_manager_html_a65802f4fb3b23c25c2bfe9099d92a7ff"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a65802f4fb3b23c25c2bfe9099d92a7ff">org.openzal.zal.StoreManager.getBlobPath</a></div><div class="ttdeci">String getBlobPath(int mboxId, int itemId, int revision, short volumeId)</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_store_manager_html_a3d62212ef490daa7ad019f81e3490042"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a3d62212ef490daa7ad019f81e3490042">org.openzal.zal.StoreManager.getCurrentVolume</a></div><div class="ttdeci">StoreVolume getCurrentVolume()</div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_store_manager_html_a27b22de27547e709acf7b73b3baedc19"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#a27b22de27547e709acf7b73b3baedc19">org.openzal.zal.StoreManager.getMailboxBlob</a></div><div class="ttdeci">MailboxBlob getMailboxBlob(Mailbox mbox, int msgId, int revision, String locator)</div></div>

@@ -23,18 +23,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_c_e_8java.html",
-"_metadata_8java.html",
-"_zimlet_exception_8java.html",
-"classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7",
-"classorg_1_1openzal_1_1zal_1_1_folder.html#aa43779f633866b28ffcf23b4ebcdbe43",
-"classorg_1_1openzal_1_1zal_1_1_mailbox.html#a174f04b1bda320c6b4fd206a08ad94c9",
-"classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8",
-"classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_identity.html",
-"classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html#a9c6bdf80d626b418fc355f95ca3f947d",
-"classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html#ad04446a967ddcbcd984cf31f47f595d1",
-"classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_input.html#a122dca0af1f7e17af994be037be40533",
-"classorg_1_1openzal_1_1zal_1_1soap_1_1_zimbra_exception_container.html#a000edbfdf7f98c1b1edb1fc8f36f042e",
-"interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html#a73407dcc93421fb80b3a0a3567b09c0e"
+"_mailbox_blob_8java.html",
+"_zimbra_context_8java.html",
+"classorg_1_1openzal_1_1zal_1_1_cache_entry_type.html#ab1308d60f2b64dbef3c7fe5233737797",
+"classorg_1_1openzal_1_1zal_1_1_flag.html#a88b4d761f866700c3fd9d9aefd674048",
+"classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a1d6e4702a3ae109ec0d8e68c6bb08c3a",
+"classorg_1_1openzal_1_1zal_1_1_mime_constants.html#af2015ec4ee917443b9770b98a088cff9",
+"classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#afcd32b938e355f8320ec782fc60694b5",
+"classorg_1_1openzal_1_1zal_1_1_x_m_l_element.html#a59b9203e03e2dd7d7aaef26b34b7b097",
+"classorg_1_1openzal_1_1zal_1_1calendar_1_1_week_day_num.html#a0f3b033048d28d5263a98765491c193d",
+"classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_connection_wrapper.html#a6befc9dd7ab82499af8c164d35cc26ef",
+"classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_document_helper.html#afab741b89d3c690ee7074f6437da45dc",
+"functions_func_x.html",
+"namespaceorg.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

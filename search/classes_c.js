@@ -6,6 +6,7 @@ var searchData=
   ['nosuchcalendarexception',['NoSuchCalendarException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchconversationexception',['NoSuchConversationException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchcosexception',['NoSuchCosException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_cos_exception.html',1,'org::openzal::zal::exceptions']]],
+  ['nosuchdistributionlistexception',['NoSuchDistributionListException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_distribution_list_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchdomainexception',['NoSuchDomainException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchfolderexception',['NoSuchFolderException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html',1,'org::openzal::zal::exceptions']]],
   ['nosuchgrantexception',['NoSuchGrantException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_grant_exception.html',1,'org::openzal::zal::exceptions']]],

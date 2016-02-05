@@ -1,14 +1,17 @@
 var searchData=
 [
+  ['fakeclock',['FakeClock',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_fake_clock.html#a6b39b3162f6342fe7c203096892d5e3e',1,'org::openzal::zal::lib::FakeClock']]],
   ['fakecontinuation',['FakeContinuation',['../classorg_1_1openzal_1_1zal_1_1_fake_continuation.html#a9507fb9a1b8dae3d08a94f9834c48e42',1,'org::openzal::zal::FakeContinuation']]],
   ['fakequeryresults',['FakeQueryResults',['../classorg_1_1openzal_1_1zal_1_1_fake_query_results.html#ab47360fefc4af10e6808f3867ded04f9',1,'org::openzal::zal::FakeQueryResults']]],
   ['fatal',['fatal',['../classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log_1_1_zimbra_log_section.html#ab8afad738356bce423bf14c0f659e228',1,'org::openzal::zal::log::ZimbraLog::ZimbraLogSection']]],
   ['fileblobstorewrapimpl',['FileBlobStoreWrapImpl',['../classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#ae9f917695455310f7bca95f725e60053',1,'org::openzal::zal::FileBlobStoreWrapImpl']]],
   ['filterout',['filterOut',['../interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_filter_3_01_t_01_4.html#a21b67f591a4ac2bed5ef3a9e1f59a35e',1,'org::openzal::zal::lib::Filter&lt; T &gt;']]],
   ['finalizeconverter',['finalizeConverter',['../classorg_1_1openzal_1_1zal_1_1log_1_1_pattern_parser.html#aecc3e01a7532bcbce2275bcd5bba04fb',1,'org::openzal::zal::log::PatternParser']]],
+  ['findclass',['findClass',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_bootstrap_class_loader.html#a5cc19e546ba2e4b2c92bab93c24ab376',1,'org::openzal::zal::extension::BootstrapClassLoader']]],
   ['flag',['Flag',['../classorg_1_1openzal_1_1zal_1_1_flag.html#a6d9991d337e36d2976a680b43798242b',1,'org::openzal::zal::Flag']]],
-  ['flushcache',['flushCache',['../classorg_1_1openzal_1_1zal_1_1_provisioning.html#aa0d4face6d027332452078ab41a11b15',1,'org::openzal::zal::Provisioning']]],
+  ['flushcache',['flushCache',['../interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#aa0d4face6d027332452078ab41a11b15',1,'org.openzal.zal.Provisioning.flushCache()'],['../classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#af4ca442d34d8fdb10d399ac1051ac6d8',1,'org.openzal.zal.ProvisioningImp.flushCache()']]],
   ['folder',['Folder',['../classorg_1_1openzal_1_1zal_1_1_folder.html#a76ef1f74d65b5841b5781fa59311842c',1,'org.openzal.zal.Folder.Folder(@NotNull Object item)'],['../classorg_1_1openzal_1_1zal_1_1_folder.html#a4961dbbef3d9b03c7fc21c02491f9abd',1,'org.openzal.zal.Folder.Folder(@NotNull Item item)']]],
+  ['forcemailboxd',['forceMailboxd',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a1ac49617cb38475c52880d3956ea988c',1,'org::openzal::zal::extension::Zimbra']]],
   ['freebusystatus',['FreeBusyStatus',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#ac9f1101c9f04a3e5ccafc46964da1ac7',1,'org::openzal::zal::calendar::FreeBusyStatus']]],
   ['fromcode',['fromCode',['../classorg_1_1openzal_1_1zal_1_1_grantee_type.html#a1d0a0b1e02ca6c6a86dd6b221d485361',1,'org::openzal::zal::GranteeType']]],
   ['fromical',['fromICal',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html#ad4e1cf49b8318f8977095f4341d77a67',1,'org.openzal.zal.calendar.AttendeeInviteStatus.fromICal()'],['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_global_invite_status.html#a8dd2e03e8b14775a288a7d5ea8c90866',1,'org.openzal.zal.calendar.GlobalInviteStatus.fromICal()']]],

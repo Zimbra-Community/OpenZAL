@@ -2,7 +2,8 @@ var searchData=
 [
   ['mailbox',['Mailbox',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html',1,'org::openzal::zal']]],
   ['mailboxblob',['MailboxBlob',['../classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html',1,'org::openzal::zal']]],
-  ['mailboxmanager',['MailboxManager',['../classorg_1_1openzal_1_1zal_1_1_mailbox_manager.html',1,'org::openzal::zal']]],
+  ['mailboxmanager',['MailboxManager',['../interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager.html',1,'org::openzal::zal']]],
+  ['mailboxmanagerimp',['MailboxManagerImp',['../classorg_1_1openzal_1_1zal_1_1_mailbox_manager_imp.html',1,'org::openzal::zal']]],
   ['mailboxmanagerlistener',['MailboxManagerListener',['../interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener.html',1,'org::openzal::zal']]],
   ['mailboxmanagerlistenerwrapper',['MailboxManagerListenerWrapper',['../classorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener_wrapper.html',1,'org::openzal::zal']]],
   ['mailboxsessionproxy',['MailboxSessionProxy',['../classorg_1_1openzal_1_1zal_1_1_mailbox_session_proxy.html',1,'org::openzal::zal']]],

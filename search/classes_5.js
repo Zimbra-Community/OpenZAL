@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['fakeclock',['FakeClock',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_fake_clock.html',1,'org::openzal::zal::lib']]],
   ['fakecontinuation',['FakeContinuation',['../classorg_1_1openzal_1_1zal_1_1_fake_continuation.html',1,'org::openzal::zal']]],
   ['fakequeryresults',['FakeQueryResults',['../classorg_1_1openzal_1_1zal_1_1_fake_query_results.html',1,'org::openzal::zal']]],
   ['fileblobstorewrapimpl',['FileBlobStoreWrapImpl',['../classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html',1,'org::openzal::zal']]],

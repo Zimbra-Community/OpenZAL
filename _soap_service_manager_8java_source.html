@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.9.1</span>
+   &#160;<span id="projectnumber">1.10.2</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_soap_service_manager_8java_source.htm
 <div class="contents">
 <a href="_soap_service_manager_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2016 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -135,84 +135,116 @@ $(document).ready(function(){initNavTree('_soap_service_manager_8java_source.htm
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> com.zimbra.soap.*;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> org.dom4j.QName;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> java.util.HashMap;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">import</span> java.util.Map;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;@Singleton</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html">   33</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html">SoapServiceManager</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  @NotNull <span class="keyword">private</span> <span class="keyword">final</span> Map&lt;QName, DocumentHandler&gt; mOriginalHandlersMap;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  @Inject</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab3db5a262b25793b8fe3cd625bc6c9b7">   38</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab3db5a262b25793b8fe3cd625bc6c9b7">SoapServiceManager</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    mOriginalHandlersMap = <span class="keyword">new</span> HashMap&lt;QName, DocumentHandler&gt;(64);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">class </span>InternalHandlerMapPublisher <span class="keyword">implements</span> HandlerMapPublisher</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    @Override</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> receivedHandlerMap(Map&lt;QName, DocumentHandler&gt; handlerMap)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">for</span> (Map.Entry&lt;<a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_q_name.html">QName</a>, DocumentHandler&gt; entry : handlerMap.entrySet())</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (!mOriginalHandlersMap.containsKey(entry.getKey()))</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          mOriginalHandlersMap.put(entry.getKey(), entry.getValue());</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ae6d49b6ab8bdb26749fb60987b296cfc">   58</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <span class="keyword">register</span>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service.html">SoapService</a> soapService)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    SoapServlet.addService(</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      soapService.getServiceName(),</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">new</span> InternalDocumentService(</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        soapService,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">new</span> InternalHandlerMapPublisher()</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      )</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    );</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab4158b816c13375cfddb2bd51855c88a">   69</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab4158b816c13375cfddb2bd51855c88a">unregister</a>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service.html">SoapService</a> soapService)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    SoapServlet.addService(</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      soapService.getServiceName(),</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keyword">new</span> InternalUnregisterDocumentService(soapService)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    );</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a7f85c45dda2c19573c04cc7cd7308928">   77</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a7f85c45dda2c19573c04cc7cd7308928">overrideZimbraHandler</a>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_overriden_soap_service.html">OverridenSoapService</a> soapService)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    SoapServlet.addService(</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      soapService.getServiceName(),</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_service_impl.html">InternalOverrideDocumentServiceImpl</a>(</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        soapService,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">new</span> InternalHandlerMapPublisher(),</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        mOriginalHandlersMap</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      )</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    );</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_utils.html">org.openzal.zal.Utils</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log.html">org.openzal.zal.log.ZimbraLog</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> java.lang.reflect.Field;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">import</span> java.util.HashMap;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">import</span> java.util.List;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">import</span> java.util.Map;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;@Singleton</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html">   37</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html">SoapServiceManager</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  @NotNull <span class="keyword">private</span> <span class="keyword">final</span> Map&lt;QName, DocumentHandler&gt; mOriginalHandlersMap;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  @Inject</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab3db5a262b25793b8fe3cd625bc6c9b7">   42</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab3db5a262b25793b8fe3cd625bc6c9b7">SoapServiceManager</a>()</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    mOriginalHandlersMap = <span class="keyword">new</span> HashMap&lt;QName, DocumentHandler&gt;(64);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">class </span>InternalHandlerMapPublisher <span class="keyword">implements</span> HandlerMapPublisher</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    @Override</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> receivedHandlerMap(Map&lt;QName, DocumentHandler&gt; handlerMap)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">for</span> (Map.Entry&lt;<a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_q_name.html">QName</a>, DocumentHandler&gt; entry : handlerMap.entrySet())</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (!mOriginalHandlersMap.containsKey(entry.getKey()))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          mOriginalHandlersMap.put(entry.getKey(), entry.getValue());</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ae6d49b6ab8bdb26749fb60987b296cfc">   62</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <span class="keyword">register</span>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service.html">SoapService</a> soapService)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    SoapServlet.addService(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      soapService.getServiceName(),</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keyword">new</span> InternalDocumentService(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        soapService,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">new</span> InternalHandlerMapPublisher()</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      )</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    );</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab4158b816c13375cfddb2bd51855c88a">   73</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab4158b816c13375cfddb2bd51855c88a">unregister</a>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service.html">SoapService</a> soapService)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    SoapServlet.addService(</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      soapService.getServiceName(),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">new</span> InternalUnregisterDocumentService(soapService)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    );</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      ((Map&lt;String, List&lt;DocumentService&gt;&gt;) sExtraServices.get(null)).<span class="keyword">remove</span>(soapService.<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service.html#a0ce075cc572397c6c23a93ccff160aa9">getServiceName</a>());</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">catch</span> (IllegalAccessException e)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(e);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a9ce481dc467ac72c9d5297e2cfb436c7">   90</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a9ce481dc467ac72c9d5297e2cfb436c7">restoreZimbraHandlers</a>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_overriden_soap_service.html">OverridenSoapService</a> soapService)</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a7f85c45dda2c19573c04cc7cd7308928">   90</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a7f85c45dda2c19573c04cc7cd7308928">overrideZimbraHandler</a>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_overriden_soap_service.html">OverridenSoapService</a> soapService)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    SoapServlet.addService(</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      soapService.getServiceName(),</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">new</span> InternalRestoreDocumentService(soapService,mOriginalHandlersMap)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    );</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_service_impl.html">InternalOverrideDocumentServiceImpl</a>(</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        soapService,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">new</span> InternalHandlerMapPublisher(),</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        mOriginalHandlersMap</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      )</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    );</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a9ce481dc467ac72c9d5297e2cfb436c7">  103</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a9ce481dc467ac72c9d5297e2cfb436c7">restoreZimbraHandlers</a>(<a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_overriden_soap_service.html">OverridenSoapService</a> soapService)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    SoapServlet.addService(</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      soapService.getServiceName(),</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keyword">new</span> InternalRestoreDocumentService(soapService,mOriginalHandlersMap)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    );</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> Field sExtraServices = null;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">static</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      sExtraServices = com.zimbra.soap.SoapServlet.class.getDeclaredField(<span class="stringliteral">&quot;sExtraServices&quot;</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      sExtraServices.setAccessible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">catch</span> (Throwable ex)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      ZimbraLog.extensions.fatal(<span class="stringliteral">&quot;ZAL Reflection Initialization Exception: &quot;</span> + Utils.exceptionToString(ex));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(ex);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_html_a0ce075cc572397c6c23a93ccff160aa9"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service.html#a0ce075cc572397c6c23a93ccff160aa9">org.openzal.zal.soap.SoapService.getServiceName</a></div><div class="ttdeci">String getServiceName()</div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_service_impl_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_service_impl.html">org.openzal.zal.soap.InternalOverrideDocumentServiceImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="_internal_override_document_service_impl_8java_source.html#l00033">InternalOverrideDocumentServiceImpl.java:33</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html">org.openzal.zal.soap.SoapServiceManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00033">SoapServiceManager.java:33</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html">org.openzal.zal.soap.SoapServiceManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00037">SoapServiceManager.java:37</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_utils_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_utils.html">org.openzal.zal.Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="_utils_8java_source.html#l00060">Utils.java:60</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_q_name_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_q_name.html">org.openzal.zal.soap.QName</a></div><div class="ttdef"><b>Definition:</b> <a href="_q_name_8java_source.html#l00023">QName.java:23</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html_ab4158b816c13375cfddb2bd51855c88a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab4158b816c13375cfddb2bd51855c88a">org.openzal.zal.soap.SoapServiceManager.unregister</a></div><div class="ttdeci">void unregister(SoapService soapService)</div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00069">SoapServiceManager.java:69</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html_ab4158b816c13375cfddb2bd51855c88a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab4158b816c13375cfddb2bd51855c88a">org.openzal.zal.soap.SoapServiceManager.unregister</a></div><div class="ttdeci">void unregister(SoapService soapService)</div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00073">SoapServiceManager.java:73</a></div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_overriden_soap_service_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_overriden_soap_service.html">org.openzal.zal.soap.OverridenSoapService</a></div><div class="ttdef"><b>Definition:</b> <a href="_overriden_soap_service_8java_source.html#l00025">OverridenSoapService.java:25</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html_ab3db5a262b25793b8fe3cd625bc6c9b7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab3db5a262b25793b8fe3cd625bc6c9b7">org.openzal.zal.soap.SoapServiceManager.SoapServiceManager</a></div><div class="ttdeci">SoapServiceManager()</div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00038">SoapServiceManager.java:38</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log.html">org.openzal.zal.log.ZimbraLog</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimbra_log_8java_source.html#l00028">ZimbraLog.java:28</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html_ab3db5a262b25793b8fe3cd625bc6c9b7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ab3db5a262b25793b8fe3cd625bc6c9b7">org.openzal.zal.soap.SoapServiceManager.SoapServiceManager</a></div><div class="ttdeci">SoapServiceManager()</div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00042">SoapServiceManager.java:42</a></div></div>
 <div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service.html">org.openzal.zal.soap.SoapService</a></div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_8java_source.html#l00024">SoapService.java:24</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html_a7f85c45dda2c19573c04cc7cd7308928"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a7f85c45dda2c19573c04cc7cd7308928">org.openzal.zal.soap.SoapServiceManager.overrideZimbraHandler</a></div><div class="ttdeci">void overrideZimbraHandler(OverridenSoapService soapService)</div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00077">SoapServiceManager.java:77</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html_a9ce481dc467ac72c9d5297e2cfb436c7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a9ce481dc467ac72c9d5297e2cfb436c7">org.openzal.zal.soap.SoapServiceManager.restoreZimbraHandlers</a></div><div class="ttdeci">void restoreZimbraHandlers(OverridenSoapService soapService)</div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00090">SoapServiceManager.java:90</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html_a7f85c45dda2c19573c04cc7cd7308928"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a7f85c45dda2c19573c04cc7cd7308928">org.openzal.zal.soap.SoapServiceManager.overrideZimbraHandler</a></div><div class="ttdeci">void overrideZimbraHandler(OverridenSoapService soapService)</div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00090">SoapServiceManager.java:90</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager_html_a9ce481dc467ac72c9d5297e2cfb436c7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a9ce481dc467ac72c9d5297e2cfb436c7">org.openzal.zal.soap.SoapServiceManager.restoreZimbraHandlers</a></div><div class="ttdeci">void restoreZimbraHandlers(OverridenSoapService soapService)</div><div class="ttdef"><b>Definition:</b> <a href="_soap_service_manager_8java_source.html#l00103">SoapServiceManager.java:103</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

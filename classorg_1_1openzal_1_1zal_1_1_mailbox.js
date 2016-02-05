@@ -31,6 +31,7 @@ var classorg_1_1openzal_1_1zal_1_1_mailbox =
     [ "createSearchFolder", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a0af8a257fdf71a835ea454104eacc568", null ],
     [ "createTag", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a9212139112207b9852ad940ade238090", null ],
     [ "delete", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7db9823db29a948cd067960a31bcf2f7", null ],
+    [ "deleteMailbox", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a5721c580d511c8ba25468a64fd701740", null ],
     [ "emptyFolder", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a88a3f3d64e0296cb3210a3709f317f2c", null ],
     [ "endTransaction", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7975508368bee5110e2ea1a682095973", null ],
     [ "getAccount", "classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad0ade96461e88afb513453fc3b43557d", null ],

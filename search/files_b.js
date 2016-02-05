@@ -3,6 +3,7 @@ var searchData=
   ['mailbox_2ejava',['Mailbox.java',['../_mailbox_8java.html',1,'']]],
   ['mailboxblob_2ejava',['MailboxBlob.java',['../_mailbox_blob_8java.html',1,'']]],
   ['mailboxmanager_2ejava',['MailboxManager.java',['../_mailbox_manager_8java.html',1,'']]],
+  ['mailboxmanagerimp_2ejava',['MailboxManagerImp.java',['../_mailbox_manager_imp_8java.html',1,'']]],
   ['mailboxmanagerlistener_2ejava',['MailboxManagerListener.java',['../_mailbox_manager_listener_8java.html',1,'']]],
   ['mailboxmanagerlistenerwrapper_2ejava',['MailboxManagerListenerWrapper.java',['../_mailbox_manager_listener_wrapper_8java.html',1,'']]],
   ['mailboxsessionproxy_2ejava',['MailboxSessionProxy.java',['../_mailbox_session_proxy_8java.html',1,'']]],

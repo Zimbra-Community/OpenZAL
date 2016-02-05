@@ -1,0 +1,5 @@
+<map id="org.openzal.zal.ProvisioningImp.getAccountsOnCos" name="org.openzal.zal.ProvisioningImp.getAccountsOnCos">
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a68fe9f9c89991cf81438bd86e5d49358" title="org.openzal.zal.Provisioning\lImp.countAccount" alt="" coords="291,5,477,46"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_count_account_result.html#a416c28a6ada1b2e790efd3ab43ccf338" title="org.openzal.zal.Provisioning.\lCountAccountResult.getCountAccountByCos" alt="" coords="240,70,528,111"/>
+<area shape="rect" id="node3" href="$interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#af2a1363de1c0641202791eec3a0e62b5" title="org.openzal.zal.Provisioning.count\lAccount" alt="" coords="576,5,797,46"/>
+</map>

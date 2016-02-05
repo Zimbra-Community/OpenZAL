@@ -61,5 +61,6 @@ var classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite =
     [ "methodIsReply", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a5666fb640904fa2b72428f67e2e10319", null ],
     [ "newCopy", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a5855558989b16d2452d6194c6a997ee4", null ],
     [ "setMailItemId", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a61ea414753e1206a43ee0b0c3d5f6bd1", null ],
-    [ "setSequence", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a51d276a5bcd80bc07f0c55057a5b41a4", null ]
+    [ "setSequence", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a51d276a5bcd80bc07f0c55057a5b41a4", null ],
+    [ "toIcal", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a8484fcfab367767c107f553f905aaa7c", null ]
 ];

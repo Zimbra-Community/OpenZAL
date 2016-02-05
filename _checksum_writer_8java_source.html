@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.9.1</span>
+   &#160;<span id="projectnumber">1.10.2</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_checksum_writer_8java_source.html',''
 <div class="contents">
 <a href="_checksum_writer_8java.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ZAL - The abstraction layer for Zimbra.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2015 ZeXtras S.r.l.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2016 ZeXtras S.r.l.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of ZAL.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
@@ -133,33 +133,73 @@ $(document).ready(function(){initNavTree('_checksum_writer_8java_source.html',''
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> java.io.File;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> java.util.jar.Manifest;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> java.util.zip.ZipFile;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html">   29</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html">ChecksumWriter</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html#ab30bbebe78565b8d5958b81b92a8951f">   31</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html#ab30bbebe78565b8d5958b81b92a8951f">main</a>(@NotNull String args[]) <span class="keywordflow">throws</span> Exception</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span>( args.length == 0 )</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      System.err.println(<span class="stringliteral">&quot;No destination file provided&quot;</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      System.exit(1);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    File destination = <span class="keyword">new</span> File(args[0]);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ZipFile zipFile = <span class="keyword">new</span> ZipFile(<a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils.html">JarUtils</a>.<a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils.html#a192b96a8603dc2399eedb682e9a5fd59">getCurrentJar</a>());</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    String currentDigest = JarUtils.computeDigest(zipFile);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Manifest manifest = JarUtils.getManifest(zipFile);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    manifest.getMainAttributes().putValue(<span class="stringliteral">&quot;Digest&quot;</span>, currentDigest);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    JarUtils.copyJar(zipFile, manifest, destination);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    System.exit(0);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html">org.openzal.zal.tools.ChecksumWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="_checksum_writer_8java_source.html#l00029">ChecksumWriter.java:29</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils.html">org.openzal.zal.tools.JarUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="_jar_utils_8java_source.html#l00041">JarUtils.java:41</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer_html_ab30bbebe78565b8d5958b81b92a8951f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html#ab30bbebe78565b8d5958b81b92a8951f">org.openzal.zal.tools.ChecksumWriter.main</a></div><div class="ttdeci">static void main(@NotNull String args[])</div><div class="ttdef"><b>Definition:</b> <a href="_checksum_writer_8java_source.html#l00031">ChecksumWriter.java:31</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils_html_a192b96a8603dc2399eedb682e9a5fd59"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_jar_utils.html#a192b96a8603dc2399eedb682e9a5fd59">org.openzal.zal.tools.JarUtils.getCurrentJar</a></div><div class="ttdeci">static File getCurrentJar()</div><div class="ttdef"><b>Definition:</b> <a href="_jar_utils_8java_source.html#l00046">JarUtils.java:46</a></div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> java.io.RandomAccessFile;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> java.security.KeyFactory;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> java.security.Signature;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> java.security.interfaces.RSAPrivateKey;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">import</span> java.security.spec.KeySpec;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> java.security.spec.PKCS8EncodedKeySpec;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">import</span> java.util.zip.ZipFile;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html">   34</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html">ChecksumWriter</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html#ab30bbebe78565b8d5958b81b92a8951f">   36</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html#ab30bbebe78565b8d5958b81b92a8951f">main</a>(@NotNull String args[]) <span class="keywordflow">throws</span> Exception</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span>( args.length &lt;= 2 )</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      System.err.println(<span class="stringliteral">&quot;/path/to/PrivateKey, /path/to/Source, /path/to/Destination parameters required.&quot;</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      System.exit(1);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    RandomAccessFile privateKeyFile = null;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ZipFile zipFile = null;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    File destination;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      privateKeyFile = <span class="keyword">new</span> RandomAccessFile(args[0], <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      zipFile = <span class="keyword">new</span> ZipFile(args[1]);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      destination = <span class="keyword">new</span> File(args[2]);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      byte[] privateKeyContent = <span class="keyword">new</span> byte[(int) privateKeyFile.length()];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        privateKeyFile.readFully(privateKeyContent);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">finally</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        privateKeyFile.close();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      KeyFactory keyFactory = KeyFactory.getInstance(<span class="stringliteral">&quot;RSA&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      KeySpec keySpec = <span class="keyword">new</span> PKCS8EncodedKeySpec(privateKeyContent);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      RSAPrivateKey privateKey = (RSAPrivateKey) keyFactory.generatePrivate(keySpec);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      byte[] currentDigest = JarUtils.computeDigest(zipFile);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      Signature rsa256 = Signature.getInstance(<span class="stringliteral">&quot;SHA256withRSA&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      rsa256.initSign(privateKey);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      rsa256.update(currentDigest);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      JarUtils.copyJar(zipFile, destination, currentDigest, rsa256.sign());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      System.exit(0);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">finally</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">if</span> (zipFile != null)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        zipFile.close();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">if</span> (privateKeyFile != null)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        privateKeyFile.close();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    System.exit(1);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html">org.openzal.zal.tools.ChecksumWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="_checksum_writer_8java_source.html#l00034">ChecksumWriter.java:34</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer_html_ab30bbebe78565b8d5958b81b92a8951f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_checksum_writer.html#ab30bbebe78565b8d5958b81b92a8951f">org.openzal.zal.tools.ChecksumWriter.main</a></div><div class="ttdeci">static void main(@NotNull String args[])</div><div class="ttdef"><b>Definition:</b> <a href="_checksum_writer_8java_source.html#l00036">ChecksumWriter.java:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

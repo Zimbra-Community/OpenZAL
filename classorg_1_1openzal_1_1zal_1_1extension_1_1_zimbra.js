@@ -1,5 +1,7 @@
 var classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra =
 [
+    [ "Zimbra", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#ac3b92d13c9ccf30735ff9cafa41763b5", null ],
+    [ "forceMailboxd", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a1ac49617cb38475c52880d3956ea988c", null ],
     [ "getMailboxManager", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a932fe33e229a566505d4015fdb7ea0b5", null ],
     [ "getProvisioning", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a08181f307ae4b3760201bfc76cde2341", null ],
     [ "getStoreManager", "classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a6250e89ab6af8b35240b5e3500764f4d", null ],

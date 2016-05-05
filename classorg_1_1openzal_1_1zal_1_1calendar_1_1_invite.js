@@ -2,6 +2,8 @@ var classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite =
 [
     [ "Invite", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a0142cd2d54832acc88c3f876b6d8d317", null ],
     [ "Invite", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a70026e1a29aea6046d7af72de547c7a2", null ],
+    [ "addAlarm", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#aeafb788efb647786b9ff192c53aa29b2", null ],
+    [ "addAttendee", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ae1a084fc0eb65ff4e98f3e312f9e671f", null ],
     [ "createdByOrganizer", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ab1607252131aeb5aa3a92251dfa4ed34", null ],
     [ "getAlarmMinutesBeforeStart", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#a8a447b40da78719f1be670b634223541", null ],
     [ "getAttachment", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ac5328bbef375efc7a7e69e6fbc9f5c0c", null ],

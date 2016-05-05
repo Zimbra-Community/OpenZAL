@@ -1,0 +1,6 @@
+<map id="org.openzal.zal.Account.getAllAddressesAllowedInFrom" name="org.openzal.zal.Account.getAllAddressesAllowedInFrom">
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_account.html#aaa8ea0dd29756e22fb843fb5ab42a6f6" title="org.openzal.zal.Account.get\lAllAddressesIncludeDomainAliases" alt="" coords="240,5,469,46"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_account.html#a50d1d317d61b1d4c0cee2d7b8cfa3011" title="org.openzal.zal.Account.get\lAllowFromAddress" alt="" coords="263,70,447,111"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1_account.html#aa76524c7080c258a61aad8c38f4808db" title="org.openzal.zal.Account.get\lAllAddresses" alt="" coords="517,5,701,46"/>
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1_account.html#a934df96df963ce7615fc9f4123e813a2" title="org.openzal.zal.Account.getName" alt="" coords="749,12,968,39"/>
+</map>

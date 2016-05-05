@@ -11,6 +11,7 @@ var classorg_1_1openzal_1_1zal_1_1_store_manager_imp =
     [ "getFileBlobStore", "classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#ad34bc0067456dfa8123917d5976e449e", null ],
     [ "getMailboxBlob", "classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a6140958d62458a1f20d7b3b0edbac062", null ],
     [ "getVolumeByName", "classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#ac4e42093eeace3f048110d567ae04703", null ],
+    [ "isValidVolume", "classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a9ef281237f5dfeb15009bceee9e3ecd2", null ],
     [ "link", "classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a22fd42c70215cec47d708d06cb1fb989", null ],
     [ "quietDelete", "classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a579051cdcfc55a697f7b2cc5164b777e", null ],
     [ "sm", "classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a0fe195122db403102dfac275c7d0bd9a", null ]

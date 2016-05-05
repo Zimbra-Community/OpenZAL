@@ -17,6 +17,7 @@ var classorg_1_1openzal_1_1zal_1_1_account =
     [ "getAccountTimeZone", "classorg_1_1openzal_1_1zal_1_1_account.html#a84231d8653aa70d351da229879f9d213", null ],
     [ "getAliases", "classorg_1_1openzal_1_1zal_1_1_account.html#a5483d86721c850596f3d5819359a2f63", null ],
     [ "getAllAddresses", "classorg_1_1openzal_1_1zal_1_1_account.html#aa76524c7080c258a61aad8c38f4808db", null ],
+    [ "getAllAddressesAllowedInFrom", "classorg_1_1openzal_1_1zal_1_1_account.html#ad4349be1e68029375d3b76876c807f46", null ],
     [ "getAllAddressesIncludeDomainAliases", "classorg_1_1openzal_1_1zal_1_1_account.html#aaa8ea0dd29756e22fb843fb5ab42a6f6", null ],
     [ "getAllDataSources", "classorg_1_1openzal_1_1zal_1_1_account.html#ae7d6810165c9bc61076adaa17f485343", null ],
     [ "getAllIdentities", "classorg_1_1openzal_1_1zal_1_1_account.html#aa158dfda27ea07515506773e91219e88", null ],

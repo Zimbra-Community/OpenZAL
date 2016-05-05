@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.2</span>
+   &#160;<span id="projectnumber">1.10.5</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -153,94 +153,105 @@ $(document).ready(function(){initNavTree('_m_part_info_8java_source.html','');})
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    mMPartInfo = (com.zimbra.cs.mime.MPartInfo) mPartInfo;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a290b4e84085fd50c31c496781b3b1579">   46</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a290b4e84085fd50c31c496781b3b1579">getFilename</a>()</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getFilename();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#af7369345245f22e11ecef6fcc2ef48c1">   51</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#af7369345245f22e11ecef6fcc2ef48c1">getDisposition</a>()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getDisposition();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  @Nullable</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a231ef1d94e82ca9c60178fd76e54e69e">   57</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a231ef1d94e82ca9c60178fd76e54e69e">getDispositionParameter</a>(String name)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      String headers[] = mMPartInfo.getMimePart().getHeader(<span class="stringliteral">&quot;Content-Disposition&quot;</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">if</span>( headers == null || headers.length == 0 )</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> null;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> ContentDisposition(headers[0]).getParameter(name);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">catch</span> (MessagingException e)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a290b4e84085fd50c31c496781b3b1579">   47</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a290b4e84085fd50c31c496781b3b1579">getFilename</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    String res = mMPartInfo.getFilename();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> res == null ? <span class="stringliteral">&quot;&quot;</span> : res;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#af7369345245f22e11ecef6fcc2ef48c1">   54</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#af7369345245f22e11ecef6fcc2ef48c1">getDisposition</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    String res = mMPartInfo.getDisposition();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> res == null ? <span class="stringliteral">&quot;&quot;</span> : res;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  @Nullable</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a231ef1d94e82ca9c60178fd76e54e69e">   61</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a231ef1d94e82ca9c60178fd76e54e69e">getDispositionParameter</a>(String name)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      String headers[] = mMPartInfo.getMimePart().getHeader(<span class="stringliteral">&quot;Content-Disposition&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span>( headers == null || headers.length == 0 )</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> ContentDisposition(headers[0]).getParameter(name);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a73384ab020fc3fb303d134d64ef446dd">   74</a></span>&#160;  <span class="keyword">public</span> MimePart <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a73384ab020fc3fb303d134d64ef446dd">getMimePart</a>()</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getMimePart();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  @Nullable</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a75d830ef311a7e1712bc6d6fd285b325">   80</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a75d830ef311a7e1712bc6d6fd285b325">getContentTypeParameter</a>(String name)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getContentTypeParameter(name);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a43a23f773459df0e22911783817e584c">   85</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a43a23f773459df0e22911783817e584c">getPartNum</a>()</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getPartNum();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  @Nullable</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aa577abf535f5676585addef4795f0871">   91</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html">MPartInfo</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aa577abf535f5676585addef4795f0871">getParent</a>()</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    com.zimbra.cs.mime.MPartInfo parent = mMPartInfo.getParent();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (parent != null)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a78d4e956c2e80f6930644a8f4f1d0696">MPartInfo</a>(parent);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> null;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a7116cab9a25c0835627819618d36dc37">  101</a></span>&#160;  <span class="keyword">public</span> List&lt;MPartInfo&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a7116cab9a25c0835627819618d36dc37">getChildren</a>()</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> ZimbraListWrapper.wrapMPartInfos(mMPartInfo.getChildren());</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a2551c4059288c44781dfbb8f2e5b5e11">  106</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a2551c4059288c44781dfbb8f2e5b5e11">isFilterableAttachment</a>()</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.isFilterableAttachment();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aca26ef08d6a357e9d37d21b4215e8b95">  111</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aca26ef08d6a357e9d37d21b4215e8b95">getContentID</a>()</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getContentID();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a197d1fbb48dd0db3d63b0a938287e5a8">  116</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a197d1fbb48dd0db3d63b0a938287e5a8">getContentType</a>()</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getContentType();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a73384ab020fc3fb303d134d64ef446dd"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a73384ab020fc3fb303d134d64ef446dd">org.openzal.zal.MPartInfo.getMimePart</a></div><div class="ttdeci">MimePart getMimePart()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00074">MPartInfo.java:74</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_aca26ef08d6a357e9d37d21b4215e8b95"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aca26ef08d6a357e9d37d21b4215e8b95">org.openzal.zal.MPartInfo.getContentID</a></div><div class="ttdeci">String getContentID()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00111">MPartInfo.java:111</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_af7369345245f22e11ecef6fcc2ef48c1"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#af7369345245f22e11ecef6fcc2ef48c1">org.openzal.zal.MPartInfo.getDisposition</a></div><div class="ttdeci">String getDisposition()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00051">MPartInfo.java:51</a></div></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">catch</span> (MessagingException e)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a73384ab020fc3fb303d134d64ef446dd">   78</a></span>&#160;  <span class="keyword">public</span> MimePart <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a73384ab020fc3fb303d134d64ef446dd">getMimePart</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getMimePart();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  @Nullable</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a75d830ef311a7e1712bc6d6fd285b325">   84</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a75d830ef311a7e1712bc6d6fd285b325">getContentTypeParameter</a>(String name)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getContentTypeParameter(name);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a43a23f773459df0e22911783817e584c">   89</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a43a23f773459df0e22911783817e584c">getPartNum</a>()</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getPartNum();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  @Nullable</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aa577abf535f5676585addef4795f0871">   95</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html">MPartInfo</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aa577abf535f5676585addef4795f0871">getParent</a>()</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    com.zimbra.cs.mime.MPartInfo parent = mMPartInfo.getParent();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (parent != null)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a78d4e956c2e80f6930644a8f4f1d0696">MPartInfo</a>(parent);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a7116cab9a25c0835627819618d36dc37">  105</a></span>&#160;  <span class="keyword">public</span> List&lt;MPartInfo&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a7116cab9a25c0835627819618d36dc37">getChildren</a>()</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> ZimbraListWrapper.wrapMPartInfos(mMPartInfo.getChildren());</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a2551c4059288c44781dfbb8f2e5b5e11">  110</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a2551c4059288c44781dfbb8f2e5b5e11">isFilterableAttachment</a>()</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.isFilterableAttachment();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aca26ef08d6a357e9d37d21b4215e8b95">  115</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aca26ef08d6a357e9d37d21b4215e8b95">getContentID</a>()</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getContentID();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a197d1fbb48dd0db3d63b0a938287e5a8">  120</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a197d1fbb48dd0db3d63b0a938287e5a8">getContentType</a>()</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.getContentType();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  @Override</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a41585110c76548a131028cd36e67b24b">  126</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a41585110c76548a131028cd36e67b24b">toString</a>()</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> mMPartInfo.toString();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a73384ab020fc3fb303d134d64ef446dd"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a73384ab020fc3fb303d134d64ef446dd">org.openzal.zal.MPartInfo.getMimePart</a></div><div class="ttdeci">MimePart getMimePart()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00078">MPartInfo.java:78</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_aca26ef08d6a357e9d37d21b4215e8b95"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aca26ef08d6a357e9d37d21b4215e8b95">org.openzal.zal.MPartInfo.getContentID</a></div><div class="ttdeci">String getContentID()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00115">MPartInfo.java:115</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_af7369345245f22e11ecef6fcc2ef48c1"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#af7369345245f22e11ecef6fcc2ef48c1">org.openzal.zal.MPartInfo.getDisposition</a></div><div class="ttdeci">String getDisposition()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00054">MPartInfo.java:54</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a41585110c76548a131028cd36e67b24b"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a41585110c76548a131028cd36e67b24b">org.openzal.zal.MPartInfo.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00126">MPartInfo.java:126</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html">org.openzal.zal.MPartInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00033">MPartInfo.java:33</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a290b4e84085fd50c31c496781b3b1579"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a290b4e84085fd50c31c496781b3b1579">org.openzal.zal.MPartInfo.getFilename</a></div><div class="ttdeci">String getFilename()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00046">MPartInfo.java:46</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a43a23f773459df0e22911783817e584c"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a43a23f773459df0e22911783817e584c">org.openzal.zal.MPartInfo.getPartNum</a></div><div class="ttdeci">int getPartNum()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00085">MPartInfo.java:85</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a290b4e84085fd50c31c496781b3b1579"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a290b4e84085fd50c31c496781b3b1579">org.openzal.zal.MPartInfo.getFilename</a></div><div class="ttdeci">String getFilename()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00047">MPartInfo.java:47</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a43a23f773459df0e22911783817e584c"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a43a23f773459df0e22911783817e584c">org.openzal.zal.MPartInfo.getPartNum</a></div><div class="ttdeci">int getPartNum()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00089">MPartInfo.java:89</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a78d4e956c2e80f6930644a8f4f1d0696"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a78d4e956c2e80f6930644a8f4f1d0696">org.openzal.zal.MPartInfo.MPartInfo</a></div><div class="ttdeci">MPartInfo(@NotNull Object mPartInfo)</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00037">MPartInfo.java:37</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a197d1fbb48dd0db3d63b0a938287e5a8"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a197d1fbb48dd0db3d63b0a938287e5a8">org.openzal.zal.MPartInfo.getContentType</a></div><div class="ttdeci">String getContentType()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00116">MPartInfo.java:116</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_aa577abf535f5676585addef4795f0871"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aa577abf535f5676585addef4795f0871">org.openzal.zal.MPartInfo.getParent</a></div><div class="ttdeci">MPartInfo getParent()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00091">MPartInfo.java:91</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a75d830ef311a7e1712bc6d6fd285b325"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a75d830ef311a7e1712bc6d6fd285b325">org.openzal.zal.MPartInfo.getContentTypeParameter</a></div><div class="ttdeci">String getContentTypeParameter(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00080">MPartInfo.java:80</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a231ef1d94e82ca9c60178fd76e54e69e"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a231ef1d94e82ca9c60178fd76e54e69e">org.openzal.zal.MPartInfo.getDispositionParameter</a></div><div class="ttdeci">String getDispositionParameter(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00057">MPartInfo.java:57</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a2551c4059288c44781dfbb8f2e5b5e11"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a2551c4059288c44781dfbb8f2e5b5e11">org.openzal.zal.MPartInfo.isFilterableAttachment</a></div><div class="ttdeci">boolean isFilterableAttachment()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00106">MPartInfo.java:106</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a7116cab9a25c0835627819618d36dc37"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a7116cab9a25c0835627819618d36dc37">org.openzal.zal.MPartInfo.getChildren</a></div><div class="ttdeci">List&lt; MPartInfo &gt; getChildren()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00101">MPartInfo.java:101</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a197d1fbb48dd0db3d63b0a938287e5a8"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a197d1fbb48dd0db3d63b0a938287e5a8">org.openzal.zal.MPartInfo.getContentType</a></div><div class="ttdeci">String getContentType()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00120">MPartInfo.java:120</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_aa577abf535f5676585addef4795f0871"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#aa577abf535f5676585addef4795f0871">org.openzal.zal.MPartInfo.getParent</a></div><div class="ttdeci">MPartInfo getParent()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00095">MPartInfo.java:95</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a75d830ef311a7e1712bc6d6fd285b325"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a75d830ef311a7e1712bc6d6fd285b325">org.openzal.zal.MPartInfo.getContentTypeParameter</a></div><div class="ttdeci">String getContentTypeParameter(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00084">MPartInfo.java:84</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a231ef1d94e82ca9c60178fd76e54e69e"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a231ef1d94e82ca9c60178fd76e54e69e">org.openzal.zal.MPartInfo.getDispositionParameter</a></div><div class="ttdeci">String getDispositionParameter(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00061">MPartInfo.java:61</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a2551c4059288c44781dfbb8f2e5b5e11"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a2551c4059288c44781dfbb8f2e5b5e11">org.openzal.zal.MPartInfo.isFilterableAttachment</a></div><div class="ttdeci">boolean isFilterableAttachment()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00110">MPartInfo.java:110</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_m_part_info_html_a7116cab9a25c0835627819618d36dc37"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_m_part_info.html#a7116cab9a25c0835627819618d36dc37">org.openzal.zal.MPartInfo.getChildren</a></div><div class="ttdeci">List&lt; MPartInfo &gt; getChildren()</div><div class="ttdef"><b>Definition:</b> <a href="_m_part_info_8java_source.html#l00105">MPartInfo.java:105</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

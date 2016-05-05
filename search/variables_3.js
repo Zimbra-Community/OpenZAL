@@ -1,6 +1,7 @@
 var searchData=
 [
   ['daily',['DAILY',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_rule_1_1_frequency.html#afc7664426812fb734e3b5fe7ea49d620',1,'org::openzal::zal::calendar::RecurrenceRule::Frequency']]],
+  ['datasource_5fpassword_5fmax_5flength',['DATASOURCE_PASSWORD_MAX_LENGTH',['../classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#abf7adea0c517b31316ea8afc3f97968f',1,'org::openzal::zal::ProvisioningImp']]],
   ['date',['date',['../classorg_1_1openzal_1_1zal_1_1_item_status.html#ad67d52ec1c20687d54bee6786e85b5b2',1,'org.openzal.zal.ItemStatus.date()'],['../classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_version.html#a772066b6d59cdb95528a44cbbb945e06',1,'org.openzal.zal.lib.ZimbraVersion.DATE()']]],
   ['date_5fdesc',['DATE_DESC',['../classorg_1_1openzal_1_1zal_1_1_sorted_by.html#a2c33ff451033449bc93b4d423f10d28a',1,'org::openzal::zal::SortedBy']]],
   ['datechanged',['dateChanged',['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#a64fec41604028a519ef081538a433983',1,'org::openzal::zal::FullItemInfo']]],

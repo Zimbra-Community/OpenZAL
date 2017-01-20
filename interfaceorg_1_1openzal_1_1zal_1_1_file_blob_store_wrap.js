@@ -1,0 +1,27 @@
+var interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap =
+[
+    [ "copy", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a59bb91e5e0e1d81af99b9074aa34b5c3", null ],
+    [ "copy", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a268f407270d7b79b8da4c01021ce7a31", null ],
+    [ "delete", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a0147cc3534a9272cd9ed4bd59e23be28", null ],
+    [ "delete", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a3094c75540cfa1066832ad0824c3a1c9", null ],
+    [ "delete", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a929da6e295dc4cd2858070bb1c1b8b3b", null ],
+    [ "deleteStore", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a98c9f1d35aaca700ebe993cbd209cb3a", null ],
+    [ "deleteStore", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a7c842000f9b0d7d1a464a7464c93ab26", null ],
+    [ "getBlobBuilder", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a6dab9c858df856ec605c85675653c550", null ],
+    [ "getContent", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a64572dde9f24b81ce4995f86b7ec2cfa", null ],
+    [ "getContent", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a4b2e76c563962cf666b04e0854dbd7d8", null ],
+    [ "getMailboxBlob", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a41be22d3f82e7e1834946f90addaf91f", null ],
+    [ "getWrappedObject", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a6276cf0a184d3140fc01c5e716b38e12", null ],
+    [ "link", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#accd3de01cbe1602c898f82ff2fdc4ca9", null ],
+    [ "link", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#adf617468bc4fdc261f82f8eb750bcb23", null ],
+    [ "renameTo", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a6e770c9e08106a63055c156e6f3e1998", null ],
+    [ "shutdown", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a7ed876257c22bfa54d3327517358faec", null ],
+    [ "stage", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a2907d39891947568cef6b9ba0056b6db", null ],
+    [ "stage", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#adfa0f55ee10029cb914556e678957e12", null ],
+    [ "stage", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a09491870ba41cedb167bf1b916c6d3ba", null ],
+    [ "startup", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#abf3bc53afbe1341e866a22acbaee895c", null ],
+    [ "storeIncoming", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a11c0ac72fbac7b9cbde3e21807857cae", null ],
+    [ "storeIncoming", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a533adb27cc4252d9d22086597d54ef3b", null ],
+    [ "storeIncoming", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a21b7f249c6eeeff9cab85570821ca6fc", null ],
+    [ "supports", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#aad74a8c191d767623c40ab52367c0953", null ]
+];

@@ -18,9 +18,14 @@ var searchData=
   ['soapservicemanager_2ejava',['SoapServiceManager.java',['../_soap_service_manager_8java.html',1,'']]],
   ['soaptransport_2ejava',['SoapTransport.java',['../_soap_transport_8java.html',1,'']]],
   ['sortedby_2ejava',['SortedBy.java',['../_sorted_by_8java.html',1,'']]],
+  ['stagedblob_2ejava',['StagedBlob.java',['../_staged_blob_8java.html',1,'']]],
+  ['stagedblobwrap_2ejava',['StagedBlobWrap.java',['../_staged_blob_wrap_8java.html',1,'']]],
+  ['store_2ejava',['Store.java',['../_store_8java.html',1,'']]],
+  ['storebuilder_2ejava',['StoreBuilder.java',['../_store_builder_8java.html',1,'']]],
+  ['storefeature_2ejava',['StoreFeature.java',['../_store_feature_8java.html',1,'']]],
   ['storemanager_2ejava',['StoreManager.java',['../_store_manager_8java.html',1,'']]],
   ['storemanagerconst_2ejava',['StoreManagerConst.java',['../_store_manager_const_8java.html',1,'']]],
-  ['storemanagerimp_2ejava',['StoreManagerImp.java',['../_store_manager_imp_8java.html',1,'']]],
+  ['storemanagerimpl_2ejava',['StoreManagerImpl.java',['../_store_manager_impl_8java.html',1,'']]],
   ['storevolume_2ejava',['StoreVolume.java',['../_store_volume_8java.html',1,'']]],
   ['stubzalextensioncontroller_2ejava',['StubZalExtensionController.java',['../_stub_zal_extension_controller_8java.html',1,'']]]
 ];

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -130,64 +130,16 @@ $(document).ready(function(){initNavTree('_mailbox_blob_8java_source.html','');}
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">package </span>org.openzal.zal;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> java.io.IOException;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html">   29</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html">MailboxBlob</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  @NotNull <span class="keyword">private</span> <span class="keyword">final</span> com.zimbra.cs.store.MailboxBlob mMailboxBlob;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#ae481c639a140cd3e2eb6559a60c8c41f">   33</a></span>&#160;  <span class="keyword">protected</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#ae481c639a140cd3e2eb6559a60c8c41f">MailboxBlob</a>(@NotNull com.zimbra.cs.store.MailboxBlob mailboxBlob)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (mailboxBlob == null)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> NullPointerException();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    mMailboxBlob = mailboxBlob;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#a6e6f408fd4416cfca64b2bb1824670b9">   42</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#a6e6f408fd4416cfca64b2bb1824670b9">getDigest</a>()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    throws IOException</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> mMailboxBlob.getDigest();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#a9cefc663661034273f0ede2f1a2bac83">   48</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_blob.html">Blob</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#a9cefc663661034273f0ede2f1a2bac83">getLocalBlob</a>()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    throws IOException</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_blob.html">Blob</a>(mMailboxBlob.<a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#a9cefc663661034273f0ede2f1a2bac83">getLocalBlob</a>());</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#aea99a12f15b7b85aacf2234c0e1b0efb">   54</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#aea99a12f15b7b85aacf2234c0e1b0efb">getRevision</a>()</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> mMailboxBlob.getRevision();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#ad854ff1daa9969d07ca9b433a41a0e79">   59</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#ad854ff1daa9969d07ca9b433a41a0e79">toString</a>()</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> mMailboxBlob.toString();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#afe903b299140b56aa1af7211c179ec40">   64</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#afe903b299140b56aa1af7211c179ec40">getItemId</a>()</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> mMailboxBlob.getItemId();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  protected &lt;T&gt; T toZimbra(Class&lt;T&gt; cls)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> cls.cast(mMailboxBlob);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_blob_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_blob.html">org.openzal.zal.Blob</a></div><div class="ttdef"><b>Definition:</b> <a href="_blob_8java_source.html#l00028">Blob.java:28</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_aea99a12f15b7b85aacf2234c0e1b0efb"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#aea99a12f15b7b85aacf2234c0e1b0efb">org.openzal.zal.MailboxBlob.getRevision</a></div><div class="ttdeci">int getRevision()</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_blob_8java_source.html#l00054">MailboxBlob.java:54</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_blob_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html">org.openzal.zal.MailboxBlob</a></div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_blob_8java_source.html#l00029">MailboxBlob.java:29</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_a9cefc663661034273f0ede2f1a2bac83"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#a9cefc663661034273f0ede2f1a2bac83">org.openzal.zal.MailboxBlob.getLocalBlob</a></div><div class="ttdeci">Blob getLocalBlob()</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_blob_8java_source.html#l00048">MailboxBlob.java:48</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_ae481c639a140cd3e2eb6559a60c8c41f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#ae481c639a140cd3e2eb6559a60c8c41f">org.openzal.zal.MailboxBlob.MailboxBlob</a></div><div class="ttdeci">MailboxBlob(@NotNull com.zimbra.cs.store.MailboxBlob mailboxBlob)</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_blob_8java_source.html#l00033">MailboxBlob.java:33</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_ad854ff1daa9969d07ca9b433a41a0e79"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#ad854ff1daa9969d07ca9b433a41a0e79">org.openzal.zal.MailboxBlob.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_blob_8java_source.html#l00059">MailboxBlob.java:59</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_a6e6f408fd4416cfca64b2bb1824670b9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#a6e6f408fd4416cfca64b2bb1824670b9">org.openzal.zal.MailboxBlob.getDigest</a></div><div class="ttdeci">String getDigest()</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_blob_8java_source.html#l00042">MailboxBlob.java:42</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_afe903b299140b56aa1af7211c179ec40"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#afe903b299140b56aa1af7211c179ec40">org.openzal.zal.MailboxBlob.getItemId</a></div><div class="ttdeci">int getItemId()</div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_blob_8java_source.html#l00064">MailboxBlob.java:64</a></div></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html">   23</a></span>&#160;<span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html">MailboxBlob</a> <span class="keyword">extends</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_staged_blob.html">StagedBlob</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#aea99a12f15b7b85aacf2234c0e1b0efb">getRevision</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  String <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#ad854ff1daa9969d07ca9b433a41a0e79">toString</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#afe903b299140b56aa1af7211c179ec40">getItemId</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_aea99a12f15b7b85aacf2234c0e1b0efb"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#aea99a12f15b7b85aacf2234c0e1b0efb">org.openzal.zal.MailboxBlob.getRevision</a></div><div class="ttdeci">int getRevision()</div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_staged_blob_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_staged_blob.html">org.openzal.zal.StagedBlob</a></div><div class="ttdef"><b>Definition:</b> <a href="_staged_blob_8java_source.html#l00025">StagedBlob.java:25</a></div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html">org.openzal.zal.MailboxBlob</a></div><div class="ttdef"><b>Definition:</b> <a href="_mailbox_blob_8java_source.html#l00023">MailboxBlob.java:23</a></div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_ad854ff1daa9969d07ca9b433a41a0e79"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#ad854ff1daa9969d07ca9b433a41a0e79">org.openzal.zal.MailboxBlob.toString</a></div><div class="ttdeci">String toString()</div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob_html_afe903b299140b56aa1af7211c179ec40"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html#afe903b299140b56aa1af7211c179ec40">org.openzal.zal.MailboxBlob.getItemId</a></div><div class="ttdeci">int getItemId()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

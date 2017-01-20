@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -130,80 +130,97 @@ $(document).ready(function(){initNavTree('_parsed_message_8java_source.html','')
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">package </span>org.openzal.zal;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">org.openzal.zal.exceptions.ZimbraException</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> javax.mail.internet.MimeMessage;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> java.util.List;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html">   30</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html">ParsedMessage</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">private</span> com.zimbra.cs.mime.ParsedMessage mParsedMessage;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a5d4df0c33ed7c39a0d6b34f1c9146a79">   34</a></span>&#160;  <span class="keyword">protected</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a5d4df0c33ed7c39a0d6b34f1c9146a79">ParsedMessage</a>(@NotNull Object parsedMessage)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> ( parsedMessage == null )</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> NullPointerException();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    mParsedMessage = (com.zimbra.cs.mime.ParsedMessage)parsedMessage;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#aed04aacb9496260a0970a7225c6fb1e4">   43</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#aed04aacb9496260a0970a7225c6fb1e4">ParsedMessage</a>(byte[] rawData, <span class="keywordtype">boolean</span> indexAttachments) <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      mParsedMessage = <span class="keyword">new</span> com.zimbra.cs.mime.ParsedMessage(rawData, indexAttachments);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">catch</span> (com.zimbra.common.service.ServiceException e)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a31c4c664cd28acb3366856d4881688b2">   55</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a31c4c664cd28acb3366856d4881688b2">ParsedMessage</a>(MimeMessage msg, <span class="keywordtype">boolean</span> indexAttachments) <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      mParsedMessage = <span class="keyword">new</span> com.zimbra.cs.mime.ParsedMessage(msg, indexAttachments);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">catch</span> (com.zimbra.common.service.ServiceException e)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> com.zimbra.common.service.ServiceException;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">org.openzal.zal.exceptions.ZimbraException</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> org.jetbrains.annotations.NotNull;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> javax.mail.internet.MimeMessage;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> java.util.List;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html">   31</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html">ParsedMessage</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">private</span> com.zimbra.cs.mime.ParsedMessage mParsedMessage;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a5d4df0c33ed7c39a0d6b34f1c9146a79">   35</a></span>&#160;  <span class="keyword">protected</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a5d4df0c33ed7c39a0d6b34f1c9146a79">ParsedMessage</a>(@NotNull Object parsedMessage)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> ( parsedMessage == null )</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> NullPointerException();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    mParsedMessage = (com.zimbra.cs.mime.ParsedMessage)parsedMessage;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#aed04aacb9496260a0970a7225c6fb1e4">   44</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#aed04aacb9496260a0970a7225c6fb1e4">ParsedMessage</a>(byte[] rawData, <span class="keywordtype">boolean</span> indexAttachments) <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      mParsedMessage = <span class="keyword">new</span> com.zimbra.cs.mime.ParsedMessage(rawData, indexAttachments);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">catch</span> (com.zimbra.common.service.ServiceException e)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">   * This triggers MimeMessage.parse(InputStream) to set internal headers and DataSources</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a31c4c664cd28acb3366856d4881688b2">   59</a></span>&#160;  <span class="keyword">public</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a31c4c664cd28acb3366856d4881688b2">ParsedMessage</a>(MimeMessage msg, <span class="keywordtype">boolean</span> indexAttachments) <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">ZimbraException</a></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      mParsedMessage = <span class="keyword">new</span> com.zimbra.cs.mime.ParsedMessage(msg, indexAttachments);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#afb39dd3a8f5d9d961d1ace52c7774a87">   67</a></span>&#160;  <span class="keyword">public</span> List&lt;MPartInfo&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#afb39dd3a8f5d9d961d1ace52c7774a87">getMessageParts</a>()</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> ZimbraListWrapper.wrapMPartInfos(mParsedMessage.getMessageParts());</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8">   73</a></span>&#160;  <span class="keyword">public</span> MimeMessage <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8">getMimeMessage</a>()</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> mParsedMessage.getMimeMessage();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a2890f9a4fe3c4d975ac5bc3af02466bc">   78</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a2890f9a4fe3c4d975ac5bc3af02466bc">hasAttachments</a>()</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> mParsedMessage.hasAttachments();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  public &lt;T&gt; T toZimbra(@NotNull Class&lt;T&gt; cls)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> cls.cast(mParsedMessage);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">catch</span> (com.zimbra.common.service.ServiceException e)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#afb39dd3a8f5d9d961d1ace52c7774a87">   71</a></span>&#160;  <span class="keyword">public</span> List&lt;MPartInfo&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#afb39dd3a8f5d9d961d1ace52c7774a87">getMessageParts</a>()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> ZimbraListWrapper.wrapMPartInfos(mParsedMessage.getMessageParts());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a40f55ecea6303303ef883bec92381412">   76</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a40f55ecea6303303ef883bec92381412">generateInternalIndexing</a>()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      mParsedMessage.analyzeFully();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_afb39dd3a8f5d9d961d1ace52c7774a87"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#afb39dd3a8f5d9d961d1ace52c7774a87">org.openzal.zal.ParsedMessage.getMessageParts</a></div><div class="ttdeci">List&lt; MPartInfo &gt; getMessageParts()</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00067">ParsedMessage.java:67</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_aed04aacb9496260a0970a7225c6fb1e4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#aed04aacb9496260a0970a7225c6fb1e4">org.openzal.zal.ParsedMessage.ParsedMessage</a></div><div class="ttdeci">ParsedMessage(byte[] rawData, boolean indexAttachments)</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00043">ParsedMessage.java:43</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_a2890f9a4fe3c4d975ac5bc3af02466bc"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a2890f9a4fe3c4d975ac5bc3af02466bc">org.openzal.zal.ParsedMessage.hasAttachments</a></div><div class="ttdeci">boolean hasAttachments()</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00078">ParsedMessage.java:78</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_af3abe8ced2887610ee51deb941ec6ee8"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8">org.openzal.zal.ParsedMessage.getMimeMessage</a></div><div class="ttdeci">MimeMessage getMimeMessage()</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00073">ParsedMessage.java:73</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_a5d4df0c33ed7c39a0d6b34f1c9146a79"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a5d4df0c33ed7c39a0d6b34f1c9146a79">org.openzal.zal.ParsedMessage.ParsedMessage</a></div><div class="ttdeci">ParsedMessage(@NotNull Object parsedMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00034">ParsedMessage.java:34</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_a31c4c664cd28acb3366856d4881688b2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a31c4c664cd28acb3366856d4881688b2">org.openzal.zal.ParsedMessage.ParsedMessage</a></div><div class="ttdeci">ParsedMessage(MimeMessage msg, boolean indexAttachments)</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00055">ParsedMessage.java:55</a></div></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8">   89</a></span>&#160;  <span class="keyword">public</span> MimeMessage <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8">getMimeMessage</a>()</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> mParsedMessage.getMimeMessage();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a2890f9a4fe3c4d975ac5bc3af02466bc">   94</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a2890f9a4fe3c4d975ac5bc3af02466bc">hasAttachments</a>()</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> mParsedMessage.hasAttachments();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  public &lt;T&gt; T toZimbra(@NotNull Class&lt;T&gt; cls)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> cls.cast(mParsedMessage);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_afb39dd3a8f5d9d961d1ace52c7774a87"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#afb39dd3a8f5d9d961d1ace52c7774a87">org.openzal.zal.ParsedMessage.getMessageParts</a></div><div class="ttdeci">List&lt; MPartInfo &gt; getMessageParts()</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00071">ParsedMessage.java:71</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_aed04aacb9496260a0970a7225c6fb1e4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#aed04aacb9496260a0970a7225c6fb1e4">org.openzal.zal.ParsedMessage.ParsedMessage</a></div><div class="ttdeci">ParsedMessage(byte[] rawData, boolean indexAttachments)</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00044">ParsedMessage.java:44</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_a2890f9a4fe3c4d975ac5bc3af02466bc"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a2890f9a4fe3c4d975ac5bc3af02466bc">org.openzal.zal.ParsedMessage.hasAttachments</a></div><div class="ttdeci">boolean hasAttachments()</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00094">ParsedMessage.java:94</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_af3abe8ced2887610ee51deb941ec6ee8"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#af3abe8ced2887610ee51deb941ec6ee8">org.openzal.zal.ParsedMessage.getMimeMessage</a></div><div class="ttdeci">MimeMessage getMimeMessage()</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00089">ParsedMessage.java:89</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_a40f55ecea6303303ef883bec92381412"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a40f55ecea6303303ef883bec92381412">org.openzal.zal.ParsedMessage.generateInternalIndexing</a></div><div class="ttdeci">void generateInternalIndexing()</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00076">ParsedMessage.java:76</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00030">ExceptionWrapper.java:30</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_a5d4df0c33ed7c39a0d6b34f1c9146a79"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a5d4df0c33ed7c39a0d6b34f1c9146a79">org.openzal.zal.ParsedMessage.ParsedMessage</a></div><div class="ttdeci">ParsedMessage(@NotNull Object parsedMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00035">ParsedMessage.java:35</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html_a31c4c664cd28acb3366856d4881688b2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html#a31c4c664cd28acb3366856d4881688b2">org.openzal.zal.ParsedMessage.ParsedMessage</a></div><div class="ttdeci">ParsedMessage(MimeMessage msg, boolean indexAttachments)</div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00059">ParsedMessage.java:59</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_zimbra_exception.html">org.openzal.zal.exceptions.ZimbraException</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimbra_exception_8java_source.html#l00025">ZimbraException.java:25</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html">org.openzal.zal.ParsedMessage</a></div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00030">ParsedMessage.java:30</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_parsed_message_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_parsed_message.html">org.openzal.zal.ParsedMessage</a></div><div class="ttdef"><b>Definition:</b> <a href="_parsed_message_8java_source.html#l00031">ParsedMessage.java:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

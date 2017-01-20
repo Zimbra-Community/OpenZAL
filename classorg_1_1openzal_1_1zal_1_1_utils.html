@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -137,6 +137,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a29a9ba7283ff68d99bcc5b8102170744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0055902ff5e9bba82b502b0c13b58e1"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#ac0055902ff5e9bba82b502b0c13b58e1">isGzipped</a> (File file)  throws IOException   </td></tr>
 <tr class="separator:ac0055902ff5e9bba82b502b0c13b58e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb34d1fbb467d3747a00160ec3b1544"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a0eb34d1fbb467d3747a00160ec3b1544">isGzipped</a> (InputStream inputStream)  throws IOException   </td></tr>
+<tr class="separator:a0eb34d1fbb467d3747a00160ec3b1544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef8749bae0cb74f5871b9a15875fa26"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#afef8749bae0cb74f5871b9a15875fa26">getContent</a> (InputStream stream, int sizeHint)  throws IOException   </td></tr>
 <tr class="separator:afef8749bae0cb74f5871b9a15875fa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44a9fbbb6a012f3084f19548b2dfda1b"><td class="memItemLeft" align="right" valign="top">static long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a44a9fbbb6a012f3084f19548b2dfda1b">copy</a> (InputStream in, boolean closeIn, OutputStream out, boolean closeOut)  throws IOException   </td></tr>
@@ -153,6 +155,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad80b57bc19805f59fe1ab180febf6ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f9909f4b6dab3f7bd2cabbe15ba2100"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a5f9909f4b6dab3f7bd2cabbe15ba2100">getEmailNamePart</a> (String address)</td></tr>
 <tr class="separator:a5f9909f4b6dab3f7bd2cabbe15ba2100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291c00eead48a96d7c7c5e2f8b73533e"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a291c00eead48a96d7c7c5e2f8b73533e">computeDigest</a> (InputStream inputStream)  throws IOException   </td></tr>
+<tr class="separator:a291c00eead48a96d7c7c5e2f8b73533e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -161,7 +165,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00060">60</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00064">64</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad60b7ae95431adbb8f073108d03b4bda"></a>
 <div class="memitem">
@@ -201,7 +205,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00174">174</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00178">178</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -227,7 +231,44 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00160">160</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00164">164</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a291c00eead48a96d7c7c5e2f8b73533e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String org.openzal.zal.Utils.computeDigest </td>
+          <td>(</td>
+          <td class="paramtype">InputStream&#160;</td>
+          <td class="paramname"><em>inputStream</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00337">337</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+
+<p><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_utils_a291c00eead48a96d7c7c5e2f8b73533e_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_utils_a291c00eead48a96d7c7c5e2f8b73533e_cgraph" alt=""/></div>
+<map name="classorg_1_1openzal_1_1zal_1_1_utils_a291c00eead48a96d7c7c5e2f8b73533e_cgraph" id="classorg_1_1openzal_1_1zal_1_1_utils_a291c00eead48a96d7c7c5e2f8b73533e_cgraph">
+<area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a9c24a74ae40d3d9dfe24bac28ef2c2ed" title="org.openzal.zal.lib.Version.is\lAtLeast" alt="" coords="248,27,437,69"/><area shape="rect" id="node5" href="classorg_1_1openzal_1_1zal_1_1_utils.html#abad6a9667711e9176e20957a67e11a78" title="org.openzal.zal.Utils.encode\lFSSafeBase64" alt="" coords="249,93,436,134"/><area shape="rect" id="node3" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a9e639c4e5c383ca9774733c165d0f3b5" title="org.openzal.zal.lib.Version.compareTo" alt="" coords="486,5,730,32"/><area shape="rect" id="node4" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#aee4f26ef7c44dbf2428e53a07dabf9ff" title="org.openzal.zal.lib.Version.\lVersion" alt="" coords="519,57,697,98"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -275,7 +316,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00245">245</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00254">254</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -301,7 +342,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00102">102</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00106">106</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -337,13 +378,13 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00179">179</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00183">183</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
-<p><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classorg_1_1openzal_1_1zal_1_1_utils_a29a9ba7283ff68d99bcc5b8102170744_cgraph.png" border="0" usemap="#classorg_1_1openzal_1_1zal_1_1_utils_a29a9ba7283ff68d99bcc5b8102170744_cgraph" alt=""/></div>
 <map name="classorg_1_1openzal_1_1zal_1_1_utils_a29a9ba7283ff68d99bcc5b8102170744_cgraph" id="classorg_1_1openzal_1_1zal_1_1_utils_a29a9ba7283ff68d99bcc5b8102170744_cgraph">
 <area shape="rect" id="node2" href="classorg_1_1openzal_1_1zal_1_1_zimlet_file.html#acfcde345bc4c8b0d1cad29d9bbfa496a" title="org.openzal.zal.ZimletFile.getName" alt="" coords="238,12,466,39"/></map>
@@ -374,7 +415,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00114">114</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00118">118</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -400,7 +441,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00169">169</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00173">173</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -426,7 +467,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00064">64</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00068">68</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -462,7 +503,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00240">240</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00249">249</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -488,7 +529,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00313">313</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00322">322</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -530,7 +571,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00139">139</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00143">143</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -555,7 +596,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00255">255</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00264">264</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -581,7 +622,33 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00235">235</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00239">239</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0eb34d1fbb467d3747a00160ec3b1544"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static boolean org.openzal.zal.Utils.isGzipped </td>
+          <td>(</td>
+          <td class="paramtype">InputStream&#160;</td>
+          <td class="paramname"><em>inputStream</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00244">244</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -607,7 +674,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00301">301</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00310">310</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -633,7 +700,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00120">120</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00124">124</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -659,7 +726,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00250">250</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00259">259</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -695,7 +762,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00267">267</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00276">276</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -721,7 +788,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00280">280</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00289">289</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>
@@ -744,7 +811,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8java_source.html#l00062">62</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8java_source.html#l00066">66</a> of file <a class="el" href="_utils_8java_source.html">Utils.java</a>.</p>
 
 </div>
 </div>

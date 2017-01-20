@@ -2,6 +2,7 @@ var classorg_1_1openzal_1_1zal_1_1_utils =
 [
     [ "addToMultiMap", "classorg_1_1openzal_1_1zal_1_1_utils.html#ad60b7ae95431adbb8f073108d03b4bda", null ],
     [ "bitmaskToTags", "classorg_1_1openzal_1_1zal_1_1_utils.html#a11eee941054f79f96cacdf79b182e498", null ],
+    [ "computeDigest", "classorg_1_1openzal_1_1zal_1_1_utils.html#a291c00eead48a96d7c7c5e2f8b73533e", null ],
     [ "copy", "classorg_1_1openzal_1_1zal_1_1_utils.html#a44a9fbbb6a012f3084f19548b2dfda1b", null ],
     [ "decode", "classorg_1_1openzal_1_1zal_1_1_utils.html#ade3724e63dde4c7aec6bc6736cc28cff", null ],
     [ "deployZimlet", "classorg_1_1openzal_1_1zal_1_1_utils.html#a29a9ba7283ff68d99bcc5b8102170744", null ],
@@ -13,6 +14,7 @@ var classorg_1_1openzal_1_1zal_1_1_utils =
     [ "getPublicURLForDomain", "classorg_1_1openzal_1_1zal_1_1_utils.html#aeb9617263c6f2b9ff42ae81259056ffc", null ],
     [ "getSmtpSession", "classorg_1_1openzal_1_1zal_1_1_utils.html#ade0d3ac8fa7d8c10427c6de5dc99c728", null ],
     [ "isGzipped", "classorg_1_1openzal_1_1zal_1_1_utils.html#ac0055902ff5e9bba82b502b0c13b58e1", null ],
+    [ "isGzipped", "classorg_1_1openzal_1_1zal_1_1_utils.html#a0eb34d1fbb467d3747a00160ec3b1544", null ],
     [ "loadTimeZonesFromFile", "classorg_1_1openzal_1_1zal_1_1_utils.html#ad80b57bc19805f59fe1ab180febf6ceb", null ],
     [ "orderZimletsByPriority", "classorg_1_1openzal_1_1zal_1_1_utils.html#a98b86abc51dadf600220754f0b4497c9", null ],
     [ "purgeMessageCache", "classorg_1_1openzal_1_1zal_1_1_utils.html#a8f00f43b40a5725b3950cb48d6571c68", null ],

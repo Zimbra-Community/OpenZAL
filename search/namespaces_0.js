@@ -1,17 +1,8 @@
 var searchData=
 [
-  ['calendar',['calendar',['../namespaceorg_1_1openzal_1_1zal_1_1calendar.html',1,'org::openzal::zal']]],
-  ['exceptions',['exceptions',['../namespaceorg_1_1openzal_1_1zal_1_1exceptions.html',1,'org::openzal::zal']]],
-  ['extension',['extension',['../namespaceorg_1_1openzal_1_1zal_1_1extension.html',1,'org::openzal::zal']]],
-  ['http',['http',['../namespaceorg_1_1openzal_1_1zal_1_1http.html',1,'org::openzal::zal']]],
-  ['lib',['lib',['../namespaceorg_1_1openzal_1_1zal_1_1lib.html',1,'org::openzal::zal']]],
-  ['log',['log',['../namespaceorg_1_1openzal_1_1zal_1_1log.html',1,'org::openzal::zal']]],
-  ['op',['op',['../namespaceorg_1_1openzal_1_1zal_1_1redolog_1_1op.html',1,'org::openzal::zal::redolog']]],
-  ['openzal',['openzal',['../namespaceorg_1_1openzal.html',1,'org']]],
-  ['org',['org',['../namespaceorg.html',1,'']]],
-  ['provisioning',['provisioning',['../namespaceorg_1_1openzal_1_1zal_1_1provisioning.html',1,'org::openzal::zal']]],
-  ['redolog',['redolog',['../namespaceorg_1_1openzal_1_1zal_1_1redolog.html',1,'org::openzal::zal']]],
-  ['soap',['soap',['../namespaceorg_1_1openzal_1_1zal_1_1soap.html',1,'org::openzal::zal']]],
-  ['tools',['tools',['../namespaceorg_1_1openzal_1_1zal_1_1tools.html',1,'org::openzal::zal']]],
-  ['zal',['zal',['../namespaceorg_1_1openzal_1_1zal.html',1,'org::openzal']]]
+  ['com',['com',['../namespacecom.html',1,'']]],
+  ['cs',['cs',['../namespacecom_1_1zimbra_1_1cs.html',1,'com::zimbra']]],
+  ['file',['file',['../namespacecom_1_1zimbra_1_1cs_1_1store_1_1file.html',1,'com::zimbra::cs::store']]],
+  ['store',['store',['../namespacecom_1_1zimbra_1_1cs_1_1store.html',1,'com::zimbra::cs']]],
+  ['zimbra',['zimbra',['../namespacecom_1_1zimbra.html',1,'com']]]
 ];

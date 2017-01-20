@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_extension_controller.html" title="org.openzal.zal.extension.\lZalExtensionController" alt="" coords="6,5,181,46"/>
-<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1extension_1_1_stub_zal_extension_controller.html" title="org.openzal.zal.extension.\lStubZalExtensionController" alt="" coords="229,5,411,46"/>
+<area shape="rect" id="node2" href="$interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint.html" title="org.openzal.zal.extension.\lZalEntrypoint" alt="" coords="219,23,394,65"/>
+<area shape="rect" id="node3" href="$classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_impl.html" title="org.openzal.zal.extension.\lZalEntrypointImpl" alt="" coords="443,23,618,65"/>
 </map>

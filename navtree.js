@@ -23,19 +23,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_c_e_8java.html",
-"_mailbox_blob_8java.html",
-"_zimbra_context_8java.html",
-"classorg_1_1openzal_1_1zal_1_1_cache_entry_type.html#a93c985d8558fc31f7559e7072969b2cc",
-"classorg_1_1openzal_1_1zal_1_1_flag.html#a867c30b758a911066c4849d9ec938ce9",
-"classorg_1_1openzal_1_1zal_1_1_mail_item_type.html",
-"classorg_1_1openzal_1_1zal_1_1_mime_constants.html#adb4cd8f7bd6c3884fe8fa0113b4e2c35",
-"classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#af52bda50a2ebaafecc05844df9eae1c3",
-"classorg_1_1openzal_1_1zal_1_1_wiki_template_1_1_context.html#a632c1345d247bf42eba547697d738ebb",
-"classorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_rule.html#a91e5321daea890d725ccb16c9b32efe2",
-"classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#aee4f26ef7c44dbf2428e53a07dabf9ff",
-"classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_response.html#a87541e49ef3ec1ed35154251b9cee230",
-"functions_func_p.html",
-"interfaceorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service.html#aab59f0351cf8cebb4cb6e1a3baceff63"
+"_item_info_8java.html",
+"_unable_to_find_distribution_list_exception_8java.html",
+"classorg_1_1openzal_1_1zal_1_1_acl.html#a9988311b368132945d7e9d50600295b8",
+"classorg_1_1openzal_1_1zal_1_1_fake_continuation.html#a0fad69a54a00199ce11ec3d6a5b1d468",
+"classorg_1_1openzal_1_1zal_1_1_item.html#a493e6506a48b009d309c7467ce4d0389",
+"classorg_1_1openzal_1_1zal_1_1_mailbox.html#aaa0edd2ca4bcc85b5a6e4d108745b6f3",
+"classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a278ac1317903b6efb54b3e5b033a9548",
+"classorg_1_1openzal_1_1zal_1_1_quota_usage.html",
+"classorg_1_1openzal_1_1zal_1_1_zimbra_id.html",
+"classorg_1_1openzal_1_1zal_1_1calendar_1_1_win_system_time.html#ad9c1313cf7685f0303c1b76b69f23ca2",
+"classorg_1_1openzal_1_1zal_1_1lib_1_1_version.html#a9af717a42ab199fac0565397eda164a6",
+"classorg_1_1openzal_1_1zal_1_1redolog_1_1op_1_1_redoable_op.html#a3a5021f804e81f519d3dd8c8ba4b6782",
+"enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html#a2c74df6eb1cbf32fd55d08b085c007b9",
+"interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#aab27ae4d207619e5254a490d2aa3ae9e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

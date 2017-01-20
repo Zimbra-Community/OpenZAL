@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -134,58 +134,44 @@ $(document).ready(function(){initNavTree('_console_boot_8java_source.html','');}
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">import</span> java.io.File;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> java.io.IOException;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html">   28</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html">ConsoleBoot</a></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html">VersionChooser</a> S_VERSION_CHOOSER       = <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html">VersionChooser</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String         EXTENSION_CLI_ATTRIBUTE = <span class="stringliteral">&quot;ZAL-ExtensionCli-Class&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">import</span> java.util.Arrays;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html">   29</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html">ConsoleBoot</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html">VersionChooser</a> sVersionChooser = <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html">VersionChooser</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html#a43fb19de1632bb6e82be70ebf011ded9">   33</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html#a43fb19de1632bb6e82be70ebf011ded9">main</a>(String[] args) <span class="keywordflow">throws</span> Exception</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    File directory = JarUtils.getCurrentJar().getParentFile();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    File extensionPathFile = <span class="keyword">new</span> File(directory, <span class="stringliteral">&quot;extension-path&quot;</span>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html">BootCli</a> bootCli;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (extensionPathFile.exists())</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      File path = S_VERSION_CHOOSER.getBestVersionDirectory(extensionPathFile);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      bootCli = createBootCli(path);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      bootCli = createBootCli(directory);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    bootCli.run(args);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html">BootCli</a> createBootCli(File extensionDirectory) <span class="keywordflow">throws</span> IOException</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html">BootCli</a>(S_VERSION_CHOOSER.<a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html#ac9b31554bf5c83f96db13d0720f24533">getBootstrapClassLoader</a>(extensionDirectory), getExtensionCli(extensionDirectory));</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> String getExtensionCli(File extensionDirectory) <span class="keywordflow">throws</span> IOException</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    File[] nodes = extensionDirectory.listFiles();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (nodes != null)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">for</span> (File jar : nodes)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        JarAccessor jarAccessor = <span class="keyword">new</span> JarAccessor(jar);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        String extensionClass = jarAccessor.getAttributeInManifest(EXTENSION_CLI_ATTRIBUTE);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (extensionClass != null &amp;&amp; !extensionClass.isEmpty())</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          <span class="keywordflow">return</span> extensionClass;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;No CLI found&quot;</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span>( args.length == 0 )</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;Missing CLI class&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    String cliClassName = args[0];</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    File directory = JarUtils.getCurrentJar().getParentFile();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    File extensionPathFile = <span class="keyword">new</span> File(directory, <span class="stringliteral">&quot;extension-path&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html">BootCli</a> bootCli;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (extensionPathFile.exists())</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      File path = sVersionChooser.getBestVersionDirectory(extensionPathFile);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      bootCli = createBootCli(path, cliClassName);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      bootCli = createBootCli(directory, cliClassName);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    bootCli.run(Arrays.copyOfRange(args,1,args.length));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">private</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html">BootCli</a> createBootCli(File extensionDirectory, String cliClassName) <span class="keywordflow">throws</span> IOException</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html">BootCli</a>(sVersionChooser.<a class="code" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html#ac9b31554bf5c83f96db13d0720f24533">getBootstrapClassLoader</a>(extensionDirectory), cliClassName);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html">org.openzal.zal.tools.VersionChooser</a></div><div class="ttdef"><b>Definition:</b> <a href="_version_chooser_8java_source.html#l00039">VersionChooser.java:39</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html">org.openzal.zal.tools.ConsoleBoot</a></div><div class="ttdef"><b>Definition:</b> <a href="_console_boot_8java_source.html#l00028">ConsoleBoot.java:28</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html">org.openzal.zal.tools.ConsoleBoot</a></div><div class="ttdef"><b>Definition:</b> <a href="_console_boot_8java_source.html#l00029">ConsoleBoot.java:29</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1lib_1_1_jar_accessor_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1lib_1_1_jar_accessor.html">org.openzal.zal.lib.JarAccessor</a></div><div class="ttdef"><b>Definition:</b> <a href="_jar_accessor_8java_source.html#l00033">JarAccessor.java:33</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html">org.openzal.zal.tools.BootCli</a></div><div class="ttdef"><b>Definition:</b> <a href="_boot_cli_8java_source.html#l00027">BootCli.java:27</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot_html_a43fb19de1632bb6e82be70ebf011ded9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1tools_1_1_console_boot.html#a43fb19de1632bb6e82be70ebf011ded9">org.openzal.zal.tools.ConsoleBoot.main</a></div><div class="ttdeci">static void main(String[] args)</div><div class="ttdef"><b>Definition:</b> <a href="_console_boot_8java_source.html#l00033">ConsoleBoot.java:33</a></div></div>

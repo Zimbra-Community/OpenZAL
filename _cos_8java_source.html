@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -186,121 +186,108 @@ $(document).ready(function(){initNavTree('_cos_8java_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashSet&lt;String&gt;(mCos.getMultiAttrSet(name));</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#ac16c148fe512c8fae2375a5e164d16ee">   79</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#ac16c148fe512c8fae2375a5e164d16ee">modify</a>(Map&lt;String, Object&gt; attrs)</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a1f5713164c2436f80b87f3e6d38ffdbd">   79</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a1f5713164c2436f80b87f3e6d38ffdbd">getId</a>()</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      mCos.modify(attrs);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a1f5713164c2436f80b87f3e6d38ffdbd">   91</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a1f5713164c2436f80b87f3e6d38ffdbd">getId</a>()</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> mCos.getId();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> mCos.getId();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a96f928bc0efabc02476378c4a210b41d">   84</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a96f928bc0efabc02476378c4a210b41d">setACE</a>(@NotNull Collection&lt;String&gt; strings)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      mCos.setACE(strings.toArray(<span class="keyword">new</span> String[strings.size()]));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a96f928bc0efabc02476378c4a210b41d">   96</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a96f928bc0efabc02476378c4a210b41d">setACE</a>(@NotNull Collection&lt;String&gt; strings)</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#abd175b00cace18d69d25e48a922b9653">   96</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#abd175b00cace18d69d25e48a922b9653">getName</a>()</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      mCos.setACE(strings.toArray(<span class="keyword">new</span> String[strings.size()]));</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#abd175b00cace18d69d25e48a922b9653">  108</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#abd175b00cace18d69d25e48a922b9653">getName</a>()</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> mCos.getName();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> mCos.getName();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a7116ce7a8458391362b5f03575018990">  101</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a7116ce7a8458391362b5f03575018990">setNotes</a>(String zimbraNotes)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      mCos.setNotes(zimbraNotes);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a7116ce7a8458391362b5f03575018990">  113</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a7116ce7a8458391362b5f03575018990">setNotes</a>(String zimbraNotes)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      mCos.setNotes(zimbraNotes);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a47cde5634fcd0661845297c76b3466a4">  126</a></span>&#160;  <span class="keyword">public</span> Map&lt;String, Object&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a47cde5634fcd0661845297c76b3466a4">getAttrs</a>(<span class="keywordtype">boolean</span> applyDefaults)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashMap&lt;String, Object&gt;(mCos.getAttrs(applyDefaults));</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a2b6861ebf17b8ee7fc8ecdbba1725b0c">  131</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a2b6861ebf17b8ee7fc8ecdbba1725b0c">getNotes</a>()</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> mCos.getNotes();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  @Override</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a14b2a62e3b32becec90ad1f20c2625e7">  137</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a14b2a62e3b32becec90ad1f20c2625e7">equals</a>(@Nullable Object o)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == o)</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span> (o == null || getClass() != o.getClass())</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">if</span> (!super.equals(o))</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html">Cos</a> zeCos = (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#af77fb86612c3cc31153c68928d0311ea">Cos</a>) o;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span> (mCos != null ? !mCos.<a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a14b2a62e3b32becec90ad1f20c2625e7">equals</a>(zeCos.mCos) : zeCos.mCos != null)</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  }</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  @Override</div>
-<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a816bde4a274838e969a02dbf783f951f">  163</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a816bde4a274838e969a02dbf783f951f">hashCode</a>()</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">int</span> result = super.hashCode();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    result = 31 * result + (mCos != null ? mCos.hashCode() : 0);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  com.zimbra.cs.account.Cos toZimbra()</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">return</span> mCos;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a14b2a62e3b32becec90ad1f20c2625e7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a14b2a62e3b32becec90ad1f20c2625e7">org.openzal.zal.Cos.equals</a></div><div class="ttdeci">boolean equals(@Nullable Object o)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00137">Cos.java:137</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_abd175b00cace18d69d25e48a922b9653"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#abd175b00cace18d69d25e48a922b9653">org.openzal.zal.Cos.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00108">Cos.java:108</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a2b6861ebf17b8ee7fc8ecdbba1725b0c"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a2b6861ebf17b8ee7fc8ecdbba1725b0c">org.openzal.zal.Cos.getNotes</a></div><div class="ttdeci">String getNotes()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00131">Cos.java:131</a></div></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a47cde5634fcd0661845297c76b3466a4">  114</a></span>&#160;  <span class="keyword">public</span> Map&lt;String, Object&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a47cde5634fcd0661845297c76b3466a4">getAttrs</a>(<span class="keywordtype">boolean</span> applyDefaults)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashMap&lt;String, Object&gt;(mCos.getAttrs(applyDefaults));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a2b6861ebf17b8ee7fc8ecdbba1725b0c">  119</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a2b6861ebf17b8ee7fc8ecdbba1725b0c">getNotes</a>()</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> mCos.getNotes();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  @Override</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a14b2a62e3b32becec90ad1f20c2625e7">  125</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a14b2a62e3b32becec90ad1f20c2625e7">equals</a>(@Nullable Object o)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == o)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">if</span> (o == null || getClass() != o.getClass())</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (!super.equals(o))</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html">Cos</a> zeCos = (<a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#af77fb86612c3cc31153c68928d0311ea">Cos</a>) o;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">if</span> (mCos != null ? !mCos.<a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a14b2a62e3b32becec90ad1f20c2625e7">equals</a>(zeCos.mCos) : zeCos.mCos != null)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  @Override</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a816bde4a274838e969a02dbf783f951f">  151</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_cos.html#a816bde4a274838e969a02dbf783f951f">hashCode</a>()</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">int</span> result = super.hashCode();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    result = 31 * result + (mCos != null ? mCos.hashCode() : 0);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  com.zimbra.cs.account.Cos toZimbra()</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> mCos;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a14b2a62e3b32becec90ad1f20c2625e7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a14b2a62e3b32becec90ad1f20c2625e7">org.openzal.zal.Cos.equals</a></div><div class="ttdeci">boolean equals(@Nullable Object o)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00125">Cos.java:125</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_abd175b00cace18d69d25e48a922b9653"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#abd175b00cace18d69d25e48a922b9653">org.openzal.zal.Cos.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00096">Cos.java:96</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a2b6861ebf17b8ee7fc8ecdbba1725b0c"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a2b6861ebf17b8ee7fc8ecdbba1725b0c">org.openzal.zal.Cos.getNotes</a></div><div class="ttdeci">String getNotes()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00119">Cos.java:119</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_adb1ec680a850844f796a6085f75db08d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#adb1ec680a850844f796a6085f75db08d">org.openzal.zal.Cos.getMailQuota</a></div><div class="ttdeci">long getMailQuota()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00068">Cos.java:68</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a1f5713164c2436f80b87f3e6d38ffdbd"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a1f5713164c2436f80b87f3e6d38ffdbd">org.openzal.zal.Cos.getId</a></div><div class="ttdeci">String getId()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00091">Cos.java:91</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a1f5713164c2436f80b87f3e6d38ffdbd"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a1f5713164c2436f80b87f3e6d38ffdbd">org.openzal.zal.Cos.getId</a></div><div class="ttdeci">String getId()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00079">Cos.java:79</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_aa222b9671eac823affa50ab1e5fb790c"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#aa222b9671eac823affa50ab1e5fb790c">org.openzal.zal.Cos.Cos</a></div><div class="ttdeci">Cos(String name, String id, Map&lt; String, Object &gt; attrs,@NotNull Provisioning prov)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00045">Cos.java:45</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a68f5781aaf185eb4bff628a51f80bfa0"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a68f5781aaf185eb4bff628a51f80bfa0">org.openzal.zal.Cos.getMultiAttrSet</a></div><div class="ttdeci">Set&lt; String &gt; getMultiAttrSet(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00074">Cos.java:74</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html">org.openzal.zal.Cos</a></div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00035">Cos.java:35</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a96f928bc0efabc02476378c4a210b41d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a96f928bc0efabc02476378c4a210b41d">org.openzal.zal.Cos.setACE</a></div><div class="ttdeci">void setACE(@NotNull Collection&lt; String &gt; strings)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00096">Cos.java:96</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a47cde5634fcd0661845297c76b3466a4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a47cde5634fcd0661845297c76b3466a4">org.openzal.zal.Cos.getAttrs</a></div><div class="ttdeci">Map&lt; String, Object &gt; getAttrs(boolean applyDefaults)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00126">Cos.java:126</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_ac16c148fe512c8fae2375a5e164d16ee"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#ac16c148fe512c8fae2375a5e164d16ee">org.openzal.zal.Cos.modify</a></div><div class="ttdeci">void modify(Map&lt; String, Object &gt; attrs)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00079">Cos.java:79</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a96f928bc0efabc02476378c4a210b41d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a96f928bc0efabc02476378c4a210b41d">org.openzal.zal.Cos.setACE</a></div><div class="ttdeci">void setACE(@NotNull Collection&lt; String &gt; strings)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00084">Cos.java:84</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00030">ExceptionWrapper.java:30</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a47cde5634fcd0661845297c76b3466a4"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a47cde5634fcd0661845297c76b3466a4">org.openzal.zal.Cos.getAttrs</a></div><div class="ttdeci">Map&lt; String, Object &gt; getAttrs(boolean applyDefaults)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00114">Cos.java:114</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_af77fb86612c3cc31153c68928d0311ea"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#af77fb86612c3cc31153c68928d0311ea">org.openzal.zal.Cos.Cos</a></div><div class="ttdeci">Cos(@NotNull Object cos)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00039">Cos.java:39</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a7116ce7a8458391362b5f03575018990"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a7116ce7a8458391362b5f03575018990">org.openzal.zal.Cos.setNotes</a></div><div class="ttdeci">void setNotes(String zimbraNotes)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00113">Cos.java:113</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a7116ce7a8458391362b5f03575018990"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a7116ce7a8458391362b5f03575018990">org.openzal.zal.Cos.setNotes</a></div><div class="ttdeci">void setNotes(String zimbraNotes)</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00101">Cos.java:101</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_ad4ca086e5fefde7259da637ef4c4a108"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#ad4ca086e5fefde7259da637ef4c4a108">org.openzal.zal.Cos.getACE</a></div><div class="ttdeci">Collection&lt; String &gt; getACE()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00063">Cos.java:63</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_entry_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_entry.html">org.openzal.zal.Entry</a></div><div class="ttdef"><b>Definition:</b> <a href="_entry_8java_source.html#l00027">Entry.java:27</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a816bde4a274838e969a02dbf783f951f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a816bde4a274838e969a02dbf783f951f">org.openzal.zal.Cos.hashCode</a></div><div class="ttdeci">int hashCode()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00163">Cos.java:163</a></div></div>
-<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_provisioning_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html">org.openzal.zal.Provisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00038">Provisioning.java:38</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_entry_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_entry.html">org.openzal.zal.Entry</a></div><div class="ttdef"><b>Definition:</b> <a href="_entry_8java_source.html#l00034">Entry.java:34</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_cos_html_a816bde4a274838e969a02dbf783f951f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_cos.html#a816bde4a274838e969a02dbf783f951f">org.openzal.zal.Cos.hashCode</a></div><div class="ttdeci">int hashCode()</div><div class="ttdef"><b>Definition:</b> <a href="_cos_8java_source.html#l00151">Cos.java:151</a></div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_provisioning_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html">org.openzal.zal.Provisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00034">Provisioning.java:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

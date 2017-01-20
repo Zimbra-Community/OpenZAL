@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_calendar_resource.html" title="org.openzal.zal.Provisioning\lKey.ByCalendarResource" alt="" coords="6,5,191,46"/>
+<area shape="rect" id="node1" href="$interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html" title="org.openzal.zal.Provisioning" alt="" coords="6,5,191,32"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html" title="org.openzal.zal.ProvisioningImp" alt="" coords="241,5,447,32"/>
 </map>

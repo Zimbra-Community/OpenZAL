@@ -1,0 +1,27 @@
+var classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store =
+[
+    [ "FileBlobPrimaryStore", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a1708aab1211509e68fb746b2ced6f64f", null ],
+    [ "canBePrimary", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a6ed8aff7676060c88ca2d19ef18a8244", null ],
+    [ "copy", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a5eb1cd652cfaec7d347cc1e01b0daabb", null ],
+    [ "delete", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a29c8c25c545c32d2db650ba7030805fd", null ],
+    [ "delete", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a468472e4d52484791a25f3d1df2781dc", null ],
+    [ "delete", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a6873f45995cfa66eb91a60aec02a34d9", null ],
+    [ "getBlobPath", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#adc354af51ca1141e895d960fa471f744", null ],
+    [ "getCompressionThreshold", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a3bb4721710aa68dda20618865e81c3a0", null ],
+    [ "getContent", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a84f6f064c18ab0b614c2de179f39d366", null ],
+    [ "getContent", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a5dddb362276ceb53ccd30b0af8bb51c4", null ],
+    [ "getMailboxBlob", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a89048b28d2127e4ae154a7600c95e2af", null ],
+    [ "getMailboxDirPath", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#ad4021090b9a6dae474744e822a1f9b8f", null ],
+    [ "getRootPath", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a5eda437931a465c2fd3b5c69bd97ba8d", null ],
+    [ "getVolumeId", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#ae50bd793e319f2cb289b59077dcc546c", null ],
+    [ "getVolumeName", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a5ac1e76153cd9af6e5dd897599567fad", null ],
+    [ "isCompressed", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a368c1ef9d47d0009877caa3332bd4b79", null ],
+    [ "link", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a29ead1667c328caa943055840dbedaef", null ],
+    [ "renameTo", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#ac823cb815f5edb689410c1fbc8843f61", null ],
+    [ "shutdown", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a57324bf3cfd575131cc61cabf030e561", null ],
+    [ "stage", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a33fcbb1d16ccfa9aa5e1bac68608753b", null ],
+    [ "startup", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a0f9654c58f086f9a752e4735e35fc75c", null ],
+    [ "storeIncoming", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#ab9666fb9180f312086365405036bd827", null ],
+    [ "supports", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a1bfff2ed84b34b17504be574980b9767", null ],
+    [ "toPrimaryStore", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#ac057ad3a473274e01236a4e48c8487bb", null ]
+];

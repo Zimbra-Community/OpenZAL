@@ -35,6 +35,7 @@ var searchData=
   ['blobdigest',['blobDigest',['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#a638f3558842708685348e1483ba95cea',1,'org::openzal::zal::FullItemInfo']]],
   ['blue',['BLUE',['../classorg_1_1openzal_1_1zal_1_1_item_1_1_color.html#a0519d9cd0b8543a895f5f2b855ea60c1',1,'org::openzal::zal::Item::Color']]],
   ['buildnum',['BUILDNUM',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_version.html#a58aa2ec427d0070c1bbae045e6e40e32',1,'org::openzal::zal::lib::ZimbraVersion']]],
+  ['bulk_5fdelete',['BULK_DELETE',['../enumorg_1_1openzal_1_1zal_1_1_store_feature.html#aeadb9b4a7eb4784d0dc49c4b86086b86',1,'org::openzal::zal::StoreFeature']]],
   ['busy',['Busy',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a06976171f26118d5c261c6c81767863f',1,'org::openzal::zal::calendar::FreeBusyStatus']]],
   ['busytentative',['BusyTentative',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a7427828be35f2ded9c0fc48616a01dfb',1,'org::openzal::zal::calendar::FreeBusyStatus']]],
   ['busyunavailable',['BusyUnavailable',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#a9e4943d0fb2b756c88f109c4a431eb63',1,'org::openzal::zal::calendar::FreeBusyStatus']]]

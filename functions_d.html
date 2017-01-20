@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -205,6 +205,10 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>DEFAULT_PATTERN
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1log_1_1_pattern_layout.html#a6406186aa6c4de266844e45a757e4ec8">org.openzal.zal.log.PatternLayout</a>
 </li>
+<li>defendsAgainstDelegateAdminAccountHarvesting()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#a306cc2b84209d0eb3e79d85b73bf3bad">org.openzal.zal.soap.InternalOverrideAdminDocumentHandler</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_handler.html#a9c5d2c3b492ceccc277e9021025237fa">org.openzal.zal.soap.InternalOverrideDocumentHandler</a>
+</li>
 <li>DEFERRED
 : <a class="el" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html#a285478629b4a76b442b24d4397624141">org.openzal.zal.calendar.AttendeeInviteStatus</a>
 </li>
@@ -212,11 +216,14 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html#a5d35a1f16fe93c0252e29a6abc389cb1">org.openzal.zal.calendar.AttendeeInviteStatus</a>
 </li>
 <li>delete()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a03b346b592bfd24578a9811d1408e77c">org.openzal.zal.FileBlobStoreWrapImpl</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a29c8c25c545c32d2db650ba7030805fd">org.openzal.zal.FileBlobPrimaryStore</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a0147cc3534a9272cd9ed4bd59e23be28">org.openzal.zal.FileBlobStoreWrap</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a14080b4df1c0d48664c7ddb6d21f9e59">org.openzal.zal.FileBlobStoreWrapImpl</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a7db9823db29a948cd067960a31bcf2f7">org.openzal.zal.Mailbox</a>
-, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#ac089c4812c719a8f815d8fccf170ebee">org.openzal.zal.StoreManager</a>
-, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#ae14088d9111173b41744c78796b03008">org.openzal.zal.StoreManagerImp</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_primary_store.html#a73666be1a9f32fd171e252cb47fbd150">org.openzal.zal.PrimaryStore</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store.html#a1cde283cee37c2e83ab5118ea6b4fd57">org.openzal.zal.Store</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_store_volume.html#aa74540b4f01b6d28fff95490960c59ae">org.openzal.zal.StoreVolume</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_volume_manager.html#aa3c206aec44964b359b938f4de9bac42">org.openzal.zal.VolumeManager</a>
 </li>
 <li>deleteAccount()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_account.html#a98c9532bc6cc693f053442ff0334c6fc">org.openzal.zal.Account</a>
@@ -229,14 +236,23 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#af784816b618dd8cbf2962480fd7e604e">org.openzal.zal.Provisioning</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#ac38e911e6fda476078cce9d62780e022">org.openzal.zal.ProvisioningImp</a>
 </li>
+<li>deleteCosById()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#a54657a89167f4d7b2d884ffea62261ba">org.openzal.zal.Provisioning</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a9356e467fcfcc03d588f6d91e9c118be">org.openzal.zal.ProvisioningImp</a>
+</li>
 <li>deleted
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_item_change.html#a1ed67774703c8b24964197cefb960585">org.openzal.zal.ItemChange</a>
+</li>
+<li>deleteDomainById()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#a9fd095bd83855c32ad24d3924a213975">org.openzal.zal.Provisioning</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a8c2ca589ee6fb34028e939149fd73a54">org.openzal.zal.ProvisioningImp</a>
 </li>
 <li>deleteMailbox()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a5721c580d511c8ba25468a64fd701740">org.openzal.zal.Mailbox</a>
 </li>
 <li>deleteStore()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#abef50f7d150d36017abe5e58aa081a9a">org.openzal.zal.FileBlobStoreWrapImpl</a>
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a7c842000f9b0d7d1a464a7464c93ab26">org.openzal.zal.FileBlobStoreWrap</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#aec8c9fbdfd20316f7e946e6536c3c6ff">org.openzal.zal.FileBlobStoreWrapImpl</a>
 </li>
 <li>deployZimlet()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#a29a9ba7283ff68d99bcc5b8102170744">org.openzal.zal.Utils</a>
@@ -250,11 +266,26 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>destroy()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_impl.html#a7b4113fada5a2e9dd465eb6a498be6ec">org.openzal.zal.extension.ZalEntrypointImpl</a>
 </li>
+<li>detach()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1index_1_1_indexer_manager.html#a666c818d28375fb898f759958103261a">org.openzal.zal.index.IndexerManager</a>
+</li>
+<li>disableCompression()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_blob_builder.html#a6b31ce5d3bc55ed23be421ed87f9cc7b">org.openzal.zal.BlobBuilder</a>
+</li>
+<li>disableDigest()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_blob_builder.html#aa16d8af90bacb71a351a73253c767b0b">org.openzal.zal.BlobBuilder</a>
+</li>
+<li>dispose()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_blob_builder.html#a57ad4ff18dc4832afa34bb0027d47713">org.openzal.zal.BlobBuilder</a>
+</li>
 <li>dl
 : <a class="el" href="enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html#a512de9e1ff5cd74b66418684adcd14cf">org.openzal.zal.provisioning.TargetType</a>
 </li>
+<li>doConversion()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1index_1_1_indexer_manager_1_1_internal_mime_handler.html#a879219bf5af093020860ae1180badf33">org.openzal.zal.index.IndexerManager.InternalMimeHandler</a>
+</li>
 <li>Document()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_document.html#a3d6848388a9ab5ec70127c50b2427a34">org.openzal.zal.Document</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_document.html#ae25e2686efe92d001d1e111639e3aaf5">org.openzal.zal.Document</a>
 </li>
 <li>DOCUMENT
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#abf50fc9d3c33d1f1d7fbd345b925c7da">org.openzal.zal.MailItemType</a>

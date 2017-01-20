@@ -4,6 +4,7 @@ var classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_hand
     [ "canAccessAccount", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#ae3915e6c4d9b64209b77feb789cc14e1", null ],
     [ "canAccessAccountCommon", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#ae0a7f25ba232d2604b205c845ad3a91f", null ],
     [ "canModifyOptions", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#aabd3880c9443ba029ad74099411a0f41", null ],
+    [ "defendsAgainstDelegateAdminAccountHarvesting", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#a306cc2b84209d0eb3e79d85b73bf3bad", null ],
     [ "domainAuthSufficient", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#af79de127e8f2809494d79b14697de695", null ],
     [ "getDefaultSessionType", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#ad9eb1d828f81c266be6c9c5b30a76327", null ],
     [ "handle", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_admin_document_handler.html#ad1f668dbacea345fb77151961493eaff", null ],

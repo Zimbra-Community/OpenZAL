@@ -10,9 +10,11 @@ var searchData=
   ['nosuchdistributionlistexception_2ejava',['NoSuchDistributionListException.java',['../_no_such_distribution_list_exception_8java.html',1,'']]],
   ['nosuchdomainexception_2ejava',['NoSuchDomainException.java',['../_no_such_domain_exception_8java.html',1,'']]],
   ['nosuchfolderexception_2ejava',['NoSuchFolderException.java',['../_no_such_folder_exception_8java.html',1,'']]],
+  ['nosuchfreebusyexception_2ejava',['NoSuchFreeBusyException.java',['../_no_such_free_busy_exception_8java.html',1,'']]],
   ['nosuchgrantexception_2ejava',['NoSuchGrantException.java',['../_no_such_grant_exception_8java.html',1,'']]],
   ['nosuchitemexception_2ejava',['NoSuchItemException.java',['../_no_such_item_exception_8java.html',1,'']]],
   ['nosuchmessageexception_2ejava',['NoSuchMessageException.java',['../_no_such_message_exception_8java.html',1,'']]],
+  ['nosuchserverexception_2ejava',['NoSuchServerException.java',['../_no_such_server_exception_8java.html',1,'']]],
   ['nosuchsignatureexception_2ejava',['NoSuchSignatureException.java',['../_no_such_signature_exception_8java.html',1,'']]],
   ['nosuchzimletexception_2ejava',['NoSuchZimletException.java',['../_no_such_zimlet_exception_8java.html',1,'']]],
   ['note_2ejava',['Note.java',['../_note_8java.html',1,'']]]

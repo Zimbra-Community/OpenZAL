@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -161,7 +161,23 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1log_1_1_zimbra_log_1_1_zimbra_log_section.html#ab8afad738356bce423bf14c0f659e228">org.openzal.zal.log.ZimbraLog.ZimbraLogSection</a>
 </li>
 <li>FBTYPE_BUSY
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#aeed2251a34652b0cb2bf2a0c628acd62">org.openzal.zal.Utils</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_free_busy.html#a778682f0bd3629d019ec5c0084f1ac4c">org.openzal.zal.FreeBusy</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_utils.html#aeed2251a34652b0cb2bf2a0c628acd62">org.openzal.zal.Utils</a>
+</li>
+<li>FBTYPE_BUSY_TENTATIVE
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_free_busy.html#ad3b3bd8cca36196d398570a13549903c">org.openzal.zal.FreeBusy</a>
+</li>
+<li>FBTYPE_BUSY_UNAVAILABLE
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_free_busy.html#a17e63c324a42da60b1d6ad1a56b2e995">org.openzal.zal.FreeBusy</a>
+</li>
+<li>FBTYPE_FREE
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_free_busy.html#af4dfb16d327d3975050209cee5f6aefb">org.openzal.zal.FreeBusy</a>
+</li>
+<li>FBTYPE_NODATA
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_free_busy.html#a9da6404080b0c5d1fe1ece923f4a0a54">org.openzal.zal.FreeBusy</a>
+</li>
+<li>FileBlobPrimaryStore()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#a1708aab1211509e68fb746b2ced6f64f">org.openzal.zal.FileBlobPrimaryStore</a>
 </li>
 <li>FileBlobStoreWrapImpl()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#ae9f917695455310f7bca95f725e60053">org.openzal.zal.FileBlobStoreWrapImpl</a>
@@ -174,6 +190,12 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 </li>
 <li>findClass()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_bootstrap_class_loader.html#a5cc19e546ba2e4b2c92bab93c24ab376">org.openzal.zal.extension.BootstrapClassLoader</a>
+</li>
+<li>findResource()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_bootstrap_class_loader.html#a30b5186fc7470a5df88789d54b4f9ce8">org.openzal.zal.extension.BootstrapClassLoader</a>
+</li>
+<li>finish()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_blob_builder.html#a7f08caa1eaa3a5774c7260c6fe3b4d00">org.openzal.zal.BlobBuilder</a>
 </li>
 <li>FIRST_USER_ID
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a506d23a6ff2dbaaf993a53d6c816d90f">org.openzal.zal.Mailbox</a>
@@ -216,6 +238,9 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 <li>Free
 : <a class="el" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#adc8c05df986b2bf5bcdd824ff3a4e7a7">org.openzal.zal.calendar.FreeBusyStatus</a>
 </li>
+<li>FreeBusy()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_free_busy.html#a0e048c304dcd96ea96c8d795af467b44">org.openzal.zal.FreeBusy</a>
+</li>
 <li>FreeBusyStatus()
 : <a class="el" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html#ac9f1101c9f04a3e5ccafc46964da1ac7">org.openzal.zal.calendar.FreeBusyStatus</a>
 </li>
@@ -245,7 +270,7 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_signature.html#a19cc01f35e15dba2a59635d42aa9977e">org.openzal.zal.ProvisioningKey.BySignature</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_x_m_p_p_component.html#a3b401f33709873129c69dc2e6df3b6ed">org.openzal.zal.ProvisioningKey.ByXMPPComponent</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_zimlet.html#a94f66f0015a55d7d0ae75030a09acfed">org.openzal.zal.ProvisioningKey.ByZimlet</a>
-, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_target_by.html#a957d82c2f29a807a0ac778d44f58315f">org.openzal.zal.TargetBy</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_targetby.html#a9b6d6d0ed0acda915345d34c7e0e8d21">org.openzal.zal.Targetby</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_zimbra_item_id.html#ae3a19e0228670e91a99b7983eb6c0261">org.openzal.zal.ZimbraItemId</a>
 </li>
 <li>fromZimbra()
@@ -254,6 +279,7 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 , <a class="el" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_global_invite_status.html#a94eb7400501f7ca7cb5a462b69d9c9a4">org.openzal.zal.calendar.GlobalInviteStatus</a>
 , <a class="el" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html#a4827c49f7f23caf95cea265e55a3e36d">org.openzal.zal.calendar.Priority</a>
 , <a class="el" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_sensitivity.html#a16e78cc82fe054649fe8b12dbb34f25f">org.openzal.zal.calendar.Sensitivity</a>
+, <a class="el" href="enumorg_1_1openzal_1_1zal_1_1_store_feature.html#af3bf566d5ecd4d14dc749b34f3c36f5b">org.openzal.zal.StoreFeature</a>
 </li>
 <li>FULL_VERSION
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_version.html#a5cf4e7c895d2e029437b5f4332420365">org.openzal.zal.lib.ZimbraVersion</a>

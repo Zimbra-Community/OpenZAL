@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -214,6 +214,9 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 <li>A_zimbraChildVisibleAccount
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#afcd32b938e355f8320ec782fc60694b5">org.openzal.zal.ProvisioningImp</a>
 </li>
+<li>A_zimbraContactMaxNumEntries
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a25edf3daf9f1c15d42c1480e79633987">org.openzal.zal.ProvisioningImp</a>
+</li>
 <li>A_zimbraCOSId
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a8188bb441876f72ec5d3f3cb5c2b75df">org.openzal.zal.ProvisioningImp</a>
 </li>
@@ -310,6 +313,12 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 <li>A_zimbraMailForwardingAddress
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a28a025b7495678e05bb8d73f76519421">org.openzal.zal.ProvisioningImp</a>
 </li>
+<li>A_zimbraMailForwardingAddressMaxLength
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#aa9a845d2d757065a49f71542c0fe5390">org.openzal.zal.ProvisioningImp</a>
+</li>
+<li>A_zimbraMailForwardingAddressMaxNumAddrs
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a1f33f840b23de51f708a11c5e9fcef8f">org.openzal.zal.ProvisioningImp</a>
+</li>
 <li>A_zimbraMailHost
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a74aa8a3e4001b320fb11902165a23097">org.openzal.zal.ProvisioningImp</a>
 </li>
@@ -325,8 +334,17 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 <li>A_zimbraMailSieveScript
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a4e05411437a9655100f56899bbc98920">org.openzal.zal.ProvisioningImp</a>
 </li>
+<li>A_zimbraMailSignatureMaxLength
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a75b28f006054ddfeaa053459b7b442d2">org.openzal.zal.ProvisioningImp</a>
+</li>
 <li>A_zimbraMailTransport
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a1fc33553441050709ae6258d51db50fd">org.openzal.zal.ProvisioningImp</a>
+</li>
+<li>A_zimbraMailTrustedSenderListMaxNumEntries
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a544afff9247ec30b6e26913036ca6ba7">org.openzal.zal.ProvisioningImp</a>
+</li>
+<li>A_zimbraMaxAppSpecificPasswords
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a183251d67edf19a51450233c38c10b83">org.openzal.zal.ProvisioningImp</a>
 </li>
 <li>A_zimbraMobilePolicyAllowBluetooth
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#ab8e04ee86cc52e695fbc230b20d0a2c9">org.openzal.zal.ProvisioningImp</a>
@@ -499,6 +517,9 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 <li>A_zimbraZimletPriority
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a3c7c20248a12dc403ee6fb57e2afa37e">org.openzal.zal.ProvisioningImp</a>
 </li>
+<li>A_zimbraZimletUserPropertiesMaxNumEntries
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#aa8d77b525211bf2fe1a30d1cbac5fd1e">org.openzal.zal.ProvisioningImp</a>
+</li>
 <li>ACCEPTED
 : <a class="el" href="enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html#a5f1e162c74009e86ffed1a5e4694b5a1">org.openzal.zal.calendar.AttendeeInviteStatus</a>
 </li>
@@ -557,10 +578,16 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html#ae1a084fc0eb65ff4e98f3e312f9e671f">org.openzal.zal.calendar.Invite</a>
 </li>
 <li>addAttribute()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_x_m_l_element.html#a239d7681995820917b8bdff23a787dd0">org.openzal.zal.XMLElement</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_x_m_l_element.html#a5044015bd55bc6aeabd0f811bab84279">org.openzal.zal.XMLElement</a>
+</li>
+<li>addContact()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result.html#a7ce0646ab7b15b1d5db30ac02eef0fe0">org.openzal.zal.Provisioning.GalSearchResult</a>
 </li>
 <li>addDocumentRevision()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#adafb15e985246ccfc35dc973ff36b7c0">org.openzal.zal.Mailbox</a>
+</li>
+<li>addFields()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1index_1_1_indexer_manager_1_1_internal_mime_handler.html#aba25d625f283ba6895affd4b3e2562c7">org.openzal.zal.index.IndexerManager.InternalMimeHandler</a>
 </li>
 <li>addHsmPolicy()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_server.html#a1560734c45e557ddf577dddbc1f57da8">org.openzal.zal.Server</a>
@@ -582,7 +609,10 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#aa66743d79d2d77d8d9d76822a5b65236">org.openzal.zal.DistributionList</a>
 </li>
 <li>addMessage()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a77fa6dbc86274b34eaf22b6e0925993e">org.openzal.zal.Mailbox</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#ad9f4001d06724a9632ad207c799f92ee">org.openzal.zal.Mailbox</a>
+</li>
+<li>addMultiAttrValue()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#a452480382516ef063ad1c7876ee7d0e7">org.openzal.zal.Entry</a>
 </li>
 <li>addressMatchesAccount()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_account.html#a7b8ddda3f3644a8808b2026f24f63ec6">org.openzal.zal.Account</a>
@@ -620,6 +650,9 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 <li>appAdminName
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_account.html#a440bdeda7c0eb9c36ddc458782ced9ee">org.openzal.zal.ProvisioningKey.ByAccount</a>
 </li>
+<li>append()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_blob_builder.html#a50f8d3ed942cff69206835b140cf208a">org.openzal.zal.BlobBuilder</a>
+</li>
 <li>Appointment()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_appointment.html#a9ee6c5b5c1e3f32de9eced1177ec4d20">org.openzal.zal.Appointment</a>
 </li>
@@ -653,8 +686,23 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#ad3f0442b69c1fe515397edf2736e7f79">org.openzal.zal.Provisioning</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#aa7ee65556176b8fb8e72ef9fcd1ad63a">org.openzal.zal.ProvisioningImp</a>
 </li>
+<li>assertDomainById()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#aab27ae4d207619e5254a490d2aa3ae9e">org.openzal.zal.Provisioning</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#a669726780d4f6ca591e55591eab22e7b">org.openzal.zal.ProvisioningImp</a>
+</li>
+<li>assertDomainByName()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#a12910f44b07220af18ed8adec639867e">org.openzal.zal.Provisioning</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#acd1d5589b2a2a9f85e27cc01934ea529">org.openzal.zal.ProvisioningImp</a>
+</li>
+<li>assertZimlet()
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#a7accb7b4832d42ae590cbd500a6fca08">org.openzal.zal.Provisioning</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#abac5335fcbfc83cc9559003e5c757278">org.openzal.zal.ProvisioningImp</a>
+</li>
 <li>attachmentsIndexingEnabled()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a37f4d73354041a1d88a1a0dfff2599f8">org.openzal.zal.Mailbox</a>
+</li>
+<li>attachToZimbra()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1index_1_1_indexer_manager.html#ab3311ee2945beb65c03a5bedd56b2b26">org.openzal.zal.index.IndexerManager</a>
 </li>
 <li>Attendee()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html#a8917dd5245677e88af8a5a56c9860199">org.openzal.zal.calendar.Attendee</a>

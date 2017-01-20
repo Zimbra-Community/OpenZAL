@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -207,8 +207,19 @@ $(document).ready(function(){initNavTree('_config_8java_source.html','');});
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> mConfig.getAttr(name, defaultValue);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_config.html#ac7358cfc5348641d8c0318b4b1983478">  100</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_config.html#ac7358cfc5348641d8c0318b4b1983478">setMessageIdDedupeCacheSize</a>(<span class="keywordtype">int</span> messageIdDedupeCacheSize)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      mConfig.setMessageIdDedupeCacheSize(messageIdDedupeCacheSize);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6de70236e4c2881208a96ff4645173a0"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6de70236e4c2881208a96ff4645173a0">org.openzal.zal.Config.getAttr</a></div><div class="ttdeci">String getAttr(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00065">Config.java:65</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6c2faff938d3e88b4dcea3e3c43681e7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6c2faff938d3e88b4dcea3e3c43681e7">org.openzal.zal.Config.getMultiAttrSet</a></div><div class="ttdeci">Set&lt; String &gt; getMultiAttrSet(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00060">Config.java:60</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_ae74769de0442c14f282b6d632b209879"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#ae74769de0442c14f282b6d632b209879">org.openzal.zal.Config.getDefaultDomain</a></div><div class="ttdeci">Domain getDefaultDomain()</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00076">Config.java:76</a></div></div>
@@ -216,12 +227,13 @@ $(document).ready(function(){initNavTree('_config_8java_source.html','');});
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html">org.openzal.zal.Config</a></div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00034">Config.java:34</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a347a63c013023e1460cdee7b12a948e2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a347a63c013023e1460cdee7b12a948e2">org.openzal.zal.Config.getAttrs</a></div><div class="ttdeci">Map&lt; String, Object &gt; getAttrs(boolean applyDefaults)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00071">Config.java:71</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html">org.openzal.zal.exceptions.NoSuchDomainException</a></div><div class="ttdef"><b>Definition:</b> <a href="_no_such_domain_exception_8java_source.html#l00023">NoSuchDomainException.java:23</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00030">ExceptionWrapper.java:30</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_ac7358cfc5348641d8c0318b4b1983478"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#ac7358cfc5348641d8c0318b4b1983478">org.openzal.zal.Config.setMessageIdDedupeCacheSize</a></div><div class="ttdeci">void setMessageIdDedupeCacheSize(int messageIdDedupeCacheSize)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00100">Config.java:100</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a2ee1a36f7f81609ba1e2a9225fea76e9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a2ee1a36f7f81609ba1e2a9225fea76e9">org.openzal.zal.Config.Config</a></div><div class="ttdeci">Config(@NotNull Object config)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00038">Config.java:38</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_ae4909d8f37012cf89fcee0c4e66ffdd9"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#ae4909d8f37012cf89fcee0c4e66ffdd9">org.openzal.zal.Config.Config</a></div><div class="ttdeci">Config(HashMap&lt; String, Object &gt; hashMap,@NotNull Provisioning provisioning)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00044">Config.java:44</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_domain_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_domain.html">org.openzal.zal.Domain</a></div><div class="ttdef"><b>Definition:</b> <a href="_domain_8java_source.html#l00038">Domain.java:38</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_entry_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_entry.html">org.openzal.zal.Entry</a></div><div class="ttdef"><b>Definition:</b> <a href="_entry_8java_source.html#l00027">Entry.java:27</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_entry_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_entry.html">org.openzal.zal.Entry</a></div><div class="ttdef"><b>Definition:</b> <a href="_entry_8java_source.html#l00034">Entry.java:34</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_config_html_a6d11334f1b51c9b611be01871b282daf"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_config.html#a6d11334f1b51c9b611be01871b282daf">org.openzal.zal.Config.getAttr</a></div><div class="ttdeci">String getAttr(String name, String defaultValue)</div><div class="ttdef"><b>Definition:</b> <a href="_config_8java_source.html#l00095">Config.java:95</a></div></div>
-<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_provisioning_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html">org.openzal.zal.Provisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00038">Provisioning.java:38</a></div></div>
+<div class="ttc" id="interfaceorg_1_1openzal_1_1zal_1_1_provisioning_html"><div class="ttname"><a href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html">org.openzal.zal.Provisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_provisioning_8java_source.html#l00034">Provisioning.java:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

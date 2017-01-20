@@ -13,6 +13,7 @@ var classorg_1_1openzal_1_1zal_1_1_item =
     [ "encodeZimbraMetadata", "classorg_1_1openzal_1_1zal_1_1_item.html#a08c37fa78516cf7abb82f21306438a63", null ],
     [ "getAttrsMap", "classorg_1_1openzal_1_1zal_1_1_item.html#a42412bec799f24ccd95f3127daf30eb8", null ],
     [ "getBlob", "classorg_1_1openzal_1_1zal_1_1_item.html#a4f0537b1e973547908319d6d4a6021cb", null ],
+    [ "getBlobPath", "classorg_1_1openzal_1_1zal_1_1_item.html#a842265450603bc8e42c1162df5df8bc4", null ],
     [ "getChangeDate", "classorg_1_1openzal_1_1zal_1_1_item.html#a493e6506a48b009d309c7467ce4d0389", null ],
     [ "getColor", "classorg_1_1openzal_1_1zal_1_1_item.html#ac9ee1b64c962d3b59df916c63be95f20", null ],
     [ "getContent", "classorg_1_1openzal_1_1zal_1_1_item.html#acb18c2dbd5a8a51dd64cb5e661f48d8d", null ],

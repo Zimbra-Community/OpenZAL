@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -209,7 +209,10 @@ $(document).ready(function(){initNavTree('functions_func_r.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_provider.html#ae5aca98e46496e6e0c08aaf9e74d2252">org.openzal.zal.redolog.RedoLogProvider</a>
 </li>
 <li>register()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ae6d49b6ab8bdb26749fb60987b296cfc">org.openzal.zal.soap.SoapServiceManager</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_store_manager_impl.html#ae299c70f218c4ed80d2b0ac21d065e1f">org.openzal.zal.extension.StoreManagerImpl</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1index_1_1_indexer_manager.html#a07c00a7e7fa6b49c263e5c6f34023ecd">org.openzal.zal.index.IndexerManager</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#ae6d49b6ab8bdb26749fb60987b296cfc">org.openzal.zal.soap.SoapServiceManager</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html#ab6d343f673794eaff3ab2c9563c3a0e6">org.openzal.zal.StoreManager</a>
 </li>
 <li>registerHandler()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1http_1_1_http_service_manager.html#acc4043fcc8c9866b9132ad40857564f2">org.openzal.zal.http.HttpServiceManager</a>
@@ -248,21 +251,38 @@ $(document).ready(function(){initNavTree('functions_func_r.html','');});
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager.html#ab5cff55cbb0c542d96f942f6a6940a5e">org.openzal.zal.MailboxManager</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox_manager_imp.html#a1aa561e0aafd95b14e79fc113b0dc7e2">org.openzal.zal.MailboxManagerImp</a>
 </li>
+<li>removeMembers()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#aa80571bb329d97953cdfa5a309aab350">org.openzal.zal.DistributionList</a>
+</li>
+<li>removeMultiAttrValue()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#a1edf66f4c4733527b58794e8846f3d8e">org.openzal.zal.Entry</a>
+</li>
 <li>rename()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox.html#a35a06845daa395b75bbf6975291894a3">org.openzal.zal.Mailbox</a>
 </li>
 <li>renameTo()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_blob.html#a4d19cd690fb1d1502d17a30a76c4b823">org.openzal.zal.Blob</a>
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_blob.html#a4d19cd690fb1d1502d17a30a76c4b823">org.openzal.zal.Blob</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_blob_wrap.html#a248527909b18d1ea171180d8456ce130">org.openzal.zal.BlobWrap</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html#ac823cb815f5edb689410c1fbc8843f61">org.openzal.zal.FileBlobPrimaryStore</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html#a6e770c9e08106a63055c156e6f3e1998">org.openzal.zal.FileBlobStoreWrap</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html#a59fdd448fd66d5602b28af4710d2f44c">org.openzal.zal.FileBlobStoreWrapImpl</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_mailbox_blob_wrap.html#a120fb356fb67ffc61a9da3dce3a63641">org.openzal.zal.MailboxBlobWrap</a>
+, <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_primary_store.html#a1cdaf8438031899978a5bc643be86f9d">org.openzal.zal.PrimaryStore</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_staged_blob_wrap_3_01_s_01extends_01_blob_01_4.html#a26b96b219fb371f92255b7140cab92f2">org.openzal.zal.StagedBlobWrap&lt; S extends Blob &gt;</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_zal_blob.html#a6f5c293d6312b626e7a31e1efbe379fc">org.openzal.zal.ZalBlob</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_zal_mailbox_blob.html#ab494c9bb170f7a5309e3a477ec457ec6">org.openzal.zal.ZalMailboxBlob</a>
 </li>
 <li>replaceHandler()
-: <a class="el" href="classorg_1_1openzal_1_1zal_1_1http_1_1_http_service_manager.html#ac75ba7744b7132e09ddab32974fb4528">org.openzal.zal.http.HttpServiceManager</a>
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1http_1_1_http_service_manager.html#a714f88d01a3ad40472201c2e2140f403">org.openzal.zal.http.HttpServiceManager</a>
 </li>
 <li>restoreVersion()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_version.html#ac56161791abd40f243688a6692e9f754">org.openzal.zal.lib.ZimbraVersion</a>
 </li>
 <li>restoreZimbraHandlers()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html#a9ce481dc467ac72c9d5297e2cfb436c7">org.openzal.zal.soap.SoapServiceManager</a>
+</li>
+<li>restoreZimbraStoreManager()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#a7c75519b7cf0e0d112f35aa05cb3ed80">org.openzal.zal.extension.Zimbra</a>
 </li>
 <li>resume()
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_continuation.html#ab0ce9aeb46d8a55cfb15d3a3f1d7219c">org.openzal.zal.Continuation</a>
@@ -273,8 +293,8 @@ $(document).ready(function(){initNavTree('functions_func_r.html','');});
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_acl.html#a481c121bd998fe11a8132013e286d560">org.openzal.zal.Acl</a>
 </li>
 <li>revokeRight()
-: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#ab41f0c82b5f0d1c8af1931c732c18d98">org.openzal.zal.Provisioning</a>
-, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#ad42118bb25bb3054ace25cc5671a9eff">org.openzal.zal.ProvisioningImp</a>
+: <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html#af73c7bf9df2059229b977cc9dc36b077">org.openzal.zal.Provisioning</a>
+, <a class="el" href="classorg_1_1openzal_1_1zal_1_1_provisioning_imp.html#aa9adfad6615b4d75cfa4ae49d2647335">org.openzal.zal.ProvisioningImp</a>
 </li>
 <li>right()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a323e392fb603a3cca380123fd8b478f4">org.openzal.zal.ACE</a>
@@ -282,12 +302,18 @@ $(document).ready(function(){initNavTree('functions_func_r.html','');});
 <li>rightsToString()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1_acl.html#a54512df6ab7aad464bfcfe93c052c479">org.openzal.zal.Acl</a>
 </li>
+<li>rightWithModifier()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a6238ccf8f7e0712a92e927f9d0d38cb7">org.openzal.zal.ACE</a>
+</li>
 <li>rollback()
 : <a class="el" href="interfaceorg_1_1openzal_1_1zal_1_1_connection.html#a8ed161e91d5b1cc0c5272b20036bd52d">org.openzal.zal.Connection</a>
 , <a class="el" href="classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_connection_wrapper.html#a6befc9dd7ab82499af8c164d35cc26ef">org.openzal.zal.lib.ZimbraConnectionWrapper</a>
 </li>
 <li>run()
 : <a class="el" href="classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html#aaee0c7db6ffc1309ccb0023a917a840d">org.openzal.zal.tools.BootCli</a>
+</li>
+<li>runsExternally()
+: <a class="el" href="classorg_1_1openzal_1_1zal_1_1index_1_1_indexer_manager_1_1_internal_mime_handler.html#a1a91f32a75dfd8b6f7e4a40c54344065">org.openzal.zal.index.IndexerManager.InternalMimeHandler</a>
 </li>
 </ul>
 </div><!-- contents -->

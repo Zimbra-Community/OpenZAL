@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -168,8 +168,14 @@ $(document).ready(function(){initNavTree('_redo_log_manager_8java_source.html','
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> mRedoLogManager.getCurrentLogSequence();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager.html#a7decb368364d60f727262e47ea2ff0ac">   62</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager.html#a7decb368364d60f727262e47ea2ff0ac">checkpointRedoLogManager</a>()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    mRedoLogManager.forceRollover(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog_log_writer_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redolog_log_writer.html">org.openzal.zal.redolog.RedologLogWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="_redolog_log_writer_8java_source.html#l00027">RedologLogWriter.java:27</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager_html_a7decb368364d60f727262e47ea2ff0ac"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager.html#a7decb368364d60f727262e47ea2ff0ac">org.openzal.zal.redolog.RedoLogManager.checkpointRedoLogManager</a></div><div class="ttdeci">void checkpointRedoLogManager()</div><div class="ttdef"><b>Definition:</b> <a href="_redo_log_manager_8java_source.html#l00062">RedoLogManager.java:62</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager.html">org.openzal.zal.redolog.RedoLogManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_redo_log_manager_8java_source.html#l00029">RedoLogManager.java:29</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager_html_abb0e94af01f1706a7d20bb30940f9b9f"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager.html#abb0e94af01f1706a7d20bb30940f9b9f">org.openzal.zal.redolog.RedoLogManager.RedoLogManager</a></div><div class="ttdeci">RedoLogManager(@Nullable Object redoLogManager)</div><div class="ttdef"><b>Definition:</b> <a href="_redo_log_manager_8java_source.html#l00038">RedoLogManager.java:38</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager_html_a5bf17c60247541e6f98f9cd635453439"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1redolog_1_1_redo_log_manager.html#a5bf17c60247541e6f98f9cd635453439">org.openzal.zal.redolog.RedoLogManager.getCurrentLogSequence</a></div><div class="ttdeci">long getCurrentLogSequence()</div><div class="ttdef"><b>Definition:</b> <a href="_redo_log_manager_8java_source.html#l00057">RedoLogManager.java:57</a></div></div>

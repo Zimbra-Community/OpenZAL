@@ -5,6 +5,7 @@ var hierarchy =
     [ "org.openzal.zal.ACE", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html", null ],
     [ "org.openzal.zal.Acl", "classorg_1_1openzal_1_1zal_1_1_acl.html", null ],
     [ "org.openzal.zal.AdministrationConstants", "classorg_1_1openzal_1_1zal_1_1_administration_constants.html", null ],
+    [ "org.openzal.zal.lib.AnyThrow", "classorg_1_1openzal_1_1zal_1_1lib_1_1_any_throw.html", null ],
     [ "org.openzal.zal.calendar.Attendee", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee.html", null ],
     [ "org.openzal.zal.calendar.AttendeeInviteStatus", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_invite_status.html", null ],
     [ "org.openzal.zal.calendar.AttendeeType", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_attendee_type.html", null ],
@@ -12,7 +13,20 @@ var hierarchy =
     [ "org.openzal.zal.AttributeInfo", "classorg_1_1openzal_1_1zal_1_1_attribute_info.html", null ],
     [ "org.openzal.zal.AuthProvider", "classorg_1_1openzal_1_1zal_1_1_auth_provider.html", null ],
     [ "org.openzal.zal.AuthToken", "classorg_1_1openzal_1_1zal_1_1_auth_token.html", null ],
-    [ "org.openzal.zal.Blob", "classorg_1_1openzal_1_1zal_1_1_blob.html", null ],
+    [ "org.openzal.zal.Blob", "interfaceorg_1_1openzal_1_1zal_1_1_blob.html", [
+      [ "org.openzal.zal.BlobWrap", "classorg_1_1openzal_1_1zal_1_1_blob_wrap.html", null ],
+      [ "org.openzal.zal.StagedBlob", "interfaceorg_1_1openzal_1_1zal_1_1_staged_blob.html", [
+        [ "org.openzal.zal.MailboxBlob", "interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html", [
+          [ "org.openzal.zal.MailboxBlobWrap", "classorg_1_1openzal_1_1zal_1_1_mailbox_blob_wrap.html", null ],
+          [ "org.openzal.zal.ZalMailboxBlob", "classorg_1_1openzal_1_1zal_1_1_zal_mailbox_blob.html", null ]
+        ] ],
+        [ "org.openzal.zal.StagedBlobWrap< S extends Blob >", "classorg_1_1openzal_1_1zal_1_1_staged_blob_wrap_3_01_s_01extends_01_blob_01_4.html", null ]
+      ] ],
+      [ "org.openzal.zal.ZalBlob", "classorg_1_1openzal_1_1zal_1_1_zal_blob.html", [
+        [ "org.openzal.zal.ZalMailboxBlob", "classorg_1_1openzal_1_1zal_1_1_zal_mailbox_blob.html", null ]
+      ] ]
+    ] ],
+    [ "org.openzal.zal.BlobBuilder", "interfaceorg_1_1openzal_1_1zal_1_1_blob_builder.html", null ],
     [ "org.openzal.zal.tools.BootCli", "classorg_1_1openzal_1_1zal_1_1tools_1_1_boot_cli.html", null ],
     [ "org.openzal.zal.ProvisioningKey.ByAccount", "classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_account.html", null ],
     [ "org.openzal.zal.ProvisioningKey.ByCacheEntry", "classorg_1_1openzal_1_1zal_1_1_provisioning_key_1_1_by_cache_entry.html", null ],
@@ -118,8 +132,11 @@ var hierarchy =
     [ "org.openzal.zal.exceptions.ExceptionWrapper", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html", null ],
     [ "org.openzal.zal.extension.ExtensionManager", "interfaceorg_1_1openzal_1_1zal_1_1extension_1_1_extension_manager.html", null ],
     [ "org.openzal.zal.lib.ExtensionVersionValidator", "classorg_1_1openzal_1_1zal_1_1lib_1_1_extension_version_validator.html", null ],
-    [ "org.openzal.zal.FileBlobStoreWrapImpl", "classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html", null ],
+    [ "org.openzal.zal.FileBlobStoreWrap", "interfaceorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap.html", [
+      [ "org.openzal.zal.FileBlobStoreWrapImpl", "classorg_1_1openzal_1_1zal_1_1_file_blob_store_wrap_impl.html", null ]
+    ] ],
     [ "org.openzal.zal.lib.Filter< T >", "interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_filter_3_01_t_01_4.html", null ],
+    [ "org.openzal.zal.FreeBusy", "classorg_1_1openzal_1_1zal_1_1_free_busy.html", null ],
     [ "org.openzal.zal.calendar.FreeBusyStatus", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_free_busy_status.html", null ],
     [ "org.openzal.zal.calendar.RecurrenceRule.Frequency", "enumorg_1_1openzal_1_1zal_1_1calendar_1_1_recurrence_rule_1_1_frequency.html", null ],
     [ "org.openzal.zal.Provisioning.GalSearchResult.GalContact", "classorg_1_1openzal_1_1zal_1_1_provisioning_1_1_gal_search_result_1_1_gal_contact.html", null ],
@@ -136,7 +153,11 @@ var hierarchy =
     [ "org.openzal.zal.http.HttpServiceManager", "classorg_1_1openzal_1_1zal_1_1http_1_1_http_service_manager.html", null ],
     [ "org.openzal.zal.IAttributes", "classorg_1_1openzal_1_1zal_1_1_i_attributes.html", null ],
     [ "org.openzal.zal.calendar.ICalendarTimezone", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_i_calendar_timezone.html", null ],
+    [ "org.openzal.zal.index.Indexer", "interfaceorg_1_1openzal_1_1zal_1_1index_1_1_indexer.html", null ],
+    [ "org.openzal.zal.index.IndexerManager", "classorg_1_1openzal_1_1zal_1_1index_1_1_indexer_manager.html", null ],
     [ "org.openzal.zal.soap.InternalDocumentHelper", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_document_helper.html", null ],
+    [ "org.openzal.zal.InternalOverrideBlobProxy", "classorg_1_1openzal_1_1zal_1_1_internal_override_blob_proxy.html", null ],
+    [ "org.openzal.zal.InternalOverrideFactory", "classorg_1_1openzal_1_1zal_1_1_internal_override_factory.html", null ],
     [ "org.openzal.zal.calendar.Invite", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite.html", null ],
     [ "org.openzal.zal.calendar.InviteFactory", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_invite_factory.html", null ],
     [ "org.openzal.zal.lib.JarAccessor", "classorg_1_1openzal_1_1zal_1_1lib_1_1_jar_accessor.html", null ],
@@ -149,7 +170,6 @@ var hierarchy =
     ] ],
     [ "org.openzal.zal.LocalConfig", "classorg_1_1openzal_1_1zal_1_1_local_config.html", null ],
     [ "org.openzal.zal.Mailbox", "classorg_1_1openzal_1_1zal_1_1_mailbox.html", null ],
-    [ "org.openzal.zal.MailboxBlob", "classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html", null ],
     [ "org.openzal.zal.MailboxManager", "interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager.html", [
       [ "org.openzal.zal.MailboxManagerImp", "classorg_1_1openzal_1_1zal_1_1_mailbox_manager_imp.html", null ]
     ] ],
@@ -161,8 +181,13 @@ var hierarchy =
     [ "org.openzal.zal.calendar.MapTimeZone", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_map_time_zone.html", null ],
     [ "org.openzal.zal.Metadata", "classorg_1_1openzal_1_1zal_1_1_metadata.html", null ],
     [ "org.openzal.zal.MetadataList", "classorg_1_1openzal_1_1zal_1_1_metadata_list.html", null ],
+    [ "org.openzal.zal.FreeBusy.Method", "enumorg_1_1openzal_1_1zal_1_1_free_busy_1_1_method.html", null ],
     [ "org.openzal.zal.Mime", "classorg_1_1openzal_1_1zal_1_1_mime.html", null ],
     [ "org.openzal.zal.MimeConstants", "classorg_1_1openzal_1_1zal_1_1_mime_constants.html", null ],
+    [ "MimeHandler", null, [
+      [ "org.openzal.zal.index.IndexerManager.InternalMimeHandler", "classorg_1_1openzal_1_1zal_1_1index_1_1_indexer_manager_1_1_internal_mime_handler.html", null ]
+    ] ],
+    [ "org.openzal.zal.index.MimeHandlerProvider", "interfaceorg_1_1openzal_1_1zal_1_1index_1_1_mime_handler_provider.html", null ],
     [ "org.openzal.zal.MPartInfo", "classorg_1_1openzal_1_1zal_1_1_m_part_info.html", null ],
     [ "org.openzal.zal.OperationContext", "classorg_1_1openzal_1_1zal_1_1_operation_context.html", null ],
     [ "org.openzal.zal.Pair< F, S >", "classorg_1_1openzal_1_1zal_1_1_pair_3_01_f_00_01_s_01_4.html", null ],
@@ -225,6 +250,7 @@ var hierarchy =
             [ "org.openzal.zal.exceptions.NoSuchCalendarException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_calendar_exception.html", null ],
             [ "org.openzal.zal.exceptions.NoSuchConversationException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_conversation_exception.html", null ],
             [ "org.openzal.zal.exceptions.NoSuchFolderException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_folder_exception.html", null ],
+            [ "org.openzal.zal.exceptions.NoSuchFreeBusyException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_free_busy_exception.html", null ],
             [ "org.openzal.zal.exceptions.NoSuchMessageException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_message_exception.html", null ]
           ] ],
           [ "org.openzal.zal.exceptions.PermissionDeniedException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_permission_denied_exception.html", null ],
@@ -238,6 +264,7 @@ var hierarchy =
         [ "org.openzal.zal.exceptions.NoSuchDistributionListException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_distribution_list_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchDomainException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_domain_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchGrantException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_grant_exception.html", null ],
+        [ "org.openzal.zal.exceptions.NoSuchServerException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_server_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchSignatureException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_signature_exception.html", null ],
         [ "org.openzal.zal.exceptions.NoSuchZimletException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_no_such_zimlet_exception.html", null ],
         [ "org.openzal.zal.exceptions.TooManyDataSourcesException", "classorg_1_1openzal_1_1zal_1_1exceptions_1_1_too_many_data_sources_exception.html", null ],
@@ -271,13 +298,20 @@ var hierarchy =
     [ "org.openzal.zal.soap.SoapServiceManager", "classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html", null ],
     [ "org.openzal.zal.soap.SoapTransport", "classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_transport.html", null ],
     [ "org.openzal.zal.SortedBy", "classorg_1_1openzal_1_1zal_1_1_sorted_by.html", null ],
+    [ "org.openzal.zal.Store", "interfaceorg_1_1openzal_1_1zal_1_1_store.html", [
+      [ "org.openzal.zal.PrimaryStore", "interfaceorg_1_1openzal_1_1zal_1_1_primary_store.html", [
+        [ "org.openzal.zal.FileBlobPrimaryStore", "classorg_1_1openzal_1_1zal_1_1_file_blob_primary_store.html", null ]
+      ] ]
+    ] ],
+    [ "org.openzal.zal.StoreBuilder", "interfaceorg_1_1openzal_1_1zal_1_1_store_builder.html", null ],
+    [ "org.openzal.zal.StoreFeature", "enumorg_1_1openzal_1_1zal_1_1_store_feature.html", null ],
     [ "org.openzal.zal.StoreManager", "interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html", [
-      [ "org.openzal.zal.StoreManagerImp", "classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html", null ]
+      [ "org.openzal.zal.extension.StoreManagerImpl", "classorg_1_1openzal_1_1zal_1_1extension_1_1_store_manager_impl.html", null ]
     ] ],
     [ "org.openzal.zal.StoreManagerConst", "classorg_1_1openzal_1_1zal_1_1_store_manager_const.html", null ],
     [ "org.openzal.zal.StoreVolume", "classorg_1_1openzal_1_1zal_1_1_store_volume.html", null ],
     [ "org.openzal.zal.Tags", "classorg_1_1openzal_1_1zal_1_1_tags.html", null ],
-    [ "org.openzal.zal.TargetBy", "classorg_1_1openzal_1_1zal_1_1_target_by.html", null ],
+    [ "org.openzal.zal.Targetby", "classorg_1_1openzal_1_1zal_1_1_targetby.html", null ],
     [ "org.openzal.zal.provisioning.TargetType", "enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html", null ],
     [ "org.openzal.zal.extension.TinyBoot", "classorg_1_1openzal_1_1zal_1_1extension_1_1_tiny_boot.html", null ],
     [ "org.openzal.zal.redolog.TransactionId", "classorg_1_1openzal_1_1zal_1_1redolog_1_1_transaction_id.html", null ],
@@ -285,6 +319,10 @@ var hierarchy =
     [ "org.openzal.zal.Item.UnderlyingData", "classorg_1_1openzal_1_1zal_1_1_item_1_1_underlying_data.html", null ],
     [ "org.openzal.zal.Utils", "classorg_1_1openzal_1_1zal_1_1_utils.html", null ],
     [ "org.openzal.zal.tools.VersionChooser", "classorg_1_1openzal_1_1zal_1_1tools_1_1_version_chooser.html", null ],
+    [ "VolumeBlob", null, [
+      [ "com.zimbra.cs.store.file.VolumeBlobProxy", "classcom_1_1zimbra_1_1cs_1_1store_1_1file_1_1_volume_blob_proxy.html", null ]
+    ] ],
+    [ "org.openzal.zal.VolumeManager", "classorg_1_1openzal_1_1zal_1_1_volume_manager.html", null ],
     [ "org.openzal.zal.calendar.WeekDayNum", "classorg_1_1openzal_1_1zal_1_1calendar_1_1_week_day_num.html", null ],
     [ "org.openzal.zal.WikiPage.WikiContext", "classorg_1_1openzal_1_1zal_1_1_wiki_page_1_1_wiki_context.html", null ],
     [ "org.openzal.zal.WikiPage", "classorg_1_1openzal_1_1zal_1_1_wiki_page.html", null ],
@@ -325,6 +363,9 @@ var hierarchy =
     ] ],
     [ "DocumentService", null, [
       [ "org.openzal.zal.soap.InternalOverrideDocumentServiceImpl", "classorg_1_1openzal_1_1zal_1_1soap_1_1_internal_override_document_service_impl.html", null ]
+    ] ],
+    [ "GalSearchResultCallback", null, [
+      [ "org.openzal.zal.ProvisioningImp.GalSearchCallback", "classorg_1_1openzal_1_1zal_1_1_provisioning_imp_1_1_gal_search_callback.html", null ]
     ] ],
     [ "HttpServletRequest", null, [
       [ "org.openzal.zal.ContinuationHttpServletRequest", "interfaceorg_1_1openzal_1_1zal_1_1_continuation_http_servlet_request.html", null ]

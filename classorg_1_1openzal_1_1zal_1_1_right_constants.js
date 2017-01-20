@@ -1,10 +1,13 @@
 var classorg_1_1openzal_1_1zal_1_1_right_constants =
 [
     [ "RT_adminLoginAs", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#aa62e208ca1c432fcebd5ac6a3ae04161", null ],
+    [ "RT_configureQuota", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#a342102b9ce9366907fe6b61218ab533b", null ],
     [ "RT_domainAdminConsoleAccountsFeaturesTabRights", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#ab4ec755c4bb753e9cf4ab56f86c5a8ba", null ],
     [ "RT_domainAdminConsoleDLSharesTabRights", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#a1e6cc00b25d1b9536d79c70bb32f4915", null ],
     [ "RT_domainAdminCosRights", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#a9768b8c73b64c26a083e392797294181", null ],
     [ "RT_domainAdminRights", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#a138a2f11543773bd63eb604f8f7b0461", null ],
+    [ "RT_domainAdminZimletRights", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#a7bfcee513324b716c960e5aad7fa451c", null ],
+    [ "RT_getAccountInfo", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#a3da1945268563a8ce316e755bd9c62c3", null ],
     [ "RT_getZimlet", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#aecf8e79ae667fcf4748cb77d4f5c17f9", null ],
     [ "RT_listZimlet", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#a58485e9a49d7f312fcd1f27bfb3f0b14", null ],
     [ "RT_loginAs", "classorg_1_1openzal_1_1zal_1_1_right_constants.html#ae5621244228c4ee3298957ef21ad9fee", null ],

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -193,99 +193,102 @@ $(document).ready(function(){initNavTree('_distribution_list_8java_source.html',
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a0cf1842e941e300a27f64f4e5ce31c47">   86</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a0cf1842e941e300a27f64f4e5ce31c47">setPrefAllowAddressForDelegatedSender</a>(@NotNull Collection&lt;String&gt; zimbraPrefAllowAddressForDelegatedSender)</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#aa80571bb329d97953cdfa5a309aab350">   86</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#aa80571bb329d97953cdfa5a309aab350">removeMembers</a>(@Nullable Collection&lt;String&gt; members)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      mDistributionList.setPrefAllowAddressForDelegatedSender(</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        zimbraPrefAllowAddressForDelegatedSender.toArray(<span class="keyword">new</span> String[zimbraPrefAllowAddressForDelegatedSender.size()])</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      );</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (members != null)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        mDistributionList.removeMembers(members.toArray(<span class="keyword">new</span> String[members.size()]));</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">/* $endif $ */</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ac6b694d46d00bddeef987e623797dfa0">  103</a></span>&#160;  <span class="keyword">public</span> Set&lt;String&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ac6b694d46d00bddeef987e623797dfa0">getMultiAttrSet</a>(String name)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashSet&lt;String&gt;(mDistributionList.getMultiAttrSet(name));</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a790a8298e5c8013184f62a318d5357d7">  109</a></span>&#160;  <span class="keyword">public</span> Collection&lt;String&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a790a8298e5c8013184f62a318d5357d7">getPrefAllowAddressForDelegatedSender</a>()</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> Arrays.asList(mDistributionList.getPrefAllowAddressForDelegatedSender());</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">/* $else $</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">    return Collections.emptyList();</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">    /* $endif $ */</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a1e75d1f36f7cc8a98216d56fac7b3669">  118</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a1e75d1f36f7cc8a98216d56fac7b3669">modify</a>(Map&lt;String, Object&gt; attrs)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a0cf1842e941e300a27f64f4e5ce31c47">  101</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a0cf1842e941e300a27f64f4e5ce31c47">setPrefAllowAddressForDelegatedSender</a>(@NotNull Collection&lt;String&gt; zimbraPrefAllowAddressForDelegatedSender)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      mDistributionList.setPrefAllowAddressForDelegatedSender(</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        zimbraPrefAllowAddressForDelegatedSender.toArray(<span class="keyword">new</span> String[zimbraPrefAllowAddressForDelegatedSender.size()])</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      );</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">/* $endif $ */</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ac6b694d46d00bddeef987e623797dfa0">  118</a></span>&#160;  <span class="keyword">public</span> Set&lt;String&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ac6b694d46d00bddeef987e623797dfa0">getMultiAttrSet</a>(String name)</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      mDistributionList.modify(attrs);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a540fcde7a8f4e7e131fd3786135b20d2">  130</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a540fcde7a8f4e7e131fd3786135b20d2">getId</a>()</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> mDistributionList.getId();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#afc2fd3cb861990f2138404b3097a1281">  135</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#afc2fd3cb861990f2138404b3097a1281">getName</a>()</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> mDistributionList.getName();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ae9b17c7ca6e2abc6c6d8b0577d722e2d">  140</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ae9b17c7ca6e2abc6c6d8b0577d722e2d">addAlias</a>(String alias) <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_already_exists_exception.html">AlreadyExistsException</a></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      mDistributionList.addAlias(alias);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a3b51f7a9b28b77b70cb0d7abca2addff">  153</a></span>&#160;  <span class="keyword">public</span> Map&lt;String, Object&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a3b51f7a9b28b77b70cb0d7abca2addff">getAttrs</a>(<span class="keywordtype">boolean</span> applyDefaults)</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashMap&lt;String, Object&gt;(mDistributionList.getAttrs(applyDefaults));</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  @NotNull</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  com.zimbra.cs.account.DistributionList toZimbra()</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> mDistributionList;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashSet&lt;String&gt;(mDistributionList.getMultiAttrSet(name));</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a790a8298e5c8013184f62a318d5357d7">  124</a></span>&#160;  <span class="keyword">public</span> Collection&lt;String&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a790a8298e5c8013184f62a318d5357d7">getPrefAllowAddressForDelegatedSender</a>()</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> Arrays.asList(mDistributionList.getPrefAllowAddressForDelegatedSender());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">/* $else $</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">    return Collections.emptyList();</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">    /* $endif $ */</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a540fcde7a8f4e7e131fd3786135b20d2">  133</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a540fcde7a8f4e7e131fd3786135b20d2">getId</a>()</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> mDistributionList.getId();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#afc2fd3cb861990f2138404b3097a1281">  138</a></span>&#160;  <span class="keyword">public</span> String <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#afc2fd3cb861990f2138404b3097a1281">getName</a>()</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">return</span> mDistributionList.getName();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ae9b17c7ca6e2abc6c6d8b0577d722e2d">  143</a></span>&#160;  <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ae9b17c7ca6e2abc6c6d8b0577d722e2d">addAlias</a>(String alias) <span class="keywordflow">throws</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_already_exists_exception.html">AlreadyExistsException</a></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      mDistributionList.addAlias(alias);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a3b51f7a9b28b77b70cb0d7abca2addff">  156</a></span>&#160;  <span class="keyword">public</span> Map&lt;String, Object&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a3b51f7a9b28b77b70cb0d7abca2addff">getAttrs</a>(<span class="keywordtype">boolean</span> applyDefaults)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> HashMap&lt;String, Object&gt;(mDistributionList.getAttrs(applyDefaults));</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  @NotNull</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  com.zimbra.cs.account.DistributionList toZimbra()</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> mDistributionList;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_aa66743d79d2d77d8d9d76822a5b65236"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#aa66743d79d2d77d8d9d76822a5b65236">org.openzal.zal.DistributionList.addMembers</a></div><div class="ttdeci">void addMembers(@Nullable Collection&lt; String &gt; members)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00071">DistributionList.java:71</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a540fcde7a8f4e7e131fd3786135b20d2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a540fcde7a8f4e7e131fd3786135b20d2">org.openzal.zal.DistributionList.getId</a></div><div class="ttdeci">String getId()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00130">DistributionList.java:130</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a0cf1842e941e300a27f64f4e5ce31c47"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a0cf1842e941e300a27f64f4e5ce31c47">org.openzal.zal.DistributionList.setPrefAllowAddressForDelegatedSender</a></div><div class="ttdeci">void setPrefAllowAddressForDelegatedSender(@NotNull Collection&lt; String &gt; zimbraPrefAllowAddressForDelegatedSender)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00086">DistributionList.java:86</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a540fcde7a8f4e7e131fd3786135b20d2"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a540fcde7a8f4e7e131fd3786135b20d2">org.openzal.zal.DistributionList.getId</a></div><div class="ttdeci">String getId()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00133">DistributionList.java:133</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a0cf1842e941e300a27f64f4e5ce31c47"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a0cf1842e941e300a27f64f4e5ce31c47">org.openzal.zal.DistributionList.setPrefAllowAddressForDelegatedSender</a></div><div class="ttdeci">void setPrefAllowAddressForDelegatedSender(@NotNull Collection&lt; String &gt; zimbraPrefAllowAddressForDelegatedSender)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00101">DistributionList.java:101</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_aff43afc9b67dd6be46016887ed1480c8"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#aff43afc9b67dd6be46016887ed1480c8">org.openzal.zal.DistributionList.getAliases</a></div><div class="ttdeci">Collection&lt; String &gt; getAliases()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00043">DistributionList.java:43</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_ae9b17c7ca6e2abc6c6d8b0577d722e2d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ae9b17c7ca6e2abc6c6d8b0577d722e2d">org.openzal.zal.DistributionList.addAlias</a></div><div class="ttdeci">void addAlias(String alias)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00140">DistributionList.java:140</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_aa80571bb329d97953cdfa5a309aab350"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#aa80571bb329d97953cdfa5a309aab350">org.openzal.zal.DistributionList.removeMembers</a></div><div class="ttdeci">void removeMembers(@Nullable Collection&lt; String &gt; members)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00086">DistributionList.java:86</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00030">ExceptionWrapper.java:30</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_ae9b17c7ca6e2abc6c6d8b0577d722e2d"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ae9b17c7ca6e2abc6c6d8b0577d722e2d">org.openzal.zal.DistributionList.addAlias</a></div><div class="ttdeci">void addAlias(String alias)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00143">DistributionList.java:143</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html">org.openzal.zal.DistributionList</a></div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00032">DistributionList.java:32</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_ac6b694d46d00bddeef987e623797dfa0"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ac6b694d46d00bddeef987e623797dfa0">org.openzal.zal.DistributionList.getMultiAttrSet</a></div><div class="ttdeci">Set&lt; String &gt; getMultiAttrSet(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00103">DistributionList.java:103</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a790a8298e5c8013184f62a318d5357d7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a790a8298e5c8013184f62a318d5357d7">org.openzal.zal.DistributionList.getPrefAllowAddressForDelegatedSender</a></div><div class="ttdeci">Collection&lt; String &gt; getPrefAllowAddressForDelegatedSender()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00109">DistributionList.java:109</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a1e75d1f36f7cc8a98216d56fac7b3669"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a1e75d1f36f7cc8a98216d56fac7b3669">org.openzal.zal.DistributionList.modify</a></div><div class="ttdeci">void modify(Map&lt; String, Object &gt; attrs)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00118">DistributionList.java:118</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_ac6b694d46d00bddeef987e623797dfa0"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ac6b694d46d00bddeef987e623797dfa0">org.openzal.zal.DistributionList.getMultiAttrSet</a></div><div class="ttdeci">Set&lt; String &gt; getMultiAttrSet(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00118">DistributionList.java:118</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a790a8298e5c8013184f62a318d5357d7"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a790a8298e5c8013184f62a318d5357d7">org.openzal.zal.DistributionList.getPrefAllowAddressForDelegatedSender</a></div><div class="ttdeci">Collection&lt; String &gt; getPrefAllowAddressForDelegatedSender()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00124">DistributionList.java:124</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_already_exists_exception_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_already_exists_exception.html">org.openzal.zal.exceptions.AlreadyExistsException</a></div><div class="ttdef"><b>Definition:</b> <a href="_already_exists_exception_8java_source.html#l00023">AlreadyExistsException.java:23</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_ad2d78ac52fa2b7762ecb317593510744"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ad2d78ac52fa2b7762ecb317593510744">org.openzal.zal.DistributionList.getAllMembersSet</a></div><div class="ttdeci">Set&lt; String &gt; getAllMembersSet()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00056">DistributionList.java:56</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_entry_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_entry.html">org.openzal.zal.Entry</a></div><div class="ttdef"><b>Definition:</b> <a href="_entry_8java_source.html#l00027">Entry.java:27</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a3b51f7a9b28b77b70cb0d7abca2addff"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a3b51f7a9b28b77b70cb0d7abca2addff">org.openzal.zal.DistributionList.getAttrs</a></div><div class="ttdeci">Map&lt; String, Object &gt; getAttrs(boolean applyDefaults)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00153">DistributionList.java:153</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_afc2fd3cb861990f2138404b3097a1281"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#afc2fd3cb861990f2138404b3097a1281">org.openzal.zal.DistributionList.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00135">DistributionList.java:135</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_entry_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_entry.html">org.openzal.zal.Entry</a></div><div class="ttdef"><b>Definition:</b> <a href="_entry_8java_source.html#l00034">Entry.java:34</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_a3b51f7a9b28b77b70cb0d7abca2addff"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a3b51f7a9b28b77b70cb0d7abca2addff">org.openzal.zal.DistributionList.getAttrs</a></div><div class="ttdeci">Map&lt; String, Object &gt; getAttrs(boolean applyDefaults)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00156">DistributionList.java:156</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_distribution_list_html_afc2fd3cb861990f2138404b3097a1281"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_distribution_list.html#afc2fd3cb861990f2138404b3097a1281">org.openzal.zal.DistributionList.getName</a></div><div class="ttdeci">String getName()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_list_8java_source.html#l00138">DistributionList.java:138</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

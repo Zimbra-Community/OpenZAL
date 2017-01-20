@@ -6,7 +6,9 @@ var classorg_1_1openzal_1_1zal_1_1_a_c_e =
     [ "granteeName", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#aee86a9a54b4fdb90bb6dddc4febb7a32", null ],
     [ "granteeType", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a01ad4677d07ece2a1812d8eeaa977c41", null ],
     [ "hashCode", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#aef279e88c05b4147d3da469a27143f15", null ],
+    [ "modifier", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a8256a4be6ae5fa3500e9d95c1864af50", null ],
     [ "right", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a323e392fb603a3cca380123fd8b478f4", null ],
+    [ "rightWithModifier", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a6238ccf8f7e0712a92e927f9d0d38cb7", null ],
     [ "targetId", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a47c26defe46c2e4aca83ba26b8a82d28", null ],
     [ "targetName", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a829a10f4523020cb16738f198ebc6cc9", null ],
     [ "targetType", "classorg_1_1openzal_1_1zal_1_1_a_c_e.html#a116f558b2471347e02fcd89aaebbb5ad", null ]

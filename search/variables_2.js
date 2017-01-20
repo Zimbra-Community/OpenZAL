@@ -1,6 +1,7 @@
 var searchData=
 [
   ['calresource',['calresource',['../enumorg_1_1openzal_1_1zal_1_1provisioning_1_1_target_type.html#a2c74df6eb1cbf32fd55d08b085c007b9',1,'org::openzal::zal::provisioning::TargetType']]],
+  ['centralized',['CENTRALIZED',['../enumorg_1_1openzal_1_1zal_1_1_store_feature.html#a0cff90612643ef4da165af15db4a7659',1,'org::openzal::zal::StoreFeature']]],
   ['chat',['CHAT',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#ab52d53625de83db154bffb5223ea2a87',1,'org::openzal::zal::MailItemType']]],
   ['comment',['COMMENT',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#a764fcdbe337063b7aefec0aeb0faeffa',1,'org::openzal::zal::MailItemType']]],
   ['commit',['COMMIT',['../classorg_1_1openzal_1_1zal_1_1_zal_build_info.html#a7a981472e9f810d04570e1099f8d16fe',1,'org::openzal::zal::ZalBuildInfo']]],

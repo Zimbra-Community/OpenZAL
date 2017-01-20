@@ -11,6 +11,7 @@ var searchData=
   ['placediteminfo',['PlacedItemInfo',['../classorg_1_1openzal_1_1zal_1_1_placed_item_info.html',1,'org::openzal::zal']]],
   ['plaintexttohtmlconverter',['PlainTextToHtmlConverter',['../interfaceorg_1_1openzal_1_1zal_1_1calendar_1_1_plain_text_to_html_converter.html',1,'org::openzal::zal::calendar']]],
   ['prefexternalsenderstype',['PrefExternalSendersType',['../classorg_1_1openzal_1_1zal_1_1_pref_external_senders_type.html',1,'org::openzal::zal']]],
+  ['primarystore',['PrimaryStore',['../interfaceorg_1_1openzal_1_1zal_1_1_primary_store.html',1,'org::openzal::zal']]],
   ['priority',['Priority',['../enumorg_1_1openzal_1_1zal_1_1calendar_1_1_priority.html',1,'org::openzal::zal::calendar']]],
   ['protocol',['Protocol',['../classorg_1_1openzal_1_1zal_1_1_protocol.html',1,'org::openzal::zal']]],
   ['provisioning',['Provisioning',['../interfaceorg_1_1openzal_1_1zal_1_1_provisioning.html',1,'org::openzal::zal']]],

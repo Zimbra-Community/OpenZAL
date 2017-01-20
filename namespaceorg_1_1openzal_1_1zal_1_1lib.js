@@ -1,6 +1,7 @@
 var namespaceorg_1_1openzal_1_1zal_1_1lib =
 [
     [ "ActualClock", "classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock.html", "classorg_1_1openzal_1_1zal_1_1lib_1_1_actual_clock" ],
+    [ "AnyThrow", "classorg_1_1openzal_1_1zal_1_1lib_1_1_any_throw.html", "classorg_1_1openzal_1_1zal_1_1lib_1_1_any_throw" ],
     [ "Clock", "interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock.html", "interfaceorg_1_1openzal_1_1zal_1_1lib_1_1_clock" ],
     [ "ExtensionVersionValidator", "classorg_1_1openzal_1_1zal_1_1lib_1_1_extension_version_validator.html", "classorg_1_1openzal_1_1zal_1_1lib_1_1_extension_version_validator" ],
     [ "FakeClock", "classorg_1_1openzal_1_1zal_1_1lib_1_1_fake_clock.html", "classorg_1_1openzal_1_1zal_1_1lib_1_1_fake_clock" ],

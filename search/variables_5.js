@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['fbtype_5fbusy',['FBTYPE_BUSY',['../classorg_1_1openzal_1_1zal_1_1_utils.html#aeed2251a34652b0cb2bf2a0c628acd62',1,'org::openzal::zal::Utils']]],
+  ['fbtype_5fbusy',['FBTYPE_BUSY',['../classorg_1_1openzal_1_1zal_1_1_free_busy.html#a778682f0bd3629d019ec5c0084f1ac4c',1,'org.openzal.zal.FreeBusy.FBTYPE_BUSY()'],['../classorg_1_1openzal_1_1zal_1_1_utils.html#aeed2251a34652b0cb2bf2a0c628acd62',1,'org.openzal.zal.Utils.FBTYPE_BUSY()']]],
+  ['fbtype_5fbusy_5ftentative',['FBTYPE_BUSY_TENTATIVE',['../classorg_1_1openzal_1_1zal_1_1_free_busy.html#ad3b3bd8cca36196d398570a13549903c',1,'org::openzal::zal::FreeBusy']]],
+  ['fbtype_5fbusy_5funavailable',['FBTYPE_BUSY_UNAVAILABLE',['../classorg_1_1openzal_1_1zal_1_1_free_busy.html#a17e63c324a42da60b1d6ad1a56b2e995',1,'org::openzal::zal::FreeBusy']]],
+  ['fbtype_5ffree',['FBTYPE_FREE',['../classorg_1_1openzal_1_1zal_1_1_free_busy.html#af4dfb16d327d3975050209cee5f6aefb',1,'org::openzal::zal::FreeBusy']]],
+  ['fbtype_5fnodata',['FBTYPE_NODATA',['../classorg_1_1openzal_1_1zal_1_1_free_busy.html#a9da6404080b0c5d1fe1ece923f4a0a54',1,'org::openzal::zal::FreeBusy']]],
   ['first_5fuser_5fid',['FIRST_USER_ID',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html#a506d23a6ff2dbaaf993a53d6c816d90f',1,'org::openzal::zal::Mailbox']]],
   ['flag',['FLAG',['../classorg_1_1openzal_1_1zal_1_1_mail_item_type.html#adfb59fc4017f51653d77272c56131a7d',1,'org::openzal::zal::MailItemType']]],
   ['flags',['flags',['../classorg_1_1openzal_1_1zal_1_1_full_item_info.html#a0e155f53cb049f69e6a68e63a27c5b83',1,'org::openzal::zal::FullItemInfo']]],

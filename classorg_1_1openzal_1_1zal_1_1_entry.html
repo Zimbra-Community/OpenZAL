@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('classorg_1_1openzal_1_1zal_1_1_entry.h
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classorg_1_1openzal_1_1zal_1_1_entry-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">org.openzal.zal.Entry Class Reference</div>  </div>
+<div class="title">org.openzal.zal.Entry Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -139,13 +139,47 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52a452e11324b39591a20e7b6e83c2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af785bcfa44f9a3df58b0c63705c1e15f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#af785bcfa44f9a3df58b0c63705c1e15f">equals</a> (@Nullable Object o)</td></tr>
 <tr class="separator:af785bcfa44f9a3df58b0c63705c1e15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5365dd8d60cf1ec8623060acd91d062"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#aa5365dd8d60cf1ec8623060acd91d062">hashCode</a> ()</td></tr>
-<tr class="separator:aa5365dd8d60cf1ec8623060acd91d062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cb48c50723234030674a040ed5c371"><td class="memItemLeft" align="right" valign="top">Set&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#ac9cb48c50723234030674a040ed5c371">getMultiAttrSet</a> (String name)</td></tr>
+<tr class="separator:ac9cb48c50723234030674a040ed5c371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452480382516ef063ad1c7876ee7d0e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#a452480382516ef063ad1c7876ee7d0e7">addMultiAttrValue</a> (String key, String value)</td></tr>
+<tr class="separator:a452480382516ef063ad1c7876ee7d0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1edf66f4c4733527b58794e8846f3d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#a1edf66f4c4733527b58794e8846f3d8e">removeMultiAttrValue</a> (String key, String value)</td></tr>
+<tr class="separator:a1edf66f4c4733527b58794e8846f3d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595d6141fa4b2d459875a7cee1f78978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1openzal_1_1zal_1_1_entry.html#a595d6141fa4b2d459875a7cee1f78978">modify</a> (Map&lt; String, Object &gt; attrs)</td></tr>
+<tr class="separator:a595d6141fa4b2d459875a7cee1f78978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_entry_8java_source.html#l00027">27</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00034">34</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a452480382516ef063ad1c7876ee7d0e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.openzal.zal.Entry.addMultiAttrValue </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00099">99</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af785bcfa44f9a3df58b0c63705c1e15f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +194,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_entry_8java_source.html#l00065">65</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00072">72</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
 
 </div>
 </div>
@@ -188,7 +222,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_entry_8java_source.html#l00059">59</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00066">66</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
 
 </div>
 </div>
@@ -205,7 +239,25 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_entry_8java_source.html#l00045">45</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00052">52</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9cb48c50723234030674a040ed5c371"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Set&lt;String&gt; org.openzal.zal.Entry.getMultiAttrSet </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00094">94</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
 
 </div>
 </div>
@@ -222,24 +274,53 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_entry_8java_source.html#l00054">54</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00061">61</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa5365dd8d60cf1ec8623060acd91d062"></a>
+<a class="anchor" id="a595d6141fa4b2d459875a7cee1f78978"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int org.openzal.zal.Entry.hashCode </td>
+          <td class="memname">void org.openzal.zal.Entry.modify </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
+          <td class="paramname"><em>attrs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_entry_8java_source.html#l00087">87</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00125">125</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1edf66f4c4733527b58794e8846f3d8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.openzal.zal.Entry.removeMultiAttrValue </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_entry_8java_source.html#l00112">112</a> of file <a class="el" href="_entry_8java_source.html">Entry.java</a>.</p>
 
 </div>
 </div>

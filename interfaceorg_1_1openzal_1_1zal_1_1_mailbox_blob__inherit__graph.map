@@ -1,0 +1,6 @@
+<map id="org.openzal.zal.MailboxBlob" name="org.openzal.zal.MailboxBlob">
+<area shape="rect" id="node4" href="$classorg_1_1openzal_1_1zal_1_1_mailbox_blob_wrap.html" title="org.openzal.zal.MailboxBlobWrap" alt="" coords="5,229,221,256"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_zal_mailbox_blob.html" title="org.openzal.zal.ZalMailboxBlob" alt="" coords="245,229,448,256"/>
+<area shape="rect" id="node2" href="$interfaceorg_1_1openzal_1_1zal_1_1_staged_blob.html" title="org.openzal.zal.StagedBlob" alt="" coords="139,80,320,107"/>
+<area shape="rect" id="node3" href="$interfaceorg_1_1openzal_1_1zal_1_1_blob.html" title="org.openzal.zal.Blob" alt="" coords="159,5,299,32"/>
+</map>

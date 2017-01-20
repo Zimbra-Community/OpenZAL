@@ -9,6 +9,6 @@ var classorg_1_1openzal_1_1zal_1_1_distribution_list =
     [ "getMultiAttrSet", "classorg_1_1openzal_1_1zal_1_1_distribution_list.html#ac6b694d46d00bddeef987e623797dfa0", null ],
     [ "getName", "classorg_1_1openzal_1_1zal_1_1_distribution_list.html#afc2fd3cb861990f2138404b3097a1281", null ],
     [ "getPrefAllowAddressForDelegatedSender", "classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a790a8298e5c8013184f62a318d5357d7", null ],
-    [ "modify", "classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a1e75d1f36f7cc8a98216d56fac7b3669", null ],
+    [ "removeMembers", "classorg_1_1openzal_1_1zal_1_1_distribution_list.html#aa80571bb329d97953cdfa5a309aab350", null ],
     [ "setPrefAllowAddressForDelegatedSender", "classorg_1_1openzal_1_1zal_1_1_distribution_list.html#a0cf1842e941e300a27f64f4e5ce31c47", null ]
 ];

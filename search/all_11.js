@@ -7,7 +7,6 @@ var searchData=
   ['queryresults',['QueryResults',['../classorg_1_1openzal_1_1zal_1_1_query_results.html#a032003b2cef3d5c5613ad642ddc38639',1,'org::openzal::zal::QueryResults']]],
   ['queryresults_2ejava',['QueryResults.java',['../_query_results_8java.html',1,'']]],
   ['quietclosestatement',['quietCloseStatement',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_database.html#acf932496c040a60c4197fcf4b1673220',1,'org::openzal::zal::lib::ZimbraDatabase']]],
-  ['quietdelete',['quietDelete',['../classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html#a579051cdcfc55a697f7b2cc5164b777e',1,'org::openzal::zal::StoreManagerImp']]],
   ['quotaexceededexception',['QuotaExceededException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_quota_exceeded_exception.html#ab653f04bf9d1b6cd5f6bad80c8a9e824',1,'org::openzal::zal::exceptions::QuotaExceededException']]],
   ['quotaexceededexception',['QuotaExceededException',['../classorg_1_1openzal_1_1zal_1_1exceptions_1_1_quota_exceeded_exception.html',1,'org::openzal::zal::exceptions']]],
   ['quotaexceededexception_2ejava',['QuotaExceededException.java',['../_quota_exceeded_exception_8java.html',1,'']]],

@@ -1,7 +1,8 @@
 var searchData=
 [
   ['mailbox',['Mailbox',['../classorg_1_1openzal_1_1zal_1_1_mailbox.html',1,'org::openzal::zal']]],
-  ['mailboxblob',['MailboxBlob',['../classorg_1_1openzal_1_1zal_1_1_mailbox_blob.html',1,'org::openzal::zal']]],
+  ['mailboxblob',['MailboxBlob',['../interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html',1,'org::openzal::zal']]],
+  ['mailboxblobwrap',['MailboxBlobWrap',['../classorg_1_1openzal_1_1zal_1_1_mailbox_blob_wrap.html',1,'org::openzal::zal']]],
   ['mailboxmanager',['MailboxManager',['../interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager.html',1,'org::openzal::zal']]],
   ['mailboxmanagerimp',['MailboxManagerImp',['../classorg_1_1openzal_1_1zal_1_1_mailbox_manager_imp.html',1,'org::openzal::zal']]],
   ['mailboxmanagerlistener',['MailboxManagerListener',['../interfaceorg_1_1openzal_1_1zal_1_1_mailbox_manager_listener.html',1,'org::openzal::zal']]],
@@ -16,8 +17,10 @@ var searchData=
   ['message',['Message',['../classorg_1_1openzal_1_1zal_1_1_message.html',1,'org::openzal::zal']]],
   ['metadata',['Metadata',['../classorg_1_1openzal_1_1zal_1_1_metadata.html',1,'org::openzal::zal']]],
   ['metadatalist',['MetadataList',['../classorg_1_1openzal_1_1zal_1_1_metadata_list.html',1,'org::openzal::zal']]],
+  ['method',['Method',['../enumorg_1_1openzal_1_1zal_1_1_free_busy_1_1_method.html',1,'org::openzal::zal::FreeBusy']]],
   ['mime',['Mime',['../classorg_1_1openzal_1_1zal_1_1_mime.html',1,'org::openzal::zal']]],
   ['mimeconstants',['MimeConstants',['../classorg_1_1openzal_1_1zal_1_1_mime_constants.html',1,'org::openzal::zal']]],
+  ['mimehandlerprovider',['MimeHandlerProvider',['../interfaceorg_1_1openzal_1_1zal_1_1index_1_1_mime_handler_provider.html',1,'org::openzal::zal::index']]],
   ['mountpoint',['Mountpoint',['../classorg_1_1openzal_1_1zal_1_1_mountpoint.html',1,'org::openzal::zal']]],
   ['mpartinfo',['MPartInfo',['../classorg_1_1openzal_1_1zal_1_1_m_part_info.html',1,'org::openzal::zal']]]
 ];

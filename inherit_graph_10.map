@@ -1,3 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classorg_1_1openzal_1_1zal_1_1_cache_entry.html" title="org.openzal.zal.CacheEntry" alt="" coords="6,5,189,32"/>
+<area shape="rect" id="node1" href="$interfaceorg_1_1openzal_1_1zal_1_1_blob.html" title="org.openzal.zal.Blob" alt="" coords="6,64,146,91"/>
+<area shape="rect" id="node2" href="$classorg_1_1openzal_1_1zal_1_1_blob_wrap.html" title="org.openzal.zal.BlobWrap" alt="" coords="200,13,371,40"/>
+<area shape="rect" id="node3" href="$interfaceorg_1_1openzal_1_1zal_1_1_staged_blob.html" title="org.openzal.zal.StagedBlob" alt="" coords="195,64,376,91"/>
+<area shape="rect" id="node8" href="$classorg_1_1openzal_1_1zal_1_1_zal_blob.html" title="org.openzal.zal.ZalBlob" alt="" coords="438,123,597,149"/>
+<area shape="rect" id="node4" href="$interfaceorg_1_1openzal_1_1zal_1_1_mailbox_blob.html" title="org.openzal.zal.MailboxBlob" alt="" coords="425,5,610,32"/>
+<area shape="rect" id="node7" href="$classorg_1_1openzal_1_1zal_1_1_staged_blob_wrap_3_01_s_01extends_01_blob_01_4.html" title="org.openzal.zal.StagedBlob\lWrap\&lt; S extends Blob \&gt;" alt="" coords="427,57,608,98"/>
+<area shape="rect" id="node5" href="$classorg_1_1openzal_1_1zal_1_1_mailbox_blob_wrap.html" title="org.openzal.zal.MailboxBlobWrap" alt="" coords="659,5,875,32"/>
+<area shape="rect" id="node6" href="$classorg_1_1openzal_1_1zal_1_1_zal_mailbox_blob.html" title="org.openzal.zal.ZalMailboxBlob" alt="" coords="665,89,868,116"/>
 </map>

@@ -1,6 +1,8 @@
 var searchData=
 [
+  ['zalblob',['ZalBlob',['../classorg_1_1openzal_1_1zal_1_1_zal_blob.html#ae15dfb0f7960e3166f0151d39cd4716e',1,'org.openzal.zal.ZalBlob.ZalBlob(File file, String volumeId)'],['../classorg_1_1openzal_1_1zal_1_1_zal_blob.html#ad239b0cc92c7c8d1ca951c778634cec4',1,'org.openzal.zal.ZalBlob.ZalBlob(File file, String volumeId, String digest, Long rawSize)']]],
   ['zalentrypointimpl',['ZalEntrypointImpl',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_zal_entrypoint_impl.html#aa6b8d21b4807b79f5bb552aafc7c8849',1,'org::openzal::zal::extension::ZalEntrypointImpl']]],
+  ['zalmailboxblob',['ZalMailboxBlob',['../classorg_1_1openzal_1_1zal_1_1_zal_mailbox_blob.html#a923f57a5a1c8b4431065f1443b8437d1',1,'org::openzal::zal::ZalMailboxBlob']]],
   ['zauthtoken',['ZAuthToken',['../classorg_1_1openzal_1_1zal_1_1_z_auth_token.html#a6fb44655bc06829307125e10183286a9',1,'org::openzal::zal::ZAuthToken']]],
   ['zimbra',['Zimbra',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_zimbra.html#ac3b92d13c9ccf30735ff9cafa41763b5',1,'org::openzal::zal::extension::Zimbra']]],
   ['zimbraconnectionwrapper',['ZimbraConnectionWrapper',['../classorg_1_1openzal_1_1zal_1_1lib_1_1_zimbra_connection_wrapper.html#aef25d2636223f3183eeb751b89ee4b0d',1,'org::openzal::zal::lib::ZimbraConnectionWrapper']]],

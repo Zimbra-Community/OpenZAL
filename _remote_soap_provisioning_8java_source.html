@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open ZAL
-   &#160;<span id="projectnumber">1.10.5</span>
+   &#160;<span id="projectnumber">1.11.3</span>
    </div>
    <div id="projectbrief">The abstraction layer for Zimbra</div>
   </td>
@@ -138,54 +138,55 @@ $(document).ready(function(){initNavTree('_remote_soap_provisioning_8java_source
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> com.zimbra.cs.account.soap.SoapProvisioning;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> java.util.Collection;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/* $endif $ */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html">   33</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html">RemoteSoapProvisioning</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#ae0fe7298728255d0bb191f7987c8f795">   35</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_response.html">GetQuotaResponse</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#ae0fe7298728255d0bb191f7987c8f795">invokeJaxb</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_request.html">GetQuotaRequest</a> getQuotaUsageRequest, String server)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_response.html">GetQuotaResponse</a>(</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          SoapProvisioning.getAdminInstance().invokeJaxb(</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            getQuotaUsageRequest.toZimbra(GetQuotaRequest.class),</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          server</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        )</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      );</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/* $else $</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    throw new UnsupportedOperationException();</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">    /* $endif $ */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#aff1bab3e53c259379514ebf79496878a">   56</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> Collection&lt;QuotaUsage&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#aff1bab3e53c259379514ebf79496878a">getQuotaUsage</a>(String server)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">return</span> ZimbraListWrapper.wrapQuotaUsages(SoapProvisioning.getAdminInstance().<a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#aff1bab3e53c259379514ebf79496878a">getQuotaUsage</a>(server));</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/* $else $</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">    throw new UnsupportedOperationException();</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    /* $endif $ */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html">org.openzal.zal.soap.RemoteSoapProvisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_remote_soap_provisioning_8java_source.html#l00033">RemoteSoapProvisioning.java:33</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning_html_aff1bab3e53c259379514ebf79496878a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#aff1bab3e53c259379514ebf79496878a">org.openzal.zal.soap.RemoteSoapProvisioning.getQuotaUsage</a></div><div class="ttdeci">static Collection&lt; QuotaUsage &gt; getQuotaUsage(String server)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_soap_provisioning_8java_source.html#l00056">RemoteSoapProvisioning.java:56</a></div></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">import</span> com.zimbra.soap.admin.message.GetQuotaUsageRequest;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* $endif $ */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html">   34</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html">RemoteSoapProvisioning</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#ae0fe7298728255d0bb191f7987c8f795">   36</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_response.html">GetQuotaResponse</a> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#ae0fe7298728255d0bb191f7987c8f795">invokeJaxb</a>(@NotNull <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_request.html">GetQuotaRequest</a> getQuotaUsageRequest, String server)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_response.html">GetQuotaResponse</a>(</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          SoapProvisioning.getAdminInstance().invokeJaxb(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            getQuotaUsageRequest.toZimbra(GetQuotaUsageRequest.class),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          server</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        )</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      );</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/* $else $</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">    throw new UnsupportedOperationException();</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">    /* $endif $ */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#aff1bab3e53c259379514ebf79496878a">   57</a></span>&#160;  <span class="keyword">public</span> <span class="keyword">static</span> Collection&lt;QuotaUsage&gt; <a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#aff1bab3e53c259379514ebf79496878a">getQuotaUsage</a>(String server)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">/* $if ZimbraVersion &gt;= 8.0.0 $ */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> ZimbraListWrapper.wrapQuotaUsages(SoapProvisioning.getAdminInstance().<a class="code" href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#aff1bab3e53c259379514ebf79496878a">getQuotaUsage</a>(server));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">catch</span> (ServiceException e)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">throw</span> ExceptionWrapper.wrap(e);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">/* $else $</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    throw new UnsupportedOperationException();</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">    /* $endif $ */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html">org.openzal.zal.soap.RemoteSoapProvisioning</a></div><div class="ttdef"><b>Definition:</b> <a href="_remote_soap_provisioning_8java_source.html#l00034">RemoteSoapProvisioning.java:34</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning_html_aff1bab3e53c259379514ebf79496878a"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#aff1bab3e53c259379514ebf79496878a">org.openzal.zal.soap.RemoteSoapProvisioning.getQuotaUsage</a></div><div class="ttdeci">static Collection&lt; QuotaUsage &gt; getQuotaUsage(String server)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_soap_provisioning_8java_source.html#l00057">RemoteSoapProvisioning.java:57</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_quota_usage_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_quota_usage.html">org.openzal.zal.QuotaUsage</a></div><div class="ttdef"><b>Definition:</b> <a href="_quota_usage_8java_source.html#l00026">QuotaUsage.java:26</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_request_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_request.html">org.openzal.zal.soap.GetQuotaRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="_get_quota_request_8java_source.html#l00028">GetQuotaRequest.java:28</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1_zimbra_list_wrapper.html">org.openzal.zal.ZimbraListWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_zimbra_list_wrapper_8java_source.html#l00044">ZimbraListWrapper.java:44</a></div></div>
 <div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_response_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_get_quota_response.html">org.openzal.zal.soap.GetQuotaResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_get_quota_response_8java_source.html#l00033">GetQuotaResponse.java:33</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning_html_ae0fe7298728255d0bb191f7987c8f795"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#ae0fe7298728255d0bb191f7987c8f795">org.openzal.zal.soap.RemoteSoapProvisioning.invokeJaxb</a></div><div class="ttdeci">static GetQuotaResponse invokeJaxb(@NotNull GetQuotaRequest getQuotaUsageRequest, String server)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_soap_provisioning_8java_source.html#l00035">RemoteSoapProvisioning.java:35</a></div></div>
-<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00031">ExceptionWrapper.java:31</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning_html_ae0fe7298728255d0bb191f7987c8f795"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1soap_1_1_remote_soap_provisioning.html#ae0fe7298728255d0bb191f7987c8f795">org.openzal.zal.soap.RemoteSoapProvisioning.invokeJaxb</a></div><div class="ttdeci">static GetQuotaResponse invokeJaxb(@NotNull GetQuotaRequest getQuotaUsageRequest, String server)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_soap_provisioning_8java_source.html#l00036">RemoteSoapProvisioning.java:36</a></div></div>
+<div class="ttc" id="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper_html"><div class="ttname"><a href="classorg_1_1openzal_1_1zal_1_1exceptions_1_1_exception_wrapper.html">org.openzal.zal.exceptions.ExceptionWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_exception_wrapper_8java_source.html#l00030">ExceptionWrapper.java:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

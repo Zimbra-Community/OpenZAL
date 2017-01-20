@@ -18,9 +18,14 @@ var searchData=
   ['soapservicemanager',['SoapServiceManager',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_service_manager.html',1,'org::openzal::zal::soap']]],
   ['soaptransport',['SoapTransport',['../classorg_1_1openzal_1_1zal_1_1soap_1_1_soap_transport.html',1,'org::openzal::zal::soap']]],
   ['sortedby',['SortedBy',['../classorg_1_1openzal_1_1zal_1_1_sorted_by.html',1,'org::openzal::zal']]],
+  ['stagedblob',['StagedBlob',['../interfaceorg_1_1openzal_1_1zal_1_1_staged_blob.html',1,'org::openzal::zal']]],
+  ['stagedblobwrap_3c_20s_20extends_20blob_20_3e',['StagedBlobWrap&lt; S extends Blob &gt;',['../classorg_1_1openzal_1_1zal_1_1_staged_blob_wrap_3_01_s_01extends_01_blob_01_4.html',1,'org::openzal::zal']]],
+  ['store',['Store',['../interfaceorg_1_1openzal_1_1zal_1_1_store.html',1,'org::openzal::zal']]],
+  ['storebuilder',['StoreBuilder',['../interfaceorg_1_1openzal_1_1zal_1_1_store_builder.html',1,'org::openzal::zal']]],
+  ['storefeature',['StoreFeature',['../enumorg_1_1openzal_1_1zal_1_1_store_feature.html',1,'org::openzal::zal']]],
   ['storemanager',['StoreManager',['../interfaceorg_1_1openzal_1_1zal_1_1_store_manager.html',1,'org::openzal::zal']]],
   ['storemanagerconst',['StoreManagerConst',['../classorg_1_1openzal_1_1zal_1_1_store_manager_const.html',1,'org::openzal::zal']]],
-  ['storemanagerimp',['StoreManagerImp',['../classorg_1_1openzal_1_1zal_1_1_store_manager_imp.html',1,'org::openzal::zal']]],
+  ['storemanagerimpl',['StoreManagerImpl',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_store_manager_impl.html',1,'org::openzal::zal::extension']]],
   ['storevolume',['StoreVolume',['../classorg_1_1openzal_1_1zal_1_1_store_volume.html',1,'org::openzal::zal']]],
   ['stubzalextensioncontroller',['StubZalExtensionController',['../classorg_1_1openzal_1_1zal_1_1extension_1_1_stub_zal_extension_controller.html',1,'org::openzal::zal::extension']]]
 ];

@@ -205,10 +205,16 @@ public class ProvisioningImp implements Provisioning
   public static String A_zimbraNetworkModulesNGEnabled                        = com.zimbra.cs.account.Provisioning.A_zimbraNetworkModulesNGEnabled;
   public static String A_zimbraNetworkMobileNGEnabled                         = com.zimbra.cs.account.Provisioning.A_zimbraNetworkMobileNGEnabled;
   public static String A_zimbraNetworkAdminEnabled                            = "zimbraNetworkAdminEnabled";//com.zimbra.cs.account.Provisioning.A_zimbraNetworkAdminEnabled;
+  public static String A_zimbraNetworkAdminNGEnabled                          = "zimbraNetworkAdminNGEnabled";//com.zimbra.cs.account.Provisioning.A_zimbraNetworkAdminNGEnabled;
+  public static String A_zimbraNetworkBackupNGEnabled                         = "zimbraNetworkBackupNGEnabled";//com.zimbra.cs.account.Provisioning.A_zimbraNetworkBackupNGEnabled;
+  public static String A_zimbraNetworkHSMNGEnabled                            = "zimbraNetworkHSMNGEnabled";//com.zimbra.cs.account.Provisioning.A_zimbraNetworkHSMNGEnabled;
   /* $else$
   public static String A_zimbraNetworkModulesNGEnabled                        = "";
   public static String A_zimbraNetworkMobileNGEnabled                         = "";
   public static String A_zimbraNetworkAdminEnabled                            = "";
+  public static String A_zimbraNetworkAdminNGEnabled                          = "";
+  public static String A_zimbraNetworkBackupNGEnabled                         = "";
+  public static String A_zimbraNetworkHSMNGEnabled                            = "";
   /* $endif$ */
   public static int    DATASOURCE_PASSWORD_MAX_LENGTH                         = 128;
 

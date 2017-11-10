@@ -330,7 +330,15 @@ public class InviteFactory
     Recurrence.RecurrenceRule mainRecurrenceRule = null;
     if (mRecurrenceRule != null)
     {
-      ParsedDuration eventDuration = dateEnd.difference(dateStart);
+      ParsedDuration  eventDuration;
+      if (type == Item.TYPE_TASK)
+      {
+        eventDuration = ParsedDuration.ONE_DAY;
+      }
+      else
+      {
+        eventDuration = dateEnd.difference(dateStart);
+      }
       Recurrence.IRecurrence simpleRecurrenceRule = new Recurrence.SimpleRepeatingRule(dateStart,
                                                                                        eventDuration,
                                                                                        mRecurrenceRule.toZimbra(ZRecur.class),
